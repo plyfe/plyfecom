@@ -1,71 +1,296 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>plyfe.com by plyfe</title>
+<head>
+    <title>Plyfe | Gamification As A Service</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="description" content="Front Row Responsive One page Theme With Video Support built by Harkable.com">
+    <meta name="author" content="harkable.com"> 
+  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  	<script>window.jQuery || document.write('<script src="assets/js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="assets/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="assets/js/jquery.imagesloaded.min.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/modernizr-2.5.3.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+    <script src="assets/js/bigvideo.js"></script> 
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style type="text/css">
+    body,td,th {
+	/* [disabled]font-family: "Open Sans", sans-serif; */
+}
+body {
+	background-image: url(assets/img/NYCBanner.png);
+}
+    </style>    
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>plyfe.com</h1>
-        <p>plyfe.com</p>
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->      
+<meta charset="utf-8">
+</head>
+<body>
 
-        <p class="view"><a href="https://github.com/plyfe/plyfecom">View the Project on GitHub <small>plyfe/plyfecom</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/plyfe/plyfecom/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/plyfe/plyfecom/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/plyfe/plyfecom">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/plyfe">plyfe</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+  <!-- Navbar -->
+	<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+    		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+          	</a>
+          	<a class="brand scroller" data-section="html" href="index.html"><img src="assets/img/plyfe-logo.png" /></a>
+		  	<div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                    <li><a href="#" class="scroller" data-section="#about">Solution</a></li>
+                    <li><a href="#" class="scroller" data-section="#clients">Clients</a></li>
+                    <li><a href="#" class="scroller" data-section="#team">Team</a></li>
+                    <li><a href="#" class="scroller" data-section="#contact">Contact</a></li>
+                </ul>
+	        </div>
+        </div>
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- end Navbar -->
     
-  </body>
+    
+    <!-- #intro -->
+	<div class="main-container">
+		<div class="container-fluid" id="intro">	
+		<div class="container">	
+			<div class="row span6 center">
+				<h1>Real Game Mechanics: True Gamification</h1>
+				<p>Plyfe is a platform that allows clients to leverage the power of game mechanics to increase engagement and influence behavior.</p>
+				<a class="scroller btn btn-xlarge btn-plyfe-purple" data-section="#contact">Learn More</a>
+			</div>	
+		</div>
+	</div>
+    <!-- ends Intro -->
+    
+    
+<!-- #about -->
+<div class="container-fluid" id="about">
+		<div class="container light">
+			<h1>What makes us special</h1>
+		<ul class="thumbnails">
+		  <li class="span4">
+		    <div class="thumbnail">
+		      <img alt="" src="assets/img/plyfe-play.png">
+		      <h3>Game Mechanics</h3>
+		      <p>Bringing real game mechanics to the gamification industry</p>
+		    </div>
+		  </li>
+		  <li class="span4">
+		    <div class="thumbnail">
+		       <img alt="" src="assets/img/icon3.png">
+		      <h3>Use Cases</h3>
+		      <p>SaaS technology to maximize campaigns, loyalty programs, and digital products</p>
+		    </div>
+		  </li>
+		  <li class="span4">
+		    <div class="thumbnail">
+		      <img alt="" src="assets/img/icon1.png">
+		      <h3>Cross Platform</h3>
+		      <p>Turnkey solutions for web, social, and mobile.  We call it digital</p>
+		    </div>
+		  </li>
+		</ul>
+	</div>
+</div>
+<!-- ends About -->
+<!-- #press -->
+<div class="container-fluid" id="clients">
+		<div class="container dark">
+			<h1>We're in great company</h1>
+		<ul class="logos">
+		  <li class="span6">
+		    <div class="thumbnail">
+		      <img alt="" src="assets/img/clients.png">
+		      <h3></h3>
+		      <br/>
+		      <p>For our clients, our success is your success</p>
+		    </div>
+		  </li>
+		  <li class="span6 second">
+		    <div class="thumbnail">
+		      <img alt="" src="assets/img/press.png">
+		      <h3></h3>
+		      <br/>
+		      <p>Selected as Forbes' 2013 most promising companies</p>
+		    </div>
+		  </li>
+		</ul>
+	</div>
+</div>
+<!-- ends press-->    
+     
+      <!-- #team -->    
+<div class="container-fluid" id="team">
+	<div class="container dark">
+		<h1>Meet the team</h1>
+			<ul class="thumbnails">
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/mateen-aini.png">
+			      <h3>Mateen Aini</h3>
+			      <p>Serial entrepreneur with multiple exits focused on emerging tech</p>
+			      <div class="social">
+				      <a href="http://www.linkedin.com/in/mateenaini"><img alt="" src="assets/img/linkedin.png"></a>
+				      <a href="https://twitter.com/mateenaini"><img alt="" src="assets/img/twitter.png"></a>
+				      <!--<img alt="" src="assets/img/facebook.png">-->
+				      <a href="mailto:mateen@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+			      </div>
+			    </div>
+			  </li>
+			
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/jeff-arbour.png">
+			      <h3>Jeff Arbour</h3>
+			      <p>10 years experience helping companies navigate social and mobile</p>
+			      <div class="social">
+				      <a href="http://www.linkedin.com/in/jeffarbour"><img alt="" src="assets/img/linkedin.png"></a>
+				      <a href="https://twitter.com/jeffarbour"><img alt="" src="assets/img/twitter.png"></a>
+				      <!--<img alt="" src="assets/img/facebook.png">-->
+				      <a href="mailto:jeff@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+			      </div>
+			    </div>
+			  </li>
+			  
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/chris-lopresto.png">
+			      <h3>Chris LoPresto</h3>
+			      <p>Tech and literal rockstar, code so clean you can eat off of it</p>
+			      <div class="social">
+				      <a href="www.linkedin.com/in/chrislopresto"><img alt="" src="assets/img/linkedin.png"></a>
+				      <a href="https://twitter.com/chrislopresto"><img alt="" src="assets/img/twitter.png"></a>
+				      <!--<img alt="" src="assets/img/facebook.png">-->
+				      <a href="mailto:chris@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+			      </div>
+			    </div>
+			  </li>
+			
+			  <li class="span3">
+			    <div class="thumbnail">
+			      <img alt="" src="assets/img/jared-sorensen.png">
+			      <h3>Jared Sorensen</h3>
+			      <p>17 years experience building and designing games</p>
+			      <div class="social">
+				      <a href="http://www.linkedin.com/profile/view?id=1649498&authType=NAME_SEARCH&authToken=taVW&locale=en_US&srchid=48778931370547600105&srchindex=1&srchtotal=19&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A48778931370547600105%2CVSRPtargetId%3A1649498%2CVSRPcmpt%3Aprimary"><img alt="" src="assets/img/linkedin.png"/></a>
+				      <a href="https://twitter.com/jaredsorensen"><img alt="" src="assets/img/twitter.png"/></a>
+				      <!--<img alt="" src="assets/img/facebook.png"/>-->
+				      <a href="mailto:jared@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"/></a>
+			      </div>
+			    </div>
+			  </li>
+			 </ul>
+		</div>
+	</div>
+      <!-- End Team -->  
+       	
+	
+      <!-- #contact -->   	
+	<div class="container-fluid" id="contact">
+	<div class="container dark">
+		<h1>Get in touch with us</h1>	
+		<!--
+		<div class="span5">			
+			<form>
+				  <div class="control-group">
+				    <label class="control-label" for="inputName">Name</label>
+				    <div class="controls">
+				      <input type="text" class="span4" id="inputName" placeholder="Name">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputEmail">Email</label>
+				    <div class="controls">
+				      <input type="text" class="span4" id="inputEmail" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputContact">Message</label>
+				    <div class="controls">
+				     <textarea id="inputContact" class="span4"></textarea>
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">
+				      <button type="submit" class="btn btn-plyfe-purple">Contact Us</button>
+				    </div>
+				  </div>
+			</form>
+		</div>
+		
+		<div class="span5 wufoo">			
+			<div id="wufoo-s7x2z7">
+			</div>
+			<script type="text/javascript">var s7x2z7;(function(d, t) {
+			var s = d.createElement(t), options = {
+			'userName':'plyfe', 
+			'formHash':'s7x2z7', 
+			'autoResize':true,
+			'height':'400',
+			'async':true,
+			'header':'show'};
+			s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+			s.onload = s.onreadystatechange = function() {
+			var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+			try { s7x2z7 = new WufooForm();s7x2z7.initialize(options);s7x2z7.display(); } catch (e) {}};
+			var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+			})(document, 'script');</script>
+		</div>
+		-->
+
+		<div class="span5">	
+				<h2>Send us an email or give us a call</h2>
+				
+				<p>We look forward to hearing from you.</p>
+	
+				<address>
+				  <strong>Plyfe, Inc.</strong><br>
+				  62 Grand St #2<br>
+				  New York, NY 10013<br>
+				  <abbr title="Email">E:</abbr> <a href="mailto:info@plyfe.me">info@plyfe.me</a><br/>
+				  <abbr title="Phone">P:</abbr> <a href="tel:+1-646-450-2406">(646) 450-2406</a>
+				</address>
+				 
+				  <a href="http://blog.plyfe.me/">Read our blog</a>
+				<br/>
+				<a href="https://plyfe.me/about">Meet the entire team</a>
+		</div>	
+		<div class="span6">
+			<img src="assets/img/plyfe-office.jpg" />
+		</div>	
+	</div>
+</div>   <!-- End Contact -->  
+	</div>
+<script>
+$(function () {
+    $(window).scroll(function(){
+    // global scroll to top button
+        if ($(this).scrollTop() > 300) {
+            $('.scrolltop').fadeIn();
+        } else {
+            $('.scrolltop').fadeOut();
+        }        
+    });
+    
+    // scroll nav
+    $('.scroller').click(function(){
+    	var section = $($(this).data("section"));
+    	var top = section.offset().top-64;
+        $("html, body").animate({ scrollTop: top }, 700);
+        return false;
+    });
+        
+});
+</script>
+</body>
 </html>
