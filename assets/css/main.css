@@ -9,13 +9,13 @@ body {
 }
 
 a, a:visited{color:#a294bc;
-	
+
 	-webkit-transition:all .1s linear;
 	-moz-transition:all .1s linear;
 	-ms-transition:all .1s linear;
 	-o-transition:all .1s linear;
 	transition:all .1s linear;
-	
+
 }
 a:hover,a:active{color:#68548f;
 	text-decoration: none;
@@ -78,9 +78,9 @@ h1 {
 	background:#fff;
 }
 
-#clients {
-	background:#000;
-	background:rgba(0,0,0,0.8);
+#customers {
+	background: url('../img/white-checked-bg.jpg') #f7f7f7;
+
 }
 
 #team {
@@ -140,7 +140,7 @@ h1 {
 }
 
 .navbar .nav li a:hover,.navbar .nav li a:focus{
-	color:#F8F8F8;	
+	color:#F8F8F8;
 }
 
 .navbar .nav > li > a:hover {
@@ -241,21 +241,21 @@ ul.logos li {
 	.nav-collapse .nav > li > a:hover,.nav-collapse .dropdown-menu a:hover {
 		background:none!important;
 	}
-	
+
 	.nav-collapse .nav > li > a,.nav-collapse .dropdown-menu a {
 		color:#ccc;
 	}
-	
+
 	.navbar .brand {
 		padding:8px 0 0 40px;
 	}
-	
+
 	body {
 		padding-right:0;
 		padding-left:0;
 		background-size:250%;
 	}
-	
+
 	#intro {
 	margin-top:45px;
 	}
@@ -267,7 +267,7 @@ ul.logos li {
 		padding-left:0;
 		background-size:330%;
 	}
-	
+
 }
 
 @media (max-width: 480px) {
