@@ -35,6 +35,11 @@ h1 {
 	margin-bottom:30px;
 }
 
+abbr[title],
+abbr[data-original-title] {
+  cursor: pointer;
+}
+
 .dark {
 	color:#fff;
 }
@@ -78,19 +83,17 @@ h1 {
 	background:#fff;
 }
 
-#customers {
+#press {
 	background: url('../img/white-checked-bg.jpg') #f7f7f7;
-
 }
 
 #team {
 	background: #010101;
-
 }
-#contact {
+
+#customers, #contact {
 	background:#202020;
 }
-
 
 /* Navbar Styles  */
 
