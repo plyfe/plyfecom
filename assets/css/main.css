@@ -79,7 +79,7 @@ abbr[data-original-title] {
 	line-height: 1.4em;
 }
 
-#about {
+#about, #customers {
 	background:#fff;
 }
 
@@ -87,12 +87,39 @@ abbr[data-original-title] {
 	background: url('../img/white-checked-bg.jpg') #f7f7f7;
 }
 
+#press h2, #press p, #customers h2, #customers p {
+	text-align: center;
+}
+
+#press ul, #customers ul {
+	padding: 0;
+	margin: auto;
+	list-style: none;
+	text-align: center;
+}
+
+#press li, #customers li {
+	display: inline;
+	margin: 0;
+	padding: 0 10px;
+}
+
+#press li img, #customers li img {
+	width: 150px;
+	height: 112px;
+}
+
 #team {
 	background: #010101;
 }
 
-#customers, #contact {
-	background:#202020;
+#contact {
+	background: #202020;
+}
+
+#contact iframe {
+	border: solid 1px white;
+	border-radius: 5px;
 }
 
 /* Navbar Styles  */
