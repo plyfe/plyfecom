@@ -26,9 +26,41 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
   	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bigvideo.js"></script>
+    <script type='text/javascript' src='assets/js/wpts_slider_multiple.js'></script>
+    <script>
+      jQuery(document).ready(function(e) {
+         jQuery('#my_carousel_ct').tsSlider({
+           thumbs:''
+          , width:'responsive'
+          , showText: false
+          , autoplay:15000
+          , imgWidth: 100
+          , imgHeight: 100
+          , imgMarginTop: 0
+          , imgMarginLeft: 0
+          , squared: true
+          , textSquarePosition: 4
+          , textPosition: 'top'
+          , imgAlignment: 'Center'
+          , textColor: 'ffffff'
+          , skin: 'transparent'
+          , arrows:'ts-arrow-1'
+          , sliderHeight: 400
+          , effects:''
+          , titleBold: 'false'
+          , titleItalic: 'false'
+          , textBold: 'true'
+          , textItalic: 'false'
+          , textWidth: 90
+          , background_sld:'#FFF'
+          , background_caption:'#000'
+         });
+      });
+    </script>
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/slider.css" rel="stylesheet">
     <style type="text/css">
       body,td,th {
       	/* [disabled]font-family: "Open Sans", sans-serif; */
@@ -58,10 +90,10 @@
           <a class="brand scroller" data-section="html" href="index.html"><img src="assets/img/plyfe-logo.png" /></a>
   	  	  <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-                <li><a href="#" class="scroller" data-section="#about">Why&nbsp;Plyfe?</a></li>
-                <li><a href="#" class="scroller" data-section="#press">Press</a></li>
+                <li><a href="#" class="scroller" data-section="#intro">What&nbsp;is&nbsp;Plyfe?</a></li>
                 <li><a href="#" class="scroller" data-section="#customers">Customers</a></li>
                 <li><a href="#" class="scroller" data-section="#team">Team</a></li>
+                <li><a href="#" class="scroller" data-section="#press">Press</a></li>
                 <li><a href="#" class="scroller" data-section="#contact">Contact</a></li>
             </ul>
           </div>
@@ -78,60 +110,37 @@
     			<div class="row span8 center">
             <h1>Increase engagement through personalized digital experiences</h1>
     				<p>Plyfe is an automated marketing platform that uses game mechanics to engage consumers and influence their behavior across all digital touchpoints.</p>
-    				<a class="scroller btn btn-xlarge btn-plyfe-purple" data-section="#about">Learn More</a>
     			</div>
+          <div id="slider">
+            <div id="my_carousel_1" class="carousel slide">
+              <!-- Carousel items -->
+              <div id="my_carousel_2" class="carousel-inner rs-slider">
+                <div class="item active">
+                  <div class="ts_border">
+                    <img src="assets/img/slides/slider_dl_challenges.jpg" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ts_border">
+                    <img src="assets/img/slides/slider_perkyjerky.competition.jpg" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="ts_border">
+                    <img src="assets/img/slides/slider_r4m_campaign.jpg" />
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <div class="slider-arrows">
+                <a class="carousel-custom ts-arrow-1 ts-arrow-1-left" href="#my_carousel_1" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-custom ts-arrow-1 ts-arrow-1-right" href="#my_carousel_1" data-slide="next">&rsaquo;</a>
+              </div>
+            </div>
+          </div>
     		</div>
     	</div>
       <!-- ends Intro -->
-
-      <!-- #about -->
-      <div class="container-fluid" id="about">
-      	<div class="container light">
-      		<h1>Why Plyfe?</h1>
-      		<ul class="thumbnails">
-      		  <li class="span4">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/plyfe-play.png">
-      		      <h3>Real Game Mechanics</h3>
-      		      <p>Entertaining and social challenges.<br/>Real-time analytics.<br/>No badges.</p>
-      		    </div>
-      		  </li>
-      		  <li class="span4">
-      		    <div class="thumbnail">
-      		       <img alt="" src="assets/img/icon3.png">
-      		      <h3>Ease of Integration</h3>
-      		      <p>Website integration in minutes.<br/>Facebook Page Tab integration in seconds.</p>
-      		    </div>
-      		  </li>
-      		  <li class="span4">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/icon1.png">
-      		      <h3>Works Everywhere</h3>
-      		      <p>Responsive web design.<br/>Looks great on phones, tablets, computers, TVs, etc.</p>
-      		    </div>
-      		  </li>
-      		</ul>
-      	</div>
-      </div>
-      <!-- ends About -->
-
-      <!-- #press -->
-      <div class="container-fluid" id="press">
-      	<div class="container light">
-          <div class="row span8 center">
-        		<h1>Plyfe in the Press</h1>
-            <h2>Forbes' Top 100 Most Promising Companies</h2>
-            <p>Plyfe was named to Forbes' list of America's Top 100 companies in 2013.</p>
-            <ul>
-              <li><a href="http://www.forbes.com/companies/plyfe/" target="_blank"><img src="assets/img/press/forbes.png"></a></li>
-              <li><a href="http://www.cnn.com/2012/10/06/tech/gaming-gadgets/global-good-challenge/index.html" target="_blank"><img src="assets/img/press/cnn.png"></a></li>
-              <li><a href="http://techcrunch.com/2012/11/29/plyfe-mobile-funding/" target="_blank"><img src="assets/img/press/techcrunch.png"></a></li>
-              <li><a href="http://mashable.com/2012/09/24/global-good-challenge/" target="_blank"><img src="assets/img/press/mashable.png"></a></li>
-            </ul>
-          </div>
-      	</div>
-      </div>
-      <!-- ends press-->
 
       <!-- #customers -->
       <div class="container-fluid" id="customers">
@@ -150,68 +159,86 @@
 
       <!-- #team -->
       <div class="container-fluid" id="team">
-      	<div class="container dark">
-      		<h1>Meet the Team</h1>
-      	  <ul class="thumbnails">
-      		  <li class="span3">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/mateen-aini.png">
-      		      <h3>Mateen Aini</h3>
-      		      <p>Serial entrepreneur with multiple exits focused on emerging tech</p>
-      		      <div class="social">
-      			      <a href="http://www.linkedin.com/in/mateenaini"><img alt="" src="assets/img/linkedin.png"></a>
-      			      <a href="https://twitter.com/mateenaini"><img alt="" src="assets/img/twitter.png"></a>
-      			      <!--<img alt="" src="assets/img/facebook.png">-->
-      			      <a href="mailto:mateen@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
-      		      </div>
-      		    </div>
-      		  </li>
+        <div class="container dark">
+          <h1>Meet the Team</h1>
+          <ul class="thumbnails">
+            <li class="span3">
+              <div class="thumbnail">
+                <img alt="" src="assets/img/mateen-aini.png">
+                <h3>Mateen Aini</h3>
+                <p>Serial entrepreneur with multiple exits focused on emerging tech</p>
+                <div class="social">
+                  <a href="http://www.linkedin.com/in/mateenaini"><img alt="" src="assets/img/linkedin.png"></a>
+                  <a href="https://twitter.com/mateenaini"><img alt="" src="assets/img/twitter.png"></a>
+                  <!--<img alt="" src="assets/img/facebook.png">-->
+                  <a href="mailto:mateen@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+                </div>
+              </div>
+            </li>
 
-      		  <li class="span3">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/jeff-arbour.png">
-      		      <h3>Jeff Arbour</h3>
-      		      <p>10+ years experience helping companies navigate social and mobile</p>
-      		      <div class="social">
-      			      <a href="http://www.linkedin.com/in/jeffarbour"><img alt="" src="assets/img/linkedin.png"></a>
-      			      <a href="https://twitter.com/jeffarbour"><img alt="" src="assets/img/twitter.png"></a>
-      			      <!--<img alt="" src="assets/img/facebook.png">-->
-      			      <a href="mailto:jeff@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
-      		      </div>
-      		    </div>
-      		  </li>
+            <li class="span3">
+              <div class="thumbnail">
+                <img alt="" src="assets/img/jeff-arbour.png">
+                <h3>Jeff Arbour</h3>
+                <p>10+ years experience helping companies navigate social and mobile</p>
+                <div class="social">
+                  <a href="http://www.linkedin.com/in/jeffarbour"><img alt="" src="assets/img/linkedin.png"></a>
+                  <a href="https://twitter.com/jeffarbour"><img alt="" src="assets/img/twitter.png"></a>
+                  <!--<img alt="" src="assets/img/facebook.png">-->
+                  <a href="mailto:jeff@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+                </div>
+              </div>
+            </li>
 
-      		  <li class="span3">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/chris-lopresto.png">
-      		      <h3>Chris LoPresto</h3>
-      		      <p>10+ years delivering working software via sustainable processes</p>
-      		      <div class="social">
-      			      <a href="www.linkedin.com/in/chrislopresto"><img alt="" src="assets/img/linkedin.png"></a>
-      			      <a href="https://twitter.com/chrislopresto"><img alt="" src="assets/img/twitter.png"></a>
-      			      <!--<img alt="" src="assets/img/facebook.png">-->
-      			      <a href="mailto:chris@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
-      		      </div>
-      		    </div>
-      		  </li>
+            <li class="span3">
+              <div class="thumbnail">
+                <img alt="" src="assets/img/chris-lopresto.png">
+                <h3>Chris LoPresto</h3>
+                <p>10+ years delivering working software via sustainable processes</p>
+                <div class="social">
+                  <a href="www.linkedin.com/in/chrislopresto"><img alt="" src="assets/img/linkedin.png"></a>
+                  <a href="https://twitter.com/chrislopresto"><img alt="" src="assets/img/twitter.png"></a>
+                  <!--<img alt="" src="assets/img/facebook.png">-->
+                  <a href="mailto:chris@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"></a>
+                </div>
+              </div>
+            </li>
 
-      		  <li class="span3">
-      		    <div class="thumbnail">
-      		      <img alt="" src="assets/img/jared-sorensen.png">
-      		      <h3>Jared Sorensen</h3>
-      		      <p>10+ years experience building and designing games</p>
-      		      <div class="social">
-      			      <a href="http://www.linkedin.com/profile/view?id=1649498&authType=NAME_SEARCH&authToken=taVW&locale=en_US&srchid=48778931370547600105&srchindex=1&srchtotal=19&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A48778931370547600105%2CVSRPtargetId%3A1649498%2CVSRPcmpt%3Aprimary"><img alt="" src="assets/img/linkedin.png"/></a>
-      			      <a href="https://twitter.com/jaredsorensen"><img alt="" src="assets/img/twitter.png"/></a>
-      			      <!--<img alt="" src="assets/img/facebook.png"/>-->
-      			      <a href="mailto:jared@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"/></a>
-      		      </div>
-      		    </div>
-      		  </li>
-      		</ul>
-      	</div>
+            <li class="span3">
+              <div class="thumbnail">
+                <img alt="" src="assets/img/jared-sorensen.png">
+                <h3>Jared Sorensen</h3>
+                <p>10+ years experience building and designing games</p>
+                <div class="social">
+                  <a href="http://www.linkedin.com/profile/view?id=1649498&authType=NAME_SEARCH&authToken=taVW&locale=en_US&srchid=48778931370547600105&srchindex=1&srchtotal=19&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A48778931370547600105%2CVSRPtargetId%3A1649498%2CVSRPcmpt%3Aprimary"><img alt="" src="assets/img/linkedin.png"/></a>
+                  <a href="https://twitter.com/jaredsorensen"><img alt="" src="assets/img/twitter.png"/></a>
+                  <!--<img alt="" src="assets/img/facebook.png"/>-->
+                  <a href="mailto:jared@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="assets/img/email.png"/></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- End Team -->
+
+      <!-- #press -->
+      <div class="container-fluid" id="press">
+      	<div class="container light">
+          <div class="row span8 center">
+        		<h1>Plyfe in the Press</h1>
+            <h2>Forbes' Top 100 Most Promising Companies</h2>
+            <p>Plyfe was named to Forbes' list of America's Top 100 companies in 2013.</p>
+            <ul>
+              <li><a href="http://www.forbes.com/companies/plyfe/" target="_blank"><img src="assets/img/press/forbes.png"></a></li>
+              <li><a href="http://www.cnn.com/2012/10/06/tech/gaming-gadgets/global-good-challenge/index.html" target="_blank"><img src="assets/img/press/cnn.png"></a></li>
+              <li><a href="http://techcrunch.com/2012/11/29/plyfe-mobile-funding/" target="_blank"><img src="assets/img/press/techcrunch.png"></a></li>
+              <li><a href="http://mashable.com/2012/09/24/global-good-challenge/" target="_blank"><img src="assets/img/press/mashable.png"></a></li>
+            </ul>
+          </div>
+      	</div>
+      </div>
+      <!-- ends press-->
 
       <!-- #contact -->
     	<div class="container-fluid" id="contact">

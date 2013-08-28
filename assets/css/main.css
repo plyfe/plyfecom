@@ -79,11 +79,50 @@ abbr[data-original-title] {
 	line-height: 1.4em;
 }
 
-#about, #customers {
-	background:#fff;
+#intro h3 {
+	color: #fff;
+	font-size: 1.2em;
+	line-height: normal;
+	text-align: left;
 }
 
-#press {
+#intro .left-button {
+	float: left;
+	width: 50%;
+}
+
+#intro .right-button {
+	float: right;
+	width: 50%;
+}
+
+#slider {
+	visibility: visible;
+}
+
+.ts-arrow-1 {
+	line-height: 37px;
+}
+
+.slider-arrows {
+	display: none;
+}
+
+#my_carousel_1:hover .slider-arrows {
+	display: block;
+}
+
+.slider-arrows .ts-arrow-1-left {
+	text-indent: -2px;
+	left: 10px;
+}
+
+.slider-arrows .ts-arrow-1-right {
+	text-indent: 2px;
+	right: 10px;
+}
+
+#customers, #press {
 	background: url('../img/white-checked-bg.jpg') #f7f7f7;
 }
 
