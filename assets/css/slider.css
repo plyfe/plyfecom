@@ -200,11 +200,11 @@
   /*bottom: 0;*/
   padding: 15px;
   background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.5);
 
   /* ADDITIONAL
    * ---------------- */
-   text-align: left;
+   text-align: center;
 }
 .carousel-caption h4,
 .carousel-caption p {

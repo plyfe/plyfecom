@@ -1,11 +1,41 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /* Setup Styles  */
 
+.clear{
+	clear:both;
+}
+
 body {
 	/* Change the background image here  */
-	background: url('../img/bg2.jpg') #000 top center fixed no-repeat;
-	background-size:150%;
-	font-family:'Open Sans',sans-serif;
+	background: #666666 center top fixed no-repeat;
+	background-size:200%;
+	font-family:'proxima_nova_rgregular', 'Open Sans',sans-serif;
 }
 
 a, a:visited{color:#a294bc;
@@ -27,12 +57,32 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
+	font-family:'proxima_nova_rgregular', 'Open Sans', sans-serif;
+	text-shadow:0px 2px rgba(0,0,0,0.7);
 	font-weight:300;
 	font-size:50px;
 	text-align:center;
 	line-height:55px;
-	text-shadow:0 1px 1px rgba(0,0,0,0.6);
-	margin-bottom:30px;
+	margin-bottom:20px;
+}
+
+.light h1{
+	text-shadow:none;
+}
+
+h2{
+	font-size:1.8em;
+	text-align:center;
+	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+}
+
+h3{
+	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+}
+
+h4{
+	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+	color:#f7f7f7;
 }
 
 abbr[title],
@@ -41,7 +91,7 @@ abbr[data-original-title] {
 }
 
 .dark {
-	color:#fff;
+	color:#f7f7f7;
 }
 
 .center {
@@ -61,22 +111,38 @@ abbr[data-original-title] {
 
 /* Section Styles  */
 
+.row.span8.center{
+	width:100%;
+}
+
 #intro {
 	margin-top:100px;
-	text-align:center;
-	min-height:400px;
-	padding:0 0 50px;
+	text-align:left;
+	padding:50px 0;
 }
 
 #intro h1 {
+	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+	font-size:3.0em;
+	line-height:1.3em;
+	margin:20px 0;
 	color:#fff;
+	width:100%;
+	text-align:left;
+	float:left;
 }
 
 #intro p {
-	padding:15px 0 30px 0;
+	border-radius:10px;
+	padding:5%;
+	width:90%;
+	margin:0 0 50px 0;
+	float:left;
 	color:#fff;
 	font-size: 1.2em;
 	line-height: 1.4em;
+	text-align:left;
+	background-color: rgba(0,0,0,0.2);
 }
 
 #intro h3 {
@@ -84,6 +150,19 @@ abbr[data-original-title] {
 	font-size: 1.2em;
 	line-height: normal;
 	text-align: left;
+}
+
+.introText{
+	float:left;
+	margin:0 2.5% 0 auto;
+	max-width:35%;
+}
+
+.introImage{
+	float:left;
+	max-height:427px;
+	max-width:60%;
+	margin:0 2.5% 0 auto;
 }
 
 #intro .left-button {
@@ -94,6 +173,49 @@ abbr[data-original-title] {
 #intro .right-button {
 	float: right;
 	width: 50%;
+}
+
+#whatWeDo h2{
+	margin:40px auto;
+}
+
+#howItWorks h1, #solutions h1, #responsive h1, #contact h1, #press h1, #team h1, #customers h1, #whatWeDo h1{
+	float:left;
+	margin:0 auto 20px auto;
+	width:33%;
+	font-size:1.3em;
+	line-height:1.5em;
+}
+
+/* Light */
+#responsive .line, #howItWorks .line, #contact .line, #press .line, #customers .line{
+	margin-top:12px;
+	float:left;
+	background-color:#444;
+	width:33%;
+	height:2px;
+}
+
+/* Dark */
+#solutions .line, #responsive .line, #contact .line, #team .line, #whatWeDo .line {
+	margin-top:12px;
+	float:left;
+	background-color:#f7f7f7;
+	width:33%;
+	height:2px;
+}
+
+#whatWeDo{
+	padding-bottom:20px;
+}
+
+#thumbnails{
+	margin:0 auto;
+}
+
+li.span2_1{
+  width: 20%;
+  margin:0;
 }
 
 #slider {
@@ -122,7 +244,7 @@ abbr[data-original-title] {
 	right: 10px;
 }
 
-#customers, #press {
+#customers, #press, #howItWorks {
 	background: url('../img/white-checked-bg.jpg') #f7f7f7;
 }
 
@@ -148,12 +270,16 @@ abbr[data-original-title] {
 	height: 112px;
 }
 
-#team {
+#team, #responsive,  #solutions, #whatWeDo{
 	background: #010101;
 }
 
 #contact {
 	background: #202020;
+}
+
+#contact h2{
+	text-align:left;
 }
 
 #contact iframe {
@@ -226,6 +352,10 @@ abbr[data-original-title] {
 	color:#fff;
 }
 
+.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{
+	padding:9px 40px;
+}
+
 .btn-dropnav {
 	float:right;
 	margin-left:5px;
@@ -273,7 +403,7 @@ abbr[data-original-title] {
 	display:block;
 	width:18px;
 	height:2px;
-	background-color:#5FAF08;
+	background-color:#444;
 	-webkit-border-radius:1px;
 	-moz-border-radius:1px;
 	border-radius:1px;
@@ -283,17 +413,63 @@ abbr[data-original-title] {
 }
 
 .navbar .btn-navbar {
-	margin-right: 30px;
+	margin:8px 30px 0 0;
 }
 
 
 .thumbnail {
-	text-align:center;
+	text-align:left;
 	border:0;
+	padding:0;
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-o-box-shadow:none;
 	-webkit-box-shadow:none;
+}
+
+.thumbnails.thirds{
+	margin-left:10px;
+}
+
+.thumbnails.thirds li{
+	width:33%;
+}
+
+.thumbnails{
+	width:100%;
+	margin:0 auto 0 auto;
+	padding:0;
+}
+
+.thumbnail h3{
+	color:#aaa;
+	font-size:1.5em;
+	text-align:center;
+}
+
+.thumbnail p {
+	border-radius:10px;
+	background-color:rgba(0,0,0,0.05);
+	width:80%;
+	padding:5%;
+	margin:0px auto 20px auto;
+}
+
+.thumbnails>li{
+	margin:0 0 0 0;
+	padding:0;
+}
+
+.carousel-caption{
+	font-family:'proxima_nova_rgbold', 'Open Sans',sans-serif;
+	font-size:1.3em;
+	color:#f0f0f0;
+	text-shadow:0px 1px rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+#whatWeDo .thumbnail p, #contact .thumbnail p, #team .thumbnail p, #solutions .thumbnail p {
+	background-color:rgba(200,200,200,0.15);
 }
 
 ul.logos li {
@@ -303,6 +479,14 @@ ul.logos li {
 
 ul.logos li {
 	margin-left: 0;
+}
+
+@media (max-width: 1199px) {
+	#intro h1 {
+		font-size:2.5em;
+		line-height:1.3em;
+	}
+
 }
 
 @media (max-width: 979px) {
@@ -316,7 +500,7 @@ ul.logos li {
 	}
 
 	.navbar .brand {
-		padding:8px 0 0 40px;
+		padding:4px 0 4px 40px;
 	}
 
 	body {
@@ -326,7 +510,29 @@ ul.logos li {
 	}
 
 	#intro {
-	margin-top:45px;
+	margin-top:0px;
+	margin-bottom:-100px;
+	}
+
+	#intro h1{
+		font-size:3.2em;
+		line-height:1.2em;
+	}
+
+	p{
+		font-size:1.1em;
+		line-height:1.5em;
+	}
+
+	.introImage{
+		max-width:757px;
+		float:none;
+	}
+
+	.introText{
+		float:none;
+		max-width:90%;
+		margin:0px auto;
 	}
 }
 
@@ -337,11 +543,72 @@ ul.logos li {
 		background-size:330%;
 	}
 
+	#intro h1{
+		font-size:2.5em;
+		line-height:1.2em;
+	}
+
+	h2{
+		font-size:1.3em;
+		line-height:1.0em;
+	}
+
+	.row.span8.center{
+		width:100%;
+		margin:0px;
+	}
+
+	li.span2_1{
+		width:100%;
+	}
+
+	li.span2_1 .thumbnail p{
+		text-align:center;
+	}
+
+	.thumbnails.thirds{
+		margin-left:0;
+	}
+
+	.thumbnails.thirds li{
+		width:100%;
+	}
+
 }
 
 @media (max-width: 480px) {
 	body {
 		background-size:420%;
+	}
+	#intro h1{
+		font-size:1.8em;
+		line-height:1.1em;
+	}
+
+	#intro p{
+		margin-left:-10%;
+		width:110%;
+	}
+
+	li.span2_1{
+		width:100%;
+	}
+
+	li.span2_1 .thumbnail p{
+		text-align:left;
+	}
+
+	.carousel-caption{
+		font-size:1em;
+		padding:0.2em;
+	}
+
+	#howItWorks h1, #solutions h1, #responsive h1, #contact h1, #press h1, #team h1, #customers h1, #whatWeDo h1{
+		width:64%;
+	}
+
+	#howItWorks .line, #solutions .line, #responsive .line, #contact .line, #press .line, #team .line, #customers .line, #whatWeDo .line{
+		width:18%;
 	}
 
 }
@@ -407,6 +674,8 @@ top:1px;
 	-ms-transform:rotate(-15deg);
 	transform:rotate(-15deg);
 }
+
+
 
 /*	BigVideo Styles */
 
