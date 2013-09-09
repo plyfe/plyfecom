@@ -33,7 +33,7 @@
 
 body {
 	/* Change the background image here  */
-	background: #666666 center top fixed no-repeat;
+	background: url(../img/bg3.jpg) #666666 center top fixed no-repeat;
 	background-size:200%;
 	font-family:'proxima_nova_rgregular', 'Open Sans',sans-serif;
 }
@@ -188,7 +188,7 @@ abbr[data-original-title] {
 }
 
 /* Light */
-#responsive .line, #howItWorks .line, #contact .line, #press .line, #customers .line{
+#responsive .line, #howItWorks .line, #contact .line, #press .line, #customers .line, #solutions .line, #responsive .line, #contact .line, #team .line, #whatWeDo .line {
 	margin-top:12px;
 	float:left;
 	background-color:#444;
@@ -197,7 +197,7 @@ abbr[data-original-title] {
 }
 
 /* Dark */
-#solutions .line, #responsive .line, #contact .line, #team .line, #whatWeDo .line {
+
 	margin-top:12px;
 	float:left;
 	background-color:#f7f7f7;
@@ -245,7 +245,7 @@ li.span2_1{
 }
 
 #customers, #press, #howItWorks {
-	background: url('../img/white-checked-bg.jpg') #f7f7f7;
+	background: url('../img/grey-checked-bg-small.png') #f7f7f7;
 }
 
 #press h2, #press p, #customers h2, #customers p {
@@ -270,12 +270,8 @@ li.span2_1{
 	height: 112px;
 }
 
-#team, #responsive,  #solutions, #whatWeDo{
-	background: #010101;
-}
-
-#contact {
-	background: #202020;
+#team, #responsive,  #solutions, #whatWeDo, #contact{
+	background: url('../img/white-checked-bg-small.png') #666;
 }
 
 #contact h2{
@@ -443,7 +439,7 @@ li.span2_1{
 }
 
 .thumbnail h3{
-	color:#aaa;
+	color:#666;
 	font-size:1.5em;
 	text-align:center;
 }
