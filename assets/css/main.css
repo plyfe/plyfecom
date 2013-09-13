@@ -33,8 +33,8 @@
 
 body {
 	/* Change the background image here  */
-	background: url(../img/bg3.jpg) #666666 center top fixed no-repeat;
-	background-size:200%;
+	background: url(../img/skylineBG.jpg) #666666 center top fixed no-repeat;
+	background-size:100%;
 	font-family:'proxima_nova_rgregular', 'Open Sans',sans-serif;
 }
 
@@ -53,12 +53,13 @@ a:hover,a:active{color:#68548f;
 
 
 h1,h2,h3,h4,h5,h6 {
-	font-weight:300;
+	color:rgba(117,79,197,0.9);
+	font-weight:normal;
 }
 
 h1 {
-	font-family:'proxima_nova_rgregular', 'Open Sans', sans-serif;
-	text-shadow:0px 2px rgba(0,0,0,0.7);
+	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+	text-shadow:0px 1px rgba(84,59,140,1);
 	font-weight:300;
 	font-size:50px;
 	text-align:center;
@@ -73,16 +74,16 @@ h1 {
 h2{
 	font-size:1.8em;
 	text-align:center;
-	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
+	font-family:'proxima_nova_rgregular', 'Open Sans', sans-serif;
 }
 
 h3{
+	color:rgba(69,69,69,1);
 	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
 }
 
 h4{
 	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
-	color:#f7f7f7;
 }
 
 abbr[title],
@@ -125,28 +126,25 @@ abbr[data-original-title] {
 	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
 	font-size:3.0em;
 	line-height:1.3em;
-	margin:20px 0;
-	color:#fff;
+	margin:0 0 40px 0;
 	width:100%;
-	text-align:left;
-	float:left;
+	text-align:center;
 }
 
 #intro p {
+	color:#fff;
 	border-radius:10px;
 	padding:5%;
 	width:90%;
 	margin:0 0 50px 0;
 	float:left;
-	color:#fff;
 	font-size: 1.2em;
 	line-height: 1.4em;
 	text-align:left;
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(70,161,199,0.4);
 }
 
 #intro h3 {
-	color: #fff;
 	font-size: 1.2em;
 	line-height: normal;
 	text-align: left;
@@ -159,10 +157,8 @@ abbr[data-original-title] {
 }
 
 .introImage{
-	float:left;
 	max-height:427px;
-	max-width:60%;
-	margin:0 2.5% 0 auto;
+	margin:0 auto;
 }
 
 #intro .left-button {
@@ -180,10 +176,12 @@ abbr[data-original-title] {
 }
 
 #howItWorks h1, #solutions h1, #responsive h1, #contact h1, #press h1, #team h1, #customers h1, #whatWeDo h1{
+	text-align:left;
+	border-bottom:2px solid rgba(117,79,197,1);
 	float:left;
 	margin:0 auto 20px auto;
-	width:33%;
-	font-size:1.3em;
+	width:100%;
+	font-size:1.8em;
 	line-height:1.5em;
 }
 
@@ -245,7 +243,7 @@ li.span2_1{
 }
 
 #customers, #press, #howItWorks {
-	background: url('../img/grey-checked-bg-small.png') #f7f7f7;
+	background: #f3f3f3;
 }
 
 #press h2, #press p, #customers h2, #customers p {
@@ -271,7 +269,7 @@ li.span2_1{
 }
 
 #team, #responsive,  #solutions, #whatWeDo, #contact{
-	background: url('../img/white-checked-bg-small.png') #666;
+	background:#fff;
 }
 
 #contact h2{
@@ -301,8 +299,7 @@ li.span2_1{
 	box-shadow:0 1px 2px rgba(0,0,0,0.5);
 	filter:none;
 	padding: 0 !important;
-	background:#0d0d0d;
-	background:rgba(13,13,13,0.9);
+	background:rgba(117,79,197,0.9);
 }
 
 .navbar .brand {
@@ -331,11 +328,11 @@ li.span2_1{
 }
 
 .navbar .nav li a:hover,.navbar .nav li a:focus{
-	color:#F8F8F8;
+	color:#FCFCFC;
 }
 
 .navbar .nav > li > a:hover {
-	color:#ccc;
+	color:#fff;
 }
 
 
@@ -439,7 +436,6 @@ li.span2_1{
 }
 
 .thumbnail h3{
-	color:#666;
 	font-size:1.5em;
 	text-align:center;
 }
