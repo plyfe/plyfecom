@@ -33,7 +33,7 @@
 
 body {
 	/* Change the background image here  */
-	background: url(../img/skylineBG.jpg) #666666 center top fixed no-repeat;
+	background: #f7f7f7 center top fixed no-repeat;
 	background-size:100%;
 	font-family:'proxima_nova_rgregular', 'Open Sans',sans-serif;
 }
@@ -119,29 +119,25 @@ abbr[data-original-title] {
 #intro {
 	margin-top:100px;
 	text-align:left;
-	padding:50px 0;
 }
 
 #intro h1 {
+	color:rgba(69,69,69,1);
 	font-family:'proxima_nova_rgbold', 'Open Sans', sans-serif;
 	font-size:3.0em;
 	line-height:1.3em;
-	margin:0 0 40px 0;
+	margin:20px 0 0px 0;
 	width:100%;
 	text-align:center;
 }
 
 #intro p {
-	color:#fff;
-	border-radius:10px;
-	padding:5%;
-	width:90%;
-	margin:0 0 50px 0;
-	float:left;
+	color:rgba(69,69,69,1);
+	width:55%;
+	margin:20px auto;
 	font-size: 1.2em;
 	line-height: 1.4em;
 	text-align:left;
-	background-color: rgba(70,161,199,0.4);
 }
 
 #intro h3 {
@@ -157,6 +153,7 @@ abbr[data-original-title] {
 }
 
 .introImage{
+	text-align:center;
 	max-height:427px;
 	margin:0 auto;
 }
@@ -462,7 +459,7 @@ li.span2_1{
 }
 
 #whatWeDo .thumbnail p, #contact .thumbnail p, #team .thumbnail p, #solutions .thumbnail p {
-	background-color:rgba(200,200,200,0.15);
+	background-color:rgba(200,200,200,0.50);
 }
 
 ul.logos li {
@@ -489,7 +486,7 @@ ul.logos li {
 	}
 
 	.nav-collapse .nav > li > a,.nav-collapse .dropdown-menu a {
-		color:#ccc;
+		color:#eee;
 	}
 
 	.navbar .brand {
@@ -503,13 +500,18 @@ ul.logos li {
 	}
 
 	#intro {
-	margin-top:0px;
-	margin-bottom:-100px;
+	margin-top:50px;
 	}
 
 	#intro h1{
-		font-size:3.2em;
+		font-size:2.5em;
 		line-height:1.2em;
+	}
+
+	#intro p{
+		margin:20px 16%;
+		width:68%;
+
 	}
 
 	p{
@@ -578,11 +580,6 @@ ul.logos li {
 		line-height:1.1em;
 	}
 
-	#intro p{
-		margin-left:-10%;
-		width:110%;
-	}
-
 	li.span2_1{
 		width:100%;
 	}
@@ -594,14 +591,6 @@ ul.logos li {
 	.carousel-caption{
 		font-size:1em;
 		padding:0.2em;
-	}
-
-	#howItWorks h1, #solutions h1, #responsive h1, #contact h1, #press h1, #team h1, #customers h1, #whatWeDo h1{
-		width:64%;
-	}
-
-	#howItWorks .line, #solutions .line, #responsive .line, #contact .line, #press .line, #team .line, #customers .line, #whatWeDo .line{
-		width:18%;
 	}
 
 }
