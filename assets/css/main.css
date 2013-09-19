@@ -182,26 +182,15 @@ abbr[data-original-title] {
 	line-height:1.5em;
 }
 
-/* Light */
-#responsive .line, #howItWorks .line, #contact .line, #press .line, #customers .line, #solutions .line, #responsive .line, #contact .line, #team .line, #whatWeDo .line {
-	margin-top:12px;
-	float:left;
-	background-color:#444;
-	width:33%;
-	height:2px;
-}
-
-/* Dark */
-
-	margin-top:12px;
-	float:left;
-	background-color:#f7f7f7;
-	width:33%;
-	height:2px;
-}
-
 #whatWeDo{
 	padding-bottom:20px;
+}
+
+#whatWeDo #youtube{
+	width:60%;
+	height:60%;
+	margin:0 auto;
+	text-align:center;
 }
 
 #thumbnails{
@@ -542,6 +531,16 @@ ul.logos li {
 		font-size:2.5em;
 		line-height:1.2em;
 	}
+
+	#intro p{
+		width:100%;
+		margin:20px auto 0 auto;
+	}
+
+	#whatWeDo #youtube{
+	width:100%;
+	height:100%;
+}
 
 	h2{
 		font-size:1.3em;
