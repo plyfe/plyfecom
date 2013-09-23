@@ -189,8 +189,12 @@ abbr[data-original-title] {
 #whatWeDo #youtube{
 	width:60%;
 	height:60%;
-	margin:40px auto 60px auto;
+	margin:0px auto 60px auto;
 	text-align:center;
+}
+
+#press ul, #customers ul{
+	margin:20px, 20px;
 }
 
 #thumbnails{
@@ -254,14 +258,13 @@ li.span2_1.bottom .thumbnail{
 
 #press ul, #customers ul {
 	padding: 0;
-	margin: auto;
+	margin: 50px auto;
 	list-style: none;
 	text-align: center;
 }
 
 #press li, #customers li {
 	display: inline;
-	margin: 0;
 	padding: 0 10px;
 }
 
@@ -594,6 +597,10 @@ ul.logos li {
 	li.span2_1{
 		width:100%;
 	}
+	
+	li.span2_1 img{
+		max-width:260px;
+	}
 
 	li.span2_1 .thumbnail p{
 		text-align:center;
@@ -633,6 +640,10 @@ ul.logos li {
 
 	li.span2_1{
 		width:100%;
+	}
+
+	li.span2_1 img{
+		max-width:260px;
 	}
 
 	li.span2_1 .thumbnail p{
