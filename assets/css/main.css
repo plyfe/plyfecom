@@ -247,6 +247,10 @@ li.span2_1.bottom .thumbnail{
 	background: #fff;
 }
 
+.social{
+	text-align:center;
+}
+
 #contact h2 {
 	font-family: "proxima_nova_rgbold", 'Open Sans', sans-serif;
 	text-align: left;
@@ -404,7 +408,7 @@ li.span2_1.bottom .thumbnail{
 
 .thumbnails{
 	width: 100%;
-	margin: 0 auto 0 auto;
+	margin: 40px auto 0 auto;
 	padding: 0;
 }
 
