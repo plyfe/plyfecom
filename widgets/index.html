@@ -49,6 +49,14 @@
   </head>
   <body>
 
+    <div data-id="entertain" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3860" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+    <div data-id="inform" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+    <div data-id="acquire" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+    <div data-id="collect" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3862" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+    <div data-id="promote" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3980" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+
+    <div id="overlay"></div>
+
     <!-- Navbar -->
   	<div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -96,8 +104,6 @@
           <div class="clear"></div>
 
           <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="305" data-challenge-id="3966" style="overflow:hidden; height:550px;" data-treatment="a"></div>
-          <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="305" data-challenge-id="3863" style="overflow:hidden; height:300px; width:30%; margin:0 auto; float:left;" data-treatment="a"></div>
-          <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="305" data-challenge-id="3862" style="overflow:hidden; height:300px; width:70%; margin:0 auto; float:left;" data-treatment="a"></div>
 
           <div class="clear"></div>
 
@@ -107,33 +113,33 @@
 
           <ul class="thumbnails">
             <li class="span2_1">
-              <div class="thumbnail">
+              <div data-id="entertain" class="thumbnail">
                 <img alt="" src="../assets/img/whatwedo/entertain.png">
                 <h3>Entertain</h3>
                 <p>Drive engagement with games and rewards</p>
               </div>
             </li>
             <li class="span2_1">
-              <div class="thumbnail">
+              <div data-id="inform" class="thumbnail">
                 <img alt="" src="../assets/img/whatwedo/inform.png">
                 <h3>Inform</h3>
                 <p>Reach your audience through videos and quizzes</p>
               </div>
             </li>
             <li class="span2_1">
-              <div class="thumbnail">
+              <div data-id="acquire" class="thumbnail">
                  <img alt="" src="../assets/img/whatwedo/acquire.png">
                 <h3>Acquire</h3>
                 <p>Increase your social media fanbase</p>
               </div>
             </li>
             <li class="span2_1 bottom">
-              <div class="thumbnail">
+              <div data-id="collect" class="thumbnail">
                 <img alt="" src="../assets/img/whatwedo/collect.png">
                 <h3>Collect</h3>
                 <p>Get to know and interact with your audience</p>
               </div>
-              <div class="thumbnail">
+              <div data-id="promote" class="thumbnail">
                  <img alt="" src="../assets/img/whatwedo/promote.png">
                 <h3>Promote</h3>
                 <p>Promote your brand across Facebook and Twitter</p>
@@ -266,24 +272,53 @@
       			</address>
 
       			<a href="http://blog.plyfe.me/">Read our blog</a><br/>
+
+            <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="305" data-challenge-id="3863" style="overflow:hidden; height:300px; width:100%; margin:0 auto; float:left;" data-treatment="a"></div>
+
       		</div>
+
       		<div class="span6">
             <iframe style="max-height: 300px; max-width: 600px; width: 100%; height: 300px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=62+Grand+St,+New+York,+NY&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=2.086497,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=62+Grand+St,+New+York,+10013&amp;t=m&amp;ll=40.730739,-73.99189&amp;spn=0.019512,0.051413&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=62+Grand+St,+New+York,+NY&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=2.086497,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=62+Grand+St,+New+York,+10013&amp;t=m&amp;ll=40.730739,-73.99189&amp;spn=0.019512,0.051413&amp;z=14&amp;iwloc=A" style="text-align:left">View Larger Map</a></small>
       		</div>
       	</div>
       </div>
       <!-- ends contact -->
-
-    </div>
-    <script src="assets/js/jquery.fitvids.js"></script>
-    <script>
-      $(function(){
-        // Target your .container, .wrapper, .post, etc.
-        $("#youtube").fitVids();
-      });
-    </script>
-    <script>
+      <script>
     $(function () {
+      //Custom JS goes here
+
+      var widget_id;
+
+      //Lightbox
+      $(".span2_1 .thumbnail").click(function(){
+
+        widget_id = $(this).attr("data-id");
+        console.log(widget_id);
+
+        $('#overlay').css({
+          "z-index" : "1040",
+          "opacity" : "1" 
+        });
+
+        $(".shadowbox-overlay[data-id='"+ widget_id +"']").css({
+          "z-index" : "1040",
+          "opacity" : "1" 
+        });
+
+        
+      });
+
+      $("#overlay").click(function(){
+        $('#overlay').css({
+          "opacity" : "0",
+          "z-index" : "-1"
+        });
+        $(".shadowbox-overlay").css({
+          "z-index" : "-1",
+          "opacity" : "0" 
+        });
+      });
+
       $(window).scroll(function(){
         // global scroll to top button
         if ($(this).scrollTop() > 300) {
@@ -295,14 +330,15 @@
 
       // scroll nav
       $('.scroller').click(function(){
-      	var section = $($(this).data("section"));
-      	var top = section.offset().top-64;
+        var section = $($(this).data("section"));
+        var top = section.offset().top-64;
         $("html, body").animate({ scrollTop: top }, 700);
         return false;
       });
     });
-		<!--sharpspring visitor tracking-->
-		var _ss = _ss || []; _ss.push(['_setAccount', 'KOI-9FX45A']); _ss.push(['_trackPageView']); (function() { var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true; ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-4UXZO.sharpspring.com/client/ss.js?ver=1.1.1'; var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ss, scr); })();
+    <!--sharpspring visitor tracking-->
+    var _ss = _ss || []; _ss.push(['_setAccount', 'KOI-9FX45A']); _ss.push(['_trackPageView']); (function() { var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true; ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-4UXZO.sharpspring.com/client/ss.js?ver=1.1.1'; var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ss, scr); })();
     </script>
+    </div>
   </body>
 </html>
