@@ -31,17 +31,20 @@
 }
 
 #overlay{
-	opacity:0;
+	display: none;
+	opacity: 0;
 	position: fixed;
 	z-index: -1;
 	top:0;
 	width: 100%;
 	height: 100%;
+	background-color: #000;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .shadowbox-overlay{
-	opacity:0;
+	display: none;
+	opacity: 0;
 	position: fixed;
 	z-index: -1;
 	left: 50%;
@@ -287,7 +290,6 @@ li.span2_1.bottom .thumbnail{
 /* Navbar Styles  */
 
 .navbar-fixed-top {
-	margin-bottom: 0;
 	position: fixed;
 }
 
