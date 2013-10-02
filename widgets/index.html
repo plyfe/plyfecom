@@ -33,14 +33,6 @@
       }
     </style>
 
-    <!-- Plyfe Widget Setup -->
-    <script type="text/javascript">
-      window.plyfeAsyncInit = function(Plyfe) {
-        Plyfe.createWidgets();
-      }
-    </script>
-    <script async="true" data-domain="demo.plyfe.me" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
-</body>
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,11 +41,26 @@
   </head>
   <body>
 
-    <div data-id="entertain" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3860" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
-    <div data-id="inform" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
-    <div data-id="acquire" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
-    <div data-id="collect" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3862" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
-    <div data-id="promote" class="shadowbox-overlay"><div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3980" style="overflow:hidden; height:550px;" data-treatment="a"></div></div>
+    <div data-id="entertain" class="shadowbox-overlay">
+      <!-- Hangman -->
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3860" style="overflow:hidden; width: 450px; height: 350px;"></div>
+    </div>
+    <div data-id="inform" class="shadowbox-overlay">
+      <!-- Watch -->
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; width: 500px; height: 350px;"></div>
+    </div>
+    <div data-id="acquire" class="shadowbox-overlay">
+      <!-- Like -->
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; width: 300px; height: 300px;"></div>
+    </div>
+    <div data-id="collect" class="shadowbox-overlay">
+      <!-- Poll Question -->
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3862" style="overflow:hidden; width: 350px; height: 350px;"></div>
+    </div>
+    <div data-id="promote" class="shadowbox-overlay">
+      <!-- Tweet -->
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3980" style="overflow:hidden; width: 450px; height: 350px;"></div>
+    </div>
 
     <div id="overlay"></div>
 
@@ -69,11 +76,11 @@
           <a class="brand scroller" data-section="html" href="index.html"><img src="../assets/img/plyfe-logo.png" /></a>
   	  	  <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-                <li><a href="#" class="scroller" data-section="#what-we-do">What&nbsp;We&nbsp;Do</a></li>
-                <li><a href="#" class="scroller" data-section="#customers">Our&nbsp;Customers</a></li>
-                <li><a href="#" class="scroller" data-section="#team">Team</a></li>
-                <li><a href="#" class="scroller" data-section="#press">Press</a></li>
-                <li><a href="#" class="scroller" data-section="#contact">Contact</a></li>
+              <li><a href="#" class="scroller" data-section="#what-we-do">What&nbsp;We&nbsp;Do</a></li>
+              <li><a href="#" class="scroller" data-section="#customers">Our&nbsp;Customers</a></li>
+              <li><a href="#" class="scroller" data-section="#team">Team</a></li>
+              <li><a href="#" class="scroller" data-section="#press">Press</a></li>
+              <li><a href="#" class="scroller" data-section="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -273,7 +280,7 @@
 
       			<a href="http://blog.plyfe.me/">Read our blog</a><br/>
 
-            <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="305" data-challenge-id="3863" style="overflow:hidden; height:300px; width:100%; margin:0 auto; float:left;" data-treatment="a"></div>
+            <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; height:300px; width:100%; margin:0 auto; float:left;" data-treatment="a"></div>
 
       		</div>
 
@@ -297,15 +304,15 @@
 
         $('#overlay').css({
           "z-index" : "1040",
-          "opacity" : "1" 
+          "opacity" : "1"
         });
 
         $(".shadowbox-overlay[data-id='"+ widget_id +"']").css({
           "z-index" : "1041",
-          "opacity" : "1" 
+          "opacity" : "1"
         });
 
-        
+
       });
 
       $("#overlay").click(function(){
@@ -315,7 +322,7 @@
         });
         $(".shadowbox-overlay").css({
           "z-index" : "-1",
-          "opacity" : "0" 
+          "opacity" : "0"
         });
       });
 
@@ -340,5 +347,17 @@
     var _ss = _ss || []; _ss.push(['_setAccount', 'KOI-9FX45A']); _ss.push(['_trackPageView']); (function() { var ss = document.createElement('script'); ss.type = 'text/javascript'; ss.async = true; ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-4UXZO.sharpspring.com/client/ss.js?ver=1.1.1'; var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ss, scr); })();
     </script>
     </div>
+
+    <!-- Plyfe Widget Setup -->
+    <script type="text/javascript">
+      window.plyfeAsyncInit = function(Plyfe) {
+        Plyfe.createWidgets();
+      }
+    </script>
+    <script async="true" data-domain="demo.plyfe.me" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
+<!--
+    <script async="true" data-domain="development.plyfe.me" data-port="3001" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
+-->
+
   </body>
 </html>
