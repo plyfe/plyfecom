@@ -446,7 +446,7 @@ li.span2_1.bottom .thumbnail{
 	text-align: center;
 }
 
-/*li.span2_1 .thumbnail:hover {
+li.span2_1 .thumbnail:hover {
 	cursor: pointer;
 	background-color: rgba(20, 20, 20, 1);
 	color: rgba(240, 240, 240, 1);
@@ -454,7 +454,7 @@ li.span2_1.bottom .thumbnail{
 
 li.span2_1 .thumbnail:hover h3{
 	color: rgba(240, 240, 240, 1);
-}*/
+}
 
 .thumbnail p {
 	border-radius: 10px;
