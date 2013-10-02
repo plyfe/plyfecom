@@ -53,14 +53,14 @@
       <!-- Like -->
       <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; margin: -150px 0 0 -150px; width: 300px; height: 300px;"></div>
     </div>
-    <div data-id="collect" class="shadowbox-overlay" style="width: 300px; height: 250px;">
+    <div data-id="collect" class="shadowbox-overlay" style="width: 300px; height: 320px;">
       <!-- Poll Question -->
-      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3862" style="overflow:hidden; margin: -125px 0 0 -150px; width: 300px; height: 250px;"></div>
+      <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3862" style="overflow:hidden; margin: -150px 0 0 -150px; width: 300px; height: 320px;"></div>
     </div>
     <div data-id="promote" class="shadowbox-overlay" style="width: 450px; height: 350px;">
       <!-- Tweet -->
       <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3980" style="overflow:hidden; margin: -175px 0 0 -225px; width: 450px; height: 350px;"></div>
-    </div>
+    </div> 
 
     <div id="overlay"></div>
 
@@ -230,7 +230,7 @@
                 <h3>Jared Sorensen</h3>
                 <div class="social">
                   <a href="http://www.linkedin.com/profile/view?id=1649498&authType=NAME_SEARCH&authToken=taVW&locale=en_US&srchid=48778931370547600105&srchindex=1&srchtotal=19&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A48778931370547600105%2CVSRPtargetId%3A1649498%2CVSRPcmpt%3Aprimary"><img alt="" src="../assets/img/linkedin.png"/></a>
-                  <a href="https://twitter.com/jaredsorensen"><img alt="" src="../assets/img/twitter.png"/></a>
+                  <!-- <a href="https://twitter.com/jaredsorensen"><img alt="" src="../assets/img/twitter.png"/></a> -->
                   <!--<img alt="" src="../assets/img/facebook.png"/>-->
                   <a href="mailto:jared@plyfe.me?subject=Plyfe.com Inquiry"><img alt="" src="../assets/img/email.png"/></a>
                 </div>
@@ -303,11 +303,13 @@
         console.log(widget_id);
 
         $('#overlay').css({
+          "display" : "block",
           "z-index" : "1040",
           "opacity" : "1"
         });
 
         $(".shadowbox-overlay[data-id='"+ widget_id +"']").css({
+          "display" : "block",
           "z-index" : "1041",
           "opacity" : "1"
         });
@@ -317,10 +319,12 @@
 
       $("#overlay").click(function(){
         $('#overlay').css({
+          "display" : "none",
           "opacity" : "0",
           "z-index" : "-1"
         });
         $(".shadowbox-overlay").css({
+          "display" : "none",
           "z-index" : "-1",
           "opacity" : "0"
         });

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html style="margin: 0; padding: 0;">
   <head>
     <title>Plyfe | Increase engagement through personalized digital experiences</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,9 @@
 
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   	<script>window.jQuery || document.write('<script src="../assets/js/jquery-1.7.2.min.js"><\/script>')</script>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
 
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
@@ -25,8 +28,69 @@
     <![endif]-->
     <meta charset="utf-8">
   </head>
-  <body>
-      <div class="plyfe-widget" data-venue="em-106" data-type="program" style="height: 100%; width: 100%;"></div>
+  <body style="margin: 0; padding: 0;">
+    <!-- Navbar -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand scroller" data-section="html" href="index.html"><img src="../assets/img/plyfe-logo.png" /></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li><a href="#" class="scroller" data-section="#what-we-do">What&nbsp;We&nbsp;Do</a></li>
+              <li><a href="#" class="scroller" data-section="#customers">Our&nbsp;Customers</a></li>
+              <li><a href="#" class="scroller" data-section="#team">Team</a></li>
+              <li><a href="#" class="scroller" data-section="#press">Press</a></li>
+              <li><a href="#" class="scroller" data-section="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Navbar -->
+
+    <div class="main-container">
+      <div class="container-fluid" id="what-we-do">
+        <div class="container light" style="margin: 50px auto 0 auto">
+          <h1>Plyfe Program</h1>
+          <div class="plyfe-widget" data-venue="em-106" data-type="program" style="height: 100%; width: 100%; margin: 0; padding: 0;"></div>
+        </div>
+      </div>
+
+      <!-- #contact -->
+      <div class="container-fluid" id="contact">
+        <div class="container light">
+          <h1>Contact Us</h1>
+          <div class="clear"></div>
+          <div class="span5">
+            <h2>Email or give us a call</h2>
+            <p>We look forward to hearing from you.</p>
+
+            <address>
+              <strong>Plyfe, Inc.</strong><br>
+              62 Grand St #2<br>
+              New York, NY 10013<br>
+              <abbr title="Email">E:</abbr> <a href="mailto:info@plyfe.me">info@plyfe.me</a><br/>
+              <abbr title="Phone">P:</abbr> <a href="tel:+1-646-450-2406">(646) 450-2406</a><br/>
+            </address>
+
+            <a href="http://blog.plyfe.me/">Read our blog</a><br/>
+
+            <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; height:300px; width:100%; margin:0 auto; float:left;" data-treatment="a"></div>
+
+          </div>
+
+          <div class="span6">
+            <iframe style="max-height: 300px; max-width: 600px; width: 100%; height: 300px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=62+Grand+St,+New+York,+NY&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=2.086497,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=62+Grand+St,+New+York,+10013&amp;t=m&amp;ll=40.730739,-73.99189&amp;spn=0.019512,0.051413&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=62+Grand+St,+New+York,+NY&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=2.086497,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=62+Grand+St,+New+York,+10013&amp;t=m&amp;ll=40.730739,-73.99189&amp;spn=0.019512,0.051413&amp;z=14&amp;iwloc=A" style="text-align:left">View Larger Map</a></small>
+          </div>
+        </div>
+      </div>
+      <!-- ends contact -->
+    </div>
 
     <!-- Plyfe Widget Setup -->
     <script type="text/javascript">
