@@ -490,6 +490,38 @@ ul.logos li {
 	margin-left: 0;
 }
 
+/* Pug Styles, Pug Life */
+/* AKA The 404 Styles */
+
+#four-oh-four {
+	text-align: center;
+	width:100%;
+	max-width: 500px;
+	margin: 110px auto 0 auto;
+}
+
+#four-oh-four h1 {
+	color: #9a1d20;
+	font-size: 54px;
+	margin: 40px 20px;
+}
+
+#pug {
+	cursor: pointer;
+	max-width: 500px;
+	box-shadow: 0 3px 3px rgba( 0, 0, 0, 0.4 );
+}
+
+#pug img {
+	width:100%;
+	max-width: 500px;
+	background-size: cover;
+}
+
+#four-oh-four p{
+	margin: 30px auto;
+}
+
 @media (max-width: 1199px) {
 	#intro h1 {
 		font-size: 2.5em;
@@ -668,6 +700,19 @@ ul.logos li {
 		/*font-size: 14px;*/
 	}
 
+	#four-oh-four {
+		margin-top: 70px;
+	}
+
+	#four-oh-four h1 {
+		font-size: 24px;
+		margin: 20px 20px;
+	}
+
+	#four-oh-four p{
+		margin: 20px 20px;
+	}
+
 }
 
 .btn-plyfe-purple {
@@ -707,3 +752,6 @@ top: 1px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+
+
