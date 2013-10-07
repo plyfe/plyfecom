@@ -60,8 +60,8 @@
         <h1>404 Error :(</h1>
         <div id="pug"> <img alt="Consolation Pug" /> </div>
         <p>That page doesn't exist, but here's a consolation pug for you.</p>
-        <button id="home-button">Home</button>
-        <button id="pug_me">Pug Me</button>
+        <a href="http://www.plyfe.com/"><div class="button" id="home-button">Home</div></a>
+        <div class="button" id="pug_me">Pug Me</div>
 
       </div>
 
@@ -84,9 +84,9 @@
       pug_me();
 
       //Buttons
-      $("#home-button").click(function(){
-        window.location='http://www.plyfe.com/';
-      });
+      // $("#home-button").click(function(){
+      //   window.location='http://www.plyfe.com/';
+      // });
       $("#pug_me, #pug").click(function(){
         pug_me();
       });
