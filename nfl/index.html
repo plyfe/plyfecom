@@ -17,9 +17,39 @@ data-fouc-class-names="swift-loading"><![endif]-->
     <link rel="canonical" href="../nfl.html">
     <link rel="alternate" media="only screen and (max-width: 640px)" href="https://mobile.twitter.com/nfl">
     <link rel="search" type="application/opensearchdescription+xml" href="../opensearch.xml" title="Twitter">
-    <link rel="stylesheet" href="https://abs.twimg.com/a/1381185256/t1/css/t1_core_logged_out.bundle.css" type="text/css">
-    <link rel="stylesheet" href="https://abs.twimg.com/a/1381185256/t1/css/t1_more.bundle.css" type="text/css">
-    <script id="swift_loading_indicator">
+    <link rel="stylesheet" href="t1_core_logged_out_bundle.css" type="text/css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="../assets/js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="../assets/js/jquery.imagesloaded.min.js"></script>
+    <script src="../assets/js/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function clickThis(thisNode) {
+        alert(thisNode.parentNode.innerHTML);
+        var container = thisNode.parentNode;
+        document.getElementById(container).className = "hidden";
+        // var container = this.parentElement;
+        // document.container.find(".wiget-container").className += "hidden";
+      }
+
+      /*$(document).ready(function() {
+        $(".wiget-container").addClass("hidden");
+        $(".expand-wiget span").click(function() {
+          var $container = $(this).parent().find(".widget-container");
+          if($container.hasClass("hidden")) {
+            $container.removeClass("hidden");
+          } else {
+            $container.addClass("hidden");
+          }
+        });
+      })*/
+    </script>
+
+
+    <!-- <link rel="stylesheet" href="https://abs.twimg.com/a/1381185256/t1/css/t1_more.bundle.css" type="text/css"> -->
+    <!--<script id="swift_loading_indicator">
     document.documentElement.className=document.documentElement.className+" "+document.documentElement.getAttribute("data-fouc-class-names");
     </script>
     <script id="swift_action_queue">
@@ -27,7 +57,7 @@ data-fouc-class-names="swift-loading"><![endif]-->
     </script>
     <script id="composition_state">
     (function(){function a(a){a.target.setAttribute("data-in-composition","true")}function b(a){a.target.removeAttribute("data-in-composition")}if(document.addEventListener){document.addEventListener("compositionstart",a,!1);document.addEventListener("compositionend",b,!1)}})();
-    </script>
+    </script> -->
   </head>
   <body class="t1 logged-out user-style-nfl" dir="ltr">
     <div id="doc" class="route-profile">
@@ -221,85 +251,85 @@ data-fouc-class-names="swift-loading"><![endif]-->
           .btn-link:focus,
 
           .pretty-link b,
-          .pretty-link:hover s,
-          .pretty-link:hover b,
+          /*.pretty-link:hover s,
+          .pretty-link:hover b,*/
           .pretty-link:focus s,
           .pretty-link:focus b,
           /* Account Group */
-          .metadata a:hover,
+/*          .metadata a:hover,
           .metadata a:focus,
 
-          .account-group:hover .fullname,
+          .account-group:hover .fullname,*/
           .account-group:focus .fullname,
           .account-summary:focus .fullname,
 
-          .stats a:hover,
-          .stats a:hover strong,
+          /*.stats a:hover,
+          .stats a:hover strong,*/
           .stats a:focus,
           .stats a:focus strong,
 
-          .profile-modal-header .fullname a:hover,
-          .profile-modal-header .username a:hover,
+          /*.profile-modal-header .fullname a:hover,
+          .profile-modal-header .username a:hover,*/
           .profile-modal-header .fullname a:focus,
           .profile-modal-header .username a:focus,
 
-          .story-article:hover .metadata,
+          /*.story-article:hover .metadata,*/
           .story-article .metadata a:focus,
 
-          .find-friends-sources li:hover .source,
+          /*.find-friends-sources li:hover .source,*/
 
-          .stream-item a:hover .fullname,
+          /*.stream-item a:hover .fullname,*/
           .stream-item a:focus .fullname,
 
-          .stream-item .view-all-supplements:hover,
+          /*.stream-item .view-all-supplements:hover,*/
           .stream-item .view-all-supplements:focus,
 
-          .tweet .time a:hover,
+          /*.tweet .time a:hover,*/
           .tweet .time a:focus,
           .tweet-actions a,
           .tweet .details.with-icn b,
 
-          .stream-item:hover .original-tweet .expand-action-wrapper,
+          /*.stream-item:hover .original-tweet .expand-action-wrapper,*/
           .stream-item .original-tweet.focus .expand-action-wrapper,
           .opened-tweet.original-tweet  .expand-action-wrapper,
 
-          .stream-item:hover .original-tweet .details b,
+          /*.stream-item:hover .original-tweet .details b,*/
           .stream-item .original-tweet.focus .details b,
           .stream-item.open .original-tweet .details b,
 
-          .simple-tweet:hover .details b,
+          /*.simple-tweet:hover .details b,*/
           .simple-tweet.focus .details b,
           .simple-tweet.open .details b,
-          .simple-tweet:hover .details .expand-action-wrapper,
+          /*.simple-tweet:hover .details .expand-action-wrapper,*/
           .simple-tweet.focus .details .expand-action-wrapper,
           .simple-tweet.open .details .collapse-action-wrapper,
-          .simple-tweet:hover .details .simple-details-link,
+          /*.simple-tweet:hover .details .simple-details-link,*/
           .simple-tweet.focus .details .simple-details-link,
 
-          .client-and-actions a:hover,
+          /*.client-and-actions a:hover,*/
           .client-and-actions a:focus,
 
-          .dismiss-promoted:hover b,
+          /*.dismiss-promoted:hover b,*/
 
-          .tweet .context .pretty-link:hover s,
-          .tweet .context .pretty-link:hover b,
+          /*.tweet .context .pretty-link:hover s,
+          .tweet .context .pretty-link:hover b,*/
           .tweet .context .pretty-link:focus s,
           .tweet .context .pretty-link:focus b,
 
-          .list .username a:hover,
+          /*.list .username a:hover,*/
           .list .username a:focus,
           .list-membership-container .create-a-list,
-          .list-membership-container .create-a-list:hover,
+          /*.list-membership-container .create-a-list:hover,*/
 
-          .story-header:hover .view-tweets,
-          .card .list-details a:hover,
+          /*.story-header:hover .view-tweets,
+          .card .list-details a:hover,*/
           .card .list-details a:focus,
-          .card .card-body:hover .attribution,
+          /*.card .card-body:hover .attribution,*/
           .card .card-body .attribution:focus,
-          .events-card .card-body:hover .attribution,
+          /*.events-card .card-body:hover .attribution,*/
           .events-card .card-body .attribution:focus,
           .new-tweets-bar,
-          .onebox .soccer ul.ticker a:hover,
+          /*.onebox .soccer ul.ticker a:hover,*/
           .onebox .soccer ul.ticker a:focus,
 
           .discover-item-actions a,
@@ -309,17 +339,17 @@ data-fouc-class-names="swift-loading"><![endif]-->
 
           .remove-background-btn,
 
-          .stream-item-activity-me .latest-tweet .tweet-row a:hover,
+          /*.stream-item-activity-me .latest-tweet .tweet-row a:hover,*/
           .stream-item-activity-me .latest-tweet .tweet-row a:focus,
-          .stream-item-activity-me .latest-tweet .tweet-row a:hover b,
+          /*.stream-item-activity-me .latest-tweet .tweet-row a:hover b,*/
           .stream-item-activity-me .latest-tweet .tweet-row a:focus b {
               color: #0084B4;
           }
 
           s,
-          .pretty-link:hover s,
+          /*.pretty-link:hover s,*/
           .pretty-link:focus s,
-          .stream-item-activity-me .latest-tweet .tweet-row a:hover s,
+          /*.stream-item-activity-me .latest-tweet .tweet-row a:hover s,*/
           .stream-item-activity-me .latest-tweet .tweet-row a:focus s {
               color: #66B5D2;
           }
@@ -348,14 +378,14 @@ data-fouc-class-names="swift-loading"><![endif]-->
           .tweet .sm-chat,
 
           .timelines-navigation .active .profile-nav-icon,
-          .timelines-navigation .profile-nav-icon:hover,
+          /*.timelines-navigation .profile-nav-icon:hover,*/
           .timelines-navigation .profile-nav-link:focus .profile-nav-icon,
 
           .sm-top-tweet,
 
-          .metadata a.tweet-geo-text:hover .sm-geo,
+          /*.metadata a.tweet-geo-text:hover .sm-geo,*/
 
-          .discover-item .js-action-card-search:hover .sm-search,
+          /*.discover-item .js-action-card-search:hover .sm-search,*/
           .discover-item .js-action-card-search:focus .sm-search {
               background-color: #0084B4;
           }
@@ -368,21 +398,21 @@ data-fouc-class-names="swift-loading"><![endif]-->
               background-color: #66B5D2;
           }
 
-          .persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-reply,
+          /*.persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-reply,
           .persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-rt,
           .persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-fav,
           .persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-trash,
           .persistent-tweet-actions.tweet-action-icons .tweet:hover .tweet-actions .sm-more {
               background-color: #66B5D2;
-          }
+          }*/
 
-          .tweet-action-icons .stream .tweet .tweet-actions .sm-reply:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-reply,
+          /*.tweet-action-icons .stream .tweet .tweet-actions .sm-reply:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-reply,
           .tweet-action-icons .stream .tweet .tweet-actions .sm-rt:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-rt,
           .tweet-action-icons .stream .tweet .tweet-actions .sm-fav:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-fav,
           .tweet-action-icons .stream .tweet .tweet-actions .sm-trash:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-trash,
           .tweet-action-icons .stream .tweet .tweet-actions .sm-more:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-more {
               background-color: #0084B4;
-          }
+          }*/
 
 
           .wrapper.black {
@@ -679,7 +709,12 @@ data-fouc-class-names="swift-loading"><![endif]-->
                 </small>
               </div>
               <p class="js-tweet-text tweet-text">VOTE: <a href="../ThisIsGMC.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ThisIsGMC</b></a> Never Say Never Moment of the Week <a href="http://t.co/i4onPfO3II" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/GLmP4K" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/GLmP4K" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/GLmP4K</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> Peyton Manning, Andrew Luck</p>
-              <div class="plyfe-widget hidden" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+              <div class="expand-widget">
+                <div id="widget-container-1">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3992" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -692,14 +727,14 @@ data-fouc-class-names="swift-loading"><![endif]-->
                   <span class="details-icon js-icon-container">
                   </span>
                   <b>
-                    <span class="expand-stream-item js-view-details">
+                    <!-- <span class="expand-stream-item js-view-details">
                       <span class="expand-action-wrapper">
                         Expand
                       </span>
                     </span>
                     <span class="collapse-stream-item js-hide-details">
                       Collapse
-                    </span>
+                    </span> -->
                   </b>
                 </a>
                 <ul class="tweet-actions js-actions">
@@ -777,7 +812,13 @@ data-fouc-class-names="swift-loading"><![endif]-->
                   <a href="status/387608345252995072.html" class="tweet-timestamp js-permalink js-nav" title="9:00 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381248005" data-long-form="true">16m</span></a>
                 </small>
               </div>
-              <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3863" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+              <p class="js-tweet-text tweet-text">Elway: Romo did a tremendous job of making us look bad; he played an incredible game <a href="http://on.nfl.com/160ezEC">http://on.nfl.com/160ezEC</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3993" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -787,12 +828,12 @@ data-fouc-class-names="swift-loading"><![endif]-->
                     <i class="sm-embed"></i>
                   </span>
                   <b>
-                    <span class="expand-stream-item js-view-details">
+                    <!-- <span class="expand-stream-item js-view-details">
                       View summary
                     </span>
                     <span class="collapse-stream-item js-hide-details">
                       Hide summary
-                    </span>
+                    </span> -->
                   </b>
                 </a>
                 <ul class="tweet-actions js-actions">
@@ -870,7 +911,13 @@ data-fouc-class-names="swift-loading"><![endif]-->
                   <a href="status/387608345252995072.html" class="tweet-timestamp js-permalink js-nav" title="9:00 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381248005" data-long-form="true">16m</span></a>
                 </small>
               </div>
-              <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3861" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+              <p class="js-tweet-text tweet-text">5 rookies who are thriving... and 5 who have not lived up to preseason expectations (via <a href="#">@Gil_Brandt</a>): <a href="http://on.nfl.com/19kfX9a">http://on.nfl.com/19kfX9a</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3994" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -880,12 +927,12 @@ data-fouc-class-names="swift-loading"><![endif]-->
                     <i class="sm-embed"></i>
                   </span>
                   <b>
-                    <span class="expand-stream-item js-view-details">
+                    <!-- <span class="expand-stream-item js-view-details">
                       View summary
                     </span>
                     <span class="collapse-stream-item js-hide-details">
                       Hide summary
-                    </span>
+                    </span> -->
                   </b>
                 </a>
                 <ul class="tweet-actions js-actions">
@@ -963,7 +1010,13 @@ data-fouc-class-names="swift-loading"><![endif]-->
                   <a href="status/387599532491833344.html" class="tweet-timestamp js-permalink js-nav" title="8:25 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381245904" data-long-form="true">51m</span></a>
                 </small>
               </div>
-              <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+              <p class="js-tweet-text tweet-text">Reclaiming the Record: 137 Decibels by <a href="#">@kcchiefs_rachel</a> — <a href="http://chfs.me/1bZoRJL">http://chfs.me/1bZoRJL</a><a href="#">#LoudAndProud</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3995" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -973,12 +1026,12 @@ data-fouc-class-names="swift-loading"><![endif]-->
                     <i class="sm-embed"></i>
                   </span>
                   <b>
-                    <span class="expand-stream-item js-view-details">
+                    <!-- <span class="expand-stream-item js-view-details">
                       View summary
                     </span>
                     <span class="collapse-stream-item js-hide-details">
                       Hide summary
-                    </span>
+                    </span> -->
                   </b>
                 </a>
                 <ul class="tweet-actions js-actions">
@@ -1056,7 +1109,13 @@ data-fouc-class-names="swift-loading"><![endif]-->
                   <a href="../Saints/status/387591669102567424.html" class="tweet-timestamp js-permalink js-nav" title="7:53 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381244029" data-long-form="true">1h</span></a>
                 </small>
               </div>
-              <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="332" data-challenge-id="3966" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+              <p class="js-tweet-text tweet-text">This is devastating for a team that cannot afford one more shred of bad news. <a href="http://on.nfl.com/1fZOlfc">http://on.nfl.com/1fZOlfc</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3996" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1070,12 +1129,12 @@ data-fouc-class-names="swift-loading"><![endif]-->
                     <i class="sm-embed"></i>
                   </span>
                   <b>
-                    <span class="expand-stream-item js-view-details">
+                    <!-- <span class="expand-stream-item js-view-details">
                       View summary
                     </span>
                     <span class="collapse-stream-item js-hide-details">
                       Hide summary
-                    </span>
+                    </span> -->
                   </b>
                 </a>
                 <ul class="tweet-actions js-actions">
@@ -1140,3182 +1199,615 @@ data-fouc-class-names="swift-loading"><![endif]-->
           </div>
         </li>
         <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387589468989173760" id="stream-item-tweet-387589468989173760" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387589468989173760"
-data-tweet-id="387589468989173760"
-
-
-data-item-id="387589468989173760"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387589468989173760&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/6gdrW9n3Sk&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:45 AM - 8 Oct 13&quot;&gt;7:45 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387589468989173760&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
- data-mentions="PepsiNEXT Lil_Eazy_Ana_42 Mathieu_Era GenoSmith7 ZSTACY_ TerranceWill2"
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387589468989173760.html" class="tweet-timestamp js-permalink js-nav" title="7:45 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381243505" data-long-form="true">2h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">VOTE: <a href="../PepsiNEXT.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>PepsiNext</b></a> Rookie of the Week <a href="http://t.co/6gdrW9n3Sk" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/1hzlfP6" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/1hzlfP6" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/1hzlfP6</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../Lil_Eazy_Ana_42.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Lil_Eazy_Ana_42</b></a> <a href="../Mathieu_Era.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Mathieu_Era</b></a> <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> <a href="../ZSTACY_.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ZSTACY_</b></a> <a href="../TerranceWill2.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>TerranceWill2</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387589468989173760.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-embed"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View summary
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide summary
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387584432431194112" id="stream-item-tweet-387584432431194112" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387584432431194112"
-data-tweet-id="387584432431194112"
-
-
-data-item-id="387584432431194112"
-
- data-retweet-id="387585469120122880"
- data-screen-name="nflnetwork" data-name="NFL Network" data-user-id="19362299"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:25 AM - 8 Oct 13&quot;&gt;7:25 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nflnetwork/status/387584432431194112&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
- data-mentions="Saints ChicagoBears Seahawks Colts"
- data-retweeter="nfl"
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nflnetwork.html" data-user-id="19362299">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000407456519/fadc03c5adf4f525deeab3322988f095_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL Network</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nflnetwork</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="../nflnetwork/status/387584432431194112.html" class="tweet-timestamp js-permalink js-nav" title="7:25 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381242304" data-long-form="true">2h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Football on a Tuesday! Today&#39;s <a href="../search-q=_NFLReplay&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NFLReplay</b></a> Schedule:&#10;&#10;2pm ET: <a href="../Saints.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Saints</b></a> vs. <a href="../ChicagoBears.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ChicagoBears</b></a> &#10;3:30pm ET: <a href="../Seahawks.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Seahawks</b></a> vs, <a href="../Colts.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Colts</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-          <span class="with-icn">
-            <i class="badge-retweeted"></i>
-            <span class="js-retweet-text">Retweeted by <a class="pretty-link js-user-profile-link" href="../nfl.html" data-user-id="19426551"><b>NFL</b></a></span>
-          </span>
-</div>
-
-
-
-<a class="details with-icn js-details" href="../nflnetwork/status/387584432431194112.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387580982431195137" id="stream-item-tweet-387580982431195137" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387580982431195137"
-data-tweet-id="387580982431195137"
-
-
-data-item-id="387580982431195137"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387580982431195137&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/PWWFjGOq7p&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:11 AM - 8 Oct 13&quot;&gt;7:11 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387580982431195137&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
- data-mentions="NFL_ATL"
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387580982431195137.html" class="tweet-timestamp js-permalink js-nav" title="7:11 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381241481" data-long-form="true">2h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">RT <a href="../NFL_ATL.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>NFL_ATL</b></a>: Nike unveils new Pro Bowl uniforms <a href="http://t.co/PWWFjGOq7p" rel="nofollow" dir="ltr" data-expanded-url="http://www.nfl.com/news/story/0ap2000000258914/article/nike-unveils-new-pro-bowl-uniforms?campaign=Twitter_atl" class="twitter-timeline-link" target="_blank" title="http://www.nfl.com/news/story/0ap2000000258914/article/nike-unveils-new-pro-bowl-uniforms?campaign=Twitter_atl" ><span class="tco-ellipsis"></span><span class="invisible">http://www.</span><span class="js-display-url">nfl.com/news/story/0ap</span><span class="invisible">2000000258914/article/nike-unveils-new-pro-bowl-uniforms?campaign=Twitter_atl</span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span>…</span></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387580982431195137.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-embed"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View summary
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide summary
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387461117033078784" id="stream-item-tweet-387461117033078784" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387461117033078784"
-data-tweet-id="387461117033078784"
-
-
-data-item-id="387461117033078784"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387461117033078784&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/jyLtaPNWvX&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;11:15 PM - 7 Oct 13&quot;&gt;11:15 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387461117033078784&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387461117033078784.html" class="tweet-timestamp js-permalink js-nav" title="11:15 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381212903" data-long-form="true">10h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Drew, Peyton, or Tony?&#10;Jamaal, Knowshon, or Frank?&#10;&#10;VOTE to determine the FedEx Air &amp; Ground Players of the Week: <a href="http://t.co/jyLtaPNWvX" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/15XlFts" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/15XlFts" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/15XlFts</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387461117033078784.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-embed"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View summary
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide summary
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387451805879529472" id="stream-item-tweet-387451805879529472" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387451805879529472"
-data-tweet-id="387451805879529472"
-
-
-data-item-id="387451805879529472"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387451805879529472&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/MffCW2uyIq&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;10:38 PM - 7 Oct 13&quot;&gt;10:38 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387451805879529472&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387451805879529472.html" class="tweet-timestamp js-permalink js-nav" title="10:38 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381210683" data-long-form="true">11h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Vote for the Pepsi Next Rookie of the Week: <a href="http://t.co/MffCW2uyIq" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/19vWjsK" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/19vWjsK" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/19vWjsK</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;Will it be Mathieu, Stacy, Lacy, Williams, or Smith?</p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387451805879529472.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-embed"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View summary
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide summary
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387444757959806976" id="stream-item-tweet-387444757959806976" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387444757959806976"
-data-tweet-id="387444757959806976"
-
-
-data-item-id="387444757959806976"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387444757959806976&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/pL4md1GmMk&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;10:10 PM - 7 Oct 13&quot;&gt;10:10 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387444757959806976&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387444757959806976.html" class="tweet-timestamp js-permalink js-nav" title="10:10 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381209003" data-long-form="true">11h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Peyton Manning. Andrew Luck. Geno Smith.&#10;&#10;Your Nominees for the GMC Never Say Never Moment of the Week. VOTE: <a href="http://t.co/pL4md1GmMk" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/16uwVkB" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/16uwVkB" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/16uwVkB</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387444757959806976.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-embed"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View summary
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide summary
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387436353845092352" id="stream-item-tweet-387436353845092352" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387436353845092352"
-data-tweet-id="387436353845092352"
-
-
-data-item-id="387436353845092352"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;player&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387436353845092352&quot;&#10;  data-card-name=&quot;player&quot;&#10;  data-card-url=&quot;http://t.co/3ca3kgvZFe&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;9:36 PM - 7 Oct 13&quot;&gt;9:36 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387436353845092352&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387436353845092352.html" class="tweet-timestamp js-permalink js-nav" title="9:36 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381206999" data-long-form="true">12h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Geno Smith tosses 3 TDs, leads the Jets to a road win in Atlanta. &#10;&#10;HIGHLIGHTS - <a href="http://t.co/3ca3kgvZFe" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/1a6tApw" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/1a6tApw" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/1a6tApw</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387436353845092352.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-video"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View media
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide media
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387427157162475520" id="stream-item-tweet-387427157162475520" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387427157162475520"
-data-tweet-id="387427157162475520"
-
-
-data-item-id="387427157162475520"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;player&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387427157162475520&quot;&#10;  data-card-name=&quot;player&quot;&#10;  data-card-url=&quot;http://t.co/qP9a6FMBcx&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;9:00 PM - 7 Oct 13&quot;&gt;9:00 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387427157162475520&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387427157162475520.html" class="tweet-timestamp js-permalink js-nav" title="9:00 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381204806" data-long-form="true">12h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Kellen Winslow manages to stay in bounds, makes impressive TD grab from Geno Smith. &#10;&#10;WATCH - <a href="http://t.co/qP9a6FMBcx" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/GK0oxK" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/GK0oxK" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/GK0oxK</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387427157162475520.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-video"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View media
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide media
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387420368614346752" id="stream-item-tweet-387420368614346752" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
- has-native-media
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387420368614346752"
-data-tweet-id="387420368614346752"
-
-
-data-item-id="387420368614346752"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-  data-card-type="photo"
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;          &lt;div class=&quot;cards-media-container &quot;&gt;&lt;div data-card-url=&quot;//twitter.com/nfl/status/387420368614346752/photo/1/large&quot; data-card-type=&quot;photo&quot; class=&quot;cards-base cards-multimedia&quot; data-element-context=&quot;platform_photo_card&quot;&gt;&#10;  &lt;div class=&quot;media&quot;&gt;&#10;    &#10;    &lt;a class=&quot;twitter-timeline-link media-thumbnail&quot; href=&quot;//twitter.com/nfl/status/387420368614346752/photo/1/large&quot; data-url=&quot;https://pbs.twimg.com/media/BWBkxbnCMAEI7k9.jpg:large&quot; data-resolved-url-large=&quot;https://pbs.twimg.com/media/BWBkxbnCMAEI7k9.jpg:large&quot;&gt;&#10;      &lt;img src=&quot;https://pbs.twimg.com/media/BWBkxbnCMAEI7k9.jpg&quot; alt=&quot;Embedded image permalink&quot; width=&quot;435&quot; height=&quot;292&quot;&gt;&#10;    &lt;/a&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;cards-content&quot;&gt;&#10;    &lt;div class=&quot;byline&quot;&gt;&#10;      &#10;    &lt;/div&gt;&#10;    &#10;  &lt;/div&gt;&#10;  &#10;&lt;/div&gt;&#10;&#10;&#10;&#10;&lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;8:33 PM - 7 Oct 13&quot;&gt;8:33 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387420368614346752&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;          &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;          &#10;          &#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
- data-mentions="nyjets Atlanta_Falcons"
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387420368614346752.html" class="tweet-timestamp js-permalink js-nav" title="8:33 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381203188" data-long-form="true">13h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">FINAL &#10;&#10;<a href="../nyjets.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>NYJets</b></a> 30&#10;<a href="../Atlanta_Falcons.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Atlanta_Falcons</b></a> 28 <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a> <a href="http://t.co/UC6QNUDdbV" class="twitter-timeline-link" data-pre-embedded="true" dir="ltr" >pic.twitter.com/UC6QNUDdbV</a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387420368614346752.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-image"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View photo
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide photo
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387417975797473280" id="stream-item-tweet-387417975797473280" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387417975797473280"
-data-tweet-id="387417975797473280"
-
-
-data-item-id="387417975797473280"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;8:23 PM - 7 Oct 13&quot;&gt;8:23 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387417975797473280&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387417975797473280.html" class="tweet-timestamp js-permalink js-nav" title="8:23 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381202617" data-long-form="true">13h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">What. A. Game. <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387417975797473280.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387415515435520000" id="stream-item-tweet-387415515435520000" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387415515435520000"
-data-tweet-id="387415515435520000"
-
-
-data-item-id="387415515435520000"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;8:13 PM - 7 Oct 13&quot;&gt;8:13 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387415515435520000&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387415515435520000.html" class="tweet-timestamp js-permalink js-nav" title="8:13 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381202031" data-long-form="true">13h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Juliooooooooo! <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387415515435520000.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387410731794059265" id="stream-item-tweet-387410731794059265" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387410731794059265"
-data-tweet-id="387410731794059265"
-
-
-data-item-id="387410731794059265"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:54 PM - 7 Oct 13&quot;&gt;7:54 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387410731794059265&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387410731794059265.html" class="tweet-timestamp js-permalink js-nav" title="7:54 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381200890" data-long-form="true">13h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Geno Smith + Kellen Winslow = Touchdown. <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387410731794059265.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387405539782586368" id="stream-item-tweet-387405539782586368" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387405539782586368"
-data-tweet-id="387405539782586368"
-
-
-data-item-id="387405539782586368"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:34 PM - 7 Oct 13&quot;&gt;7:34 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387405539782586368&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387405539782586368.html" class="tweet-timestamp js-permalink js-nav" title="7:34 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381199652" data-long-form="true">14h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Jets are on a mission tonight. <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387405539782586368.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387398678622638080" id="stream-item-tweet-387398678622638080" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
- has-cards
- has-native-media
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387398678622638080"
-data-tweet-id="387398678622638080"
-
-
-data-item-id="387398678622638080"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-  data-card-type="photo"
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;          &lt;div class=&quot;cards-media-container &quot;&gt;&lt;div data-card-url=&quot;//twitter.com/nfl/status/387398678622638080/photo/1/large&quot; data-card-type=&quot;photo&quot; class=&quot;cards-base cards-multimedia&quot; data-element-context=&quot;platform_photo_card&quot;&gt;&#10;  &lt;div class=&quot;media&quot;&gt;&#10;    &#10;    &lt;a class=&quot;twitter-timeline-link media-thumbnail&quot; href=&quot;//twitter.com/nfl/status/387398678622638080/photo/1/large&quot; data-url=&quot;https://pbs.twimg.com/media/BWBRC6DCEAE2eov.jpg:large&quot; data-resolved-url-large=&quot;https://pbs.twimg.com/media/BWBRC6DCEAE2eov.jpg:large&quot;&gt;&#10;      &lt;img src=&quot;https://pbs.twimg.com/media/BWBRC6DCEAE2eov.jpg&quot; alt=&quot;Embedded image permalink&quot; width=&quot;435&quot; height=&quot;290&quot;&gt;&#10;    &lt;/a&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;cards-content&quot;&gt;&#10;    &lt;div class=&quot;byline&quot;&gt;&#10;      &#10;    &lt;/div&gt;&#10;    &#10;  &lt;/div&gt;&#10;  &#10;&lt;/div&gt;&#10;&#10;&#10;&#10;&lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:06 PM - 7 Oct 13&quot;&gt;7:06 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387398678622638080&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;          &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;          &#10;          &#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387398678622638080.html" class="tweet-timestamp js-permalink js-nav" title="7:06 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381198017" data-long-form="true">14h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Geno Smith: 1st Half&#10;&#10;8/9, 134yds, 2 TDs, 0 INTs. <a href="../search-q=_NiceHalfRookie&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NiceHalfRookie</b></a> <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a> <a href="http://t.co/qvBLSUPboT" class="twitter-timeline-link" data-pre-embedded="true" dir="ltr" >pic.twitter.com/qvBLSUPboT</a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387398678622638080.html">
-  <span class="details-icon js-icon-container">
-      <i class="sm-image"></i>
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-      View photo
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Hide photo
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387395870850707456" id="stream-item-tweet-387395870850707456" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387395870850707456"
-data-tweet-id="387395870850707456"
-
-
-data-item-id="387395870850707456"
-
-
- data-screen-name="nfl" data-name="NFL" data-user-id="19426551"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;6:55 PM - 7 Oct 13&quot;&gt;6:55 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387395870850707456&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
-
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="status/387395870850707456.html" class="tweet-timestamp js-permalink js-nav" title="6:55 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381197347" data-long-form="true">14h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Endzone access de-nied!&#10;&#10;Jets came to play. <a href="../search-q=_NYJvsATL&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NYJvsATL</b></a></p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-</div>
-
-
-
-<a class="details with-icn js-details" href="status/387395870850707456.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-  <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387390910872698880" id="stream-item-tweet-387390910872698880" data-item-type="tweet">
-
-
-
-
-
-
-  <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet
-
-
-
-
-
-
- with-social-proof
-
-
-
-
-
-
-
-
-
-
-
-"
-data-feedback-key="stream_status_387390910872698880"
-data-tweet-id="387390910872698880"
-
-
-data-item-id="387390910872698880"
-
- data-retweet-id="387391016090628096"
- data-screen-name="RealJoeNamath" data-name="Joe Namath" data-user-id="103620256"
-
-
-
-
-
-
-
-data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;6:36 PM - 7 Oct 13&quot;&gt;6:36 PM - 7 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/RealJoeNamath/status/387390910872698880&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;"
-
-
-
- data-retweeter="nfl"
-
-
-
- data-you-follow="false"
- data-you-block="false">
-
-
-    <span class="icon dogear"></span>
-
-
-    <div class="content">
-
-
-
-
-
-      <div class="stream-item-header">
-          <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../RealJoeNamath.html" data-user-id="103620256">
-    <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/704120078/Joe_Namath_normal.jpg" alt="">
-    <strong class="fullname js-action-profile-name show-popup-with-id">Joe Namath</strong>
-    <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>RealJoeNamath</b></span>
-
-  </a>
-
-        <small class="time">
-    <a href="../RealJoeNamath/status/387390910872698880.html" class="tweet-timestamp js-permalink js-nav" title="6:36 PM - 7 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381196165" data-long-form="true">15h</span></a>
-</small>
-
-      </div>
-
-
-
-      <p class="js-tweet-text tweet-text">Wow! We&#39;re seeing game from the Jets we haven&#39;t seen for a long time. Jets are really looking good on both sides of the ball. Go Jets!!</p>
-
-
-
-      <div class="stream-item-footer">
-
-
-
-<div class="context">
-          <span class="with-icn">
-            <i class="badge-retweeted"></i>
-            <span class="js-retweet-text">Retweeted by <a class="pretty-link js-user-profile-link" href="../nfl.html" data-user-id="19426551"><b>NFL</b></a></span>
-          </span>
-</div>
-
-
-
-<a class="details with-icn js-details" href="../RealJoeNamath/status/387390910872698880.html">
-  <span class="details-icon js-icon-container">
-
-  </span>
-  <b>
-    <span class="expand-stream-item js-view-details">
-
-        <span class="expand-action-wrapper">
-          Expand
-        </span>
-    </span>
-    <span class="collapse-stream-item js-hide-details">
-      Collapse
-    </span>
-  </b>
-</a>
-
-
-
-
-
-<ul class="tweet-actions js-actions">
-  <li class="action-reply-container">
-    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
-      <span class="icon sm-reply"></span>
-      <b>Reply</b>
-    </a>
-  </li>
-  <li class="action-rt-container js-toggle-state js-toggle-rt">
-    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweet</b>
-    </a>
-    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
-      <span class="icon sm-rt"></span>
-      <b>Retweeted</b>
-    </a>
-  </li>
-  <li class="action-del-container">
-    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
-      <span class="icon sm-trash"></span>
-      <b>Delete</b>
-    </a>
-  </li>
-  <li class="action-fav-container js-toggle-state js-toggle-fav">
-    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorite</b>
-    </a>
-    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
-      <span class="icon sm-fav"></span>
-      <b>Favorited</b>
-    </a>
-  </li>
-
-    <li class="more-tweet-actions">
-  <div class="action-more-container">
-    <div class="dropdown">
-      <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
-        <span class="icon sm-more"></span>
-        <b>More</b>
-      </button>
-      <div class="dropdown-menu">
-        <div class="dropdown-caret">
-          <span class="caret-outer"></span>
-          <span class="caret-inner"></span>
-        </div>
-        <ul>
-            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
-              <button type="button" class="dropdown-link">Embed Tweet</button>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</li>
-
-
-
-
-</ul>
-
-      </div>
-
-
-
-
-
-
-
-<div class="expanded-content js-tweet-details-dropdown">
-
-
-
-
-
-</div>
-
-
-
-    </div>
-  </div>
-
-
-
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-</ol>
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet has-cards with-social-proof" data-feedback-key="stream_status_387589468989173760" data-tweet-id="387589468989173760" data-item-id="387589468989173760" data-screen-name="nfl" data-name="NFL" data-user-id="19426551" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387589468989173760&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/6gdrW9n3Sk&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:45 AM - 8 Oct 13&quot;&gt;7:45 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387589468989173760&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="PepsiNEXT Lil_Eazy_Ana_42 Mathieu_Era GenoSmith7 ZSTACY_ TerranceWill2" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
+                </a>
+                <small class="time">
+                  <a href="status/387589468989173760.html" class="tweet-timestamp js-permalink js-nav" title="7:45 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381243505" data-long-form="true">2h</span></a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">VOTE: <a href="../PepsiNEXT.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>PepsiNext</b></a> Rookie of the Week <a href="http://t.co/6gdrW9n3Sk" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/1hzlfP6" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/1hzlfP6" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/1hzlfP6</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../Lil_Eazy_Ana_42.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Lil_Eazy_Ana_42</b></a> <a href="../Mathieu_Era.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Mathieu_Era</b></a> <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> <a href="../ZSTACY_.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ZSTACY_</b></a> <a href="../TerranceWill2.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>TerranceWill2</b></a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3997" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                </div>
+                <a class="details with-icn js-details" href="status/387589468989173760.html">
+                  <span class="details-icon js-icon-container">
+                    <i class="sm-embed"></i>
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+                      View summary
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Hide summary
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                              <button type="button" class="dropdown-link">Embed Tweet</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+
+<!-- start new tweets -->
+        <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387600272996184064" id="stream-item-tweet-387600272996184064" data-item-type="tweet">
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet with-social-proof" data-feedback-key="stream_status_387600272996184064" data-tweet-id="387600272996184064" data-item-id="387600272996184064" data-retweet-id="387608382036668416" data-screen-name="NFLfootballinfo" data-name="Michael Signora" data-user-id="59236263" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;8:28 AM - 8 Oct 13&quot;&gt;8:28 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/NFLfootballinfo/status/387600272996184064&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="nfl" data-retweeter="nfl" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../NFLfootballinfo.html" data-user-id="59236263">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/352379220/NFL12_normal.png" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">Michael Signora</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>NFLfootballinfo</b></span>
+                </a>
+                <small class="time">
+                  <a href="../NFLfootballinfo/status/387600272996184064.html" class="tweet-timestamp js-permalink js-nav" title="8:28 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381246081" data-long-form="true">49m</span>
+                  </a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">VOTE: <a href="../ThisIsGMC.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ThisIsGMC</b></a> Never Say Never Moment of the Week <a href="http://t.co/i4onPfO3II" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/GLmP4K" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/GLmP4K" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/GLmP4K</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> Peyton Manning, Andrew Luck</p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4008" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                  <span class="with-icn">
+                    <i class="badge-retweeted"></i>
+                    <span class="js-retweet-text">Retweeted by <a class="pretty-link js-user-profile-link" href="../nfl.html" data-user-id="19426551"><b>NFL</b></a></span>
+                  </span>
+                </div>
+                <a class="details with-icn js-details" href="../NFLfootballinfo/status/387600272996184064.html">
+                  <span class="details-icon js-icon-container">
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+                      <span class="expand-action-wrapper">
+                        Expand
+                      </span>
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Collapse
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                              <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                                <button type="button" class="dropdown-link">Embed Tweet</button>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387608345252995072" id="stream-item-tweet-387608345252995072" data-item-type="tweet">
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet has-cards with-social-proof" data-feedback-key="stream_status_387608345252995072" data-tweet-id="387608345252995072" data-item-id="387608345252995072" data-screen-name="nfl" data-name="NFL" data-user-id="19426551" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387608345252995072&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/i4onPfO3II&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;9:00 AM - 8 Oct 13&quot;&gt;9:00 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387608345252995072&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="ThisIsGMC GenoSmith7" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
+                </a>
+                <small class="time">
+                  <a href="status/387608345252995072.html" class="tweet-timestamp js-permalink js-nav" title="9:00 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381248005" data-long-form="true">16m</span></a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">Elway: Romo did a tremendous job of making us look bad; he played an incredible game <a href="http://on.nfl.com/160ezEC">http://on.nfl.com/160ezEC</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4000" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                </div>
+                <a class="details with-icn js-details" href="status/387608345252995072.html">
+                  <span class="details-icon js-icon-container">
+                    <i class="sm-embed"></i>
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+                      View summary
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Hide summary
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                              <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                                <button type="button" class="dropdown-link">Embed Tweet</button>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387608345252995072" id="stream-item-tweet-387608345252995072" data-item-type="tweet">
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet has-cards with-social-proof" data-feedback-key="stream_status_387608345252995072" data-tweet-id="387608345252995072" data-item-id="387608345252995072" data-screen-name="nfl" data-name="NFL" data-user-id="19426551" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387608345252995072&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/i4onPfO3II&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;9:00 AM - 8 Oct 13&quot;&gt;9:00 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387608345252995072&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="ThisIsGMC GenoSmith7" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a  class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
+                </a>
+                <small class="time">
+                  <a href="status/387608345252995072.html" class="tweet-timestamp js-permalink js-nav" title="9:00 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381248005" data-long-form="true">16m</span></a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">5 rookies who are thriving... and 5 who have not lived up to preseason expectations (via <a href="#">@Gil_Brandt</a>): <a href="http://on.nfl.com/19kfX9a">http://on.nfl.com/19kfX9a</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4002" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                </div>
+                <a class="details with-icn js-details" href="status/387608345252995072.html">
+                  <span class="details-icon js-icon-container">
+                    <i class="sm-embed"></i>
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+                      View summary
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Hide summary
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                              <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                                <button type="button" class="dropdown-link">Embed Tweet</button>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387599532491833344" id="stream-item-tweet-387599532491833344" data-item-type="tweet">
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet has-cards with-social-proof" data-feedback-key="stream_status_387599532491833344" data-tweet-id="387599532491833344" data-item-id="387599532491833344" data-screen-name="nfl" data-name="NFL" data-user-id="19426551" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;        &lt;div class=&quot;card2 &quot; data-card2-name=&quot;summary&quot;&gt;&#10;    &lt;div class=&quot;js-macaw-cards-iframe-container&quot;&#10;  data-src=&quot;/i/cards/tfw/v1/387599532491833344&quot;&#10;  data-card-name=&quot;summary&quot;&#10;  data-card-url=&quot;http://t.co/XwfHhuC2Rj&quot;&#10;  data-publisher-id=&quot;19426551&quot;&#10;  data-creator-id=&quot;&quot;&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;/div&gt;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;8:25 AM - 8 Oct 13&quot;&gt;8:25 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nfl/status/387599532491833344&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &lt;span class=&quot;flag-container flag-cards&quot;&gt;&#10;  &lt;button type=&quot;button&quot; class=&quot;flaggable btn-link&quot;&gt;&#10;    Flag media&#10;  &lt;/button&gt;&#10;  &lt;span class=&quot;flagged hidden&quot;&gt;&#10;    Flagged&#10;    &lt;span&gt;&#10;      &lt;a target=&quot;_blank&quot; href=&quot;//support.twitter.com/articles/20069937&quot;&gt;&#10;        (learn more)&#10;      &lt;/a&gt;&#10;    &lt;/span&gt;&#10;  &lt;/span&gt;&#10;&lt;/span&gt;&#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="FedEx drewbrees jcharles25 knowshonmoreno" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nfl.html" data-user-id="19426551">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000533936183/11035db3a4ffc8408e4c60bb9cf95788_normal.jpeg" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">NFL</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nfl</b></span>
+                </a>
+                <small class="time">
+                  <a href="status/387599532491833344.html" class="tweet-timestamp js-permalink js-nav" title="8:25 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381245904" data-long-form="true">51m</span></a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">Reclaiming the Record: 137 Decibels by <a href="#">@kcchiefs_rachel</a> — <a href="http://chfs.me/1bZoRJL">http://chfs.me/1bZoRJL</a><a href="#">#LoudAndProud</a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4004" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                </div>
+                <a class="details with-icn js-details" href="status/387599532491833344.html">
+                  <span class="details-icon js-icon-container">
+                    <i class="sm-embed"></i>
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+                      View summary
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Hide summary
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                              <button type="button" class="dropdown-link">Embed Tweet</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+<!-- end new tweets -->
+        <li class="js-stream-item stream-item stream-item expanding-stream-item" data-item-id="387584432431194112" id="stream-item-tweet-387584432431194112" data-item-type="tweet">
+          <div class="tweet original-tweet js-stream-tweet js-actionable-tweet js-profile-popup-actionable js-original-tweet with-social-proof" data-feedback-key="stream_status_387584432431194112" data-tweet-id="387584432431194112" data-item-id="387584432431194112" data-retweet-id="387585469120122880" data-screen-name="nflnetwork" data-name="NFL Network" data-user-id="19362299" data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-fixer&quot;&gt;&#10;&#10;&#10;&#10;&#10;  &lt;div class=&quot;js-tweet-media-container &quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;entities-media-container &quot; style=&quot;min-height:0px&quot;&gt;&#10;    &lt;/div&gt;&#10;&#10;  &lt;div class=&quot;js-machine-translated-tweet-container&quot;&gt;&lt;/div&gt;&#10;  &lt;div class=&quot;js-tweet-stats-container tweet-stats-container already-open&quot;&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;client-and-actions&quot;&gt;&#10;    &lt;span class=&quot;metadata&quot;&gt;&#10;      &lt;span title=&quot;7:25 AM - 8 Oct 13&quot;&gt;7:25 AM - 8 Oct 13&lt;/span&gt;&#10;&#10;      &#10;&#10;&#10;           &amp;middot; &lt;a class=&quot;permalink-link js-permalink js-nav&quot; href=&quot;/nflnetwork/status/387584432431194112&quot;  tabindex=&quot;-1&quot;&gt;Details&lt;/a&gt;&#10;&#10;      &#10;&#10;&#10;    &lt;/span&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;" data-mentions="Saints ChicagoBears Seahawks Colts" data-retweeter="nfl" data-you-follow="false" data-you-block="false">
+            <span class="icon dogear"></span>
+            <div class="content">
+              <div class="stream-item-header">
+                <a class="account-group js-account-group js-action-profile js-user-profile-link js-nav" href="../nflnetwork.html" data-user-id="19362299">
+                  <img class="avatar js-action-profile-avatar" src="https://si0.twimg.com/profile_images/378800000407456519/fadc03c5adf4f525deeab3322988f095_normal.jpeg" alt="">
+                  <strong class="fullname js-action-profile-name show-popup-with-id">NFL Network</strong>
+                  <span>&rlm;</span><span class="username js-action-profile-name"><s>@</s><b>nflnetwork</b></span>
+                </a>
+                <small class="time">
+                  <a href="../nflnetwork/status/387584432431194112.html" class="tweet-timestamp js-permalink js-nav" title="7:25 AM - 8 Oct 13" ><span class="_timestamp js-short-timestamp js-relative-timestamp" data-time="1381242304" data-long-form="true">2h</span></a>
+                </small>
+              </div>
+              <p class="js-tweet-text tweet-text">Football on a Tuesday! Today&#39;s <a href="../search-q=_NFLReplay&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NFLReplay</b></a> Schedule:&#10;&#10;2pm ET: <a href="../Saints.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Saints</b></a> vs. <a href="../ChicagoBears.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ChicagoBears</b></a> &#10;3:30pm ET: <a href="../Seahawks.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Seahawks</b></a> vs, <a href="../Colts.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Colts</b></a></p>
+              <div class="expand-widget">
+                <div id="widget-container">
+                  <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4010" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
+                  </div>
+                </div>
+                <span onclick="clickThis(this)">Expand</span>
+              </div>
+              <div class="stream-item-footer">
+                <div class="context">
+                  <span class="with-icn">
+                    <i class="badge-retweeted"></i>
+                    <span class="js-retweet-text">Retweeted by <a class="pretty-link js-user-profile-link" href="../nfl.html" data-user-id="19426551"><b>NFL</b></a></span>
+                  </span>
+                </div>
+                <a class="details with-icn js-details" href="../nflnetwork/status/387584432431194112.html">
+                  <span class="details-icon js-icon-container">
+                  </span>
+                  <b>
+                    <!-- <span class="expand-stream-item js-view-details">
+
+                        <span class="expand-action-wrapper">
+                          Expand
+                        </span>
+                    </span>
+                    <span class="collapse-stream-item js-hide-details">
+                      Collapse
+                    </span> -->
+                  </b>
+                </a>
+                <ul class="tweet-actions js-actions">
+                  <li class="action-reply-container">
+                    <a role="button" class="with-icn js-action-reply js-tooltip" data-modal="tweet-reply" href="with_replies.html#">
+                      <span class="icon sm-reply"></span>
+                      <b>Reply</b>
+                    </a>
+                  </li>
+                  <li class="action-rt-container js-toggle-state js-toggle-rt">
+                    <a role="button" class="with-icn retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweet</b>
+                    </a>
+                    <a role="button" class="with-icn undo-retweet js-tooltip" data-modal="tweet-retweet" href="with_replies.html#">
+                      <span class="icon sm-rt"></span>
+                      <b>Retweeted</b>
+                    </a>
+                  </li>
+                  <li class="action-del-container">
+                    <a role="button" class="with-icn js-action-del js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-trash"></span>
+                      <b>Delete</b>
+                    </a>
+                  </li>
+                  <li class="action-fav-container js-toggle-state js-toggle-fav">
+                    <a role="button" class="with-icn favorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorite</b>
+                    </a>
+                    <a role="button" class="with-icn unfavorite js-tooltip" href="with_replies.html#">
+                      <span class="icon sm-fav"></span>
+                      <b>Favorited</b>
+                    </a>
+                  </li>
+                  <li class="more-tweet-actions">
+                    <div class="action-more-container">
+                      <div class="dropdown">
+                        <button type="button" class="btn-link with-icn dropdown-toggle js-dropdown-toggle js-tooltip">
+                          <span class="icon sm-more"></span>
+                          <b>More</b>
+                        </button>
+                        <div class="dropdown-menu">
+                          <div class="dropdown-caret">
+                            <span class="caret-outer"></span>
+                            <span class="caret-inner"></span>
+                          </div>
+                          <ul>
+                            <li class="embed-link js-embed-tweet" data-nav="embed_tweet">
+                              <button type="button" class="dropdown-link">Embed Tweet</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="expanded-content js-tweet-details-dropdown">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
         <div class="stream-footer ">
   <div class='timeline-end has-items has-more-items'>
     <div class="stream-end">
@@ -5109,7 +2601,7 @@ data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-f
   <input type="hidden" id="swift-module-path" value="https://abs.twimg.com/c/swift/en">
 
 
-    <script src="https://abs.twimg.com/c/swift/en/init.bc7461bcfce7be323dfb7cbf24f049a152a5ffe2.js" async></script>
+    <!--<script src="https://abs.twimg.com/c/swift/en/init.bc7461bcfce7be323dfb7cbf24f049a152a5ffe2.js" async></script>-->
 
 <!-- Plyfe Widget Setup -->
 <script type="text/javascript">
@@ -5117,4 +2609,4 @@ data-expanded-footer="&lt;div class=&quot;js-tweet-details-fixer tweet-details-f
     Plyfe.createWidgets();
   }
 </script>
-<script async="true" data-domain="plyfe.me" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
+<script async="true" data-domain="demo.plyfe.me" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
