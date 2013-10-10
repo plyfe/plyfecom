@@ -1,14 +1,22 @@
 /*Angie's styles*/
-.expand-widget div {
+.expand-widget span {
   color: #0084B4;
 }
 
-.expand-widget div:hover {
+.expand-widget span:hover {
   cursor: pointer;
 }
 
-#widget-container.hidden {
+/*span.collpase {
+  display: none;
+}*/
+
+.isHidden {
   display:none;
+}
+
+.isShown {
+  display:block;
 }
 
 

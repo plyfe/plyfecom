@@ -26,28 +26,23 @@ data-fouc-class-names="swift-loading"><![endif]-->
     <script src="../assets/js/modernizr-2.5.3.min.js"></script>
     <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      function clickThis(thisNode) {
-        alert(thisNode.parentNode.innerHTML);
-        var container = thisNode.parentNode;
-        document.getElementById(container).className = "hidden";
-        // var container = this.parentElement;
-        // document.container.find(".wiget-container").className += "hidden";
+      function clickThis(thisWidget, thisSpan) {
+        if(document.getElementById(thisWidget).className == "isHidden") {
+          document.getElementById(thisWidget).className = "isShown";
+          this.id = "collapse";
+          this.innerHTML = "Collapse";
+        } else {
+          document.getElementById(thisWidget).className = "isHidden";
+          this.id = "expand";
+          this.innerHTML = "Expand";
+        }
+        changeSpan(thisSpan, this.innerHTML);
       }
 
-      /*$(document).ready(function() {
-        $(".wiget-container").addClass("hidden");
-        $(".expand-wiget span").click(function() {
-          var $container = $(this).parent().find(".widget-container");
-          if($container.hasClass("hidden")) {
-            $container.removeClass("hidden");
-          } else {
-            $container.addClass("hidden");
-          }
-        });
-      })*/
+      function changeSpan(targetSpan, thisText) {
+        targetSpan.innerHTML = thisText;
+      }
     </script>
-
-
     <!-- <link rel="stylesheet" href="https://abs.twimg.com/a/1381185256/t1/css/t1_more.bundle.css" type="text/css"> -->
     <!--<script id="swift_loading_indicator">
     document.documentElement.className=document.documentElement.className+" "+document.documentElement.getAttribute("data-fouc-class-names");
@@ -246,17 +241,17 @@ data-fouc-class-names="swift-loading"><![endif]-->
       </div>
       <div id="page-outer">
         <div id="page-container" class="wrapper wrapper-profile white">
-          <style id="user-style-nfl" class="js-user-style">a,
+          <style id="user-style-nfl" class="js-user-style">
+          a,
           .btn-link,
           .btn-link:focus,
-
           .pretty-link b,
           /*.pretty-link:hover s,
           .pretty-link:hover b,*/
           .pretty-link:focus s,
           .pretty-link:focus b,
           /* Account Group */
-/*          .metadata a:hover,
+          /*.metadata a:hover,
           .metadata a:focus,
 
           .account-group:hover .fullname,*/
@@ -413,8 +408,6 @@ data-fouc-class-names="swift-loading"><![endif]-->
           .tweet-action-icons .stream .tweet .tweet-actions .sm-more:hover, .tweet-action-icons .stream .tweet .tweet-actions a:focus .sm-more {
               background-color: #0084B4;
           }*/
-
-
           .wrapper.black {
             background: url("https://abs.twimg.com/a/1381185256/t1/img/wash-black-30.png");
           }
@@ -510,11 +503,7 @@ data-fouc-class-names="swift-loading"><![endif]-->
                 </div>
               </div>
             </div>
-
-
-
-
-    <div class="module trends hidden">
+<div class="module trends hidden">
   <div class="flex-module trends-inner">
     <div class="flex-module trends-container">
   <div class="flex-module-header">
@@ -533,9 +522,7 @@ data-fouc-class-names="swift-loading"><![endif]-->
 </div>
   </div>
 </div>
-
-
-  <div class="module site-footer ">
+<div class="module site-footer ">
   <div class="flex-module">
     <div class="flex-module-inner js-items-container">
       <ul class="clearfix">
@@ -597,11 +584,7 @@ data-fouc-class-names="swift-loading"><![endif]-->
         <span class="divider hidden">&middot;</span>
         <span class="url editable-group">
           <span class="profile-field">
-            <a target="_blank" rel="me nofollow" href="http://t.co/5K6SRMMaxj" title="http://www.togetherwemakefootball.com">
-  togetherwemakefootball.com
-</a>
-
-
+            <a target="_blank" rel="me nofollow" href="http://t.co/5K6SRMMaxj" title="http://www.togetherwemakefootball.com">togetherwemakefootball.com</a>
           </span>
         </span>
       </p>
@@ -710,11 +693,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">VOTE: <a href="../ThisIsGMC.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ThisIsGMC</b></a> Never Say Never Moment of the Week <a href="http://t.co/i4onPfO3II" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/GLmP4K" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/GLmP4K" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/GLmP4K</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> Peyton Manning, Andrew Luck</p>
               <div class="expand-widget">
-                <div id="widget-container-1">
+                <div id="widget-container-1" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3992" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-1', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -814,11 +797,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">Elway: Romo did a tremendous job of making us look bad; he played an incredible game <a href="http://on.nfl.com/160ezEC">http://on.nfl.com/160ezEC</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-2" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3993" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-2', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -913,11 +896,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">5 rookies who are thriving... and 5 who have not lived up to preseason expectations (via <a href="#">@Gil_Brandt</a>): <a href="http://on.nfl.com/19kfX9a">http://on.nfl.com/19kfX9a</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-3" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3994" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-3', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1012,11 +995,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">Reclaiming the Record: 137 Decibels by <a href="#">@kcchiefs_rachel</a> — <a href="http://chfs.me/1bZoRJL">http://chfs.me/1bZoRJL</a><a href="#">#LoudAndProud</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-4" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3995" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-4', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1111,11 +1094,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">This is devastating for a team that cannot afford one more shred of bad news. <a href="http://on.nfl.com/1fZOlfc">http://on.nfl.com/1fZOlfc</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-5" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3996" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-5', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1214,11 +1197,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">VOTE: <a href="../PepsiNEXT.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>PepsiNext</b></a> Rookie of the Week <a href="http://t.co/6gdrW9n3Sk" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/1hzlfP6" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/1hzlfP6" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/1hzlfP6</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../Lil_Eazy_Ana_42.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Lil_Eazy_Ana_42</b></a> <a href="../Mathieu_Era.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Mathieu_Era</b></a> <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> <a href="../ZSTACY_.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ZSTACY_</b></a> <a href="../TerranceWill2.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>TerranceWill2</b></a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-6" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="3997" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-6', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1316,11 +1299,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">VOTE: <a href="../ThisIsGMC.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ThisIsGMC</b></a> Never Say Never Moment of the Week <a href="http://t.co/i4onPfO3II" rel="nofollow" dir="ltr" data-expanded-url="http://on.nfl.com/GLmP4K" class="twitter-timeline-link" target="_blank" title="http://on.nfl.com/GLmP4K" ><span class="tco-ellipsis"></span><span class="invisible">http://</span><span class="js-display-url">on.nfl.com/GLmP4K</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span></a>&#10;&#10;NOMINEES: <a href="../GenoSmith7.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>GenoSmith7</b></a> Peyton Manning, Andrew Luck</p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-7" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4008" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-7', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1420,11 +1403,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">Elway: Romo did a tremendous job of making us look bad; he played an incredible game <a href="http://on.nfl.com/160ezEC">http://on.nfl.com/160ezEC</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-8" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4000" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-8', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1519,11 +1502,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">5 rookies who are thriving... and 5 who have not lived up to preseason expectations (via <a href="#">@Gil_Brandt</a>): <a href="http://on.nfl.com/19kfX9a">http://on.nfl.com/19kfX9a</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-9" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4002" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-9', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1618,11 +1601,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">Reclaiming the Record: 137 Decibels by <a href="#">@kcchiefs_rachel</a> — <a href="http://chfs.me/1bZoRJL">http://chfs.me/1bZoRJL</a><a href="#">#LoudAndProud</a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-10" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4004" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-10', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
@@ -1718,11 +1701,11 @@ data-fouc-class-names="swift-loading"><![endif]-->
               </div>
               <p class="js-tweet-text tweet-text">Football on a Tuesday! Today&#39;s <a href="../search-q=_NFLReplay&src=hash.html" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr" ><s>#</s><b>NFLReplay</b></a> Schedule:&#10;&#10;2pm ET: <a href="../Saints.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Saints</b></a> vs. <a href="../ChicagoBears.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>ChicagoBears</b></a> &#10;3:30pm ET: <a href="../Seahawks.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Seahawks</b></a> vs, <a href="../Colts.html" class="twitter-atreply pretty-link" dir="ltr" ><s>@</s><b>Colts</b></a></p>
               <div class="expand-widget">
-                <div id="widget-container">
+                <div id="widget-container-11" class="isHidden">
                   <div class="plyfe-widget" data-venue="plyfeme" data-type="challenge" data-campaign-id="335" data-challenge-id="4010" style="overflow:hidden; height:350px; width:100%; margin:0 auto; float:left;" data-treatment="a">
                   </div>
                 </div>
-                <span onclick="clickThis(this)">Expand</span>
+                <span id="expand" onclick="clickThis('widget-container-11', this)">Expand</span>
               </div>
               <div class="stream-item-footer">
                 <div class="context">
