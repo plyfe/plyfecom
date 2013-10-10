@@ -1,7 +1,9 @@
 /*Angie's styles*/
 
-.expand-widget {
-  padding: 10px 0;
+.expand-widget .isShown{
+  padding: 10px 5px;
+  background-color: #f7f7f7;
+  width: 428px;
 }
 
 .expand-widget span {
