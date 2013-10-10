@@ -1,10 +1,20 @@
 /*Angie's styles*/
+
+.expand-widget {
+  padding: 10px 0;
+}
+
 .expand-widget span {
   color: #0084B4;
 }
 
 .expand-widget span:hover {
   cursor: pointer;
+}
+
+span.ch-name {
+  font-weight: bold;
+  color: #222;
 }
 
 /*span.collpase {
