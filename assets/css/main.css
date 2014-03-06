@@ -791,5 +791,35 @@ top: 1px;
 	border-radius: 5px;
 }
 
+.main-container #careers {
+	margin-top: 100px;
+	text-align: left;
+}
+
+.main-container #careers .container {
+	padding-top: 0;
+	max-width: 940px;
+}
+
+#careers h2 {
+	text-align: left;
+}
+
+span.hiring {
+	margin-left: 80%;
+}
+
+@media (max-width: 480px) {
+	span.hiring {
+		margin-left: 70%;
+	}
+}
+
+@media (max-width: 980px) {
+	span.hiring img {
+		padding-top: 10px;
+	}
+}
+
 
 
