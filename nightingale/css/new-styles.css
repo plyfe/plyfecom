@@ -1,0 +1,8 @@
+#navigation ul li.plyfe-nonactive a {
+  color: #888888 !important;
+}
+
+#navigation ul li.plyfe-nonactive:hover > a {
+  background: #fff;
+  cursor: default;
+}
