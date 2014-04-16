@@ -1,0 +1,13 @@
+#navigation ul li.plyfe-nonactive a {
+  color: #888888 !important;
+}
+
+#navigation ul li.plyfe-nonactive:hover > a {
+  background: #fff;
+  cursor: default;
+}
+
+.sidebar li.scoreboard {
+  margin: 10px auto;
+  width: 160px;
+}
