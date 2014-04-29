@@ -1,0 +1,1 @@
+function qm_create(){}

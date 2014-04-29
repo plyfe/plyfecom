@@ -1,0 +1,20 @@
+#inventorySearchWidget { width: 100%;}
+#newInventorySearchWidget{ width: 100%;}
+#usedInventorySearchWidget{ width: 100%;}
+#inventorySearchTrimWidget { width: 100%;}
+#isVehicleType {clear: both;float: left;width: 99%;}
+#frmisTitleBox {clear: both;float: left;width: 99%;}
+#isVehicleInfo {clear: both;float: left;width: 99%;}
+#isVehicleInfoBox{ float:left; width:100%;}
+
+#isVehicleInfoBox input, #isVehicleInfoBox select{width:98%; margin:0 auto;}
+#frmisSubmitButton {clear: both;float: left;width: 99%;}
+
+
+#orStock{float:left; clear:both; text-align:center; width:99%;}
+#isVehicleStock{float:left; clear:both; width:99%;}
+#isVehicleStock p { position: relative;}
+#isVehicleStock p input{display: block;padding: 4px;width:95%;margin: 0;}
+#isVehicleStock p label {width:94%;display: block;margin: 5px 5px 5px 6px;padding: 0;position: absolute; top: 0; left: 0;}
+
+#selMpg #mpgFrom, #selMpg #mpgTo {width:39%;}
