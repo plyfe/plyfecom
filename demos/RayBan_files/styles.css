@@ -1,0 +1,321 @@
+﻿
+/*-  html5doctor.com/html-5-reset-stylesheet/
+----------------------------------------------------------------------*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+
+/*-  MAIN
+----------------------------------------------------------------------*/
+
+
+/*-  General */
+body { background-color: #000; font-family: 'Conv_tradegothicltstd-light', Helvetica, sans-serif; color: #000000; }
+html, body { height: 100%; }
+h1 { font-size: 1.5em; margin-bottom: 1.250em; }
+h2 { color: #000; font-weight: normal; font-family: 'Conv_TradeGothicLTStd-BdCn20'; color: #fff; }
+h3 { font-family: 'Conv_TradeGothicLTStd-Bd2'; font-weight: normal; }
+p, li { line-height: 1.6em; }
+p { font-family: 'Conv_TradeGothicLTStd'; margin-bottom: 1.5em; }
+a { text-decoration: none; color: #000; }
+a:hover { color: #ed1f24; }
+address { font-style: normal; }
+
+/*-  Structural */
+.wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -8.8em; }
+.container { margin: 0px auto; max-width: 60.000em; /* 960 */ z-index: 999; }
+#main { padding-bottom: 1em; }
+section { width: 95%; margin: 0 auto; }
+
+/*-  Header */
+header { overflow: hidden; background-color: #000; }
+header h2 { margin: 0.9em auto; width: 7em; }
+header h2 img { width: 100%; }
+header nav ul { display: none; }
+
+/*-  Nav */
+nav ul li { border-top: 1px solid #333; }
+nav ul li a { padding: 0.7em 0; font-size: 0.8em; color: #fff; text-align: center; display: block; background-color: #000; text-transform: uppercase; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease; }
+nav a#pull { padding: 1em 0; font-size: 0.8em; border-bottom: 0.1em solid #000;  font-weight: bold; background-color: #333; color: #fff; text-align: center; display: block; text-transform: uppercase; }
+nav ul li a:hover, nav ul li.active a { color: #ed1f24; background-color: #fff; }
+
+.banner { margin: 0px auto; max-width: 60em; background-color: #ff0000; clear: both; font-family: 'Conv_TradeGothicLTStd-BdCn20'; }
+.banner a { padding: 1.0em 0; font-weight: normal; font-size: 1.5em; color: #fff; text-align: center; display: block; text-transform: uppercase; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease; }
+
+h1 { width: 90%; margin: 2.5em auto 2.5em; }
+h1 img { width: 100%; }
+h1 span { display: block; font-size: 1.1em; font-family: 'Conv_TradeGothicLTStd-BdCn20'; text-transform: uppercase; text-align: right; color: #fff; }
+h1.initial span { text-shadow: 1px 1px 1px #474646; }
+.content h1 span { text-shadow: none; }
+.content h2 { font-size: 1.9em; margin-bottom: 0.636em; }
+
+/*-  Index */
+.tickets-wrapper { background: url("../RayBan_files/grey_bg.png"); overflow: hidden; width: 95%; margin: 0 auto; }
+.free-tickets { margin: 0 auto; display: block; width: 60%; display: none; }
+.free-tickets-mobile { width: 100%; display: block; }
+.copy p { font-size: 0.8em; color: #fff; line-height: 1.8em; }
+.copy { padding: 1.1em 0 0; overflow: hidden; width: 94%; margin: 0 auto; }
+#main .copy h2 { margin-bottom: 0.4em; font-size: 1.30em; line-height: 1.4em; color: #000; }
+.primary .free-tickets { width: 50%;  -webkit-box-shadow: 0px 0px 15px 3px #fff; -moz-box-shadow: 0px 0px 15px 3px #fff; box-shadow: 0px 0px 15px 3px #fff; margin: 0 0.8em 0.8em 0; }
+
+.buttons { width: 100%; }
+.buttons a { overflow: hidden; color: #eb2026; font: 1.2em/1.40em 'Conv_TradeGothicLTStd-BdCn20'; text-align: center; text-transform: uppercase; display: block; padding: 1.09em 0em; height: 3.03em; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease;
+	color: #fff;
+	background: #fa262b;
+	background-image: linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -o-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -moz-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -webkit-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -ms-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, #ed1f24),
+		color-stop(0.55, #fa262b)
+	);
+
+/*
+	background: #4B4A4A;
+	background-image: linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -o-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -moz-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -webkit-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -ms-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, #2B2A2A),
+		color-stop(0.55, #4B4A4A)
+	);
+*/
+	}
+.buttons a:hover {
+	color: #fff;
+	background: #fa262b;
+	background-image: linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -o-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -moz-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -webkit-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -ms-linear-gradient(bottom, #ed1f24 10%, #fa262b 55%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, #ed1f24),
+		color-stop(0.55, #fa262b)
+	);
+
+	}
+.buttons .book a { overflow: hidden; color: #fff; font: 1.2em/1.40em 'Conv_TradeGothicLTStd-BdCn20'; text-align: center; text-transform: uppercase; display: block; padding: 1.09em 0em; height: 3.03em; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; -ms-transition: All 0.5s ease; transition: All 0.5s ease;
+	background: #4B4A4A;
+	background-image: linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -o-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -moz-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -webkit-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -ms-linear-gradient(bottom, #2B2A2A 10%, #4B4A4A 55%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, #2B2A2A),
+		color-stop(0.55, #4B4A4A)
+	);
+	}
+.buttons .buy img { width: 20%; margin: 0 auto; display: block; }
+
+
+.list { background: url("../img/grey_bg.png"); padding-top: 0.813em; }
+.list h3 { color: #fff; font-size: 1.1em; margin: 0 0 0.5em 0.8em; }
+.list h4 { font: 1em/1.6em 'Conv_TradeGothicLTStd-Bd2', Helvetica, sans-serif; margin-bottom: 0.8em; }
+.list li { font-size: 0.844em; margin-bottom: 1.5em; }
+.list ol, .list ul { background: url("../img/grey_bg.png"); margin: 0 1em 0 1em; padding: 1.5em 1.5em 7em 1.5em; }
+.list ol { padding: 1.5em 1.5em 1.5em 3em; }
+.list ol li { list-style: decimal; margin-bottom: 1.704em; }
+.list ul li ul { height: auto; background: none; overflow: auto; padding: 0; margin: 2em 0; }
+.list ul li li { font-size: 1em; margin-bottom: 0.5em; }
+.list ul li p { margin-bottom: 0.5em; }
+.list a { text-decoration: underline; }
+.list address { margin-top: 1em; }
+.list .help { background-color: #ed1f24; margin-bottom: 0; font: 0.85em 'TradeGothicLTStd-Bold'; padding: 1.150em;  }
+.list .help a:hover { color: #fff; }
+.list form { background: url("../img/black_bg.png"); padding: 0.8em 2.5em; overflow: hidden; }
+.list form h3 { color: #fff; font-family: 'Conv_TradeGothicLTStd-Bd2'; font-weight: normal; display: block; margin: 0 0 0.5em -1.6em; }
+.list label { width: 70%; float: left; }
+.list input { font-size: 0.644em;}
+.list input[type="text"] { border: 0; height: 2.3em; width: 88%; padding: 0 5%; color: #999; line-height: 2em; }
+.list input[type="submit"] { background-color: #fc3337; border: 0; color: #fff; height: 2.3em; text-transform: uppercase; float: left; width: 30%; font-family: 'Conv_TradeGothicLTStd-Bd2'; }
+.list input[type="submit"]:hover { background-color: #000; }
+.list .error { color: #e30613; margin-bottom: 0.4em; line-height: 1.2em; display: none; }
+
+#bg { z-index: -999; position: fixed; top: -50%; left: -50%; width: 200%; height: 200%; }
+#bg img { position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; min-width: 50%; min-height: 50%; }
+
+.ie img.bg { min-height: 100%; min-width: 1024px; z-index: -999; width: 100%; height: auto; position: fixed; top: 0; left: 0; }
+.ie #bg { top: 0%; left: 0%; width: 100%; height: 100%; }
+#bg.home-image { display: none; }
+.ie #bg.home-image { display: block; }
+
+.ie .buttons .book a { border-bottom: 0.1em solid #9a9a9a; }
+
+.shadowed { -webkit-filter: drop-shadow(3px 3px 7px #2f2e2e); filter: url(../img/shadow.svg#drop-shadow); -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#3a3939')"; filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=3, OffY=3, Color='#3a3939')"; }
+.clear { display: block; clear: both; }
+
+footer, .push { height: 8.8em; }
+footer { background: url("../img/black_bg.png"); text-align: center; }
+footer p { color: #fff; margin-bottom: 0.5em; padding: 3em 1em 0; font-size: 0.8em; }
+footer p a { font-size: 1em; }
+footer a { color: #fff; text-decoration: underline; font-size: 0.8em; }
+
+
+
+
+
+/*-  MEDIA QUERIES
+----------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 320px) {
+
+}
+
+/*( Mobile landscape )*/
+@media screen and (min-width: 480px) {
+	h1 { position: relative; width: 65%; }
+	h1 span { bottom: 10%; right: -8%; position: absolute; }
+	.content h2 { font-size: 2.9em; }
+	.free-tickets { float: left; width: 25%;}
+	.copy { padding: 0.5em 0 0; float: left; width: 70%; margin-left: 2%; }
+	.buttons { float: right; width: 25%; }
+	.buttons a { padding: 1.59em 0em; }
+	.buttons .buy img { width: 45%; }
+	.list input { font-size: 0.844em;}
+}
+
+/*( Tablets ) */
+@media screen and (min-width: 600px) {
+	header h2 { float: left; width: 10.41%; margin-left: 2%; margin-bottom: 0; }
+	header nav { float: right; width: 84.5%; }
+	header nav ul { display: block; width: 100%; }
+	nav ul li { float: left; border: none; }
+	nav ul li a { font-size: 0.7em; padding: 2.500em 0; }
+	nav a#pull { display: none; }
+    nav .home { width: 14.44%; margin-left: 3.56%; }
+    nav .book { width: 26.172%; }
+    nav .faqs { width: 33.580%; }
+    nav .terms { width: 22.222%; }
+    h1 { margin: 5.9em auto; }
+	h1 span { right: -8%; bottom: 25%; }
+    .free-tickets { width: 27%; }
+	.buttons { width: 20%; }
+	footer p, footer a { font-size: 0.85em; }
+}
+
+/*( Tablets Landscape ) */
+@media screen and (min-width: 768px) {
+ 	nav ul li a { font-size: 0.8em; }
+	.content h1 { width: 75%; margin: 10px 0 1.9em -1em; }
+	.content h2 { font-size: 3.1em; }
+	.content h1 span { right: -30%; bottom: -8%; }
+	.content article { width: 95%; margin: 0 auto; }
+	.content .free-tickets { display: block; }
+	.content .free-tickets-mobile { display: none; }
+	.list { width: 60.00%; float: right; margin-top: 0; }
+	.primary { width: 35%; float: left; }
+	.privacy .list { width: 100%; }
+}
+
+
+/*( Desktops ) */
+@media screen and (min-width: 960px) {
+	header h2 { margin-left: 0%; }
+	nav ul li a { font-size: 0.95em; }
+	h1 { margin: 40px 0 2em 8.5em; }
+	.tickets-wrapper { width: 100%; margin: 0 auto; padding: 0;}
+	.free-tickets { width: 14%; display: block; }
+	.free-tickets-mobile { display: none; }
+	.list ol, .list ul { margin: 0 2.625em 0 2.625em; height: 26.5em; }
+	.list ul, .list ol { overflow-y: scroll; }
+	.list { width: 50%; }
+	.primary { width: 50%; }
+	.primary .free-tickets { width: 34%; }
+	.index h1 { width: 50%; }
+	.content h1 { width: 58%; margin: 10px 0 3.9em -2.1em; }
+	.content h1 span { right: -18%; bottom: 5%; }
+	.content article { width: 100%; }
+	.content h2 { font-size: 3.825em; }
+	.content h2 span { display: block; }
+	.copy { float: left; width: 66%; margin-left: 2%; padding-top: 1.4em; }
+	.copy p { font-size: 0.95em; }
+	.buttons { width: 16%; }
+	.buttons a { padding: 1.09em 0em; }
+}
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  	.ie7 img.bg { left: 50%; margin-left: -512px; }
+}
+
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=1c84eb16-eac7-4347-8c64-03acd5cefd94");
+@font-face{
+font-family:"TradeGothicLTStd-Bold";
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix");
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix") format("embedded-opentype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-Bold.woff") format("woff"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/955ee494-66b2-4eb2-8f19-bc3a088df16d.ttf") format("truetype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-Bold.svg#TradeGothicLTStd-Bold") format("svg");
+}
+
+@font-face{
+font-family:"Conv_TradeGothicLTStd-BdCn20";
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix");
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix") format("embedded-opentype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-BdCn20.woff") format("woff"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/616c4c87-a077-43f4-a9f4-f01267c13818.ttf") format("truetype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-BdCn20.svg#TradeGothicLTStd-BdCn20") format("svg");
+}
+
+@font-face{
+font-family:"Conv_TradeGothicLTStd-Bd2";
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/bb3aa0a7-2585-4e89-ad82-658fd561751a.eot?#iefix");
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/bb3aa0a7-2585-4e89-ad82-658fd561751a.eot?#iefix") format("embedded-opentype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-Bd2.woff") format("woff"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/d5ea405c-2180-4ff0-bd51-3e19fb280be4.ttf") format("truetype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd-Bd2#TradeGothicLTStd-Bd2") format("svg");
+}
+
+@font-face{
+font-family:"Conv_TradeGothicLTStd";
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/1d699af3-0e50-4c4b-a343-42d071e85714.eot?#iefix");
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/1d699af3-0e50-4c4b-a343-42d071e85714.eot?#iefix") format("embedded-opentype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd.woff") format("woff"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/8e50278c-45cd-4808-b774-24767d958f17.ttf") format("truetype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/TradeGothicLTStd.svg#TradeGothicLTStd") format("svg");
+}
+
+@font-face{
+font-family:"Conv_tradegothicltstd-light";
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix");
+src:url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/413d9688-00d4-47c4-bb55-656a0cd396e9.eot?#iefix") format("embedded-opentype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/tradegothicltstd-light.woff") format("woff"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/e741f29c-bc18-4343-bff3-db2465a0be3e.ttf") format("truetype"),url("http://www-uat-us.rewardrequest.com/US00275/Content/fonts/tradegothicltstd-light.svg#tradegothicltstd-light") format("svg");
+}
+
+#hurry{
+
+     width: 100%;
+     background:#000000;
+     height:45px;
+     color:white;
+     font-weight:bold;
+     line-height:50px;
+     text-align:center;
+
+}
+
+/*TLC DEV
+h1 {
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 0.4em;
+}
+h1 {
+
+    font-family: 'Conv_TradeGothicLTStd-BdCn20';
+    font-weight: normal;
+}*/
