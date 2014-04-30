@@ -1,0 +1,67 @@
+#featuredVehiclesScroller{
+	width: 320px;
+	height:360px;
+	margin:0 auto;
+	}
+#featuredVehiclesScroller #frmfvsTitleBox{
+	float:left;
+	clear:both;
+	width:100%;
+	}
+#featuredVehiclesScroller .fvsTitle{
+	float:left;
+	}
+
+#featuredVehiclesScroller .controls {
+	width:20px;
+	float:left;
+	}
+#featuredVehiclesScroller .controls a{
+	float:left;
+	}
+	
+#featuredVehiclesScroller #fvsCarousel{
+	overflow: hidden;
+	float:left;
+	width:300px;
+	height:300px;
+	clear:both;
+	}
+
+#featuredVehiclesScroller .jcarousel-clip-vertical{
+	width: 300px;
+	height:300px;
+	float:left;
+	overflow:hidden;
+	}
+
+#featuredVehiclesScroller .jcarousel-container{
+	clear:both;
+	float:left;
+	width:100%;
+}
+
+#featuredVehiclesScroller .jcarousel-fvs .jcarousel-item-vertical {
+	margin:0 4px;
+	width:290px;
+	height:150px;
+	border:1px solid #fff;
+	text-align:center;
+	padding:2px;
+
+	}
+#featuredVehiclesScroller .jcarousel-fvs .jcarousel-item-vertical img{
+	
+}
+#featuredVehiclesScroller .jcarousel-fvs .jcarousel-item:hover,.jcarousel-fvs .jcarousel-item:focus {
+	border-color: #ccc;
+	}
+
+#featuredVehiclesScroller .jcarousel-item .slideBlock a{
+	float:right;
+	display:block;
+}
+#featuredVehiclesScroller .jcarousel-item *{
+	text-align:left;
+}
+

@@ -1,0 +1,6 @@
+/*!CK:523554330!*//*1398052904,178191137*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["ILc0g"]); }
+
+__d("OGLitestandEllipsis",["CSS","DOM","LitestandEllipsis","Vector","csx","queryThenMutateDOM"],function(a,b,c,d,e,f,g,h,i,j,k,l){var m=18,n=16,o=4,p=10,q={init:function(r){var s,t,u,v;l(function(){s=h.find(r,"._6mt");t=h.scry(r,"._6mu")[0];var w=j.getElementDimensions(s).y;if(h.scry(r,"._47au").length){u=p;}else u=o;v=Math.round(w/m);},function(){if(v>=u){g.hide(t);i.add(s,u*m);}else if(t){g.show(t);var w=u-v;i.add(t,w*n);}});}};e.exports=q;});
+__d("EntstreamSubstoryAttachmentListSeeMore",["CSS","DOM","Event","OGLitestandEllipsis","copyProperties","csx"],function(a,b,c,d,e,f,g,h,i,j,k,l){function m(n,o){this.seeMoreLink=n;this.moreContent=o;i.listen(this.seeMoreLink,'click',this.handleClick.bind(this));}k(m.prototype,{handleClick:function(event){g.hide(this.seeMoreLink);g.show(this.moreContent);var n=h.scry(this.moreContent,"._gxb");n.forEach(function(o){j.init(o);});}});e.exports=m;});
