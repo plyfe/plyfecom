@@ -1,0 +1,1291 @@
+/*
+ Theme Name: Burn
+ Description: TCCC Burn 2.0 Wordpress theme
+ Author: TCCC - EPAM
+ Version: 1.2.275
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+:focus {/* remember to define focus styles! */
+    outline: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+html, body {
+	width: 100%;
+}
+
+a img{border:0px;}
+
+/* micro clearfix */
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+
+em{
+    font-style:italic;
+}
+
+strong{
+	font-weight:bold;
+}
+
+#burn-modal-back{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: url('../burn.com_files/transgrey.png');
+    z-index: 10;
+    top:0px;
+    left:0px;
+    display:none;
+}
+
+#page {
+    padding:0px 40px 30px;
+    margin:0px auto;
+    position:relative;
+}
+
+#page, #header {
+	width:842px;
+}
+
+/* in-iframe for facebook environment */
+#page.in-iframe{
+    padding:0px 0px;
+}
+
+#page.in-iframe, #page.in-iframe #header {
+	width: 732px;
+}
+
+#page.in-iframe #sidebar,#page.in-iframe .sidebar{
+	right:0px;
+	width: 185px;
+}
+
+#page.in-iframe .tagcloud p {
+	max-width: 185px;
+}
+
+#header{
+	height: 24px;
+	padding: 30px 0px 37px;
+	position:fixed;
+	background-color: #fff;
+	z-index:7;
+}
+
+#header .above_main{
+	width: 484px;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	float: left;
+}
+
+#main {
+    position:relative;
+    left:0px;
+    top:91px;
+    width:484px;
+    font-size:1.1em;
+    z-index:6;
+}
+
+#sidebar,.sidebar {
+	position:absolute;
+	top:91px;
+	right:40px;
+    width:295px;
+}
+
+.logo-image {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    width: 89px;
+	height: 46px;
+	background: url('../burn.com_files/logo_burn_red.png') no-repeat;
+}
+
+.gap{
+	width: 63px;
+	float: left;
+	height: 24px;
+}
+
+.selectors{
+	position: relative;
+}
+
+/* Top navigation */
+.topnavigation{
+	position: absolute;
+	right: 0px;
+}
+.topnavigation .page_item{
+    float:left;
+    margin-left:10px;
+    list-style-type: none;
+}
+.topnavigation .page_item a{
+    text-decoration:none;
+    font-weight:bold;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    font-size:18px;
+    color:#000;
+}
+.topnavigation .current_page_item a{
+    color: #e3291d;
+}
+
+.widget_mslswidget .widget-title{
+    float:left;
+    font-weight:bold;
+    padding-left:0px;
+    color:#000;
+    font-size:0.9em;
+    text-transform:capitalize;
+}
+.lang-selector .lang-item a{
+    text-decoration: none;
+    color:#555555;
+}
+.lang-selector .lang-item .current_language{
+    color:#ff0000;
+}
+
+/* TAGCLOUD */
+.tagcloud-selected-tag, .tagcloud-selected-tag p {
+	color: #e42a20 !important;
+}
+
+.tagcloud a{
+	color: #57585A;
+	text-decoration:none;
+}
+
+.tagcloud p {
+	max-width: 295px;
+}
+
+.widget_tag_cloud .widget-title{
+    display:none;
+}
+
+/* post */
+.burn_articles{
+	background: url('../burn.com_files/grid_bg.png');
+	min-height: 548px;
+	width: 484px;
+}
+
+.burn-article{
+    float:left;
+    position:relative;
+    min-width:121px;
+    min-height:137px;
+    line-height:0px;
+}
+
+.burn-article a{
+	text-decoration: none;
+}
+
+.index-page .burn-article.relpos-6{
+    float:right;
+}
+
+.burn-article.size-large{
+    width:242px;
+    height:274px;
+}
+.burn-article.size-middle{
+    width:242px;
+    height:137px;
+}
+
+.navtype-label{
+    position:absolute;
+    right:5px;
+    top:5px;
+    background:#e12a20;
+    color:#fff;
+    font-weight:bold;
+    font-size:1.1em;
+    padding:1px 3px;
+    line-height:normal;
+    text-align: right;
+}
+
+.navtype-label.debug{
+	top: 25px;
+	font-size: 10px;
+	display: none;
+}
+
+.navtype-label.debug.show{
+	top: 35px;
+	display: block;
+}
+
+.box-copy{
+    display:none;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background:#fff;
+    color:#000;
+    text-transform: uppercase;
+    font-weight:bold;
+    line-height:normal;
+    width:100%;
+}
+.box-copy div{
+    overflow: hidden;
+    padding:5px;
+    padding-right:0px;
+    white-space: nowrap;
+}
+.post-hover{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:url('../burn.com_files/transred.png');
+    display:none;
+    cursor:pointer;
+}
+
+/* popup */
+.popup, .iframe {
+	background:#fff;
+	border: 10px solid #ffffff;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    display:none;
+    left:38px;
+    min-height:200px;
+    position: fixed;
+    top:81px;
+    width:484px;
+    z-index:100;
+}
+
+.closepopup{
+	background: url('') no-repeat top left;
+	cursor: pointer;
+	height: 21px;
+	line-height:500000px;
+	right:6px;
+	position: absolute;
+	top:6px;
+	width: 21px;
+	z-index: 1000;
+}
+
+.popup-transg{
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+.popup-container .content {
+	padding-top: 10px;
+}
+
+.popup-container .content h2{
+	color: #e53228;
+	font-size: 12px;
+	padding-top:15px;
+	font-weight: bold;
+	clear:both;
+}
+
+.popup-container .content h3{
+	color: #e53228;
+	font-size: 11px;
+	padding-bottom: 20px;
+	font-style: italic;
+}
+
+.topmediaholder{
+	width: 484px;
+	height: 275px;
+	background-color: #e2dede;
+}
+
+.topmedia.image{
+    max-width:100%;
+    max-height:100%;
+}
+
+.blurclass{
+	text-shadow: 1px 1px 8px #000000;
+	color: transparent;
+
+}
+
+.videoicon{
+    position:absolute;
+    height:100%;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    background:url('../burn.com_files/playshadowed.png') no-repeat;
+    background-position: 50% 50%;
+    cursor:pointer;
+}
+
+/*+OTHER*/
+.popup .providers, .empty_page .providers{
+	clear: both;
+	font-family:Arial, Helvetica, sans-serif;
+	height: 30px;
+}
+
+.empty_page .providers {
+	margin-bottom: 30px;
+}
+
+.empty_page article {
+	margin-right: 5px;
+}
+
+article .providers{
+	font-family:Arial, Helvetica, sans-serif;
+	height: 30px;
+	margin: 3px;
+	overflow: visible;
+	position: absolute;
+	width: 120px;
+	z-index: -1;
+}
+
+.used-provider {
+	float:left;
+	margin-right: 5px;
+}
+
+.fb_bar {
+	height: 24px;
+	overflow:hidden;
+	width: 47px;
+}
+
+.tw_feed {
+	height: 24px;
+	margin-top: 2px;
+	width: 58px;
+}
+
+.googleplusone {
+	margin-top: 2px;
+}
+
+.vk {
+	margin-top: 2px;
+	overflow:hidden;
+	width: 62px;
+}
+
+.stumbleupon {
+	height: 30px;
+	width: 30px;
+}
+
+.plusotherbutton, .popup-container .plusotherbutton{
+	color: #58595B;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 25px;
+	margin-right: 5px;
+	text-transform: uppercase;
+}
+
+.plusotherproviders {
+	display: none;
+	float: left;
+}
+
+/*social media little buttons from post*/
+
+.morebuttonsxx table tr td img{
+	display : block;
+}
+.morebuttonsxx table tr td  a div{
+	width:17px;
+	margin-top:3px;
+	overflow:hidden;
+}
+.morebuttonsxx{
+	text-indent:-400000em;
+	background-color: white;
+	position: absolute;
+	overflow: hidden;
+	top:304px;
+	left: 157px;
+	width: auto;
+	height: auto;
+	border: 2px solid #CECECE;
+	display:none;
+}
+.morebuttonsxx table{
+	width: 100%;
+}
+.morebuttonsxx tr td{
+	width:18px;
+	height: auto;
+	/*outline: 1px solid green;*/
+}
+.plusotherbutton:hover{
+	cursor: pointer;
+}
+
+/*   */
+.post-excerpt {
+	font-size:11px;
+}
+
+.post-tandc-link{text-align:center;padding-bottom:10px;}
+.post-tandc-link a{color:#E42A20}
+.post-tandc{
+	display:none;
+}
+#popup-tandc-content{
+	width:464px;
+	max-height:360px;
+	overflow:auto;
+	padding:10px;
+	background-color:#fff;
+}
+#popup-tandc-close{
+	background: url('') no-repeat right center #fff;
+	cursor: pointer;
+	height: 25px;
+}
+#burn-popup-tandc{
+	display:none;
+	width:484px;
+	position:absolute;
+	top:81px;
+	left:30px;
+	z-index:110;
+	border-width:10px;
+	border-style: solid;
+	border-color:rgba(255,255,255,0.7);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	font-size:1.2em;
+}
+
+.readmorebtn {
+	display: block;
+	cursor: pointer;
+	font-weight:bold;
+	font-size:11px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.readmorebtn + p {
+	display: none;
+	font-size:11px;
+	font-weight:normal;
+	line-height: 16px;
+	margin-bottom: 10px;
+	overflow:auto;
+	text-align:left;
+}
+
+/* BURN SELECTOR */
+.burn_selector{
+	float: left;
+	text-align: right;
+	height: 24px;
+	width: auto;
+	padding: 0px 4px 0px 6px;
+	line-height: 24px;
+	background-color: #e40521;
+	cursor: pointer;
+	position: relative;
+	margin: 0px 32px 0px 0px;
+}
+
+.burn_selector .title{
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-stretch: condensed;
+	text-transform: uppercase;
+	color: white;
+}
+
+.burn_selector .title:after{
+	content: '\0020\25BC';
+}
+
+.burn_selector:hover .options{
+	visibility: visible;
+}
+
+.burn_selector .options{
+	text-align: left;
+    right: 0px;
+    position: absolute;
+    top: 24px;
+    z-index: 40;
+    background: #000;
+    visibility: hidden;
+    padding: 5px;
+}
+
+.burn_selector .option{
+	font-size: 12px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	line-height: 16px;
+	color: #888;
+}
+
+.burn_selector .option.selected{
+	color: #FFF;
+}
+
+.burn_selector .option.unfiltered{
+	color: #FFF !important;
+}
+
+.burn_selector .option:hover{
+	color: #E42A20;
+}
+
+.burn_selector .option.active{
+	color: #E42A20 !important;
+}
+
+.burn_selector.location{
+	float: left;
+	margin: 0px;
+}
+
+.burn_selector.language{
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.burn_selector.location .option a{
+	color: #888;
+	text-decoration: none;
+}
+
+.burn_selector.language .option a{
+	color: #888;
+	text-decoration: none;
+}
+
+.burn_selector.location .option.selected a{
+	color: #FFF;
+}
+
+.burn_selector.language .option.selected a{
+	color: #FFF;
+}
+
+.location_wrapper{
+	margin-bottom: 20px;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+/* PERMALINK */
+#permalink_bar {
+	cursor: pointer;
+	position: fixed;
+	top: 0px;
+	right: 20px;
+	font-weight: bold;
+	z-index: 100;
+	background: #FFF;
+}
+
+#permalink_bar td{
+	height: 20px;
+	vertical-align: bottom;
+}
+
+/* FEED WIDGET */
+.burn_feeds_widget {
+	margin-bottom: 30px;
+}
+
+.burn_feeds_widget .burn_feeds_menu {
+	height: 21px;
+	margin-bottom:9px;
+}
+
+.burn_feeds_widget .burn_feeds_menu ul{
+	cursor: pointer;
+	list-style-type:none;
+}
+
+.burn_feeds_widget .burn_feeds_menu ul li{
+	background: url('../burn.com_files/feeds-menu.png') no-repeat;
+	display:block;
+	float:left;
+	height: 21px;
+	width:26px;
+	margin-right: 11px;
+}
+
+.burn_feeds_widget .twitter_icon  { background-position: -26px 0 !important; }
+.burn_feeds_widget .facebook_icon { background-position: 0 0 !important; }
+.burn_feeds_widget .flickr_icon   { background-position: -52px 0 !important; }
+.burn_feeds_widget .youtube_icon  { background-position: -104px 0 !important; }
+.burn_feeds_widget .vimeo_icon    { background-position: -78px 0 !important; }
+
+.burn_feeds_widget .twitter_icon.selected, .burn_feeds_widget .twitter_icon:hover  	{ background-position: -26px -21px  !important; }
+.burn_feeds_widget .facebook_icon.selected, .burn_feeds_widget .facebook_icon:hover { background-position: 0 -21px  !important; }
+.burn_feeds_widget .flickr_icon.selected, .burn_feeds_widget .flickr_icon:hover  	{ background-position: -52px -21px  !important; }
+.burn_feeds_widget .youtube_icon.selected, .burn_feeds_widget .youtube_icon:hover  	{ background-position: -104px -21px  !important; }
+.burn_feeds_widget .vimeo_icon.selected, .burn_feeds_widget .vimeo_icon:hover    	{ background-position: -78px -21px  !important; }
+
+#blackburnlogo{
+	float:left;
+	width:40px;
+	height:40px;
+	background: url('../burn.com_files/blackburnlogo.jpg') no-repeat top left;
+}
+
+#feedinfotext{
+	overflow: hidden;
+	padding-left:13px;
+	clear:right;
+}
+
+#feedinfotext p{
+	font-weight:bold;
+	font-size:11px;
+	font-family:Arial,_sans;
+}
+#feedinfotext p+p{
+	color: #e42a20;
+	font-weight:bold;
+	font-size:15px;
+	font-family:Arial,_sans;
+}
+
+#burn_feeds_content{
+	clear:both;
+	min-height:200px;
+	max-height:400px;
+	padding-top: 30px;
+	font-weight:bold;
+	font-size:11px;
+	font-family:Arial,_sans;
+}
+
+#burn_feeds_content .feed-block {
+	display: inline-block;
+    position: relative;
+}
+
+#burn_feeds_content .feed-tile {
+	float:left;
+	height:84px;
+	margin-bottom: 3px;
+	width:91px;
+}
+
+.feeds{
+	clear:right;
+	line-height:1.4em;
+	margin-top:26px;
+}
+
+.feeds:first-child{
+	margin-top: 0px;
+}
+.feeds ul li a{
+	color: #e42a20;
+	text-decoration:none;
+}
+
+.feeds ul li {
+	color: #e42a20;
+	float:left;
+	font-size:10px;
+	list-style-type:disc;
+	list-style-position:inside;
+	margin-left:-2px;
+	margin-right:4px;
+	padding:0;
+}
+
+/*feed date*/
+.feeds ul li:first-child{
+	color: #58595b;
+	list-style-type:none;
+	margin-left:0;
+}
+/* feed url */
+.feeds  a{
+	color: #e42a20;
+	text-decoration:none;
+}
+
+.feeds ul li:last-child{
+	clear:right;
+	float:left;
+	margin-right:0;
+}
+
+.rela{
+	position:realtive;
+}
+
+/* CAROUSEL */
+.burn_carousel{
+	height: 274px;
+	width: 434px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	margin-bottom: 20px;
+	z-index:30;
+}
+
+.burn_carousel .image .caption{
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 10px;
+	background: #FFF;
+	display:none;
+}
+
+.burn_carousel .image{
+    height: 208px;
+    width: 381px;
+	overflow: hidden;
+    position: absolute;
+    top:35px;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+    display:none;
+    background-color:#fff;
+}
+
+.burn_carousel .image.infront{
+    z-index:100;
+    opacity:1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.burn_carousel .image.inmiddle{
+    z-index:99;
+}
+
+.burn_carousel .image.actual{
+    height: 277px;
+    width: 434px;
+    top: 0px;
+    left: 0px;
+    opacity:1;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+	display:block;
+}
+
+.burn_carousel .image.shadowed{
+    box-shadow: 2px 2px 4px #010101;
+    -webkit-box-shadow: 2px 2px 4px #010101;
+    -moz-box-shadow: 2px 2px 4px #010101;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#010101')";
+}
+
+.burn_carousel .image img{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.burn_carousel .image.actual img{
+	height: 237px;
+}
+
+.burn_carousel .image.hidden{
+    width:1px;
+    opacity:0.1;
+    filter:alpha(opacity=10); /* For IE8 and earlier */
+}
+
+.burn_carousel .image.right{
+	right: -24px;
+	display:block;
+}
+
+.burn_carousel .image.left{
+	left: -24px;
+	display:block;
+}
+
+.burn_carousel .button{
+	height: 277px;
+	width: 30px;
+	position: absolute;
+	z-index:150;
+	display:none;
+}
+
+.burn_carousel .button.left{
+	left: -20px;
+	top: 0px;
+	background: url('images/carousel_left.png') no-repeat center center;
+}
+
+.burn_carousel .button.right{
+	right: -20px;
+	top: 0px;
+	background: url('images/carousel_right.png') no-repeat center center;
+}
+
+.burn_carousel .button:hover{
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+.burn_top_content{
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+.burn_filter{
+	height: 35px;
+	width: 484px;
+}
+
+/* EMPTY PAGE */
+.empty_page {
+	border: 6px solid #DBDBDB;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #383839;
+	display:table;
+	height: 410px;
+	text-align: center;
+	vertical-align:middle;
+	width: 484px;
+}
+
+.wrapper {
+	display:table-cell;
+	position:relative;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.empty_content {
+	margin-bottom: 5px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	width: 380px;
+}
+
+.empty_content > h1 {
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	font-weight:bold;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-stretch: condensed;
+}
+
+/* iframe */
+.iframe {
+	width:720px;
+}
+
+.closeiframe{
+	background: url('') no-repeat top left;
+	cursor: pointer;
+	float: right;
+	height: 21px;
+	width: 21px;
+}
+/* iframe */
+
+/*search box*/
+.searchbox{
+	border:1px solid #e40521;
+	padding:1px;
+	background-color:#dddddd;
+	height:18px;
+	margin-bottom:17px;
+}
+
+.searchbox .burn_search{
+	border:none;
+	background-color:#dddddd;
+	color:#e40521;
+	font-size:1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px;
+	padding-left:3px;
+	line-height:18px;
+	height:18px;
+	width: 98%;
+}
+
+.searchbox .searchbutton{
+	cursor: pointer;
+	position:absolute;
+	right: 2px;
+	top: 2px;
+	border:none;
+	background:url('../burn.com_files/search.png') center center no-repeat #e40521;
+	text-indent:-1000px;
+	line-height:18px;
+	height:18px;
+	width:22px;
+}
+
+.editposticon{
+	display: none;
+	position:absolute;
+	right:3px;
+	top:25px;
+	height:20px;
+	width:20px;
+	z-index: 2;
+}
+
+/* LOGIN */
+.dialog_window {
+	border: 0px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.dialog_container {
+	border-width: 10px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 0px;
+	margin: 0px;
+	position: fixed;
+	background: none;
+}
+
+.dialog_container .red{	color: #e42a20; }
+.dialog_container .bold{ font-weight: bold; font-size: 12px;}
+.dialog_container .center{ text-align: center; }
+.dialog_container input.red1 {
+	background-color: #e42a20;
+	border: 0;
+	color: white;
+	font-size: 12px;
+	font-style: italic;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 7px;
+	padding-left: 5px;
+	vertical-align: baseline;
+	width: 200px;
+}
+
+.dialog_container .placeholder {
+	color: #f39d98 !important;
+	font: italic 12px Arial, Helvetica, sans-serif;
+	left: 5px;
+	overflow-x: hidden;
+	position: absolute;
+	top: -1px;
+}
+
+.dialog_container .combo {
+	height: 25px;
+	line-height: 16px;
+	top: 4px !important;
+}
+
+.ui-widget-overlay {background: url('../burn.com_files/transgrey.png')!important;opacity:1!important;}
+
+.dialog_content {
+	background: #FFF;
+	font-family: Arial, sans-serif, Verdana;
+	padding: 10px 15px;
+}
+
+.dialog_content h1{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 35px;
+	text-align: center;
+	width: 100%;
+}
+
+.dialog_content p{
+	color: #000;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 16px;
+}
+
+.dialog_content .col_left{
+	float:left;
+	width: 205px;
+}
+
+.dialog_content .col_right{
+	float: right;
+	width: 205px;
+}
+
+.dialog_content hr {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.dialog_content .submit_check{
+	border: 0;
+	cursor: pointer;
+	float: right;
+	height: 21px;
+	width: 21px;
+}
+
+.form_container a {
+	color: #e42a20;
+	font-weight: bold;
+}
+
+#captcha_image {
+	margin: 15px 0;
+}
+
+.popup_error{
+	border: 3px solid #E42A20;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
+.ui-dialog-titlebar { display:none; }
+
+.footer{
+	background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    color: white;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 2000;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer .footer_element{
+	display: inline;
+	border-right: 2px solid white;
+	margin-right: 10px;
+	padding-right: 10px;
+	margin-left: 10px;
+}
+
+.footer .footer_element.last{
+	border: none;
+}
+
+.footer .footer_element a{
+	color: #E42A20;
+}
+
+.burn-combobox{
+	height: 25px;
+	width: auto;
+	line-height: 25px;
+	background-color: #e42a20;
+	cursor: pointer;
+	position: relative;
+	padding-left: 5px;
+}
+
+.burn-combobox .burn-combobox-label{
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Arial Narrow", Arial, sans-serif;
+	font-stretch: condensed;
+	text-transform: uppercase;
+	color: white;
+	white-space:nowrap;
+	overflow: hidden;
+	display: block;
+	width: auto;
+}
+
+.burn-combobox .burn-combobox-arrow{
+	position: absolute;
+	top: 0px;
+	right: 6px;
+	color: #FFF;
+}
+
+.burn-combobox .burn-combobox-arrow:after{
+	content: '\0020\25BC';
+}
+
+.burn-combobox:hover .options{
+	display: block;
+}
+
+.burn-combobox .options{
+	background: #000;
+	display: none;
+	height: auto !important;
+	left: 0px;
+	max-height: 200px !important;
+	text-align: left;
+	overflow-y: scroll;
+	position: absolute;
+    top: 25px;
+    width: 205px;
+    z-index: 2040;
+}
+
+.burn-combobox .option{
+	color: #FFF;
+	font-size: 12px;
+	line-height: 16px;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.burn-combobox .option:hover{
+	color: #E42A20;
+}
+
+.dob{
+	float: left;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.dob .options{
+	width: 60px;
+}
+
+.year{
+	width: 65px;
+	margin-right: 0px;
+}
+
+.year .options{
+	width: 65px;
+}
+
+.burn-checkbox{
+	cursor: pointer;
+	float:left;
+	width: 16px;
+	height: 16px;
+}
+
+.burn-checkbox-image{
+	height: 16px;
+	width: 16px;
+}
+
+.burn-checkbox-image.checked{
+	background-position: 0 -16px;
+}
+
+.cb_image{
+	/*float: left;
+	margin-top: 20px;*/
+}
+
+.t_right{
+	text-align: right;
+}
+
+.burn_button{
+	background-color: #e42a20;
+	border: 0;
+	color: white;
+	font-size: 12px;
+	font-style: italic;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.dialog_container{position:absolute;}
+
+.error {
+	display: block;
+}
+
+/*promo*/
+.post-promo{padding-bottom:10px;line-height:1.4em;}
+.post-promo.message{background-color:#e42a20;color:#fff;font-size:14px;font-weight:bold;padding:5px;border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;text-align:center;}
+.post-promo.message a{color:#fff;}
+.burn-promo-explain{display:none;text-align: left;font-size:11px;}
+.promo-loginbutton{float:right;padding-top:5px;}
+.promo-loginbutton a,.burn-promo-button a{
+	padding:10px 30px;background:#000;text-decoration:none;
+	border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;
+	line-height:29px;color:#fff;font-size:14px;font-weight:bold;
+}
+.burn-promo-button{text-align: left;}
+.burn-promo-success,.burn-promo-error{
+	display:none;background-color:#e42a20;color:#fff;font-size:14px;font-weight:bold;padding:0px;line-height:38px;height:38px;
+	border-radius: 3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;text-align:center;margin:10px 0px;position:relative;}
+.burn-promo-message-close{position:absolute;right:2px;top:2px;height:10px;width:10px;color:#fff;cursor:pointer;line-height:10px;}
+.ajaxload{background:url(images/ajax-loader.gif) no-repeat center center;min-height:20px;min-width:50px;}
+.promo-height{height:44px;}
+#promocontainer.justdone .burn-promo-button,#promocontainer.justdone .burn-promo-checkbox{display:none;}
+.burn-promo-checkbox{text-align:right;vertical-align:middle;}
+.burn-promo-checkbox>div{float:right;}
