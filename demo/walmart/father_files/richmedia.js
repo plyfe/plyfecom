@@ -1,1 +1,0 @@
-WALMART.richmedia=new (function(){var A;this.queue=function(B){if(typeof B=="function"){if(typeof A=="undefined"){A=new Array();}A.push(B);}};this.load=function(){if(typeof A!="undefined"){for(var B=0;B<A.length;B++){A[B]();}}};})();

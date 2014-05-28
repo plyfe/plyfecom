@@ -1,1 +1,0 @@
-(function(A,B){A.widget("ui.richmediapov",A.ui.mouse,{options:{},_create:function(){this._mouseInit();},_init:function(){},destroy:function(){if(this.element.data("richmediapov")){this.element.removeData("richmediapov");this._mouseDestroy();}return this;}});})(WALMART.jQuery);
