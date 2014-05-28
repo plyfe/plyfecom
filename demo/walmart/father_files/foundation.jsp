@@ -8862,13 +8862,13 @@ var BrowserPreference = new function () {
         var H = {
             name: "prefses",
             path: "/",
-            domain: ".walmart.com"
+            domain: ".plyfe.com"
         };
         var I = {
             name: "prefper",
             expireDays: 3650,
             path: "/",
-            domain: ".walmart.com"
+            domain: ".plyfe.com"
         };
         var C = [H, I];
         var A = new function () {
@@ -9113,19 +9113,19 @@ function getCustomerInfo(cookieName, path, domain, delimiter) {
 }
 function getCustomerId() {
     var D = ".";
-    var C = getCustomerInfo("com.wm.customer", "/", ".walmart.com", "~~");
+    var C = getCustomerInfo("com.wm.customer", "/", ".plyfe.com", "~~");
     var B = C !== null ? C[0] : null;
     var A = B !== null ? B.substring((B.indexOf(D) + 2)) : null;
     return A;
 }
-var re = new RegExp(".*walmart.com$", "i");
+var re = new RegExp(".*plyfe.com$", "i");
 
 function getCustFirstName() {
     getCustFirstNameFromCurrentSite();
 }
 function getCustFirstNameFromCurrentSite() {
     if (document.location.hostname.match(re)) {
-        var A = getCustomerInfo("com.wm.customer", "/", ".walmart.com", "~~");
+        var A = getCustomerInfo("com.wm.customer", "/", ".plyfe.com", "~~");
         if (A && null != A && 4 < A.length && null != A[4] && "true" == A[4]) {
             var B = A[1];
             var C = /\+/g;
@@ -9242,7 +9242,7 @@ function showCOPPAMsgPopup() {
     return;
 }
 function setCOPPACookie() {
-    document.cookie = "coppa_timeout=" + escape(today.getTime() + 300000) + "; path=/; domain=walmart.com;";
+    document.cookie = "coppa_timeout=" + escape(today.getTime() + 300000) + "; path=/; domain=plyfe.com;";
 }
 if (typeof deconcept == "undefined") {
     var deconcept = new Object();
