@@ -1,0 +1,75 @@
+	body {
+		line-height: 1; color: black; background: #CCCCCC url(http://i.cdn.turner.com/si/.element/img/4.1/global/background_tile.gif) repeat-x scroll left top;
+		font: 12px verdana, arial, helvetica, sans-serif; 
+	}
+
+ /* wrapper -------------------------------------------------------------------*/
+
+	#wrapper { margin-right: auto; margin-left: auto; }
+	#wrapper, #footer { background: #41535F; width: 1000px; }
+
+/* header -------------------------------------------------------------------*/
+
+	#header { 
+		position: relative; height: 134px;
+		background: transparent url(http://i.cdn.turner.com/si/blogs/nhlrl/redlight.jpg) no-repeat;
+		color: #FFFFFF;
+		font-weight: bold; text-transform: uppercase;
+	}
+	#header a {  }
+	
+	#header .main { 
+		position: absolute; display: block; width: 740px; height: 100px; top: 0px; left: 0px; z-index: 999; background: transparent;
+	}
+	#header .si { 
+		position: absolute; display: block; width: 210px; height: 100px; top: 0px; right: 0px; z-index: 999; background: transparent;
+	}
+	#header .si_link { top: 55px; }
+		
+/* navigation -------------------------------------------------------------------*/
+
+	#navbar {
+		position: absolute;
+		left: 0px; top: 100px;
+		height: 34px; width: 1000px;
+		background: transparent url(http://i.cdn.turner.com/si/blogs/nbapf/subnav_back.jpg) repeat-x;
+		color: #FFF;
+	}
+	#nav-sub { display: none; }
+	ul#nav { margin: 0px; padding: 0px; list-style: none;			 }
+	ul#nav a {
+		text-decoration: none; color: #FFF; font-size: 11px;
+		float: left; padding: 10px 14px 12px 14px;
+		background: url(http://i.cdn.turner.com/si/blogs/nbapf/subnav_seperator.jpg) no-repeat 0px 6px;
+		height: 13px; 
+	}
+	ul#nav a.first { background: none; }
+	ul#nav a.rss { float: right; padding:10px 15px 12px 15px; }
+	ul#nav a:hover { 
+		background: url(http://i.cdn.turner.com/si/blogs/nbapf/subnav_highlight.jpg) repeat-x;
+		color: #FFFFFF; 
+	}
+	ul#nav a.hiddenNav {
+		width:140px;
+		height:34px;
+		margin: 0px;
+		padding: 0px;
+		background: url(http://i.cdn.turner.com/si/.element/img/4.1/sect/MAIN/moresi_tab_blogs.png) no-repeat;
+	} 
+	#rss { position: absolute; top: 108px; height: 20px; right: 15px; width: 280px; text-align: right; }
+	#rss li {
+		background: url(http://i.cdn.turner.com/si/.element/img/4.1/sect/olympics/2010/blog/rss_logo.png) no-repeat left center; padding-left: 20px; list-style: none; 
+	}
+	#rss a:hover { color: #FFFFFF; }
+	ul#nav li ul { position:absolute; top:35px; left:0; width:100%; list-style:none; z-index: 9999; display: none;  }
+	ul#nav li ul li { padding-right: 10px; padding-left: 10px; }
+	ul#nav li ul li a{ font: 10px Helvetica, Arial, sans-serif; color: #FFFFFF; letter-spacing: .1em; }
+	ul#nav li ul li a:hover{ text-decoration: underline; }
+	ul#nav li.hover ul, ul#nav li:hover ul { display:block; }
+	#banner { margin: 0 auto; text-align: center; margin-top: 6px }
+
+	.navigation { text-align: center; }
+
+	div.globalNav {
+		z-index: 999;
+	}
