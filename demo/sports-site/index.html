@@ -7,102 +7,101 @@
 		<title>Sports Site</title>
 		<meta name="description" content="Sports news"/>
 		<meta name="keywords" content="Sports news"/>
-		<link rel="canonical" href="http://sportsillustrated.cnn.com/" />
 		<link rel="icon" href="sport_files/favicon.gif" type="image/gif" sizes="16x16">
 		<meta name="sailthru.tags" content="homepage" />
 		<meta http-equiv="x-ua-compatible" content="IE=8">
 		<meta http-equiv="refresh" content="900"/>
 		<link type="text/css" rel="stylesheet" href="sport_files/_lib-homepage-min.css"/>
 
-		<script type="text/javascript" language="JavaScript" src="sport_files/homepage-min.js"></script>
-		<!-- TODO: re-add to pkg - temporarily removing from pkg - reference working version -->
-		<script language="JavaScript" type="text/javascript" src="sport_files/video-bc.js"></script>
-		<script language="JavaScript" type="text/javascript" src="sport_files/BrightcoveExperiences.js"></script>
-
-		<script type="text/javascript" language="JavaScript">var tii_isTestServer = false;if( location.hostname == "preview2.sportsillustrated.turner.com" || location.hostname == "preview.ref.sportsillustrated.turner.com" || location.hostname == "sipreview.turner.com" ) tii_isTestServer = true;if( tii_isTestServer ) document.write( '<scr'+'ipt type="text/javascript" language="JavaScript" src="http://test-tiads.sportsillustrated.cnn.com/ads/tgx.js"></scr'+'ipt>' ); else document.write( '<scr'+'ipt type="text/javascript" language="JavaScript" src="http://tiads.sportsillustrated.cnn.com/ads/tgx.js"></scr'+'ipt>' );</script>
-		<script type="text/javascript"> var adConfig=new TiiAdConfig('3475.si2'); adConfig.setCmSitename('cm.si2'); adConfig.setRevSciTracking(true); var adFactory = new TiiAdFactory(adConfig, "home"); adFactory.setParam( 'ptype', 'main' ); </script>
-
-
-		<script type="text/javascript" src="sport_files/siBar.min.js" async></script>
-
 		<link rel="stylesheet" type="text/css" href="sport_files/siBar.min.css">
-		<link rel="stylesheet" type="text/css" href="sport_files/embedded-fonts.css" />
 		<link type="text/css" rel="stylesheet" href="sport_files/refresh2013.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
-
-
-		<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
-
-		<link rel="alternate" type="application/rss+xml" title="SI - Top Stories [RSS]" href="http://rss.cnn.com/rss/si_topstories.rss" />
-		<link rel="alternate" type="application/rss+xml" title="SI - Recent Stories [RSS]" href="http://rss.cnn.com/rss/si_latest.rss" />
-
-		<meta name="last-published" content="2014-06-02T16:35:07Z">
-			<link type="text/css" rel="stylesheet" href="sport_files/homepage_scoreboard.css"/>
-			<script type="text/javascript" language="JavaScript" src="sport_files/jquery.jsonp-2.1.4.min.js"></script>
-			<script type="text/javascript" src="sport_files/Scoreboard.js"></script>
-
-		<script>
-			var cnnPageInfo_section = "MAIN";
-			var cnnPageInfo_pageType = "section";
-			var cnnPageInfo_branding = "";
-			cnnBrowserFixes();
-		</script>
-
-		<!-- bolthouse trailing slash ads fix : 10/29/13 mh did this-->
-		<script type="text/javascript">
-		var bolthouse_array = [
-				"/more/news/20131029/Roc-Nation-Sports",
-				"/mma/news/20131029/Erik-Perez-MMA",
-				"/college-football/news/20131029/Jordan-Wynn",
-			];
-			var bhPathIndex = $.inArray( location.pathname, bolthouse_array);
-			if(	bhPathIndex > -1 ){
-				location.href = bolthouse_array[ bhPathIndex ] + '/';
-			}
-			</script>
-		<!-- END: bolthouse trailing slash ads fix -->
-		<!-- template hack for ad tags -->
-		<script type="text/javascript">if( ( window.location.pathname ).indexOf( '/more/news/20130514/fortunate-50-' ) === 0 ) { adFactory.setZone( "moresports/fortunate50" ); }</script>
-		<style>
-		DIV#sitiSportsman .cnnLive { display:none; }
-		DIV#sitiSportsman .cnnBoxWriters DD { height:30px;padding-top:1px; }
-		</style>
-		<!-- Visual Revenue Reader Response Tracking Script (v6) -->
-		<script type="text/javascript">
-			var automate_vrq = false;
-			try{
-				automate_vrq = cnnPage.isHomepage;
-			}catch(e){}
-
-			var _vrq = _vrq || [];
-			_vrq.push(['id', 188]);
-			_vrq.push(['automate', automate_vrq ]);	//automate should be set to true if this is the homepage
-			_vrq.push(['track', function(){}]);
-			(function(d, a){
-				var s = d.createElement(a),
-				x = d.getElementsByTagName(a)[0];
-				s.async = true;
-				s.src = 'http://a.visualrevenue.com/vrs.js';
-				x.parentNode.insertBefore(s, x);
-			})(document, 'script');
-		</script>
-		<!-- End of VR RR Tracking Script - All rights reserved -->
-
-		<!-- Visual Revenue Logic for Homepage - SI-5749 -->
-
-
 
 	</head>
-
-
-
-
 
 <body id="si-homepage">
 		<!--[if IE 6]><div class="ie"><div class="ie6"><![endif]-->
 		<!--[if IE 7]><div class="ie"><div class="ie7"><![endif]-->
 		<!--[if IE 8]><div class="ie"><div class="ie8"><![endif]-->
+<div id="siBar-wrapper" class="v3">
+	<!--[if lte IE 8]>
+<div class="ie8">
+<![endif]-->
+  <ul class="inner">
+    <li id="siBar-sicom" class="nav-item sicom">
+      <div class="sport-site">
+      </div>
+    </li>
+    <li id="siBar-social-facebook" class="nav-item facebook">
+      <div class="icon">
+        <a target="_blank">
+        </a>
+      </div>
+    </li>
+    <li id="siBar-social-twitter" class="nav-item twitter">
+      <div class="icon">
+        <a target="_blank">
+        </a>
+      </div>
+    </li>
+    <li id="siBar-top-stories" class="nav-item">
+      <a target="_self">
+        <span>
+          Top Stories
+        </span>
+      </a>
+    </li>
+    <li id="siBar-blogs" class="nav-item">
+      <a target="_self">
+        <span>
+          Blogs
+        </span>
+      </a>
+    </li>
+    <li id="siBar-extramustard" class="nav-item">
+      <a target="_self">
+        <span>
+          Extra Mustard
+        </span>
+      </a>
+      <div id="siBar-extramustard-drop" class="story-drop dropdown">
+        <div class="lip">
+        </div>
+      </div>
+    </li>
+    <li id="siBar-edge" class="nav-item">
+      <a target="_blank">
+        <span>
+          Edge
+        </span>
+      </a>
+    </li>
+    <li id="siBar-swim" class="nav-item">
+      <a target="_self">
+        <span>
+          Swimsuit
+        </span>
+      </a>
+    </li>
+    <li id="siBar-more" class="nav-item more">
+      <span>
+        Partners
+      </span>
 
+    </li>
+    <li id="siBar-newsletter" class="nav-item newsletter">
+      <span>
+        Newsletter
+      </span>
+    </li>
+    <li id="siBar-magazine" class="nav-item magazine">
+      <a target="_blank">
+        <span>
+          Magazine
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 
 <div class="cnnPage">
