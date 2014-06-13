@@ -1,0 +1,485 @@
+body {
+	/*background: #17618f url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/background-repeat.jpg') repeat-x!important;*/
+	min-width: 1064px; /* added to fix centering issue on ipad: SI-7177 */
+}
+
+DIV.cnnPage { /* repeating for stats pages */
+	margin: 0 auto;
+	width: 1000px;
+	background: transparent;
+}
+
+DIV#cnnScoreboardRow, DIV.cnnViewerAd, DIV.cnnAboveFoldAboveAd, DIV.cnnAboveFold, DIV.cnnBelowFold, DIV.cnnAboveFoldBelowAd, .cnnTwitterWatch, .cnnFooterBox, .cnnFooterBoxTC, DIV.cnnSearchFooter, #cnnSponsoredPods, .cnnBannerFooter, DIV.content,
+DIV.cnnAboveFoldAboveAd, DIV#cnnViewerAd, DIV.cnnAboveFold, DIV.cnnAboveFoldBelowAd, DIV.cnnBelowFold, #cnnSponsoredPods, DIV.cnnBelowContent, #cnnFooter, DIV.cnnSearchFooter, .cnnMySITeamBox {
+	background-color: #0b334f;
+}
+.cnnViewerAd { /*stats page fixes*/
+	background-color: #0b334f;
+	background-image: none;
+}
+DIV.cnnViewerAd {
+	padding: 0 0 11px!important;
+}
+.cnnStatsContentTable, DIV.cnnContent DIV.cnnSearchFooter {
+	background-color: #fff;
+}
+DIV.cnnAboveFoldAboveAd {
+	padding: 0 11px;
+}
+DIV.cnnAboveFoldAbove, DIV.cnnAboveFold {
+	padding: 11px 11px 0 11px;
+}
+DIV.cnnInlineAd { margin: 0; }
+DIV#cnnViewerAd {
+	border: none;
+}
+DIV.cnnBox DIV.cnnTitle { height: 28px; position: relative; }
+DIV.cnnBox DIV.cnnTitle { background: transparent url('header_tab.png') no-repeat top left!important; }
+#si-homepage DIV.cnnBox DIV.cnnTitle { background: transparent url('homepage_tab.png') no-repeat top left!important; }
+#si-homepage DIV.cnnBox DIV.cnnTitle DIV {
+	float: none;
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	margin-top: 0;
+}
+#si-homepage .ie7 DIV.cnnBox DIV.cnnTitle DIV { bottom: -4px; }
+#si-homepage .ie8 DIV.cnnBox DIV.cnnTitle DIV, #si-homepage .ie9 DIV.cnnBox DIV.cnnTitle DIV { bottom: -1px; }
+
+/*------------ fonts -----------*/
+@font-face {
+	font-family: 'proxima-nova';
+	font-weight : normal;
+	font-style : normal;
+	src: url('proxima-nova/ProximaNova-regular.otf') format('otf'),
+}
+
+/* bold */
+@font-face {
+	font-family: 'proxima-nova';
+	font-weight : bold;
+	font-style : normal;
+	src: url('proxima-nova/ProximaNova-bold.otf') format('otf'),
+}
+
+
+#sitiHeader {
+	background: transparent url('site-header-bg.png') no-repeat;
+	height: 116px;
+	width: 1000px;
+	margin-top: 24px;
+	position: relative;
+	text-align: left;
+	z-index: 1000;
+}
+	#sitiHeader .left-section {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+		#sitiHeader .left-section .si-logo {
+			background:  url('SI-logo.png') no-repeat;
+			display: block;
+			width: 129px;
+			height: 93px;
+			margin: 26px 0 0 15px;
+		}
+	#sitiHeader .siti-search-bar {
+		position: absolute;
+		left: 178px;
+		top: 13px;
+	}
+	#sitiHeader .siti-search-bar input {
+		vertical-align: middle;
+	}
+	#sitiHeader .siti-search-bar .search-field {
+		background-color: #d1d3d4;
+		width: 120px;
+		padding: 0 5px;
+		margin-right: 3px;
+		color: #666;
+		border: 1px solid #80878d;
+	}
+	#sitiHeader .siti-cm-row {
+		position: absolute;
+		right: 152px;
+		top: 10px;
+		width: 510px;
+		height: 40px;
+		text-align: right;
+		font: normal 14px/22px 'Lato', Helvetica, sans-serif;
+	}
+		#sitiHeader .siti-cm-row a {
+			position: relative;
+			font-weight: normal;
+			color: #ffcc00;
+			line-height: 14px;
+			vertical-align: middle;
+		}
+			#sitiHeader .siti-cm-row a img {
+				position: absolute;
+				left: -28px;
+				top: -22px;
+				z-index: 5;
+				display: none;
+			}
+			#sitiHeader .siti-cm-row a:hover img {
+				display: block;
+			}
+		#sitiHeader .siti-cm-row span {
+			background: url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/cm-row-div.png') no-repeat center top;
+			display: inline-block;
+			/*width: 21px;
+			*/width: 12px;
+			height: 15px;
+			vertical-align: middle;
+		}
+	#sitiHeader .siti-magazine-cover {
+		position: absolute;
+		right: 0;
+		top: 5px;
+		width: 147px;
+		height: 145px;
+		overflow: hidden;
+	}
+		#sitiHeader .siti-magazine-cover img {
+			width: 125px;
+			margin: 12px 0 0 8px;
+		}
+		#sitiHeader .siti-magazine-cover span {
+			background: url('') no-repeat;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 147px;
+			height: 145px;
+		}
+	#sitiHeader .siti-banner {
+		background: url('') repeat-x;
+		position: absolute;
+		left: 178px;
+		top: 5px;
+		width: 824px;
+		height: 105px;
+		overflow: hidden;
+	}
+		#sitiHeader .siti-banner ul {
+			padding: 10px 0 0 8px;
+			z-index: 2;
+			position: relative;
+		}
+			#sitiHeader .siti-banner ul li {
+				float: left;
+				border-left: 1px solid #496071;
+				padding: 0 5px;
+			}
+			#sitiHeader .siti-banner ul li:first-child, #sitiHeader .siti-banner ul.section-subnav li {
+				border: none;
+			}
+			#sitiHeader .siti-banner ul li a {
+				font: normal 14px/14px 'Lato', Helvetica, sans-serif;
+				color: #fff;
+			}
+			#sitiHeader .siti-banner ul.ncaab li a, #sitiHeader .siti-banner ul.mlb li a, #sitiHeader .siti-banner ul.tennis li a, #sitiHeader .siti-banner ul.more li a { font-size: 12px; }
+			#sitiHeader .siti-banner ul.nba li a {font-size: 11px;}
+			#sitiHeader .siti-banner ul.mlb li { padding: 0 4px; }
+			#sitiHeader .siti-banner ul li a:hover, #sitiHeader .siti-banner ul li:hover a {
+				color: #9cacb9;
+			}
+			#sitiHeader .siti-banner ul li ul.section-subnav {
+				position: absolute;
+				left: 0;
+				top: 24px;
+				padding: 2px 0 0 8px;
+				margin-bottom: -10px;
+				display: none;
+			}
+			#sitiHeader .siti-banner ul li:hover ul.section-subnav { display: block; }
+				#sitiHeader .siti-banner ul.section-subnav li a {
+					color: #9cacb9;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+				#sitiHeader .siti-banner ul.section-subnav li a:hover {
+					color: #fff;
+				}
+		#sitiHeader .siti-banner .section-name {
+			position: relative;
+			margin: 12px 0 0 10px;
+			font: bold 60px/60px 'Lato', Helvetica, sans-serif;
+			font-weight: 900;
+			color: #fff;
+			clear: both;
+			text-shadow:0px 0px 0 rgb(177,177,177),
+			-1px -1px 0 rgb(128,128,128),
+			-2px -2px 0 rgb(79,79,79),
+			-3px -3px 2px rgba(0,0,0,0.4),
+			-3px -3px 1px rgba(0,0,0,0.5),
+			0px 0px 2px rgba(0,0,0,.2);
+			-webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.7) 70%);
+			-webkit-mask-image: linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.7) 70%);
+			-moz-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.7) 70%);
+			-moz-mask-image: linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,.7) 70%);
+		}
+		#sitiHeader .siti-banner .section-name a {
+			color: #fff;
+		}
+
+		#sitiHeader .siti-banner .section-name.gameflash {
+			font: normal 24px/28px 'Lato', Helvetica, sans-serif;
+		}
+			#sitiHeader .siti-banner .section-name.gameflash span {
+				font: bold 44px/30px 'Lato', Helvetica, sans-serif;
+				color: #627686;
+				text-shadow: none;
+				margin-left: -2px;
+			}
+		#sitiHeader .siti-banner .team-name {
+			margin: 16px 0 0 10px;
+			font-size: 36px;
+			color: #fff;
+			position: relative;
+		}
+		.ie7 #sitiHeader .siti-banner .team-name { margin-top: 34px; }
+		#sitiHeader .siti-banner .team-name a {
+			color: #fff;
+			display: block;
+			position: relative;
+			z-index: 1;
+		}
+		#sitiHeader .siti-banner .team-name img {
+			position: absolute;
+			right: 10px;
+			top: -40px;
+			width: 130px;
+			opacity: 0.4;
+			filter: alpha(opacity=40);
+		}
+		#sitiHeader .siti-banner .team-name strong { font-weight: 900; }
+		#sitiHeader .siti-banner .team-name span.reflection {
+			position: absolute;
+			top: 45px;
+			left: 0px;
+			height: 38px;
+			overflow: hidden;
+			opacity: .30;
+			filter: alpha(opacity=30);
+			-moz-transform: scaleY(-1);
+			-webkit-transform: scaleY(-1);
+			-ms-transform: scaleY(-1);
+		}
+		.ie7 #sitiHeader .siti-banner .team-name span.reflection, .ie8 #sitiHeader .siti-banner .team-name span.reflection {
+			filter: progid:DXImageTransform.Microsoft.BasicImage(mirror=1, rotation=2, opacity=.30)
+		}
+
+		#sitiHeader .siti-banner .gradient-shim {
+			background: url(images/header-reflection-gradient.png) repeat-x center bottom;
+			display: block;
+			width: 100%;
+			height: 22px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 2;
+		}
+
+#sitiSiteNav {
+	background-color: #0b334f;
+	width: 1000px;
+}
+	#sitiSiteNav ul {
+		background: transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/site-menu-bg.png') no-repeat 1px top;
+		width: 1000px;
+		height: 50px;
+		padding: 0 32px;
+		position: relative;
+		left: -32px;
+		z-index: 890!important;
+	}
+		#sitiSiteNav ul li {
+			background: transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/site-menu-div.png') no-repeat right 4px;
+			float: left;
+			position: relative;
+		}
+		#sitiSiteNav ul li.nfl { width: 53px; }
+		#sitiSiteNav ul li.mmqb { width: 111px; }
+		#sitiSiteNav ul li.ncaaf { width: 73px; }
+		#sitiSiteNav ul li.mlb { width: 53px; }
+		#sitiSiteNav ul li.olympics { width: 91px; }
+		#sitiSiteNav ul li.nba { width: 53px; }
+		#sitiSiteNav ul li.ncaab { width: 73px; }
+		#sitiSiteNav ul li.golf { width: 63px; }
+		#sitiSiteNav ul li.nhl { width: 53px; }
+		#sitiSiteNav ul li.soccer { width: 83px; }
+		#sitiSiteNav ul li.tennis { width: 77px; }
+		#sitiSiteNav ul li.more { width: 67px; }
+		#sitiSiteNav ul li.fantasy { width: 91px; }
+		#sitiSiteNav ul li.photos { width: 83px; }
+		#sitiSiteNav ul li.video { width: 67px; }
+		#sitiSiteNav ul li.last { background-image: none; }
+		#sitiSiteNav ul li.nfl:hover {  }
+		#sitiSiteNav ul li.mmqb:hover { width: 112px; margin-left: -1px; }
+		#sitiSiteNav ul li.ncaaf:hover { width: 74px; margin-left: -1px; }
+		#sitiSiteNav ul li.mlb:hover { width: 54px; margin-left: -1px; }
+		#sitiSiteNav ul li.nba:hover { width: 54px; margin-left: -1px; }
+		#sitiSiteNav ul li.ncaab:hover { width: 74px; margin-left: -1px; }
+		#sitiSiteNav ul li.golf:hover { width: 64px; margin-left: -1px; }
+		#sitiSiteNav ul li.nhl:hover { width: 54px; margin-left: -1px; }
+		#sitiSiteNav ul li.soccer:hover { width: 84px; margin-left: -1px; }
+		#sitiSiteNav ul li.tennis:hover { width: 78px; margin-left: -1px; }
+		#sitiSiteNav ul li.more:hover { width: 68px; margin-left: -1px; }
+		#sitiSiteNav ul li.fantasy:hover { width: 92px; margin-left: -1px; }
+		#sitiSiteNav ul li.photos:hover { width: 84px; margin-left: -1px; }
+		#sitiSiteNav ul li.video:hover { width: 68px; margin-left: -1px; }
+		#sitiSiteNav ul li a {
+			display: block;
+			height: 36px;
+			width: 100%;
+			text-align: center;
+			font: bold 16px/34px 'Lato', Helvetica, sans-serif;
+			color: #000;
+		}
+		#sitiSiteNav ul li a strong { font-weight: 900; }
+		#sitiSiteNav ul li:hover > a {
+			background-color: #000;
+			color: #fff;
+		}
+		#sitiSiteNav ul li:first-child:hover a {
+		}
+		/*----2nd tier----*/
+			#sitiSiteNav ul li ul {
+				background: #364754 url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/nav-dropdown-gradient.jpg') repeat-x;
+				position: absolute;
+				left: 0;
+				top: 36px;
+				width: 125px;
+				height: auto;
+				padding: 5px 0;
+				display: none;
+			}
+			#sitiSiteNav ul li.ncaaf ul { width: 155px; }
+			#sitiSiteNav ul li.mlb ul { width: 155px; }
+			#sitiSiteNav ul li.nba ul { width: 175px; }
+			#sitiSiteNav ul li.ncaab ul { width: 145px; }
+			#sitiSiteNav ul li.golf ul { width: 170px; }
+			#sitiSiteNav ul li.nhl ul { width: 150px; }
+			#sitiSiteNav ul li.soccer ul { width: 150px; }
+			#sitiSiteNav ul li.tennis ul { width: 185px; }
+			#sitiSiteNav ul li.video ul { width: 160px; left: -91px; }
+			#sitiSiteNav ul li.more ul { width: 200px; }
+			#sitiSiteNav ul li:hover ul {
+				display: block;
+			}
+			#sitiSiteNav ul li ul li {
+				float: none;
+				background: none;
+				position: relative;
+			}
+			#sitiSiteNav ul li ul li a {
+				background: transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/nav-arrow.png') no-repeat 8px 8px;
+				padding: 0 0 0 20px!important;
+				height: 24px;
+				width: auto;
+				font: normal 14px/24px 'Lato', Helvetica, sans-serif;
+				color: #fff;
+				text-align: left;
+			}
+			#sitiSiteNav ul li ul li:hover a {
+				margin: 0;
+				background-color: #55636e;
+			}
+			/*----3rd tier----*/
+				#sitiSiteNav ul li ul li ul {
+					background: #55636e!important;
+					position: absolute;
+					left: 125px;
+					top: 0;
+					width: 310px;
+					padding: 1px 0 5px;
+					z-index: 99999;
+				}
+				#sitiSiteNav ul li.nfl ul li ul { width: 395px; }
+				#sitiSiteNav ul li.ncaaf ul li ul { left: 155px; }
+				#sitiSiteNav ul li.mlb ul li ul { width: 310px; left: 135px; }
+				#sitiSiteNav ul li.nba ul li ul { width: 310px; left: 175px; }
+				#sitiSiteNav ul li.ncaab ul li ul { left: 145px; }
+				#sitiSiteNav ul li.golf ul li ul { left: 170px; }
+				#sitiSiteNav ul li.nhl ul li ul { width: 230px; left: 150px; }
+				#sitiSiteNav ul li.tennis ul li ul { left: 155px; }
+				#sitiSiteNav ul li:hover ul li ul { display: none; }
+				#sitiSiteNav ul li ul li:hover ul { display: block!important; }
+				#sitiSiteNav ul li ul li ul li {
+					float: left;
+					color: #fff;
+					padding: 0 4px;
+					margin-top: 10px;
+					font-size: 11px;
+					line-height: 14px;
+					text-align: center;
+				}
+				#sitiSiteNav ul li ul li:hover ul li a{
+					background: #000;
+					height: 22px;
+					overflow: hidden;
+					padding: 0 3px!important;
+					margin-bottom: 4px;
+				}
+				#sitiSiteNav ul li ul li ul li a:hover{
+					background-color: #fff;
+				}
+					#sitiSiteNav ul li ul li ul li a img {
+						margin-top: -13px;
+					}
+				#sitiSiteNav ul li ul li ul li.division {
+					clear: left;
+					padding: 0 8px;
+				}
+				#sitiSiteNav ul li ul li ul li.division span {
+					background: url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/division-logos.png') no-repeat;
+					display: block;
+					width: 45px;
+					height: 40px;
+				}
+				#sitiSiteNav ul li ul li ul li.division span.nfl-american { background-position: left top; }
+				#sitiSiteNav ul li ul li ul li.division span.nfl-national { background-position: -45px top; }
+				#sitiSiteNav ul li ul li ul li.division span.mlb-national { background-position: -90px top; }
+				#sitiSiteNav ul li ul li ul li.division span.mlb-american { background-position: -135px top; }
+				#sitiSiteNav ul li ul li ul li.division span.nba-eastern { background-position: -180px top; }
+				#sitiSiteNav ul li ul li ul li.division span.nba-western { background-position: -225px top; }
+				#sitiSiteNav ul li ul li ul li.division span.nhl-eastern { background-position: -270px top; }
+				#sitiSiteNav ul li ul li ul li.division span.nhl-western { background-position: -315px top; }
+				/* generic */
+				#sitiSiteNav ul li.ncaaf ul li ul, #sitiSiteNav ul li.ncaab ul li ul, #sitiSiteNav ul li.golf ul li ul, #sitiSiteNav ul li.soccer ul li ul, #sitiSiteNav ul li.tennis ul li ul {
+					width: 140px;
+					padding: 0;
+				}
+					#sitiSiteNav ul li.ncaaf ul li ul, #sitiSiteNav ul li.ncaab ul li ul, #sitiSiteNav ul li.soccer ul li ul { width: 270px; }
+					#sitiSiteNav ul li.golf ul li ul { left: 170px; }
+					#sitiSiteNav ul li.tennis ul li ul { width: 150px; }
+				#sitiSiteNav ul li.ncaaf ul li ul li, #sitiSiteNav ul li.ncaab ul li ul li, #sitiSiteNav ul li.golf ul li ul li, #sitiSiteNav ul li.soccer ul li ul li, #sitiSiteNav ul li.tennis ul li ul li {
+					width: 100%;
+					padding: 0;
+					margin: 0;
+				}
+					#sitiSiteNav ul li.ncaaf ul li ul li, #sitiSiteNav ul li.ncaab ul li ul li, #sitiSiteNav ul li.soccer ul li ul li { width: 135px; }
+				#sitiSiteNav ul li.ncaaf ul li ul li a, #sitiSiteNav ul li.ncaab ul li ul li a, #sitiSiteNav ul li.golf ul li ul li a, #sitiSiteNav ul li.soccer ul li ul li a, #sitiSiteNav ul li.tennis ul li ul li a {
+					background: transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/nav-arrow.png') no-repeat 8px 8px;
+				}
+				#sitiSiteNav ul li.ncaaf ul li:hover ul li a, #sitiSiteNav ul li.ncaab ul li:hover ul li a, #sitiSiteNav ul li.golf ul li:hover ul li a, #sitiSiteNav ul li.soccer ul li:hover ul li a, #sitiSiteNav ul li.tennis ul li:hover ul li a {
+					background-color: transparent;
+					height: 24px;
+					padding: 0 0 0 20px!important;
+					margin: 0;
+				}
+				#sitiSiteNav ul li.ncaaf ul li:hover ul li a:hover, #sitiSiteNav ul li.ncaab ul li:hover ul li a:hover, #sitiSiteNav ul li.golf ul li:hover ul li a:hover, #sitiSiteNav ul li.soccer ul li:hover ul li a:hover, #sitiSiteNav ul li.tennis ul li:hover ul li a:hover {
+					background-color: #000 ;
+				}
+
+/* tease "fixes" */
+.ie8 #sitiT1 .siti-t1-header a { font-size:0.97em; }
+.firefox.mac #sitiT1 .siti-t1-header a { font-size:0.99em; }
+
+/* photo gallery */
+#sipg #sitiHeader{ margin-top: 0; }

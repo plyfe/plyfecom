@@ -1,0 +1,163 @@
+/* homepage scoreboards css for 2013 Refresh  */
+DIV.cnnGameScores { font:9px verdana,geneva,sans-serif !important; height:53px;padding:23px 0; }
+
+DIV#cnnGameSportsTabs UL { left: 11px;}
+DIV#cnnGameSportsTabs DIV.cnnRight { float:right;text-transform:uppercase;white-space:nowrap; font:14px/14px 'Lato',Helvetica,sans-serif; background:transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/scoreboard_thin_arrow_blue_right.gif') no-repeat 3px 2px; padding-left:7px; position: relative; top: 10px; right: 18px; }
+DIV#cnnGameSportsTabs DIV.cnnRight A { color:#fff;padding:0 5px 0 6px; }
+DIV#cnnGameSportsTabs DIV.cnnRight A:hover { color:#53616a; }
+
+/* scoreboard sport header */
+DIV#cnnGameSportsTabs UL LI.selected-tab { border:none; height: 20px; margin: 0; background: url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/scoreboard_active_header_indicator.gif') no-repeat 30px 16px;}
+DIV#cnnGameSportsTabs UL LI.selected-tab A { color:#fff !important; font-weight: bold !important; background: #506b81; padding-left: 10px; position: relative; top:-1px;}
+DIV#cnnGameSportsTabs UL LI A { line-height: 20px; }
+.ie DIV#cnnGameSportsTabs UL LI.selected-tab { position: relative; top:-2px; }
+
+DIV#cnnGameSportsTabs UL LI.selected-tab + LI { border: none !important; }
+DIV#cnnGameSportsTabs UL LI A IMG { margin:5px 0 0 7px; padding: 0px 5px 0px 0px;vertical-align: text-top;}
+
+/* scoreboard games list per sport */
+DIV.cnnGameScores UL { margin:auto;text-align:left; padding: 0 0 0 8px !important; }
+
+/* scoreboard game styles */
+DIV.cnnGameScores UL LI { background-color:#ccc;float:left;height:53px;margin:0 1px;width:86px; padding:0 !important;}
+DIV.cnnGameScores UL LI A { background-color:#fff;cursor:pointer;display:block;line-height:14px;padding:2px; }
+DIV.cnnGameScores UL LI A:hover { background-color:#e7e7e7; }
+DIV.cnnGameScores UL LI A DIV.game-container { background:transparent url('http://i.cdn.turner.com/si/.element/img/4.1/sect/global/scores_back.gif') repeat-x 0px 0px;border:1px solid #d0d5d8;color:#53616a; position:relative; font-family: verdana,geneva,sans-serif; font-size:9px !important; font-weight:bold; }
+.ie DIV.cnnGameScores UL LI A DIV.game-container { background-position:0px 1px; }
+DIV.cnnGameScores UL LI STRONG.team { display:block;overflow:hidden;padding:0 3px 2px 4px; }
+DIV.cnnGameScores UL LI A STRONG.team { color:#000; }
+DIV.cnnGameScores UL LI STRONG.team EM { color:#666;float:left;font-style:normal;font-weight:normal;margin-right:2px;text-align:right;width:14px; }
+DIV.cnnGameScores UL LI STRONG.team SPAN.teamName { color:inherit !important; margin:0 !important; display:block;overflow:hidden;text-transform:uppercase;white-space:nowrap;width:32px; }
+DIV.cnnGameScores UL LI STRONG.team SPAN.mysi-team { color:#ec2c21 !important; }
+DIV.cnnGameScores UL LI STRONG.team STRONG.score { display:inline;float:right;padding:0; }
+DIV.cnnGameScores UL LI A STRONG.team STRONG.score { color:#53616a; }
+DIV.cnnGameScores UL LI DIV DIV.game-status { font-weight:normal; background:none;border:0;border-top:1px solid #d0d5d8;font-size:9px;height:auto;padding:0;text-align:center;width:auto; }
+DIV.cnnGameScores UL#cnnGameScoresNFL LI DIV DIV { font-family:arial; }
+DIV.cnnGameScores UL LI DIV DIV SPAN { color:#b2b2b2;padding:0 5px; }
+DIV.cnnGameScores UL LI.cnnFirst { background-color:transparent;margin:0 1px 0 0;width:12px; }
+.ie6 DIV.cnnGameScores UL LI.cnnFirst { margin:0 1px 0 0; }
+DIV.cnnGameScores UL LI.cnnFirst A { background:transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/scoreboard_arrow_gray_left.gif') no-repeat center left;border:0;height:53px;width:12px; }
+.ie6 DIV.cnnGameScores UL LI.cnnFirst A { width:4px; }
+
+DIV.cnnGameScores UL LI.cnnFirst { margin:0 2px 0 0;width:12px; }
+DIV.cnnGameScores UL LI.cnnLast { background-color:transparent;height:57px;margin:0 0 0 6px;width:12px; border: none !important; }
+.ie6 DIV.cnnGameScores UL LI.cnnLast { margin:0 0 0 6px; }
+DIV.cnnGameScores UL LI.cnnLast A { background:transparent url('http://i.cdn.turner.com/si/.element/img/4.2/global/refresh/scoreboard_arrow_gray_right.gif') no-repeat center left;border:0;height:53px;width:12px; }
+.ie6 DIV.cnnGameScores UL LI.cnnLast A { width:4px; }
+DIV.cnnGameScores UL LI.cnnEmptyGame { background-color:#fff;opacity:.40; }
+.ie DIV.cnnGameScores UL LI.cnnEmptyGame { filter:alpha(opacity=40); }
+DIV.cnnGameScores UL#cnnGameScoresNFL { margin:0 4px; }
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNFL { margin:0 3px; }
+.ie6 DIV.cnnGameScores UL#cnnGameScoresMLB,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNHL,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNBA,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNBA,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNCAAB,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNCAAB,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNCAAF,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresSoccer { margin:0 4px; }
+
+/* scoreboard wide games adjustments */
+UL#cnnGameScoresNCAAF LI.cnnGameScoresNCAAF,
+UL#cnnGameScoresNCAAB LI.cnnGameScoresNCAAB,
+UL#cnnGameScoresNCAAF LI.cnnEmptyGame,
+UL#cnnGameScoresNCAAB LI.cnnEmptyGame{ width: 154px; }
+DIV.cnnGameScores UL#cnnGameScoresNCAAB LI STRONG.team SPAN.teamName,
+DIV.cnnGameScores UL#cnnGameScoresNCAAF LI STRONG.team SPAN.teamName { width: 111px; }
+
+/* scoreboard mysi tab */
+UL#cnnGameScoresMYSI LI.cnnGameScoresMLB,
+UL#cnnGameScoresMYSI LI.cnnGameScoresNBA,
+UL#cnnGameScoresMYSI LI.cnnGameScoresNCAAB,
+UL#cnnGameScoresMYSI LI.cnnGameScoresNCAAF,
+UL#cnnGameScoresMYSI LI.cnnGameScoresNFL,
+UL#cnnGameScoresMYSI LI.cnnGameScoresNHL,
+DIV.cnnGameScores UL#cnnGameScoresMYSI LI.cnnEmptyGame{ width: 154px; }
+DIV.cnnGameScores UL#cnnGameScoresMYSI LI STRONG.team SPAN.teamName{ width: 111px; }
+
+
+DIV.cnnGameScores UL.cnnGameScoresNCAAF LI STRONG SPAN { width:92px; }
+DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG SPAN { width:32px; }
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNCAAF LI STRONG SPAN { width:76px; }
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG SPAN { width:28px; }
+
+DIV.cnnGameScores UL#cnnGameScoresNCAAB LI STRONG SPAN,
+DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG SPAN { width:90px; }
+DIV.cnnGameScores UL#cnnGameScoresSoccer LI STRONG SPAN { width:112px; }
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNBA LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNBA LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNCAAB LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNHL LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNHL LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresMLB LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresMLB LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL.cnnGameScoresNFL LI STRONG SPAN,
+.ie6 DIV.cnnGameScores UL#cnnGameScoresSoccer LI STRONG SPAN { width:80px; }
+
+DIV.cnnGameScores UL.cnnGameScoresMLB LI STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNHL LI STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNBA LI STRONG,
+DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNCAAF LI STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG { padding:0 3px 2px 3px; }
+DIV.cnnGameScores UL#cnnGameScoresSoccer LI STRONG { padding:0 1px 2px 0; }
+DIV.cnnGameScores UL#cnnGameScoresMLB LI STRONG STRONG,
+DIV.cnnGameScores UL.cnnGameScoresMLB LI STRONG STRONG,
+DIV.cnnGameScores UL#cnnGameScoresNHL LI STRONG STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNHL LI STRONG STRONG,
+DIV.cnnGameScores UL#cnnGameScoresNBA LI STRONG STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNBA LI STRONG STRONG,
+DIV.cnnGameScores UL#cnnGameScoresNCAAB LI STRONG STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG STRONG,
+DIV.cnnGameScores UL.cnnGameScoresNCAAF LI STRONG STRONG,
+DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG STRONG,
+DIV.cnnGameScores UL#cnnGameScoresSoccer LI STRONG STRONG { padding:0; }
+DIV.cnnGameScores UL.cnnGameScoresMLB LI STRONG.cnnTelevisedGame, 
+DIV.cnnGameScores UL.cnnGameScoresNHL LI STRONG.cnnTelevisedGame, 
+DIV.cnnGameScores UL.cnnGameScoresNBA LI STRONG.cnnTelevisedGame, 
+DIV.cnnGameScores UL#cnnGameScoresNFL LI STRONG.cnnTelevisedGame, 
+DIV.cnnGameScores UL.cnnGameScoresNCAAF LI STRONG.cnnTelevisedGame, 
+DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG.cnnTelevisedGame {
+	padding-left:22px;
+}
+DIV.cnnGameScores UL#cnnGameScoresMLB LI STRONG.cnnTelevisedGame SPAN, 
+DIV.cnnGameScores UL.cnnGameScoresMLB LI STRONG.cnnTelevisedGame SPAN, 
+DIV.cnnGameScores UL#cnnGameScoresNHL LI STRONG.cnnTelevisedGame SPAN, 
+DIV.cnnGameScores UL.cnnGameScoresNHL LI STRONG.cnnTelevisedGame SPAN, 
+DIV.cnnGameScores UL#cnnGameScoresNBA LI STRONG.cnnTelevisedGame SPAN, 
+DIV.cnnGameScores UL.cnnGameScoresNBA LI STRONG.cnnTelevisedGame SPAN {
+	width: 80px;
+}
+DIV.cnnGameScores DIV#cnnGamelessMessage{ text-align:center !important; margin:15px 0; font-size:15px; font-weight: bold; width:1000px; position:absolute; }
+.ie6 DIV.cnnGameScores DIV#cnnGamelessMessage{ position:relative; margin-top:-40px;}
+.ie7 DIV.cnnGameScores DIV#cnnGamelessMessage{ position:relative; left:0; margin-top:-40px;}
+
+DIV.cnnGameScores UL.cnnGameScoresNCAAB LI STRONG EM { width:12px; } 
+
+DIV.cnnGameScores UL LI.cnnFirstEmptyGame DIV{	border:none; overflow:hidden; height:53px;}
+DIV.cnnGameScores UL LI.cnnFirstEmptyGame A{	border:none; padding:0;}
+
+/* scoreboard golf leaderboard */
+DIV.cnnGameScores UL#cnnGameScoresGolf LI.cnnGameScoresGolf { background-color:#fff; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI.cnnGameScoresGolf A { padding-top: 3px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI.cnnFirst {width:8px;}
+DIV.cnnGameScores UL#cnnGameScoresGolf LI.cnnLast {width:8px;}
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard { width:651px; background:none;border-width:1px 0;cursor:pointer;float:none;height:48px;margin:0;position:relative; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard DIV.player-info { border:0px solid #ccc;border-width:0 1px;border-bottom:1px dotted #ccc;color:#000;font-size:11px;font-weight:bold;font-family: verdana,geneva,sans-serif;height:auto;padding:0 3px;position:absolute;text-align:left;width:200px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard DIV.player-info DIV.score { border:0;color:#ec2c21;float:right;margin-left:3px;padding:0;position:static;text-align:center;width:25px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard EM.rank { color:#666;float:left;font-style:normal;margin-right:3px;text-align:right;width:16px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard SPAN.player-name { color:#000;display:block;overflow:hidden;padding:0;width:133px; }
+.ie6 DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard SPAN.player-name { font-size:10px;width:125px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.golf-leaderboard STRONG.thru { color:#53616a;float:right;text-align:center;width:20px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem0 { left:0px;top:0px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem1 { left:0px;top:16px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem2 { left:0px;top:32px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem3 { left:207px;top:0px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem4 { left:207px;top:16px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem5 { left:207px;top:32px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem6 { left:414px;top:0px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem7 { left:414px;top:16px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI DIV.cnnItem8 { left:414px;top:32px; }
+DIV.cnnGameScores UL#cnnGameScoresGolf LI {width:626px; position: relative; left: 16px; }

@@ -1,0 +1,24 @@
+DIV.cnnBanner DIV.cnnGameScores UL LI STRONG EM { width:12px; }
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnTabs { padding-top:1px;height:17px; }
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnTabs DIV { padding-top:3px; }
+/*DIV.cnnAboveFold DIV.cnnT1 H1, DIV.cnnAboveFold DIV.cnnT1 H2 { font-size:32px; }*/
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnTabs a, DIV.cnnAboveFold DIV.cnnT1 DIV.cnnTabs span { padding: 2px 28px; }
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnT1Wide10 DIV.cnnTabs { height:23px; }
+DIV.cnnAboveFold DIV.cnnT1 P { font-size:11px; }
+DIV.cnnAboveFold DIV.cnnT1 P A { font-size:11px; }
+DIV.cnnAboveFold DIV.cnnT2s DIV.cnnTitle { line-height:30px;padding-bottom:0; }
+DIV.cnnBox DIV.cnnTitle { line-height:30px;padding-bottom:0; }
+.cnnBoxWriters .cnnBoxFooter A { padding:0 5px; }
+.cnnBoxTR .cnnBoxFooter { padding:4px 0; }
+.cnnBoxPhotos .cnnBoxFooter { padding:4px 0; }
+.cnnBoxPhotos A{ line-height: 11px; }
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnT1RelatedList LI DIV.cnnVideo DL DT,
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnT1RelatedList LI DIV.cnnLink DD STRONG { font-size : 11px !important; }
+
+DIV.cnnAboveFold DIV.cnnT1 DL { font-size:11px; } /* Video T1 Teaser */
+
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnT1Caption{ font-size: 11px; text-rendering:geometricPrecision; } /* T1 Caption */
+DIV.cnnAboveFold DIV.cnnT1 DIV.cnnT1Tease P{ font-size: 12px; letter-spacing: -0.01em;} /* T1 Tease */
+
+/* refresh styles */
+.firefox.mac DIV#sitiT2 UL LI A {letter-spacing: 0.16px;}

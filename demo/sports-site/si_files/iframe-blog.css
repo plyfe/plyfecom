@@ -1,0 +1,10 @@
+#si-com-video-content{margin:5px 7px 5px 7px;}
+#si-com-video-info P{margin:10px 0;font-family:'Geogrotesque', Helvetica, sans-serif;font-size:18px;line-height:24px;text-transform:uppercase;}
+#si-com-video-info a{display:block;margin:5px;}
+#si-com-video-info div.more-videos-button{width:247px;height:27px;background-image:url(http://i.cdn.turner.com/si/blogs/assets/extramustard/img/sidebar/more-videos-btn-no-text.png);background-repeat:no-repeat;margin:0 auto;}
+#si-com-video-info a, #si-com-video-info a div.more-videos-button{text-decoration:none;}
+#si-com-video-info a div.more-videos-button span{color:#000;text-transform:uppercase;font-family:Geogrotesque, Helvetica, sans-serif;text-decoration:none;padding:1px 0 0 0;font-size:17px;font-weight:bold;letter-spacing:3px;line-height:33px;}
+.ie #si-com-video-info a div.more-videos-button span{font-family:Geogrotesque-IE-Bold;font-weight:normal;font-style:normal;}
+#si-com-video-info{color:#72808C;font-size:20px;font-weight:bold;text-align:center;}
+#siOverlayBox{visibility:visible;position:absolute;left:40%;top:25%;cursor: pointer;}
+#siOverlayBox:hover { background:url("http://i.cdn.turner.com/si/.element/img/4.1/video/giant_play_buton2.png") no-repeat; }
