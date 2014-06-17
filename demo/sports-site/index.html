@@ -1,13 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 
 	<head>
 
-		<meta http-equiv="Content-type" content="text/html;charset=iso-8859-1" />
+		<meta http-equiv="Content-type"/>
 		<title>Sports Site</title>
 		<meta name="description" content="Sports news"/>
 		<meta name="keywords" content="Sports news"/>
-		<link rel="canonical" href="http://sportsillustrated.cnn.com/" />
 		<link rel="icon" href="sport_files/favicon.gif" type="image/gif" sizes="16x16">
 		<meta name="sailthru.tags" content="homepage" />
 		<meta http-equiv="x-ua-compatible" content="IE=8">
@@ -16,30 +15,14 @@
 
 		<script type="text/javascript" language="JavaScript" src="sport_files/homepage-min.js"></script>
 		<!-- TODO: re-add to pkg - temporarily removing from pkg - reference working version -->
-		<script language="JavaScript" type="text/javascript" src="sport_files/video-bc.js"></script>
-		<script language="JavaScript" type="text/javascript" src="sport_files/BrightcoveExperiences.js"></script>
-
-		<script type="text/javascript" language="JavaScript">var tii_isTestServer = false;if( location.hostname == "preview2.sportsillustrated.turner.com" || location.hostname == "preview.ref.sportsillustrated.turner.com" || location.hostname == "sipreview.turner.com" ) tii_isTestServer = true;if( tii_isTestServer ) document.write( '<scr'+'ipt type="text/javascript" language="JavaScript" src="http://test-tiads.sportsillustrated.cnn.com/ads/tgx.js"></scr'+'ipt>' ); else document.write( '<scr'+'ipt type="text/javascript" language="JavaScript" src="http://tiads.sportsillustrated.cnn.com/ads/tgx.js"></scr'+'ipt>' );</script>
-		<script type="text/javascript"> var adConfig=new TiiAdConfig('3475.si2'); adConfig.setCmSitename('cm.si2'); adConfig.setRevSciTracking(true); var adFactory = new TiiAdFactory(adConfig, "home"); adFactory.setParam( 'ptype', 'main' ); </script>
 
 
 		<script type="text/javascript" src="sport_files/siBar.min.js" async></script>
-
 		<link rel="stylesheet" type="text/css" href="sport_files/siBar.min.css">
-		<link rel="stylesheet" type="text/css" href="sport_files/embedded-fonts.css" />
 		<link type="text/css" rel="stylesheet" href="sport_files/refresh2013.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
-
-
 		<script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
-
 		<link rel="alternate" type="application/rss+xml" title="SI - Top Stories [RSS]" href="http://rss.cnn.com/rss/si_topstories.rss" />
 		<link rel="alternate" type="application/rss+xml" title="SI - Recent Stories [RSS]" href="http://rss.cnn.com/rss/si_latest.rss" />
-
-		<meta name="last-published" content="2014-06-02T16:35:07Z">
-			<link type="text/css" rel="stylesheet" href="sport_files/homepage_scoreboard.css"/>
-			<script type="text/javascript" language="JavaScript" src="sport_files/jquery.jsonp-2.1.4.min.js"></script>
-			<script type="text/javascript" src="sport_files/Scoreboard.js"></script>
 
 		<script>
 			var cnnPageInfo_section = "MAIN";
@@ -48,47 +31,6 @@
 			cnnBrowserFixes();
 		</script>
 
-		<!-- bolthouse trailing slash ads fix : 10/29/13 mh did this-->
-		<script type="text/javascript">
-		var bolthouse_array = [
-				"/more/news/20131029/Roc-Nation-Sports",
-				"/mma/news/20131029/Erik-Perez-MMA",
-				"/college-football/news/20131029/Jordan-Wynn",
-			];
-			var bhPathIndex = $.inArray( location.pathname, bolthouse_array);
-			if(	bhPathIndex > -1 ){
-				location.href = bolthouse_array[ bhPathIndex ] + '/';
-			}
-			</script>
-		<!-- END: bolthouse trailing slash ads fix -->
-		<!-- template hack for ad tags -->
-		<script type="text/javascript">if( ( window.location.pathname ).indexOf( '/more/news/20130514/fortunate-50-' ) === 0 ) { adFactory.setZone( "moresports/fortunate50" ); }</script>
-		<style>
-		DIV#sitiSportsman .cnnLive { display:none; }
-		DIV#sitiSportsman .cnnBoxWriters DD { height:30px;padding-top:1px; }
-		</style>
-		<!-- Visual Revenue Reader Response Tracking Script (v6) -->
-		<script type="text/javascript">
-			var automate_vrq = false;
-			try{
-				automate_vrq = cnnPage.isHomepage;
-			}catch(e){}
-
-			var _vrq = _vrq || [];
-			_vrq.push(['id', 188]);
-			_vrq.push(['automate', automate_vrq ]);	//automate should be set to true if this is the homepage
-			_vrq.push(['track', function(){}]);
-			(function(d, a){
-				var s = d.createElement(a),
-				x = d.getElementsByTagName(a)[0];
-				s.async = true;
-				s.src = 'http://a.visualrevenue.com/vrs.js';
-				x.parentNode.insertBefore(s, x);
-			})(document, 'script');
-		</script>
-		<!-- End of VR RR Tracking Script - All rights reserved -->
-
-		<!-- Visual Revenue Logic for Homepage - SI-5749 -->
 	</head>
 
 
@@ -237,7 +179,7 @@ DIV.cnnAboveFoldAboveAd TABLE { margin:0 auto; }
 		<div id="sitiT1Holder">
 			<div id="sitiT1">
 				<ul>
-					<li class="t1_1 image no-bullets no-header">
+					<li class="t1_1 image no-bullets">
 						<div class="siti-t1-header">
 							<h1><a href="http://plyfe.com/demo/sports-site/article">Rafael Nadal</a></h1>
 							<a href:"http://plyfe.com/demo/sports-site/article">
@@ -245,12 +187,10 @@ DIV.cnnAboveFoldAboveAd TABLE { margin:0 auto; }
 							</span>
 							<span class="tabLabel" style="display:none;">Rafael Nadal</span></a>
 						</div>
-						<div class="siti-t1-image-container">
+
+            <div class="siti-t1-image-container">
 							<a href="http://plyfe.com/demo/sports-site/article" >
 								<img class="sitiImage" src="sport_files/4_500x576.jpg" width="500" height="576" alt="" border="0">
-								<div class="sitiT1BottomTease">
-								<span class="tease-text">Nadal's career throughout time: highs and lows</span>
-								</div>
 							</a>
 						</div>
 						<div class="sitiT1-t1-bottom-container">
@@ -260,14 +200,13 @@ DIV.cnnAboveFoldAboveAd TABLE { margin:0 auto; }
 					</li>
 					<li class="t1_2 image no-bullets">
 						<div class="siti-t1-header">
-							<h1><a href="http://plyfe.com/demo/sports-site/article">Odds for basketball's post-season</a></h1>
+							<h1><a href="http://plyfe.com/demo/sports-site/article">Basketball</a></h1>
 								<a href="http://plyfe.com/demo/sports-site/article">
-									<span class="tease">
-									</span>
-									<span class="tabLabel" style="display:none;">Odds for basketball's post-season</span>
+									<span class="tease">Odds for basketball's post-season</span>
 								</a>
 						</div>
-						<div class="siti-t1-image-container">
+
+            <div class="siti-t1-image-container">
 							<a href="http://plyfe.com/demo/sports-site/article">
 							<img class="sitiImage" src="sport_files/1_500x576.jpg" width="500" height="576" alt="Tony Parker | Photo: Greg Nelson/SI" border="0" href:"http://plyfe.com/demo/sports-site/article">
 							</a>
@@ -279,10 +218,9 @@ DIV.cnnAboveFoldAboveAd TABLE { margin:0 auto; }
 					</li>
 					<li class="t1_3 image no-bullets">
 						<div class="siti-t1-header">
-							<h1><a href="http://plyfe.com/demo/sports-site/article"></a></h1>
+							<h1><a href="http://plyfe.com/demo/sports-site/article"></a> NFL Review</h1>
 							<a href="http://plyfe.com/demo/sports-site/article">
-							<span class="tease">Commentators talk the fute of NFL and the direction the U.S. is pushing football
-							</span>
+							<span class="tease">Commentators talk the fute of NFL</span>
 							<strong class="byline"></strong>
 							<span class="tabLabel" style="display:none;"></span>
 							</a>
@@ -298,45 +236,23 @@ DIV.cnnAboveFoldAboveAd TABLE { margin:0 auto; }
 						</div>
 					</li>
 
-					<li class="t1_4 video no-caption no-bullets no-header">
+					<li class="t1_4 video no-caption no-bullets">
 						<div class="siti-t1-header">
-							<h1><a href="http://plyfe.com/demo/sports-site/article">SI Now: Kevin Love courted By Big Papi and beers at Fenway </a></h1>
+							<h1><a href="http://plyfe.com/demo/sports-site/article">Soccer</a></h1>
 								<a href:"http://plyfe.com/demo/sports-site/article">
 									<span class="tease">What's going on in the world of soccer today?
 									</span>
-									<span class="tabLabel" style="display:none;">Today's hot trending sports topics</span>
 								</a>
 						</div>
 						<div class="siti-t1-image-container">
 							<a href="http://plyfe.com/demo/sports-site/article" id="t1_4_video" class="t1_video">
 							<img class="sitiImage" src="sport_files/2_500x576.jpg" width="500" height="576" alt="" border="0" href:"http://plyfe.com/demo/sports-site/article">
-							<div class="sitiT1BottomTease">
-								<span class="tease-text">What's going on in the world of soccer today?
-								</span>
-							</div>
 							</a>
-							<img id="siOverlayT1" class="video" src="http://i.cdn.turner.com/si/.element/img/4.1/video/giant_play_buton.png" />
-							<div class="video-player" style="display:none;" >
-								<h2>SI Now: Kevin Love courted By Big Papi and beers at Fenway </h2>
-								<p>Want to know what the sports world is buzzing about this morning? Don't worry, we've got you covered.</p>
-								<div class="cnnCVPPlayer" id="container__video_nba_20140602_2014-06-02-2014-kevinlove-californiachrome-davidortiz_sportsillustrated_">
-									<div id="playerArea_video_43D8A8DC-4583-7C40-C789-5C5C6BF8BF0E">
-										<img src="sport_files/4.jpg" alt="SI Now: Kevin Love courted By Big Papi and beers at Fenway " href:"http://plyfe.com/demo/sports-site/article" width="662" height="423" />
-									</div>
-									<div id="cnnCredit" class="cnnCredit"></div>
-								</div>
-								<div class="share"></div>
-									<script type="text/javascript">
-									var T1VideoList = T1VideoList || {};
-									T1VideoList[ "t1_4_video" ] = {
-									"id": "nba/20140602/2014-06-02-2014-kevinlove-californiachrome-davidortiz",
-									"container": "playerArea_video_43D8A8DC-4583-7C40-C789-5C5C6BF8BF0E",
-									"player": "t1"
-									};
-									</script>
-								</div>
-							</div>
-							<div class="sitiT1-t1-bottom-container"></div>
+            </div>
+            <div class="sitiT1-t1-bottom-container">
+              <span class="photo-caption">
+                </span>
+            </div>
 						</li>
 					</ul>
 
@@ -495,11 +411,8 @@ Basketball Post-Season
 	<div class="cnnBox">
 		<div class="cnnTitle">
 			<div>
-				<a href:"http://plyfe.com/demo/sports-site/article">
-					<img src="http://i.cdn.turner.com/si/.element/img/4.1/sect/MAIN/more_36x11.gif" alt="More SI Writers" title="More SI Writers"/>
-				</a>
 			</div>
-			<a>SS Writers</a>
+			<a style="float:left">SS Writers</a>
 		</div>
 
 
@@ -602,7 +515,7 @@ Basketball Post-Season
 <div class="cnnCol1">
 	<div class="cnnBox cnnSiVideoSC">
 		<div class="cnnTitle">
-				<a>
+				<a style="float:left">
 				Trivia
 				</a>
 		</div>
@@ -619,101 +532,7 @@ Basketball Post-Season
 				<div class="cnnBoxFooter">
 				</div>
 			</div>
-			<script type="text/javascript">
-				var mycarousel_itemList = [
-					    {
-							id: "soccer/20140601/usa-beats-turkey-world-cup-friendly-grant-wahl-brian-straus",
-							headline:"United States beats Turkey in World Cup friendly",
-							title: "USMNT",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140601191253-michael-bradley-usa-soccer-world-cup-video-carousel.jpg",
-							url:"/video/soccer/20140601/usa-beats-turkey-world-cup-friendly-grant-wahl-brian-straus.sportsillustrated/"
-						},
-					    {
-							id: "nhl/20140601/kings-blackhawks-game-7-wcf-060114",
-							headline:"Kings edge Blackhawks in OT to win Game 7",
-							title: "Los Angeles Kings",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140601231923-toffoli-lak-nhl-celeb-656-video-carousel.jpg",
-							url:"/video/nhl/20140601/kings-blackhawks-game-7-wcf-060114.nhl/"
-						},
-					    {
-							id: "nba/20140601/tony-parker-ankle-nba-finals-spurs-heat",
-							headline:"How will Parker\'s health affect NBA Finals?",
-							title: "Tony Parker",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140601021312-parker-video-video-carousel.jpg",
-							url:"/video/nba/20140601/tony-parker-ankle-nba-finals-spurs-heat.sportsillustrated/"
-						},
-					    {
-							id: "nba/20140601/tim-duncan-san-antonio-spurs-miami-heat-2014-nba-finals",
-							headline:"Tim Duncan talks NBA Finals rematch with Heat",
-							title: "Tim Duncan",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140601021633-tim-duncan-spurs-heat-video-carousel.jpg",
-							url:"/video/nba/20140601/tim-duncan-san-antonio-spurs-miami-heat-2014-nba-finals.sportsillustrated/"
-						},
-					    {
-							id: "nfl/20140530/2014-05-30-clip04-johnnymanziel-clevelandbrowns-themmqb",
-							headline:"Johnny Manziel thrives under media scrutiny",
-							title: "Johnny Manziel",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140530150611-johnny-manziel-ota-practice-1-video-carousel.jpg",
-							url:"/video/nfl/20140530/2014-05-30-clip04-johnnymanziel-clevelandbrowns-themmqb.sportsillustrated/"
-						},
-					    {
-							id: "nfl/20140530/nfl-best-offseason-moves-boomer-esiason",
-							headline:"Boomer: Which NFL team has had best offseason?",
-							title: "NFL Offseason",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140530111726-nfl-offseason-video-carousel.jpg",
-							url:"/video/nfl/20140530/nfl-best-offseason-moves-boomer-esiason.sportsillustrated/"
-						},
-					    {
-							id: "nhl/20140530/new-york-rangers-stanley-cup-final-montreal",
-							headline:"Who do Rangers hope to meet in Cup Final?",
-							title: "Stanley Cup",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140530015356-494519603-video-carousel.jpg",
-							url:"/video/nhl/20140530/new-york-rangers-stanley-cup-final-montreal.sportsillustrated/"
-						},
-					    {
-							id: "mlb/20140528/verducci-quick-pitch-boston-red-sox-losing-streak",
-							headline:"Forget it, it\'s already too late for the Red Sox",
-							title: "Red Sox",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140528113342-david-ortiz-video-carousel.jpg",
-							url:"/video/mlb/20140528/verducci-quick-pitch-boston-red-sox-losing-streak.sportsillustrated/"
-						},
-					    {
-							id: "si-video/20140528/patriots-devin-mccourty-with-more-free-safety-advice",
-							headline:"Patriots FS McCourty with more free safety tips",
-							title: "Funniest Athletes",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140528141440-devin-mccourty-video-carousel.jpg",
-							url:"/video/si-video/20140528/patriots-devin-mccourty-with-more-free-safety-advice.sportsillustrated/"
-						},
-					    {
-							id: "nba/20140527/2014-05-27-clip02",
-							headline:"Can LeBron James\' play reach another level?",
-							title: "LeBron James",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140527153002-lebron-another-level-video-carousel.jpg",
-							url:"/video/nba/20140527/2014-05-27-clip02.sportsillustrated/"
-						},
-					    {
-							id: "nfl/20140528/2014-05-28-clip02-aaronhernandez",
-							headline:"What is Aaron Hernandez\'s legal strategy?",
-							title: "Aaron Hernandez",
-							src: "http://i2.cdn.turner.com/si/dam/assets\t\t\t\t\t\t\t\t/140528134718-aaron-hernandez-legal-strategy-video-carousel.jpg",
-							url:"/video/nfl/20140528/2014-05-28-clip02-aaronhernandez.sportsillustrated/"
-						}
-					];
 
-					var cvpBox1Playlist = [];
-
-					mycarousel_itemList.push( mycarousel_itemList.shift() );
-
-					for (video in mycarousel_itemList){
-						var video_array = [];
-						video_array.push( mycarousel_itemList[video].id );
-						video_array.push( mycarousel_itemList[video].headline );
-						video_array.push( mycarousel_itemList[video].url );
-
-						cvpBox1Playlist.push( video_array );
-					}
-
-			</script>
 		</div>
 	</div>
 
@@ -730,11 +549,8 @@ Basketball Post-Season
 			<div class="cnnBox">
 				<div class="cnnTitle">
 					<div>
-						<a href="http://mmqb.si.com/">
-						<img src="http://i.cdn.turner.com/si/.element/img/4.1/sect/MAIN/more_36x11.gif" alt="More The MMQB" />
-						</a>
 					</div>
-						<a href="#" >
+						<a href="#" style="float:left">
 							The MMQB
 						</a>
 					</div>
@@ -751,12 +567,6 @@ Basketball Post-Season
 									DeAngelo Williams takes on breast cancer
 							</a>
 						</div>
-						<div>
-							<a href="#" >
-								<img src="http://i2.cdn.turner.com/si/dam/assets/140514151248-mmqb95-single-image-cut.jpg" alt="mmqb95"/>
-								NFL history told through 95 artifacts
-							</a>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -765,11 +575,8 @@ Basketball Post-Season
 				<div class="cnnBox">
 					<div class="cnnTitle">
 						<div>
-							<a href="/sinow">
-								<img src="http://i.cdn.turner.com/si/.element/img/4.1/sect/MAIN/more_36x11.gif" alt="More SI Now" />
-							</a>
 						</div>
-						<a>
+						<a style="float:left">
 							SS Now
 						</a>
 					</div>
@@ -785,13 +592,6 @@ Basketball Post-Season
 				<a>
 					<img src="http://i2.cdn.turner.com/si/dam/assets/140531000903-andrejohnsonthumb-single-image-cut.jpg" alt="andrejohnsonthumb"/>
 					Houston Texans unlikely to trade a player
-				</a>
-			</div>
-
-			<div>
-				<a>
-				<img src="http://i2.cdn.turner.com/si/dam/assets/140531001155-samthumb-single-image-cut.jpg" alt="samthumb"/>
-					Will NFL try to change things?
 				</a>
 			</div>
 		</div>
@@ -879,61 +679,6 @@ Basketball Post-Season
 </div>
 <!-- end footerbox -->
 
-<!--START OF PAGELINKS.JS-->
-<script language="Javascript">// Post Processing code to update links with tracking references
-
-var url = window.location.href.toString();
-url = url.replace(/http:\/\/[^\/]*/, '');
-url = url.replace(/\?.*$/, '');
-
-// All links on page
-var links = document.getElementsByTagName('a');
-
-for (var i=0; i < links.length; i++) {
-	var link = links[i];
-	if (link.href); else continue;
-	if (link.href.indexOf('.html/')>0) { siLog.debug('Fix trail slash - ',link.href); link.href = link.href.replace(/\.html\//,'.html'); }
-	if (!cnnPage.isHomepage) {
-		// Loop through links, add erefs where expected
-		if (link.href.indexOf('http://www.fannation.com/') == 0) {
-			cnnAddQ( link, 'eref=fromSI' );
-		}
-		if (url != '/' && link.href.indexOf('/vault') > 0) {
-			cnnAddQ( link, 'eref=sisf' );
-		}
-		if (url.indexOf('/danpatrick') != 0 && link.href.indexOf('/danpatrick') > 0 && link.href.indexOf('.mp3') < 0) {
-			cnnAddQ( link, 'eref=fromSI' );
-		}
-	}
-	if (link.innerHTML == link.getAttribute('title')) {
-		link.setAttribute('title','');
-	}
-}
-
-function cnnAddQ (link, add) {
-	if (link.href.toLowerCase().indexOf('javascript') == -1) {
-		if (link.href.indexOf('?') > 0) link.href = link.href + '&' + add;
-		else link.href = link.href + '?' + add;
-	}
-}
-
-// Add whitespace to cnnClear
-var breaks = $c('cnnClear','div');
-
-/* Homepage */
-if (cnnPage.isHomepage) {
-	cnnTagHPLinks();
-	/* iPad */
-	if(navigator.userAgent.indexOf('iPad')>-1) {
-		$e('cnnShareRow_mobile').href='http://ax.itunes.apple.com/WebObjects/MZStore.'
-		+'woa/wa/browserRedirect?url=itms%253A%252F%252Fax.itunes.apple.com%252FWebObj'
-		+'ects%252FMZStore.woa%252Fwa%252FviewSoftware%253Fid%253D329510739%2526mt%253D8';
-	}
-	/* Poll frame height issue */
-	if ($e('cnnPollFrame')) { $e('cnnPollFrame').setAttribute('height','169'); }
-}</script>
-<!--END OF PAGELINKS.JS-->
-
 <!-- Temp fix to make Vault links not open new window -->
 <script language="Javascript">
 	var links = document.getElementsByTagName('a');
@@ -960,9 +705,6 @@ if (cnnPage.isHomepage) {
 	}
 	//-->
 </script>
-
-<img src="http://i.cdn.turner.com/si/.e/img/4.0/global/pixels/blank_pixel.gif" alt="" id="TargetImageDE" name="TargetImageDE" onload="cnnad_getDEAdHeadCookie(this)" height="1" width="1">
-<script language="Javascript" type="text/javascript">siTracking.init();</script>
 
 <!-- TIIAD -->
 <script type="text/javascript">
