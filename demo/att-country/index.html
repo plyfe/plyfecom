@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://uverse.com/uverse/countrydeep -->
+<html lang="en" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+				<!-- Version: 6.5.23.2 -->
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" id="viewport-meta" content="width=device-width">
+
+<!-- 3rd party meta tags -->
+
+		<title> The Country Deep App |
+AT&amp;T U-verse</title>
+
+		<script async="" src="./country-deep_files/analytics.js"></script><script async="" src="./country-deep_files/beacon.js"></script><script type="text/javascript" async="" src="./country-deep_files/ga.js"></script><script>
+			window.__usingNewAuth = true;
+		</script>
+
+			<!--[if lte IE 8]>
+				<link rel="stylesheet" href="/web_files/NEXTGEN/web_files/nes/styles/css/master-ie8.css?cache=6.5.23.2" />
+			<![endif]-->
+			<!--[if gte IE 9]><!-->
+				<link rel="stylesheet" href="http://uverse.com/web_files/NEXTGEN/web_files/nes/styles/css/master.css?cache=6.5.23.2">
+			<!--<![endif]-->
+
+			<link rel="stylesheet" href="http://uverse.com/web_files/NEXTGEN/web_files/snes/styles/css/uv.css?cache=6.5.23.2">
+
+
+			<script src="./country-deep_files/mootools-core-1.4.5.min.js"></script>
+			<script src="./country-deep_files/mootools-more-1.4.0.1-custom-1.min.js"></script>
+			<script src="./country-deep_files/knockout-3.0.0.min.js"></script>
+
+			<script src="./country-deep_files/Uverse.config.js"></script>
+<script>
+/**
+* This file contains JS config values
+* that must be different per page,
+* and therefore cannot be cached in /javascripts/Uverse.config.js
+*/
+Uverse.config.dvr = {
+dvrMode: 'dvrItems'
+};
+Uverse.config.requestPath = '/ng' ;
+Uverse.config.cgate = {
+url: 'http://uverse.com/cprodx?appID=m83879&isPassive=false&returnURL=http://uverse.com/uverse/countrydeep'
+};
+</script><script type="text/javascript">
+	(function(win) {
+		var location = win.location;
+
+		// @FIXME: Clean up when tguard is ready
+		var usingNewAuth = true;
+		var authCookie = usingNewAuth ? 'TATS-US-TokenID' : 'ATTNETSSOCKSTR';
+		var pathCheck = usingNewAuth ? 'WATokenService' : 'login.html';
+
+		var cgate = Cookie.read(authCookie);
+		var nxtgn = Cookie.read('NEXTGEN_NAME');
+		var shortCode = Cookie.read('NEXTGEN_SITE_AREA');
+
+		var href = location.href;
+		var hash = location.hash;
+
+		if(hash) {
+			var hashString = hash.substr(1);
+			href = location.protocol + "//" + location.host;
+
+			if (hash == '#/') {
+				href += location.pathname;
+			} else if (hashString.charAt(0) == '/') {
+				href += hashString;
+			} else {
+				href += location.pathname + '?' + hashString;
+			}
+		}
+
+
+		if (!nxtgn && cgate && location.href.indexOf(pathCheck) == -1) {
+			win.location = 'http://uverse.com/login.html?return=' + href;
+		}
+
+		var prefix = '';
+		if (shortCode && shortCode !== '' && shortCode != '""') {
+			prefix = '/' + shortCode;
+		}
+
+		if (prefix != '') {
+			win.location = 'http://uverse.com/login.html?return=' + href;
+		}
+
+
+	})(window);
+</script>
+			<script src="./country-deep_files/Uverse.combined.min.js"></script>
+
+	<!-- Adobe Analytics -->
+	<script id="adobeAnalyticsScript" src="./country-deep_files/satelliteLib-bee1ce9b89e943a46b1dfd167adc564fe75eef37.js"></script><script src="./country-deep_files/mbox-contents-3fe7f1ac02f9f751c9c175021a5f0779a4287d23.js"></script><script src="./country-deep_files/satellite-5317552d344e24e7c10002e2.js"></script><style type="text/css">null{visibility: hidden;}</style><script src="./country-deep_files/ga.js"></script><meta id="wtMetaTag" name="DCSext.wtDTMInd" content="1">
+
+
+
+<meta name="description" content="Uverse.com offers over 300,000 TV shows, movies, sports, music videos and live streaming TV for free, with even more for U-verse TV subscribers.">
+<meta name="fragment" content="!">
+
+
+		<!--[if lt IE 9]>
+		<script src="/web_files/NEXTGEN/web_files/nes/js/lib/html5shiv/html5shiv-3.7.0.js?cache=true"></script>
+		<![endif]-->
+
+		<script>
+
+
+
+var UvJsOptions = {};
+
+UvJsOptions.jsSrc = "/TEAMSITE/DEVELOPMENT/web_files/snes/javascripts/src/";
+
+UvJsOptions.links = {
+	signInUrlTemplate: "http://uverse.com/cprodx?appID=m83879&isPassive=false&returnURL={{ returnUrl }}"
+};
+
+UvJsOptions.flyouts = {
+	buttons: {
+		trailer: "Watch Trailer"
+		, episode: "Watch Episode"
+		, movies: "Watch Movie"
+		, clip: "Watch Clip"
+		, live: "Watch Live"
+		, resume: "Resume"
+		, rent: "Rent on your TV"
+
+	}
+	, footer: {
+		signin: 'Please <a href="{{ signinLink }}">sign in</a> to watch {{ contentChoice | choice:"content online":"this series online":"LIVE online" }}'
+		, upgrade: '<a href="{{ upgradeLink }}">U-verse TV upgrade</a> required to watch {{ contentChoice | choice:"full movie":"more of this series":"online" }}'
+		, broadband: "Broadband or TV Upgrade required to watch"
+		, hdprem: "HD Premium required to watch"
+		, hdupgrade: "HD Premium or TV Upgrade required"
+		, rentalOrderLink: "/uv/ondemand"
+	}
+};
+
+UvJsOptions.purchaseHistory = {
+	couponCodeDefault: "No Coupon"
+};
+
+UvJsOptions.googleAnalytics = {
+	accountNumber: "UA-6309852-3"
+};
+		</script>
+			<script src="./country-deep_files/Uv.vendor.combined.min.js"></script>
+			<script src="./country-deep_files/uv.combined.min.js"></script>
+		<script src="./country-deep_files/uv.templates.js"></script>
+
+	<script src="./country-deep_files/s-code-contents-65778bc202aa3fe01113e6b6ea6d103eda099fe5.js"></script><script src="./country-deep_files/foresee-fsr.js" type="text/javascript"></script><meta name="attanalytics.loggedin" content="Guest"><meta name="attanalytics.hsia" content="Non-HSIA"><meta name="attanalytics.usertvpackage" content=""><script src="./country-deep_files/foresee-trigger.js" type="text/javascript"></script><script src="./country-deep_files/satellite-52f5548bc7a6006cc700022d.js"></script><style type="text/css">null{visibility: hidden;}</style><script type="text/javascript" src="./country-deep_files/foresee-surveydef.js"></script></head>
+
+	<body class="pageType-default not-logged-in not-uverse-user">
+
+
+
+		<section id="pageContainer1" class="page-container">
+
+
+<div id="toast" class="toast hidden">
+	<div class="toast-close"></div>
+	<div class="toast-button">
+		<span class="slice-one"></span>
+		<span class="slice-two"></span>
+	</div>
+	<span class="toast-message">
+		<span class="toast-message-alert"></span>
+		<span class="toast-message-text"></span>
+	</span>
+</div><div id="masthead" class="page-header track-hasCategory track-hasLabel" data-clicktrack-category="Top Nav" data-clicktrack-label="/uverse/countrydeep">
+	<div class="page-header-nav">
+
+	<ul class="global-links track-hasSubcategory" data-clicktrack-subcategory="ATT Sites">
+			<li class="global-link"><a href="http://att.net/" class="track" data-clicktrack-action="att.net">att.net</a></li>
+			<li class="global-link"><a href="http://www.att.com/shop/u-verse?source=ECSFU90000000000L&wtExtndSource=uv_hdr_att" class="track" data-clicktrack-action="att.com">att.com</a></li>
+			<li class="global-link current"><a href="http://uverse.com/" class="track" data-clicktrack-action="uverse.com">uverse.com</a></li>
+	</ul>
+
+		<div id="main-navigation" class="main-navigation track-hasSubcategory" data-clicktrack-subcategory="Navigation">
+			<div class="page-header-left-wrapper">
+				<a href="http://uverse.com/" class="track" data-clicktrack-action="U-verse Logo">
+					<img class="main-logo" src="./country-deep_files/ATT_logo.png" alt="AT&amp;T" title="U-verse Home">
+				</a>
+			</div>
+			<div id="discover-menu" class="page-header-discover-wrapper" data-bind="hover: { hovered: showMenuHovered }">
+<button class="U2-control U2-control-button blue page-header-discover track-hasCategory
+track-hasSubcategory
+track-hasAction
+track-hasLabel track" data-clicktrack-category="Top Nav" data-clicktrack-subcategory="Navigation" data-clicktrack-action="Browse" data-clicktrack-label="/uverse/countrydeep" data-bind="ucontrol:{}"><span class="btn-text">
+Browse </span></button>
+	<div class="discover-menu has-promo " data-bind="fade: { visible: showMenu, partiallyVisible: partiallyVisible, duration: showMenu() ? 500 : 300 }" style="opacity: 0; display: none;">
+
+	<section class="discover-menu-section track-hasAction" data-clicktrack-action="Browse Submenu">
+		<header class="discover-menu-header">
+			<a href="http://uverse.com/" class="track" data-clicktrack-label="Watch Now">Watch Now</a>
+		</header>
+		<ul class="discover-menu-list">
+			<li class="discover-menu-item"><a href="http://uverse.com/live" class="track" data-clicktrack-label="Live TV">Live TV</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/tv" class="track" data-clicktrack-label="TV Shows">TV Shows</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/movies" class="track" data-clicktrack-label="Movies">Movies</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/music" class="track" data-clicktrack-label="Music">Music</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/networks" class="track" data-clicktrack-label="Networks">Networks</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/free" class="track" data-clicktrack-label="Free">Free</a></li>
+		</ul>
+	</section>
+	<section class="discover-menu-section track-hasAction" data-clicktrack-action="Browse Submenu">
+		<header class="discover-menu-header">
+			<a href="http://uverse.com/uverse" class="track" data-clicktrack-label="U-verse TV">U-verse TV</a>
+		</header>
+		<ul class="discover-menu-list">
+			<li class="discover-menu-item"><a href="http://uverse.com/guide" class="track" data-clicktrack-label="TV Listings">TV Listings</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/dvr/recorded" class="track" data-clicktrack-label="My DVR">My DVR</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/uverse/whats-on" class="track" data-clicktrack-label="What’s On">What’s On</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/uverse/ondemand" class="track" data-clicktrack-label="On Demand">On Demand</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/uverse/ppv" class="track" data-clicktrack-label="Pay Per View">Pay Per View</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/uverse/apps" class="track" data-clicktrack-label="Apps">Apps</a></li>
+			<li class="discover-menu-item"><a href="http://uverse.com/u-guide" class="track" data-clicktrack-label="UGuide Magazine">UGuide Magazine</a></li>
+		</ul>
+	</section>
+
+	<div class="discover-menu-genres collapsed" data-bind="css: { &#39;collapsed&#39;: !showGenreMenu() }, transition: ko.Animation.slideTo(showGenreMenu(), 0)" style="top: 211px; left: 0px;">
+		<header class="discover-menu-header header-genres" data-bind="merge: { genreMenuEnabled: false }">
+			<a href="http://uverse.com/uverse/countrydeep#" class="menu-genre-toggle track-hasAction track-hasLabel disabled" data-clicktrack-action="Browse Genre Toggle" data-clicktrack-label="Collapse - /uverse/countrydeep" data-bind="click: toggleGenreMenu
+					, attr: { &#39;data-clicktrack-label&#39;: showGenreMenu() ? &#39;Expand - /uverse/countrydeep&#39; : &#39;Collapse - /uverse/countrydeep&#39; }
+					, css: { &#39;disabled&#39;: !genreMenuEnabled() }
+					">
+				Genres
+			</a>
+		</header>
+
+	</div>
+		<div class="discover-promo">
+			<a href="http://uverse.com/uverse" class="track-hasAction
+track-hasLabel" data-clicktrack-action="Browse Shop U-verse" data-clicktrack-label="/uverse/countrydeep">
+Shop for U-verse TV Packages &amp; Features »			</a>
+		</div>
+	</div>
+			</div>
+			<span class="page-header-or">or</span>
+			<div id="quickSearch" class="quick-search track-hasSubcategory" data-clicktrack-subcategory="Search">
+				<form action="http://uverse.com/search" method="post" class="track-hasAction" data-clicktrack-action="Submit Query">
+<input type="text" name="query" value="" class="U-control U-control-textbox quick-search-textbox " maxlength="64" autocomplete="off" data-bind="" placeholder="Search Uverse.com">					<input type="hidden" name="searchEpisodeAndClipDescriptions" class="searchEpisodeAndClipDescriptions" value="false">
+					<input type="hidden" name="searchHdOnly" class="searchHdOnly" value="false">
+					<input type="hidden" name="searchFreeOnly" class="searchFreeOnly" value="false">
+					<input type="hidden" name="searchEspanolOnly" class="searchEspanolOnly" value="false">
+					<div class="quick-search-magnify"><button type="submit"></button></div>
+
+					<div class="quick-search-results-container hidden track-hasAction" data-clicktrack-action="Search Suggestion">
+					</div>
+
+				</form>
+			</div>
+			<div class="profile-links-wrapper">
+	<div id="profile-links" class="profile-links ">
+	<div data-bind="visible: isUserLoggedIn(), hover: {hovered: showMenuHovered}" style="display: none;">
+		<div class="profile-loginmenu profile-loginmenu-menulink track-hasAction track-hasLabel track" data-clicktrack-action="Hi username" data-bind="attr: {&#39;data-clicktrack-label&#39;: userFirstName()}">
+			<span class="profile-loginmenu-cell profile-loginmenu-avatar">
+<svg class="logged-in" xmlns="http://www.w3.org/2000/svg" width="15px" height="20px">
+<g>
+<path d="M13.5,11.97c-0.38-0.9-2.67-1.68-2.67-1.68C9.61,9.82,9.6,9.36,9.6,9.36c-2.4,5.11-4.23,0.01-4.23,0.01
+c-0.17,0.69-2.64,1.5-2.64,1.5c-0.72,0.3-1.03,0.75-1.03,0.75c-1.07,1.71-1.2,5.52-1.2,5.52c0.01,0.87,0.36,0.96,0.36,0.96
+c2.46,1.18,6.32,1.39,6.32,1.39c3.96,0.09,6.85-1.21,6.85-1.21c0.42-0.29,0.43-0.51,0.43-0.51C14.75,15.04,13.5,11.97,13.5,11.97z"></path>
+<path d="M4.76,6.66C4.94,8.3,6.26,10,7.44,10c1.37,0,2.67-1.79,2.87-3.35c0.08-0.06,0.2-0.2,0.25-0.53
+c0,0,0.29-1.13-0.1-1.01c0.01-0.03,0.01-0.07,0.01-0.11c0.04-0.25,0.06-0.52,0.06-0.79c0-2.21-1.33-3.73-2.98-3.73
+c-1.64,0-2.98,1.52-2.98,3.73c0,0.3,0.03,0.59,0.07,0.87c0,0.02,0,0.03,0,0.05C4.19,4.91,4.51,6.13,4.51,6.13
+C4.56,6.45,4.68,6.6,4.76,6.66z"></path>
+</g>
+</svg>			</span>
+			<span class="profile-loginmenu-cell profile-loginmenu-username">
+				<span>Hi <span data-bind="text: userFirstName"></span></span>
+			</span>
+			<span class="profile-loginmenu-cell profile-loginmenu-arrow"></span>
+		</div>
+
+<div data-bind="fade: { visible: showMenu, partiallyVisible: partiallyVisible, duration: showMenu() ? 500 : 300 }" class="user-menu" style="opacity: 0; display: none;">
+
+	<section class="account-package-manager track-hasSubcategory" data-clicktrack-subcategory="Packages" data-bind="mergeModelData: { packages: &#39;packageJsonData&#39; }">
+		<script>
+			Uverse.loader.storeModelData('packageJsonData', [{"title":"HBO","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomHBOMax&source=ECSFU90000000000L&wtExtndSource=Custom_HBOMax","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/hbo.svg","packageKeys":["HBO","HBOCIN"]},{"title":"Cinemax","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomHBOMax&source=ECSFU90000000000L&wtExtndSource=Custom_HBOMax","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/cinemax.svg","packageKeys":["MAX","HBOCIN"]},{"title":"Starz","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomStarzEncore&source=ECSFU90000000000L&wtExtndSource=Custom_StarzEncore","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/starz.svg","packageKeys":["STARZ","STRENC"]},{"title":"Showtime","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomShowtime&source=ECSFU90000000000L&wtExtndSource=Custom_Showtime","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/showtime.svg","packageKeys":["SHO","SHUNLD"]},{"title":"Encore","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomStarzEncore&source=ECSFU90000000000L&wtExtndSource=Custom_StarzEncore","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/encore.svg","packageKeys":["ENCORE","STRENC"]},{"title":"High Definition","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomHD&source=ECSFU90000000000L&wtExtndSource=Custom_HD","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/hd_package.svg","packageKeys":["HDPREM"]},{"title":"Sports","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomSports&source=ECSFU90000000000L&wtExtndSource=Custom_Sports","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/sports_package.svg","packageKeys":["SPORTS"]},{"title":"Spanish","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomSpanish&source=ECSFU90000000000L&wtExtndSource=Custom_Spanish","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/spanish_package.svg","packageKeys":["SPANSH"]},{"title":"International","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomInternational&source=ECSFU90000000000L&wtExtndSource=Custom_International","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/international_package.svg","packageKeys":["TVMAND","TVSTH2","VIETPK","TVFILI","ART","CCTV","ETGLBL","FILIPC","MBCAMR","PHOINF","PHONAC","RAINTL","SBN","TVASIA","TVBV","TVMAND","TVRUSS","TVSH2","ZEETV"]},{"title":"The Movie Package","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomUMovie&source=ECSFU90000000000L&wtExtndSource=Custom_Movies","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/movie_package.svg","packageKeys":["MOVIE"]},{"title":"ScreenPack","upgradeLink":"https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomScreenPack&source=ECSFU90000000000L&wtExtndSource=Custom_ScreenPack","logoUrl":"http://uverse.com/web_files/NEXTGEN/web_files/images/packages/screenpack.svg","packageKeys":["SCRPAS"]}]);
+		</script>
+
+		<header class="account-package-header">
+
+
+<a class="U2-control U2-control-button-link blue manage controlStyle-medium track-hasAction track" data-clicktrack-action="Button - Manage" href="https://www.att.com/olam/loginAction.olamexecute?pId=U_PassThru_UcomGeneric&source=ECSFU90000000000L&wtExtndSource=Custom_Generic" target="_blank"> <span class="my-package-label">Manage My TV Package</span>
+<span class="my-package-text" data-bind="text: userPackage"></span>
+</a>		</header>
+		<article class="account-package-list-container">
+			<div class="account-package-list" data-bind="foreach: { data: displayPackages, as: &#39;package&#39; }, cloneAndAnimate: { subscribe: displayPackages, clone: ko.Animation.slide(&#39;up&#39;), element: ko.Animation.slide(&#39;down&#39;,true).slide(&#39;in&#39;) }"></div>
+		</article>
+		<footer class="account-package-footer track-hasAction" data-clicktrack-action="See More" data-bind="click: nextPage">
+<svg class="next-page-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="9">
+<defs>
+<lineargradient id="page_next_arrow_stops">
+<stop style="stop-color:#a3a3a3;stop-opacity:1" offset="0"></stop>
+<stop style="stop-color:#b8b8b8;stop-opacity:1" offset="1"></stop>
+</lineargradient>
+<lineargradient xlink:href="#page_next_arrow_stops" id="page_next_arrow_gradient" x1="10" y1="9" x2="10" y2="0" gradientUnits="userSpaceOnUse"></lineargradient>
+</defs>
+<g>
+<path style="fill:url(#page_next_arrow_gradient);fill-opacity:1;stroke-width:0" d="M 0,0 10,9 20,0 z"></path>
+</g>
+</svg>		</footer>
+	</section>
+	<section class="account-links-manager track-hasSubcategory" data-clicktrack-subcategory="Menu">
+			<article>
+				<header class="account-links-header">
+						<a href="http://uverse.com/" class="track-hasAction track" data-clicktrack-action="My Uverse.com">
+							My Uverse.com
+						</a>
+
+				</header>
+				<ul>
+					<li class="account-links-element">
+						<a href="http://uverse.com/uv/myshows" class="track-hasAction track" data-clicktrack-action="Resume Watching">Resume Watching</a>
+					</li>
+					<li class="account-links-element">
+						<a href="http://uverse.com/uv/myshows" class="track-hasAction track" data-clicktrack-action="My Favorites">My Favorites</a>
+					</li>
+					<li class="account-links-element">
+						<a href="http://uverse.com/uverse/countrydeep#notificationsSettings=show" class="track-hasAction track" data-clicktrack-action="Notification Settings">Notification Settings</a>
+					</li>
+					<li class="account-links-element">
+						<a href="http://uverse.com/uverse/countrydeep#parentalControlsSettings=show" class="track-hasAction track" data-clicktrack-action="Parental Controls">Parental Controls</a>
+					</li>
+				</ul>
+			</article>
+			<article>
+				<header class="account-links-header">
+						<a href="http://www.att.com/olam/showUverseOverviewAction.myworld" class="track-hasAction track" data-clicktrack-action="myAT&amp;T">
+							myAT&amp;T
+						</a>
+
+				</header>
+				<ul>
+					<li class="account-links-element">
+						<a href="https://www.att.com/olam/passthroughAction.myworld?actionType=MakePayment&source=ECSFU90000000000L&wtExtndSource=paybill" class="track-hasAction track" data-clicktrack-action="Pay My Bill" target="_blank">Pay My Bill</a>
+					</li>
+					<li class="account-links-element">
+						<a href="http://www.att.com/esupport/index.jsp?App_ID=PBY" class="track-hasAction track" data-clicktrack-action="Support" target="_blank">Support</a>
+					</li>
+					<li class="account-links-element">
+						<a href="https://www.att.com/olam/passthroughAction.myworld?actionType=ManageVoipCheckVMRedirect&source=ECSFU90000000000L&wtExtndSource=checkvoicemail" class="track-hasAction track" data-clicktrack-action="Check My Voicemail" target="_blank">Check My Voicemail</a>
+					</li>
+				</ul>
+			</article>
+		<article>
+			<ul>
+				<li class="account-links-element bottom-link">
+	<a href="https://cprodx.uverse.com/commonLogin/igate_web_dlom/logOut.do?style=TokenService&returnurl=http://uverse.com/logout.html?return=http://uverse.com/uverse/countrydeep" class="track-hasAction track" data-clicktrack-action="Sign Out">Sign Out</a>
+				</li>
+			</ul>
+		</article>
+	</section>
+</div>	</div>
+	<div data-bind="visible: !isUserLoggedIn()">
+		<div class="profile-loginmenu-cell profile-loginmenu-cell-signup">
+	<span class="profile-loginmenu-signup"><a href="https://attreg.att.net/PortalRegWeb/PortalRegController?callingAppId=ME&returnurl=http://uverse.com/uverse/countrydeep" target="_blank" class="track-hasAction track external" data-clicktrack-action="Sign Up">Sign up</a></span>
+	<span class="profile-loginmenu-support"><a href="http://www.att.com/esupport/index.jsp?App_ID=PBY&source=ECSFU90000000000L&wtExtndSource=uv_hdr_esupport" target="_blank" class="track-hasAction track external" data-clicktrack-action="Support">Support</a></span>
+		</div>
+		<div class="profile-loginmenu">
+	<a id="logInLink" href="http://uverse.com/cprodx?appID=m83879&isPassive=false&returnURL=http://uverse.com/uverse/countrydeep" class="profile-loginmenu-link track-hasAction track" data-clicktrack-action="Sign In">				<span class="profile-loginmenu-cell profile-loginmenu-avatar">
+<svg class="not-logged-in" xmlns="http://www.w3.org/2000/svg" width="15px" height="20px">
+<g>
+<path d="M13.5,11.97c-0.38-0.9-2.67-1.68-2.67-1.68C9.61,9.82,9.6,9.36,9.6,9.36c-2.4,5.11-4.23,0.01-4.23,0.01
+c-0.17,0.69-2.64,1.5-2.64,1.5c-0.72,0.3-1.03,0.75-1.03,0.75c-1.07,1.71-1.2,5.52-1.2,5.52c0.01,0.87,0.36,0.96,0.36,0.96
+c2.46,1.18,6.32,1.39,6.32,1.39c3.96,0.09,6.85-1.21,6.85-1.21c0.42-0.29,0.43-0.51,0.43-0.51C14.75,15.04,13.5,11.97,13.5,11.97z"></path>
+<path d="M4.76,6.66C4.94,8.3,6.26,10,7.44,10c1.37,0,2.67-1.79,2.87-3.35c0.08-0.06,0.2-0.2,0.25-0.53
+c0,0,0.29-1.13-0.1-1.01c0.01-0.03,0.01-0.07,0.01-0.11c0.04-0.25,0.06-0.52,0.06-0.79c0-2.21-1.33-3.73-2.98-3.73
+c-1.64,0-2.98,1.52-2.98,3.73c0,0.3,0.03,0.59,0.07,0.87c0,0.02,0,0.03,0,0.05C4.19,4.91,4.51,6.13,4.51,6.13
+C4.56,6.45,4.68,6.6,4.76,6.66z"></path>
+</g>
+</svg>				</span>
+				<span class="profile-loginmenu-cell profile-loginmenu-signin" data-bind="visible: !isUserLoggedIn()">
+Sign in				</span>
+</a>
+		</div>
+	</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="page-header-placeholder"></div>
+
+<script type="text/javascript">
+	Uverse.load({
+		moduleName: 'Uverse.widgets.QuickSearch'
+		, id: 'quickSearch'
+		, options: {
+			searchUrl: '/search/quickSearch.html'
+			,searchKey: 'letters'
+			,minCharacters: 1
+		}
+	});
+
+	Uverse.load({
+		moduleName: 'Uverse.widgets.FixedHeader'
+		, id: 'main-navigation'
+	});
+
+	Uverse.load({
+		moduleName: 'Uverse.widgets.LogInLinks'
+		, id: 'profile-links'
+		, options: {
+			menuOffset: { x: 3, y: 15 }
+		}
+	});
+
+	Uverse.load({
+		moduleName: 'Uverse.widgets.DiscoverMenu'
+		, id: 'discover-menu'
+		, options: {
+			menuOffset: { x: 0, y: 15 }
+		}
+	});
+
+</script>
+
+
+
+			<div role="main" id="main">
+
+
+
+		<script>
+			Uverse.config.componentPageUrl = '/uverse/countrydeep';
+		</script>
+
+		<div ng-app="uv" ng-controller="UvMainCtrl" class="component-page ng-scope">
+
+	<div id="getPromoBanner" class="get-promo-banner" data-bind="merge: { page: &#39;/uverse/countrydeep&#39; }" style="display: block;">
+		<!-- ko if: shouldShowButton -->
+		<span class="get-promo-text" data-bind="text: text">Check to see if U-verse® TV is available in your area?</span>
+<a class="U2-control U2-control-button-link blue get-promo-button track-hasCategory
+track-hasSubcategory
+track-hasAction track" data-clicktrack-category="Get Promo Bar" data-clicktrack-subcategory="Banner" data-clicktrack-action="CTA Button" href="http://www.att.com/shop/availability.html?source=ECSFU90000000000L&wtExtndSource=home_txtpromo" target="_blank" data-bind="attr: { href: link, &#39;data-clicktrack-label&#39;: clicktrackLabel, target: linkTarget }" data-clicktrack-label="Check to see if U-verse® TV is available in your area? - /uverse/countrydeep"><span class="btn-text" data-bind="text: buttonText">Click Here</span></a>		<!-- /ko -->
+		<!-- ko if: !shouldShowButton --><!-- /ko -->
+	</div>
+
+	<div class="plyfe-widget" data-venue="att" data-type="campaign" data-campaign-id="453" style="overflow:hidden; margin:auto; width: 980px; height: 800px; margin-top:10px;"></div>
+	<div style="width:980px; margin:auto;">
+	<img src="country-deep_files/more.png" style="width:980px; margin:auto;"/>
+</div>
+
+
+
+	<script type="text/javascript">
+		Uverse.load({
+			moduleName: 'Uverse.widgets.GetPromoBanner'
+			, id: 'getPromoBanner'
+		});
+	</script>
+			<div ng-controller="ComponentsPageCtrl" class="ng-scope">
+				<!-- ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><div ng-controller="PageTitleCtrl" class="component page-title ng-scope">
+	<h1 ng-bind-html="title" class="ng-binding">Country Deep<sup><small>™</small></sup> only on AT&amp;T U-verse<sup><small>®</small></sup></h1>
+</div></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope">
+<section class="component slide-component ng-scope" ng-controller="SlideComponentCtrl">
+	<article class="slide-component-wrapper" ng-class="{&#39;right-alignment&#39;: !imageHasLeftAlignment}" hover="onSlideComponentHover($event, hover)">
+		<ul class="slide-component-list">
+			<!-- ngRepeat: slide in slides --><li class="slide-component-item ng-scope" slide-component="" ng-repeat="slide in slides" ng-show="$index === currentSlideIndex" style="opacity: 1;">
+				<div class="slide-component-container">
+					<div class="image-container">
+						<img ng-src="http://uverse.com/web_files/NEXTGEN/web_files/images/components/slide-component/Carousel_cdApp_v2.jpg" alt="Country Deep" src="./country-deep_files/Carousel_cdApp_v2.jpg">
+					</div>
+					<div class="text-container">
+						<!-- ngIf: slide.networkLogo -->
+						<!-- ngIf: slide.title --><div class="title-container ng-scope" ng-if="slide.title">
+
+								<h2 class="title ng-scope ng-binding" ng-bind-html="slide.title">Country Deep<sup>™</sup></h2>
+
+						</div><!-- end ngIf: slide.title -->
+						<!-- ngIf: slide.subtitle --><div class="subtitle-container ng-scope" ng-if="slide.subtitle">
+
+								<h3 class="subtitle ng-scope ng-binding" ng-bind-html="slide.subtitle">Only on AT&amp;T U-verse<sup>®</sup></h3>
+
+						</div><!-- end ngIf: slide.subtitle -->
+						<!-- ngIf: slide.description --><span class="description ng-scope ng-binding" ng-if="slide.description" ng-bind-html="slide.description">The Music. The Stories. The Artists. Country Deep brings you closer to the country artists you love. Tune to Ch 530/1530 HD to launch Country Deep on AT&amp;T U-verse.</span><!-- end ngIf: slide.description -->
+						<!-- ngIf: slide.secondaryCtaText -->
+						<!-- ngIf: slide.buttonText --><div class="button-container ng-scope" ng-if="slide.buttonText">
+							<!-- ngIf: !isPlayLink(slide.buttonUrl) --><a class="button blue ng-scope ng-isolate-scope" uv-href="http://www.att.com/u-verse/shop/?source=ECSFU90000000000L&amp;wtExtndSource=pkgpg_countrydeep#fbid=fruhcBSHoyD" target="_self" ng-if="!isPlayLink(slide.buttonUrl)" url="slide.buttonUrl" text="slide.buttonText" button-target="getLinkTarget(slide.buttonLinkIsExternal)" data-track-component="&#39;Slide Component&#39;" data-track-metadata="slide.buttonText" href="http://www.att.com/u-verse/shop/?source=ECSFU90000000000L&wtExtndSource=pkgpg_countrydeep#fbid=fruhcBSHoyD"><span class="btn-text ng-binding" ng-bind-html="text">Get U-verse TV</span></a><!-- end ngIf: !isPlayLink(slide.buttonUrl) -->
+							<!-- ngIf: isPlayLink(slide.buttonUrl) --></div><!-- end ngIf: slide.buttonText -->
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in slides --><li class="slide-component-item ng-scope ng-hide" slide-component="" ng-repeat="slide in slides" ng-show="$index === currentSlideIndex" style="opacity: 0;">
+				<div class="slide-component-container">
+					<div class="image-container">
+						<img ng-src="http://uverse.com/web_files/NEXTGEN/web_files/images/components/slide-component/Carousel_DavidNail_v2.jpg" alt="David Nail" src="./country-deep_files/Carousel_DavidNail_v2.jpg">
+					</div>
+					<div class="text-container">
+						<!-- ngIf: slide.networkLogo --><div class="logo-container ng-scope" ng-if="slide.networkLogo">
+
+								<img class="logo ng-scope" ng-src="http://uverse.com/web_files/NEXTGEN/web_files/images/Network Logos/network-page/country_deep_91x85.png" alt="Country Deep" src="./country-deep_files/country_deep_91x85.png">
+
+						</div><!-- end ngIf: slide.networkLogo -->
+						<!-- ngIf: slide.title -->
+						<!-- ngIf: slide.subtitle --><div class="subtitle-container ng-scope" ng-if="slide.subtitle">
+							<a ng-transclude="" if="slide.subtitleUrl" class="subtitle-link" uv-href="/music/artist/david-nail-country-deep" target="_self" data-track-component="&#39;Slide Component&#39;" data-track-metadata="slide.subtitle" href="http://uverse.com/music/artist/david-nail-country-deep">
+								<h3 class="subtitle ng-scope ng-binding" ng-bind-html="slide.subtitle">David Nail: I'm a Fire</h3>
+
+						</a></div><!-- end ngIf: slide.subtitle -->
+						<!-- ngIf: slide.description --><span class="description ng-scope ng-binding" ng-if="slide.description" ng-bind-html="slide.description">Go behind-the-scenes of life on David Nail's “I’m a Fire” tour, sponsored by Country Deep. Two new episodes debuting weekly in June! </span><!-- end ngIf: slide.description -->
+						<!-- ngIf: slide.secondaryCtaText -->
+						<!-- ngIf: slide.buttonText --><div class="button-container ng-scope" ng-if="slide.buttonText">
+							<!-- ngIf: !isPlayLink(slide.buttonUrl) --><a class="button blue ng-scope ng-isolate-scope" uv-href="/music/artist/david-nail-country-deep" target="_self" ng-if="!isPlayLink(slide.buttonUrl)" url="slide.buttonUrl" text="slide.buttonText" button-target="getLinkTarget(slide.buttonLinkIsExternal)" data-track-component="&#39;Slide Component&#39;" data-track-metadata="slide.buttonText" href="http://uverse.com/music/artist/david-nail-country-deep"><span class="btn-text ng-binding" ng-bind-html="text">Watch now</span></a><!-- end ngIf: !isPlayLink(slide.buttonUrl) -->
+							<!-- ngIf: isPlayLink(slide.buttonUrl) --></div><!-- end ngIf: slide.buttonText -->
+					</div>
+				</div>
+			</li><!-- end ngRepeat: slide in slides -->
+		</ul>
+
+		<!-- ngIf: hasMoreThanOneSlide() --><div ng-if="hasMoreThanOneSlide()" class="pagination ng-scope">
+			<ul class="pagination-wrap">
+				<!-- ngRepeat: slide in slides --><li class="pagination-item-container ng-scope active" ng-repeat="slide in slides" ng-click="goToSelectedSlide($index)" ng-class="{active: $index == currentSlideIndex}" data-track-component="&#39;Slide Component&#39;" data-track-metadata="&#39;Slide Component pagination dots&#39;"><div class="pagination-item"></div></li><!-- end ngRepeat: slide in slides --><li class="pagination-item-container ng-scope" ng-repeat="slide in slides" ng-click="goToSelectedSlide($index)" ng-class="{active: $index == currentSlideIndex}" data-track-component="&#39;Slide Component&#39;" data-track-metadata="&#39;Slide Component pagination dots&#39;"><div class="pagination-item"></div></li><!-- end ngRepeat: slide in slides -->
+			</ul>
+		</div><!-- end ngIf: hasMoreThanOneSlide() -->
+
+		<!-- ngIf: hasMoreThanOneSlide() --><div ng-if="hasMoreThanOneSlide()" ng-click="goToPreviousSlide()" left-arrow="" data-track-component="&#39;Slide Component&#39;" data-track-metadata="&#39;Slide Component pagination arrow left&#39;" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></div><!-- end ngIf: hasMoreThanOneSlide() -->
+
+		<!-- ngIf: hasMoreThanOneSlide() --><div ng-if="hasMoreThanOneSlide()" ng-click="goToNextSlide()" data-track-component="&#39;Slide Component&#39;" right-arrow="" data-track-metadata="&#39;Slide Component pagination arrow right&#39;" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></div><!-- end ngIf: hasMoreThanOneSlide() -->
+	</article>
+</section>
+
+
+
+</div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><section class="component card-container ng-scope" ng-controller="CardContainerCtrl" data-track-component="&#39;Card Container&#39;">
+    <header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Just In</h2>
+
+    <!-- ngIf: headerData.toolTipText --><div ng-if="headerData.toolTipText" class="tool-tip-icon ng-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Tooltip&#39;" data-track-metadata="isHovered"></div><!-- end ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata --><a ng-if="headerData.link &amp;&amp; headerData.link.linkMetadata" ng-bind-html="headerData.link.linkMetadata" uv-href="/network/country-deep" uv-target="headerData.link.externalLink" data-track-component="&#39;Header Link&#39;" data-track-metadata="headerData.link.linkMetadata" class="ng-scope ng-binding" href="http://uverse.com/network/country-deep" target="headerData.link.externalLink">View All</a><!-- end ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+    <article>
+        <div carousel="true" slide-adjust="20" class="ng-isolate-scope"><div class="carousel-container">
+	<div class="carousel-button ng-isolate-scope left ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;left&#39;" direction="left" ng-show="canMoveLeft"><i left-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></i></div>
+	<div class="carousel-button ng-isolate-scope right" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;right&#39;" direction="right" ng-show="canMoveRight"><i right-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></i></div>
+	<div class="carousel-content" ng-transclude="" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+            <!-- ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2815.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 1" src="./country-deep_files/CD2815.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 1
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2816.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 2" src="./country-deep_files/CD2816.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 2
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2818.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 3" src="./country-deep_files/CD2818.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 3
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2819.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 4" src="./country-deep_files/CD2819.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 4
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2694.jpg" alt="Jana Kramer - Country Deep - Love to Love: Episode 8" src="./country-deep_files/CD2694.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Jana Kramer - Country Deep - Love to Love: Episode 8
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards -->
+        </div>
+</div></div>
+    </article>
+</section></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><section class="component card-container ng-scope" ng-controller="CardContainerCtrl" data-track-component="&#39;Card Container&#39;">
+    <header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Music Videos</h2>
+
+    <!-- ngIf: headerData.toolTipText --><div ng-if="headerData.toolTipText" class="tool-tip-icon ng-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Tooltip&#39;" data-track-metadata="isHovered"></div><!-- end ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+    <article>
+        <div carousel="true" slide-adjust="20" class="ng-isolate-scope"><div class="carousel-container">
+	<div class="carousel-button ng-isolate-scope left ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;left&#39;" direction="left" ng-show="canMoveLeft"><i left-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></i></div>
+	<div class="carousel-button ng-isolate-scope right ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;right&#39;" direction="right" ng-show="canMoveRight"><i right-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></i></div>
+	<div class="carousel-content" ng-transclude="" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+            <!-- ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2450.jpg" alt="Blake Shelton - Country Deep - Honey Bee" src="./country-deep_files/CD2450.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Blake Shelton - Country Deep - Honey Bee
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2568.jpg" alt="Blake Shelton - Country Deep - Drink On It (audio)" src="./country-deep_files/CD2568.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Blake Shelton - Country Deep - Drink On It (audio)
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2626.jpg" alt="Blake Shelton - Country Deep - Doin&#39; What She Likes" src="./country-deep_files/CD2626.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Blake Shelton - Country Deep - Doin' What She Likes
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2525.jpg" alt="Blake Shelton - Country Deep - Sure Be Cool If You Did (Lyric Video)" src="./country-deep_files/CD2525.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Blake Shelton - Country Deep - Sure Be Cool If You Did (Lyric Video)
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards -->
+        </div>
+</div></div>
+    </article>
+</section></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><section class="component card-container ng-scope" ng-controller="CardContainerCtrl" data-track-component="&#39;Card Container&#39;">
+    <header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Rising Stars</h2>
+
+    <!-- ngIf: headerData.toolTipText --><div ng-if="headerData.toolTipText" class="tool-tip-icon ng-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Tooltip&#39;" data-track-metadata="isHovered"></div><!-- end ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+    <article>
+        <div carousel="true" slide-adjust="20" class="ng-isolate-scope"><div class="carousel-container">
+	<div class="carousel-button ng-isolate-scope left ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;left&#39;" direction="left" ng-show="canMoveLeft"><i left-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></i></div>
+	<div class="carousel-button ng-isolate-scope right ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;right&#39;" direction="right" ng-show="canMoveRight"><i right-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></i></div>
+	<div class="carousel-content" ng-transclude="" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+            <!-- ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD1002.jpg" alt="Country Deep - Rising Stars - David Nail - Sound of a Million Dreams" src="./country-deep_files/CD1002.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Country Deep - Rising Stars - David Nail - Sound of a Million Dreams
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2685.jpg" alt="Dan + Shay - Country Deep - Story + Song: Parking Brake" src="./country-deep_files/CD2685.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Dan + Shay - Country Deep - Story + Song: Parking Brake
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2690.jpg" alt="Dan + Shay - Country Deep - Story + Song: What You Do To Me" src="./country-deep_files/CD2690.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Dan + Shay - Country Deep - Story + Song: What You Do To Me
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2686.jpg" alt="Dan + Shay - Country Deep - Story + Song: Party Girl" src="./country-deep_files/CD2686.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Dan + Shay - Country Deep - Story + Song: Party Girl
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards -->
+        </div>
+</div></div>
+    </article>
+</section></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><section class="component card-container ng-scope" ng-controller="CardContainerCtrl" data-track-component="&#39;Card Container&#39;">
+    <header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Original Shows</h2>
+
+    <!-- ngIf: headerData.toolTipText --><div ng-if="headerData.toolTipText" class="tool-tip-icon ng-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Tooltip&#39;" data-track-metadata="isHovered"></div><!-- end ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+    <article>
+        <div carousel="true" slide-adjust="20" class="ng-isolate-scope"><div class="carousel-container">
+	<div class="carousel-button ng-isolate-scope left ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;left&#39;" direction="left" ng-show="canMoveLeft"><i left-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></i></div>
+	<div class="carousel-button ng-isolate-scope right ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;right&#39;" direction="right" ng-show="canMoveRight"><i right-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></i></div>
+	<div class="carousel-content" ng-transclude="" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+            <!-- ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2818.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 3" src="./country-deep_files/CD2818.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 3
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2815.jpg" alt="David Nail - Country Deep - I&#39;m A Fire - Episode 1" src="./country-deep_files/CD2815.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		David Nail - Country Deep - I'm A Fire - Episode 1
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2705.jpg" alt="Jennifer Nettles - Country Deep - Jealousy" src="./country-deep_files/CD2705.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Jennifer Nettles - Country Deep - Jealousy
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2706.jpg" alt="Jennifer Nettles - Country Deep - Falling" src="./country-deep_files/CD2706.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Jennifer Nettles - Country Deep - Falling
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards -->
+        </div>
+</div></div>
+    </article>
+</section></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><section class="component card-container ng-scope" ng-controller="CardContainerCtrl" data-track-component="&#39;Card Container&#39;">
+    <header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Behind the Scenes</h2>
+
+    <!-- ngIf: headerData.toolTipText --><div ng-if="headerData.toolTipText" class="tool-tip-icon ng-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Tooltip&#39;" data-track-metadata="isHovered"></div><!-- end ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+    <article>
+        <div carousel="true" slide-adjust="20" class="ng-isolate-scope"><div class="carousel-container">
+	<div class="carousel-button ng-isolate-scope left ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;left&#39;" direction="left" ng-show="canMoveLeft"><i left-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow left" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 9.488,16.997 21.565,4.794 16.821,0 4.744,12.203 l 0,0 -1.133,1.145 -1.599,1.616 0,0 L 0,16.997 16.821,33.995 21.565,29.201 z"></path></svg></i></div>
+	<div class="carousel-button ng-isolate-scope right ng-hide" ng-class="direction" ng-click="move()" ng-transclude="" data-track-component="&#39;Carousel&#39;" data-track-metadata="&#39;right&#39;" direction="right" ng-show="canMoveRight"><i right-arrow="" class="ng-scope"><svg xmlns="http://www.w3.org/2000/svg" class="navigation-arrow right" width="21.565001" height="33.994999" viewBox="0 0 21.565001 33.994999"><path d="M 12.077,16.998 0,29.201 l 4.744,4.794 12.077,-12.203 0,0 1.133,-1.145 1.599,-1.616 0,0 2.012,-2.033 L 4.744,0 0,4.794 z"></path></svg></i></div>
+	<div class="carousel-content" ng-transclude="" style="-webkit-transform: translate3d(0px, 0px, 0px);">
+            <!-- ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2531.jpg" alt="Whitney Duncan - Country Deep - Right Road Now" src="./country-deep_files/CD2531.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Whitney Duncan - Country Deep - Right Road Now
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2441.jpg" alt="Brantley Gilbert - Country Deep - Bottoms Up: Behind the Scenes" src="./country-deep_files/CD2441.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Brantley Gilbert - Country Deep - Bottoms Up: Behind the Scenes
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2587.jpg" alt="Eli Young Band - Country Deep - Drunk Last Night (The Making of)" src="./country-deep_files/CD2587.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Eli Young Band - Country Deep - Drunk Last Night (The Making of)
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards --><div class="card-wrapper ng-isolate-scope" hover="setHovered($event, hover)" is-hovered="isHovered" data-track-component="&#39;Card&#39;" data-track-metadata="card.title" ng-repeat="card in cards" card-data="card">
+	<!-- ngInclude: template --><div ng-include="template" class="ng-scope"><section class="card landscape-video-card ng-scope">
+	<header class="card-image-wrapper image-size-thumbnail">
+		<img class="card-image image-size-thumbnail" ng-src="http://cdn05.uverse.com/7325/entertainment/prod/nextgen/images/genex-drm/CD2164.jpg" alt="Billy Currington - Country Deep - Hey Girl: The Story Behind the Song" src="./country-deep_files/CD2164.jpg">
+		<!-- ngIf: isEntitled() && cardData.playLink --><a ng-if="isEntitled() &amp;&amp; cardData.playLink" class="card-image-overlay play ng-scope" ng-click="playVideo(cardData.playLink)" data-track-component="&#39;Play&#39;" data-track-metadata="cardData.title"></a><!-- end ngIf: isEntitled() && cardData.playLink -->
+		<!-- ngIf: !isEntitled() -->
+	</header>
+	<article class="metadata single-line-ellipsis ng-binding">
+		Billy Currington - Country Deep - Hey Girl: The Story Behind the Song
+	</article>
+</section></div>
+    <div class="badge">
+    <!-- ngIf: cardData.cardType !== 'music' && cardData.fullCount > 0 -->
+</div>
+</div><!-- end ngRepeat: card in cards -->
+        </div>
+</div></div>
+    </article>
+</section></div>
+				</div><!-- end ngRepeat: component in components --><div ng-repeat="component in components" class="ng-scope">
+					<!-- ngInclude: component.templateUrl --><div ng-include="component.templateUrl" data-component="component" class="ng-scope"><article ng-controller="MarketingCtrl" class="component marketing-component ng-scope">
+	<!-- ngIf: data.marketingItems.length > 0 --><div ng-if="data.marketingItems.length &gt; 0" class="ng-scope">
+		<header class="component-header ng-isolate-scope" header-data="header">
+	<h2 class="component-title ng-binding" ng-bind-html="headerData.title">Access Country Deep on U-verse TV </h2>
+
+    <!-- ngIf: headerData.toolTipText -->
+
+	<p class="promo-header">
+		<!-- ngIf: headerData.promoText --><span ng-if="headerData.promoText" ng-bind-html="headerData.promoText" class="ng-scope ng-binding">Don't have AT&amp;T U-verse TV?</span><!-- end ngIf: headerData.promoText -->
+
+		<!-- ngIf: headerData.link && headerData.link.linkMetadata --><a ng-if="headerData.link &amp;&amp; headerData.link.linkMetadata" ng-bind-html="headerData.link.linkMetadata" uv-href="http://www.att.com/u-verse/shop/?source=ECSFU90000000000L&amp;wtExtndSource=pkgpg_countrydeep" uv-target="headerData.link.externalLink" data-track-component="&#39;Header Link&#39;" data-track-metadata="headerData.link.linkMetadata" class="ng-scope ng-binding" href="http://www.att.com/u-verse/shop/?source=ECSFU90000000000L&wtExtndSource=pkgpg_countrydeep" target="headerData.link.externalLink">Order Now</a><!-- end ngIf: headerData.link && headerData.link.linkMetadata -->
+	</p>
+</header>
+
+		<div class="component-content marketing-component">
+			<!-- ngRepeat: item in data.marketingItems --><div ng-repeat="item in data.marketingItems" data-track-component="item.clickTrackingSubcategory" class="ng-scope">
+				<i class="component-content-separator"></i>
+
+				<div class="component-content-wrapper">
+
+					<!-- ngIf: item.hero.position === 'LEFT' -->
+					<!-- ngInclude: templateUrl --><div class="marketing-body ng-scope marketing-standard hero-right" ng-include="templateUrl" ng-class="[templateClass, (item.hero.position === &#39;LEFT&#39; ? &#39;hero-left&#39; : &#39;hero-right&#39;)]" item="item" on-remove-self="removeItem"><h3 class="marketing-body-title ng-scope ng-binding" ng-bind-html="item.body.textTitle">Tune in and explore all of the new features, artists and content.</h3>
+<!-- ngIf: item.body.description.length > 0 --><p class="marketing-body-description ng-scope ng-binding" ng-if="item.body.description.length &gt; 0" ng-bind-html="item.body.description"><ul>
+<li>Watch the latest music videos, performances and behind the scenes clips from country’s biggest stars </li>
+<li>Discover up-and-coming artists on the verge of stardom</li>
+  <li>Enjoy themed music video playlists</li>
+  <li>Create and save your own music video playlists</li>
+  <li>See exclusive concerts, series, and interviews any time you want</li>
+</ul></p><!-- end ngIf: item.body.description.length > 0 -->
+
+<div class="marketing-cta ng-isolate-scope" cta="item.body.cta">
+	<div class="marketing-cta-items">
+		<!-- ngIf: cta.text.length > 0 --><p ng-if="cta.text.length &gt; 0" class="marketing-cta-text ng-scope ng-binding" ng-bind-html="cta.text">Tune to Ch 530/1530 HD or press “Go Interactive” to launch Country Deep on AT&amp;T U-verse.</p><!-- end ngIf: cta.text.length > 0 -->
+		<!-- ngRepeat: link in cta.links --><div class="marketing-cta-wrapper ng-scope" ng-repeat="link in cta.links">
+			<!-- ngIf: link.type === 'image' -->
+			<!-- ngIf: link.type === 'button' --><div ng-if="link.type === &#39;button&#39;" class="ng-scope">
+				<!-- ngIf: link.linkMetadata.length > 0 --><a class="morpheus button blue ng-scope ng-isolate-scope" uv-href="/network/country-deep" target="_self" ng-if="link.linkMetadata.length &gt; 0" url="link.linkUrl" text="link.linkMetadata" button-target="getLinkTarget(link.externalLink)" data-track-component="&#39;button&#39;" data-track-metadata="link.linkMetadata" href="http://uverse.com/network/country-deep"><span class="btn-text ng-binding" ng-bind-html="text">Watch Online</span></a><!-- end ngIf: link.linkMetadata.length > 0 -->
+			</div><!-- end ngIf: link.type === 'button' -->
+		</div><!-- end ngRepeat: link in cta.links -->
+	</div>
+</div>
+</div>
+					<!-- ngIf: item.hero.position === 'RIGHT' --><!-- ngInclude: templateUrl --><div class="marketing-hero ng-scope" ng-include="templateUrl" ng-style="{width: heroWidth}" ng-if="item.hero.position === &#39;RIGHT&#39;"><div class="marketing-hero-html ng-scope ng-binding" ng-bind-html="item.hero.html"><iframe style="margin-top: 45px;" width="560" height="315" src="./country-deep_files/v6C999bbbUs.html" frameborder="0" allowfullscreen=""></iframe></div></div><!-- end ngIf: item.hero.position === 'RIGHT' -->
+
+				</div>
+			</div><!-- end ngRepeat: item in data.marketingItems -->
+		</div>
+	</div><!-- end ngIf: data.marketingItems.length > 0 -->
+</article>
+</div>
+				</div><!-- end ngRepeat: component in components -->
+			</div>
+		</div>
+
+
+<div class="hidden">
+
+</div>
+<div id="hiddenTemplatesCardPage" class="hidden">
+
+	<script id="bannersTemplate-default" type="text/html">
+	<img src="{src}" alt="{alt}" />
+</script>
+
+<script id="bannersTemplate-defaultWithLink" type="text/html">
+	<a href="{link}" target="{target}" class="track" data-clicktrack-action="Promo Banner"><img src="{src}" alt="{alt}" /></a>
+</script>
+
+<script id="bannersTemplate-unsupportedBrowser" type="text/html">
+	<a class="unsupported-browser-banner" href="{url}" target="{target}"  data-clicktrack-action="Message Banner" data-clicktrack-label="Unsupported Browser: {browser}">
+		<img src="{src}" alt="{alt}" />
+	</a>
+</script>
+
+<div class="hidden">
+	<div id="playerTemplate" class="modal-player track-hasSubcategory track-hasCategory   modal-player-" data-clicktrack-subcategory="Player Modal" data-clicktrack-category="Modal">
+		<div class="modal-player-header">
+			<div class="modal-player-header-network playerLoader-network">
+			</div>
+			<div class="modal-player-header-title">
+				<span class="modal-player-header-title-text playerLoader-title playerLoader-shrink">
+						(TITLE)
+				</span>
+			</div>
+	<a class="modal-close-button track-hasAction track" href="http://uverse.com/uverse/countrydeep#" data-clicktrack-action="Close Button">x</a>
+		</div>
+	<div class="modal-player-media">
+		<div class="extensionPanels">	<div class="player-extension  hidden  loadingError-extension player-extension-error ">
+		<div class="player-extension-icon">&nbsp;</div>
+		<div class="player-extension-title">  Oops... An error has occurred   </div>
+
+		<div class="player-extension-contents">
+		<p>
+We apologize for the inconvenience. If the problem persists <br> please visit our 				<a href="http://www.att.com/esupport/article.jsp?sid=KB401143&cv=803&source=ECSFU90000000000L&wtExtndSource=uv_ftr_esupport" target="_blank" class="track" data-clicktrack-action="Error Support Link">
+AT&amp;T U-verse Support page				</a>
+ for further troubleshooting.		</p>
+		</div>
+	</div>
+</div>
+		<div class="player-loading player-loading-icon-wrapper">
+			<span class="player-loading-icon">Loading...</span>
+		</div>
+	</div>
+
+	<div class="modal-player-meta-container">
+		<div class="modal-player-meta">
+			<div class="modal-player-meta-sidebar">
+				<div class="modal-player-meta-sidebar-ad companionAd"></div>
+				<div class="modal-player-meta-sidebar-menu"></div>
+			</div>
+			<div class="modal-player-meta-info">
+				<h2 class="modal-player-meta-info-episode playerLoader-subtitle"></h2>
+				<div class="modal-player-meta-info-description">
+					<p class="playerLoader-description"></p>
+				</div>
+				<div class="modal-player-meta-info-share socialLinks"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-player-footer"></div>
+	</div>
+</div>
+	<section id="cardFlyoutTemplate" class="card-details" data-bind="hover: flyoutIsHover, fade: { visible: showFlyout, partiallyVisible: partiallyVisible, duration: showFlyout() ? 1200 : 10 }
+				, css: { &#39;expanded-description&#39;: expandDescription() || isClipCard(), &#39;no-clip&#39;: !hasLeftColumn(), &#39;video-details&#39;: flyoutType() == &#39;video&#39; }
+				, ellipsify: {
+						truncateTo: &#39;word&#39;
+						, enabled: ellipsifyDescription() &amp;&amp; !isClipCard()
+						, wrapChild: &#39;.ellipsify-description&#39;
+						, ellipsified: showMoreLink
+					}">
+		<header class="card-details-header" data-bind="ellipsify: {
+						truncateTo: &#39;letter&#39;
+						, enabled: ellipsifyDescription
+						, wrapChild: &#39;.card-details-title&#39;
+						, ellipsified: showTitleTooltip
+					}">
+			<!-- ko if: Uverse.page.isLoggedIn() && favoritesId() != null && contentType() != 'live' -->
+				<span class="card-details-favorite track" data-clicktrack-action="" data-bind="css: { active: isFavorited }
+							, attr: {
+								title: isFavorited() ? &#39;Remove From Favorites&#39; : &#39;Add To Favorites&#39;
+								, &#39;data-clicktrack-action&#39;: isFavorited() ? &#39;Add to Favorites&#39; : &#39;Remove from Favorites&#39;
+							}
+							, click: toggleFavorite">
+				</span>
+			<!-- /ko -->
+			<!-- ko if: !categoryUrl() -->
+			<h2 class="card-details-title" data-bind="text: title(), attr: { title: showTitleTooltip() ? title : &#39;&#39; }"></h2>
+			<!-- /ko -->
+			<!-- ko if: categoryUrl() -->
+			<a class="card-details-title track" href="" data-bind="text: categoryTitle, attr: { href: categoryUrl, title: showTitleTooltip() ? categoryTitle : &#39;&#39; }" data-clicktrack-action="Title"></a>
+			<!-- /ko -->
+		</header>
+		<article class="card-details-article" data-bind="click: playLinkClick, css: { &#39;has-footer&#39;: entitlementState() !== Uverse.Enums.Entitlement.ALLOWED || contentType() == &#39;rental&#39;, &#39;rental&#39;: contentType() == &#39;rental&#39; }">
+			<!-- ko if: hasLeftColumn -->
+				<div class="card-details-left">
+					<div class="card-details-thumb-wrapper">
+						<!-- ko if: (contentType() == 'tv' || contentType() == 'movies' || contentType() == 'rental') && (hasEntitledButton() || numClips() == 1 || isClip())   -->
+							<a href="http://uverse.com/uverse/countrydeep#" data-bind="attr: { href: linkPlayIcon, &#39;data-clicktrack-label&#39;: clicktrackLabel}" target="_self" class="card-details-play-thumb-overlay video-play-link track" data-clicktrack-action="Image - Play"></a>
+						<!-- /ko -->
+						<img class="card-details-thumb" data-bind="attr: { src: assetImageUrl }">
+						<!-- ko if: hasBookmark -->
+							<figure class="card-details-bookmark-bar">
+								<figcaption class="card-details-bookmark-bar-thumb" data-bind="style: { width: bookmarkProgress }"></figcaption>
+							</figure>
+						<!-- /ko -->
+					</div>
+
+					<!-- ko if: hasBookmark -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: flyoutLink() + &#39;&amp;resume&#39; }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Resume</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko --><!-- ko if: contentType() == 'tv' && hasEntitledButton() && !hasBookmark() -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: flyoutLink }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Episode</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko --><!-- ko if: contentType() == 'movies' && hasEntitledButton() && !hasBookmark() -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: flyoutLink }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Movie</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko --><!-- ko if: isClip -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: assetPromoLink }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Clip</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko --><!-- ko if: isTrailer -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: assetPromoLink }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Trailer</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko -->
+					<!-- ko if: contentType() == 'rental' -->
+						<span class="card-details-rent">Rent on your TV</span>
+					<!-- /ko -->
+				</div>
+			<!-- /ko -->
+
+			<div class="card-details-right">
+				<!-- ko if: contentType() == 'music' -->
+					<a class="video-play-link play-thumb-wrap track" data-bind="attr: { href: flyoutUrl }" data-clicktrack-action="Image - Play">
+						<div class="play-thumb-overlay"></div>
+						<img class="card-details-video-thumb" data-bind="attr: { src: assetImageUrl }">
+					</a>
+					<h3 class="card-details-video-subtitle" data-bind="ellipsify: {
+						truncateTo: &#39;letter&#39;
+						, enabled: ellipsifyDescription
+						, wrapChild: &#39;.ellipsify-title&#39;
+						, ellipsified: showMusicTitleTooltip
+					}"><span class="ellipsify-title" data-bind="text: flyoutTitle, attr: { title: showMusicTitleTooltip() ? flyoutTitle : &#39;&#39; }"></span> (<span data-bind="text: formattedDuration"></span>)</h3>
+				<!-- /ko -->
+				<!-- ko if: contentType() == 'live' && assetImageUrl() -->
+					<a class="video-play-link play-thumb-wrap track" data-bind="attr: { href: isEntitled() ? flyoutUrl : null, &#39;data-clicktrack-label&#39;: categoryTitle }" data-clicktrack-action="Play">
+						<div class="play-thumb-overlay" data-bind="css: { &#39;locked&#39;: entitlementState() !== Uverse.Enums.Entitlement.ALLOWED }"></div>
+						<img class="card-details-video-thumb" data-bind="attr: { src: assetImageUrl }">
+					</a>
+				<!-- /ko -->
+				<!-- ko if: contentType() == 'tv' && !isClipCard() && !isClip() && isEntitled() -->
+					<!-- ko if: flyoutUrl() -->
+					<span class="card-details-latest-episode" data-bind="css: { &#39;no-title&#39;: !isEpisode() }">Latest Episode</span>
+					<!-- /ko -->
+					<h3 class="card-details-subtitle" data-bind="visible: isEpisode() &amp;&amp; flyoutType() == &#39;category&#39;, text: flyoutTitle"></h3>
+					<div class="card-details-episode-metadata" data-bind="visible: isEpisode">
+						<span>
+Season <span class="card-details-season-number" data-bind="text: assetSeasonNumber"></span> Episode <span class="card-details-episode-number" data-bind="text: assetEpisodeNumber"></span>						</span>
+						<span data-bind="visible: !!formattedDuration()">
+(<span data-bind="text: formattedDuration"></span>)						</span>
+					</div>
+				<!-- /ko -->
+				<!-- ko if: isClipCard -->
+					<div class="card-details-episode-metadata">
+Clip						<span data-bind="visible: !!formattedDuration()">
+(<span data-bind="text: formattedDuration"></span>)						</span>
+					</div>
+				<!-- /ko -->
+				<p class="card-details-description" data-bind="visible: contentType() != &#39;music&#39; &amp;&amp; contentType() != &#39;live&#39;, css: { &#39;no-metadata&#39;: !hasMetadata() }">
+					<span class="ellipsify-description" data-bind="text: description"></span>
+					<a href="http://uverse.com/uverse/countrydeep#" class="track" data-clicktrack-action="More" data-bind="click: toggleExpandedDescription, visible: showMoreLink " title="View the entire description">
+more					</a>
+				</p>
+				<div class="card-details-metadata" data-bind="visible: hasMetadata">
+					<!-- ko if: contentType() == 'tv' && !isClip() -->
+					<div class="metadata-line" data-bind="visible: rating() &amp;&amp; rating().length, text: rating"></div>
+					<div class="metadata-line" data-bind="visible: !!formattedReleaseDate()">Aired <span data-bind="text: formattedReleaseDate"></span></div>
+					<!-- /ko -->
+					<!-- ko if: contentType() == 'movies' && !isClipCard() -->
+					<div class="metadata-line">
+						<!-- ko if: rating() -->
+						<span class="metadata-item" data-bind="text: rating"></span>
+						<!-- /ko -->
+						<!-- ko if: !!formattedDuration() -->
+						<span class="metadata-item"><span data-bind="text: formattedDuration"></span> Minutes</span>
+						<!-- /ko -->
+						<!-- ko if: !!formattedReleaseDate() && !isClip() -->
+						<span class="metadata-item">Released <span data-bind="text: formattedReleaseDate"></span></span>
+						<!-- /ko -->
+					</div>
+					<!-- /ko -->
+					<!-- ko if: hasBookmark -->
+					<div class="metadata-line">
+						<span class="metadata-item" data-bind="text: bookmarkRemaining"></span> min remaining
+					</div>
+					<!-- /ko -->
+					<div class="metadata-line" data-bind="visible: assetGenres() &amp;&amp; assetGenres().length">
+						<span class="metadata-item card-details-genres" data-bind="foreach: assetGenres"><!-- ko if: $index() > 0 -->, <!-- /ko --><span data-bind="text: $data"></span></span>
+					</div>
+				</div>
+				<!-- ko if: !hasLeftColumn -->
+					<!-- ko if: hasBookmark -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: flyoutLink() + &#39;#resume&#39; }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Resume</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko --><!-- ko if: hasEntitledButton() && contentType() == 'movies' && !hasBookmark() -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="attr: { href: flyoutLink }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Button - Play">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Movie</span><span class="slice-two">&nbsp;</span>
+</span> </a>					<!-- /ko -->
+				<!-- /ko -->
+				<!-- ko if: contentType() == 'live' && entitlementState() === Uverse.Enums.Entitlement.ALLOWED && !assetImageUrl() && (!inHomeOnly() || (inHomeOnly() && inHome() === Uverse.Enums.InHomeStatus.IN_HOME)) -->
+<a href="http://uverse.com/uverse/countrydeep#" target="_self" data-bind="visible: !isBlackout(), attr: { href: flyoutLink, &#39;data-clicktrack-label&#39;: categoryTitle }" class="U-control U-control-button card-details-button video-play-link
+track" data-clicktrack-action="Watch Live">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>Watch Live</span><span class="slice-two">&nbsp;</span>
+</span> </a>				<!-- /ko -->
+			</div>
+		</article>
+		<!-- ko if: doShowFooter -->
+			<footer class="card-details-footer">
+				<span class="card-details-entitlement-icon" data-bind="
+								css: {
+										&#39;sign-in&#39;: entitlementState() === Uverse.Enums.Entitlement.NEED_LOGIN
+										, upgrade: entitlementState() !== Uverse.Enums.Entitlement.ALLOWED &amp;&amp; entitlementState() !== Uverse.Enums.Entitlement.NEED_LOGIN &amp;&amp; !isGeoRestricted()
+										, blackout: isBlackout() &amp;&amp; entitlementState() === Uverse.Enums.Entitlement.ALLOWED &amp;&amp; !isGeoRestricted()
+										, inhome: inHomeOnly() &amp;&amp; inHome() !== Uverse.Enums.InHomeStatus.IN_HOME &amp;&amp; entitlementState() === Uverse.Enums.Entitlement.ALLOWED &amp;&amp; !isGeoRestricted()
+								}
+								, text: footerIconText
+						"></span>
+				<!-- ko if: !inHomeOnly() && !isGeoRestricted()-->
+					<span class="card-details-entitlement-message" data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_LOGIN ">
+Please <a data-bind="attr: { href: &#39;http://uverse.com/cprodx?appID=m83879&amp;isPassive=false&amp;returnURL=http://uverse.com/uverse/countrydeep&#39;, &#39;data-clicktrack-label&#39;: clicktrackLabel }" class="track" data-clicktrack-action="Sign In" data-clicktrack-label="">sign in</a> to watch <span data-bind="choose: showType">|content online|this series online|LIVE online</span>					</span>
+
+					<span data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_UPGRADE || entitlementState() === Uverse.Enums.Entitlement.NEED_ORDER">
+						<span class="card-details-entitlement-message" data-bind="visible: !needsBroadband()">
+<a data-bind="attr: { href: packageUpgradeUrl, &#39;data-clicktrack-action&#39;: clicktrackActionUpgradeUrl, &#39;data-clicktrack-label&#39;: clicktrackLabelUpgradeUrl }" class="track" data-clicktrack-action="Upgrade" data-clicktrack-label="">U-verse TV upgrade</a> required to watch <span data-bind="choose: !hasLeftColumn() || showType">|full movie|more of this series|online</span>
+						</span>
+						<span class="card-details-entitlement-message" data-bind="visible: needsBroadband()">
+							<a href="http://uverse.com/uverse/countrydeep#" data-bind="attr: { href: packageUpgradeUrl, &#39;data-clicktrack-action&#39;: clicktrackActionUpgradeUrl, &#39;data-clicktrack-label&#39;: clicktrackLabelUpgradeUrl }" class="track" data-clicktrack-action="Upgrade" data-clicktrack-label="">
+Broadband or TV Upgrade required to watch							</a>
+						</span>
+					</span>
+					<span class="card-details-entitlement-message" data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_HDPREM">
+						<a href="http://uverse.com/uverse/countrydeep#" data-bind="attr: { href: packageUpgradeUrl, &#39;data-clicktrack-action&#39;: clicktrackActionUpgradeUrl, &#39;data-clicktrack-label&#39;: clicktrackLabelUpgradeUrl }" class="track" data-clicktrack-action="Upgrade" data-clicktrack-label="">
+HD Premium required to watch						</a>
+					</span>
+					<span class="card-details-entitlement-message" data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_HDUPGRADE">
+						<a href="http://uverse.com/uverse/countrydeep#" data-bind="attr: { href: packageUpgradeUrl, &#39;data-clicktrack-action&#39;: clicktrackActionUpgradeUrl, &#39;data-clicktrack-label&#39;: clicktrackLabelUpgradeUrl }" class="track" data-clicktrack-action="Upgrade" data-clicktrack-label="">
+HD Premium or TV Upgrade required						</a>
+					</span>
+				<!-- /ko -->
+				<!-- ko if: !isBlackout() && isGeoRestricted() -->
+					<span class="card-details-entitlement-message">
+Channel unavailable in your region					</span>
+				<!-- /ko -->
+				<!-- ko if: !isBlackout() && inHomeOnly() && !isGeoRestricted() -->
+					<span class="card-details-entitlement-message" data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_LOGIN ">
+Please <a data-bind="attr: { href: &#39;http://uverse.com/cprodx?appID=m83879&amp;isPassive=false&amp;returnURL=http://uverse.com/uverse/countrydeep&#39;, &#39;data-clicktrack-label&#39;: clicktrackLabel }" class="track" data-clicktrack-action="Sign In" data-clicktrack-label="">sign in</a> to watch LIVE online in home					</span>
+					<span class="card-details-entitlement-message" data-bind="visible: entitlementState() === Uverse.Enums.Entitlement.NEED_UPGRADE || entitlementState() === Uverse.Enums.Entitlement.NEED_ORDER ">
+<a data-bind="attr: { href: packageUpgradeUrl, &#39;data-clicktrack-action&#39;: clicktrackActionUpgradeUrl, &#39;data-clicktrack-label&#39;: clicktrackLabelUpgradeUrl }" class="track" data-clicktrack-action="Upgrade" data-clicktrack-label="">Upgrade required</a> to watch LIVE in home					</span>
+					<!-- ko if: entitlementState() === Uverse.Enums.Entitlement.ALLOWED && inHome() !== Uverse.Enums.InHomeStatus.IN_HOME -->
+						<span class="card-details-entitlement-message" data-bind="visible: inHome() === Uverse.Enums.InHomeStatus.OUT_OF_HOME ">
+<a href="http://uverse.com/uverse/countrydeep#" data-bind="click: recheckApplet()">Connect to Home Network</a> to watch						</span>
+						<span class="card-details-entitlement-message" data-bind="visible: inHome() === Uverse.Enums.InHomeStatus.APPLET_NOT_INSTALLED ">
+<a href="http://uverse.com/configure-live-player-plugin" class="track" data-clicktrack-action="Plug-in required" data-clicktrack-label="">Plug-in required</a> to watch LIVE in home						</span>
+						<span class="card-details-entitlement-message" data-bind="visible: inHome() === Uverse.Enums.InHomeStatus.JAVA_OUT_OF_DATE ">
+<a href="http://uverse.com/configure-live-player-plugin" class="track" data-clicktrack-action="Plug-in required" data-clicktrack-label="">Update Java</a> to watch LIVE in home						</span>
+					<!-- /ko -->
+				<!-- /ko -->
+				<span class="card-details-entitlement-message" data-bind="visible: isBlackout() &amp;&amp; entitlementState() === Uverse.Enums.Entitlement.ALLOWED &amp;&amp; !isGeoRestricted(), text: footerBlackoutText"></span>
+			</footer>
+		<!-- /ko -->
+		<!-- ko if: contentType() == 'rental' -->
+		<footer class="card-details-footer rental-footer">
+<a href="http://uverse.com/uverse/countrydeep#" target="_blank" data-bind="attr: { href: orderUrl }" class="U-control U-control-button card-details-button
+track" data-clicktrack-action="Button - External Link">
+<span class="U-control-button-wrapper">
+<span class="slice-one"><span class="U-control-button-icon"></span>How To Order</span><span class="slice-two">&nbsp;</span>
+</span> </a>			<div class="card-details-rental-metadata">
+<span data-bind="choose: [ &#39;1_day&#39;, &#39;2_days&#39;, &#39;3_days&#39; ].indexOf(rentalPeriod())">1 Day Rental|2 Day Rental|3 Day Rental</span>			</div>
+			<ul class="card-details-rental-pricing">
+				<li data-bind="visible: price3D()"><span class="card-details-rental-format">3D</span> $<span data-bind="text: formatPrice(price3D())"></span></li>
+				<li data-bind="visible: priceHD()"><span class="card-details-rental-format">HD</span> $<span data-bind="text: formatPrice(priceHD())"></span></li>
+				<li data-bind="visible: priceSD() &amp;&amp; (!priceHD() || !price3D())"><span class="card-details-rental-format">SD</span> $<span data-bind="text: formatPrice(priceSD())"></span></li>
+			</ul>
+		</footer>
+		<!-- /ko -->
+		<div class="card-details-arrow" data-bind="css: flyoutModel.arrowDirection">
+			<div class="arrow-left"></div>
+			<div class="arrow-right"></div>
+		</div>
+	</section>
+
+	<section id="categoryImageCardTemplate" class="card category-image-card" data-card-widget="CategoryImageCard" data-bind="hover: { hovered: cardIsHovered }, attr: {&#39;data-clicktrack-label&#39;: displayTitle}">
+		<div class="tag new" data-bind="visible: isNew">
+			<span class="tag_text">New</span>
+			<span class="tag_slant"></span>
+		</div>
+		<div class="card-image-container">
+			<a href="http://uverse.com/uverse/countrydeep#" class="track-hasCategory
+track-hasSubcategory
+track-hasAction
+track-hasLabel" data-clicktrack-category="My Shows Widget" data-clicktrack-subcategory="Favorites Card" data-clicktrack-action="Image" data-clicktrack-label="Movie or Series" data-bind="attr: { href: titleLink, &#39;data-clicktrack-label&#39;: displayTitle }">
+				<img class="card-image" data-bind="attr: { src: imageUrl, alt: categoryTitle }">
+			</a>
+		</div>
+	</section>
+</div>
+
+
+			</div>
+
+
+<div id="mastfooter" class="page-footer track-hasCategory" data-clicktrack-category="Footer">
+	<div class="page-footer-content track-hasLabel" data-clicktrack-label="/uverse/countrydeep">
+		<a href="http://uverse.com/uverse/countrydeep#top" class="mastfooter-back-to-top track" data-clicktrack-subcategory="Back to Top" data-clicktrack-action="Back to Top Button">
+			<span class="label">Back to top</span>
+		</a>
+
+		<ul class="page-footer-main-links track-hasSubcategory" data-clicktrack-subcategory="Navigation">
+			<li class="open-footer">
+				<a href="http://uverse.com/uverse/countrydeep#" id="open-footer-button" class="track" data-clicktrack-action="More Info Toggle">
+	<svg class="open-footer-plus" xmlns="http://www.w3.org/2000/svg" width="10px" height="10px">
+		<g>
+			<line class="open-footer-plus-v" x1="5" y1="0" x2="5" y2="10" stroke="#CCCCCC" stroke-width="2"></line>
+			<line class="open-footer-plus-h" x1="0" y1="5" x2="10" y2="5" stroke="#CCCCCC" stroke-width="2"></line>
+		</g>
+	</svg>
+Privacy, Legal and More Info				</a>
+			</li>
+			<li class="" data-bind="visible: isSupportedMobileDevice" style="display: none;">
+				<a class="track" data-clicktrack-action="Mobile Site" data-bind="attr: { href: siteSwitchUrl }" href="http://uverse.com/siteSwitch.html?device-type=mobile&return=%2F">
+Mobile Site				</a>
+			</li>
+			<li>
+				<a href="http://uverse.com/live" class="track" data-clicktrack-action="Live TV">
+Live TV				</a>
+			</li>
+			<li>
+				<a href="http://uverse.com/guide" class="track" data-clicktrack-action="TV Listings">
+TV Listings				</a>
+			</li>
+			<li>
+				<a href="http://uverse.com/dvr/recorded" class="track" data-clicktrack-action="My DVR">
+My DVR				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/u-verse/shop/index.jsp?source=ECSFU90000000000L&wtExtndSource=uv_connect_ftr" class="track shop-uverse" data-clicktrack-action="Shop Uverse">
+Order AT&amp;T U-verse®				</a>
+			</li>
+		</ul>
+
+		<ul class="page-footer-more-links track-hasSubcategory" data-clicktrack-subcategory="Navigation">
+			<li>
+				<a href="http://www.att.com/shop/u-verse?source=ECSFU90000000000L&wtExtndSource=shop_uv_ftr_learn" class="track hijacks" data-clicktrack-action="U-verse About">
+About U-verse				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/esupport/article.jsp?sid=KB401143&cv=803&source=ECSFU90000000000L&wtExtndSource=uv_ftr_esupport" class="track" data-clicktrack-action="U-verse Support">
+U-verse Support				</a>
+			</li>
+			<li>
+				<a href="http://uverse.com/uverse/legal-details" class="track" data-clicktrack-action="U-verse Legal">
+U-verse Legal				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/u-verse/att-terms-of-service.jsp?source=EC00uv000000001UL&wtExtndSource=uv_ftr_tos" class="track" data-clicktrack-action="U-verse Terms">
+U-verse Terms of Service				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/gen/corporate-citizenship?pid=5882&source=ECSFU90000000000L&wtExtndSource=uv_ftr_copyright" class="track" data-clicktrack-action="Copyright">
+Copyright				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/gen/privacy-policy?pid=2506&source=ECSFU90000000000L&wtExtndSource=uv_ftr_privacy" class="track" data-clicktrack-action="Privacy">
+Privacy				</a>
+			</li>
+			<li>
+				<a href="http://www.att.com/gen/general?pid=11561&source=ECSFU90000000000L&wtExtndSource=uv_ftr_tou" class="track" data-clicktrack-action="Site Terms">
+Website Terms of Use				</a>
+			</li>
+			<li>
+				<a href="http://preferences-mgr.truste.com/?type=att02&affiliateId=107" class="track" data-clicktrack-action="About Ads">
+About Our Ads				</a>
+			</li>
+		</ul>
+
+		<div class="page-footer-legal track-hasSubcategory" data-clicktrack-subcategory="Navigation">
+All non-AT&amp;T names and images are copyrights or trademarks of their respective owners. <a href="http://uverse.com/uverse/copyright-notices" target="_blank" class="track" data-clicktrack-action="Trademark">Click here for details.</a><br>Some content on this site may be inappropriate for children under 14. Geographic and service restrictions apply to AT&amp;T U-verse. <a href="http://www.att.com/u-verse/availability/index.jsp?source=ECSFU90000000000L&wtExtndSource=uv_rfrl_ftr#fbid=azhch6fNMEf" target="_blank" class="track" data-clicktrack-action="Geographic Restrictions">Click here to see if you qualify.</a><br><br><a href="http://www.att.com/gen/privacy-policy?pid=2587" target="_blank" class="track" data-clicktrack-action="Copyright">Copyright 2014 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T and the AT&amp;T logo are trademarks of AT&amp;T Intellectual Property.		</div>
+
+		<div class="page-footer-social track-hasSubcategory" data-clicktrack-subcategory="Social Networks">
+			<h2 class="social-title">Stay Connected</h2>
+			<ul class="social-icons">
+				<li>	<a class="social-icon digital-smiths-social social-icon-facebook track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=facebook&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="Facebook"></a>
+</li>
+				<li>	<a class="social-icon digital-smiths-social social-icon-twitter track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=twitter&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="Twitter"></a>
+</li>
+				<li>	<a class="social-icon digital-smiths-social social-icon-googleplus track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=googleplus&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="Google Plus"></a>
+</li>
+				<li>	<a class="social-icon digital-smiths-social social-icon-linkedin track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=linkedin&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="LinkedIn"></a>
+</li>
+				<li>	<a class="social-icon digital-smiths-social social-icon-delicious track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=delicious&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="Delicious"></a>
+</li>
+				<li>	<a class="social-icon digital-smiths-social social-icon-digg track" href="http://rest.sharethis.com/share/sharer.php?pub_key=a3cce920-3a6b-47a8-a890-d27d55cbc9e8&access_key=512db7bf2cce2acb63fad31b31067e27&destination=digg&via=Uverse&title=&url=http%3A%2F%2Fuverse.com%2Fuverse%2Fcountrydeep" target="_blank" data-clicktrack-action="Digg"></a>
+</li>
+			</ul>
+
+				<a href="http://uverse.com/sports/network/teamusa" target="_blank" class="team-usa-button track" data-clicktrack-action="Team USA" data-clicktrack-subcategory="Banner">
+Proud sponsor of the U.S Olympic Team				</a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	Uverse.load({
+		moduleName: 'Uverse.widgets.Footer'
+		, id: 'mastfooter'
+	});
+</script>
+		</section>
+
+<div id="hiddenTemplates" class="hidden">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="modalShadow1" class="modal-shadow hidden"></div>
+
+<div id="modalContainer1" class="modal-container hidden track-hasCategory track-hasSubcategory" data-clicktrack-category="Modal" data-clicktrack-subcategory="Wrapper">
+    <div class="modal-contents-wrapper">
+        <div class="modal-contents"></div>
+    </div>
+</div>
+<div id="pageBlocker" class="page-blocker hidden">
+	<div class="vertically-centered-wrapper">
+		<span class="page-blocker-spinner"></span>
+		<div class="page-blocker-message-wrapper">
+			<span class="page-blocker-message"></span>
+		</div>
+	</div>
+</div><div id="scrollBarTemplate" class="U-control-scrollbar ">
+<div class="U-control-scrollbar-track">
+<div class="slice-one"></div>
+<div class="slice-two"></div>
+<div class="slice-three"></div>
+</div>
+<div class="U-control-scrollbar-thumb">
+<div class="slice-one"></div>
+<div class="slice-two"></div>
+<div class="slice-three"></div>
+</div>
+</div>		<!-- ComScore's Tag -->
+		<noscript>
+			&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7718380&amp;c3=&amp;c4=http://uverse.com/uverse/countrydeep&amp;c5=&amp;c6=&amp;c15=&amp;cv=2.0&amp;cj=1" /&gt;
+		</noscript>
+
+
+
+<div class="modal-container hidden track-hasCategory track-hasSubcategory" data-clicktrack-category="Modal" data-clicktrack-subcategory="Wrapper">
+    <div class="modal-contents-wrapper">
+        <div class="modal-contents"></div>
+    </div>
+</div><div class="modal-shadow hidden"></div>
+
+       <!-- Plyfe Widget Setup -->
+    <script type="text/javascript">
+      window.plyfeAsyncInit = function(Plyfe) {
+        Plyfe.createWidgets();
+      }
+    </script>
+
+    <script async="true" data-domain="demo.plyfe.me" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
+<!--
+
+    <script async="true" data-domain="development.plyfe.me" data-port="3001" src="https://plyfe-test.s3.amazonaws.com/system/demo/assets/plyfe.widget.js"></script>
+-->
+</body></html>

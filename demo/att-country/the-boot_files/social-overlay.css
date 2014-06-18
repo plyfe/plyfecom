@@ -1,0 +1,93 @@
+#social_overlay_fancybox {
+	width: 360px;
+}
+
+#social_overlay_fancybox .sailthru-newsletter{
+	width: 250px;
+	margin: 0 auto;
+}
+
+#social_overlay_fancybox .logo_wrap{
+	font: 21px/1.5 "Open Sans n7", arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#social_overlay_fancybox img{
+	display: block;
+	margin: 0 auto;
+	max-width: 350px;
+}
+
+#social_overlay_fancybox .facebook_wrap{
+	display: block;
+	margin: 20px auto 0;
+	font: 21px/1.5 "Open Sans n7", arial, sans-serif;
+	text-transform: uppercase;
+	border-top: 1px solid #cccccc;
+	padding-top: 20px;
+}
+
+#social_overlay_fancybox .facebook_wrap span{
+	vertical-align: text-bottom;
+}
+
+#social_overlay_fancybox .fb_iframe_widget{
+	line-height: 20px;
+	overflow: hidden;
+}
+
+#social_overlay_fancybox .wrapper{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#social_overlay_fancybox .newsletter_wrap{
+	border-top: 1px solid #cccccc;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+#social_overlay_fancybox .newsletter_wrap .title{
+	text-align: center;
+	font: 21px/1.5 "Open Sans n7", arial, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 5px;
+}
+
+#social_overlay_fancybox .newsletter_wrap .completed{
+	font: 16px/1.5 "Open Sans n5", arial, sans-serif;
+}
+
+#social_overlay_fancybox .newsletter_wrap .gform_error, #social_overlay_fancybox .newsletter_wrap .gform_description {
+	text-align: center;
+	display: block;
+	margin-top: 5px;
+}
+
+#social_overlay_fancybox .newsletter_wrap input.sailthru-email{
+	border: 1px solid #cccccc;
+	margin-bottom: 10px;
+	width: 218px;
+}
+
+#social_overlay_fancybox .newsletter_wrap input.button {
+	width: 250px;
+	cursor: pointer;
+}
+
+#social_overlay_fancybox .hidden {
+	display: none;
+}
+
+#social_overlay_fancybox .fb-auth-registration-link {
+	width: 100%;
+	padding: 8px 0;
+	font: 16px/normal "Open Sans n6", arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}

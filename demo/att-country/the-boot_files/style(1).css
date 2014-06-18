@@ -1,0 +1,274 @@
+/* css for weather widget */
+	
+	#wreport-wid{
+		position:relative;
+		display:block;
+		clear:both;
+		width: auto;
+		font-size:12px;
+		
+	}
+	
+	#wreport-wid h2{
+		font-size:1.5em;
+		font-weight:normal;
+		margin:0 0 8px 0;
+	}
+	
+	#wreport-wid #whldr{
+		margin:0px 0px 20px 0px;
+		float:left;
+		
+	}
+	
+	#wreport-wid ul, #wreport-wid ul li{
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+	
+	#wreport-wid ul li{
+		float:left;
+	}
+	
+	#wreport-wid .wlhr{
+		float:left;
+		width: 145px;
+	}
+	
+	#wreport-wid ul li.temp{
+		margin: 0 0px 0 0;
+	}
+	
+	#wreport-wid .wicon {
+    float: left;
+    padding: 0 0 10px 10px;
+    text-align: center;
+    width: 110px;
+    height:130px;
+}
+	
+	#wreport-wid .wicon .shrtphrase{	
+		margin: 5px 0 0 0;
+	}
+	
+	#wreport-wid #lbtn{
+		background: #da9900;
+		width: 180px;
+		height: 20px;
+		line-height: 20px;
+		margin: 20px 0 0 0;
+		display: block;
+		float: left;
+		font-size: 0.9em;
+	}
+	
+	#wreport-wid #lbtn a{
+		margin: 0 0 0 8px;
+		color:#fff;
+	}
+	
+	#wreport-wid ul li p{
+		font-weight:bold;
+		font-siz: 0.917em;
+	}
+	#wreport-wid ul li p.tmprtre{
+		font-size:3.333em;
+		margin: 14px 0 14px 0;
+		line-height:28px;
+	}
+	
+	#wreport-wid ul li p.tmprtre span{
+		font-size: 0.8em;
+		font-weight:normal;
+	}
+	
+	#wreport-wid ul li p.tmprtre sup{
+		margin: 0 0 0 0;
+	}
+	
+	#wreport-wid .wicon p img{
+		margin: 6px 0 3px 0;
+	}
+	
+	#wreport-wid .wicon p{
+		font-weight:normal;
+	}
+	
+	#wreport-wid .tlist{
+		opacity: 0.8;
+		clear:both;
+		margin: 0px 0 0 0;
+	}
+	
+	#wreport-wid .tlist ul li{
+		clear:both;
+		font-weight:bold;
+		font-size:0.9em;
+		line-height:15px;
+		width:145px;
+	}
+	
+	#wreport-wid .tlist ul li span{
+		margin: 0 0px 0 0px;
+		width: 73px;
+		float:left;
+	}
+	
+	#wreport-wid .tlist ul li em{
+		font-style:normal;
+	}
+	
+	
+	#wreport-wid .forecast ul li{
+		height:120px;
+		width:72px;
+		text-align:center;
+		background: #3a3a3a;
+		margin: 15px 4px 0 0;
+		border:1px solid #4f4f4f;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 3px;
+		behavior: url(border-radius.htc);
+		z-index:9999;
+		position:relative;
+	}
+	
+	#wreport-wid .forecast ul li.selected,#wreport-wid .forecast ul li.active{
+		height:127px;
+		border-bottom:0px;
+		background: #474747;
+	}
+	
+	#wreport-wid .forecast ul li.last{
+		margin-right:0;
+	}
+	
+	#wreport-wid .forecast ul li p{
+		font-weight:normal;
+	}
+	
+	#wreport-wid .forecast ul li p.hltmp{
+		margin: 2px 0 0 0;
+	}
+	
+	#wreport-wid .forecast ul li div{
+		margin:8px 0 0 0;
+	}
+	
+	
+	#wreport-wid p.etxt{
+		font-size:0.9em;
+		line-height: 11px;
+	}
+	
+	#wreport-wid .ftxt{
+		font-size:0.85em;
+		font-weight:bold;
+		font-style:normal;
+		opacity:0.7;
+		display:block;
+		line-height:14px;
+	}
+	
+	#wreport-wid #wdetails{
+		width:384px;
+		height:100px;
+		margin: 5px 0 0 0;
+		background: #474747;
+		border:1px solid #4f4f4f;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 3px;
+		behavior: url(border-radius.htc);
+		position:absolute;
+		top:250px;
+		z-index:1;
+
+		
+	}
+	
+	#wreport-wid #wdetails p{
+		font-size: 0.8em;
+		margin:15px 30px 0 12px;
+		line-height:12px;
+	}
+	
+	#wreport-wid #wdetails ul{
+		margin: 17px 0 0 12px;
+	}
+	
+	#wreport-wid #wdetails ul li{
+		width:120px;
+	}
+	
+	
+	#wreport-wid #wdetails ul li img{
+		float:left;
+		padding:2px 0 0 0;
+		margin: 0 3px 0 0;
+	}
+	
+	#wreport-wid .wdetail{
+		display:none;
+	}
+	
+	#wreport-wid .wld{
+		cursor:pointer;
+	}
+	
+	#wmap #wactions, #wreport-wid #wactions li{
+		list-style:none;
+	}
+
+	#wmap{
+		position:relative;
+	}
+
+	#wmap #wactions{
+		position: absolute;
+		top: -3px;
+		right: 5px;
+	}
+
+	#wmap #wactions li{
+		display:block;
+		background: #151614;
+		width:36px;
+		height:36px;
+		margin: 7px 0 0 0;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		behavior: url(border-radius.htc);
+		cursor:pointer;
+		opacity:0.7;
+	}
+	
+	#wmap #wactions li:hover, #wmap #wactions li.active{
+		opacity:1;
+	}
+	
+	#wreport-wid.widget .read_more {
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 0 0 30px;
+    padding: 0;
+    width: 80%;
+}
+#wreport-wid .weather-sponsorDiv {
+    margin: 5px -15px -15px;
+    padding: 5px 5px 10px 5px;
+    text-align: center;
+}
+.weather-current-conditions .weather-sponsor-name {
+    font-weight: bold;
+}
+	
+.clear{
+	both:clear;
+}
+
+/* end css for weather widget */
