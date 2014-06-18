@@ -1,0 +1,145 @@
+
+.single-local_expert h1, .archive-local_expert h1 {
+    font-size: 28px;
+    margin-bottom: 12px !important;
+}
+
+.local_expert_contact {
+    margin-bottom: 12px !important;
+}
+
+.local_expert_contact .local_expert_contact_inner {
+    background: #000;
+    color: #FFF;
+}
+
+.local_expert_contact_inner ul {
+    padding: 12px;
+    margin: 0px;
+}
+
+.local_expert_contact_inner li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.local_expert_contact_inner li.local_expert_contact_head {
+    display: block;
+    margin: 0px 0px 12px 0px !important;
+}
+
+.local_expert_contact_inner h4 {
+    color: #FFF !important;
+    font-size: 1.5em;
+    font-weight: bold !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.local_expert_contact_inner img {
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner {
+    background: #000;
+    color: #FFF;
+    min-height: 260px;
+    float: right;
+    width: 315px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li {
+    display: block;
+    margin: 0px 0px 12px 0px;
+    padding: 2px 0px;
+    word-wrap: break-word;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li.local_expert_contact_phone {
+    background: transparent url(../img/phoneicon.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li.local_expert_contact_contact {
+    background: transparent url(../img/emailicon.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li.local_expert_contact_website {
+    background: transparent url(../img/websiteicon.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li.local_expert_contact_facebook {
+    background: transparent url(../img/facebookicon.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner li.local_expert_contact_twitter {
+    background: transparent url(../img/twittericon.png) no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+}
+
+.local_expert_contact.map .local_expert_contact_inner h4 {
+    display: block !important;
+    margin-bottom: 12px !important;
+}
+
+.local_expert_contact.map .local_expert_contact_inner span {
+    display: block;
+    padding-bottom: 6px;
+}
+
+section.local-experts-active {
+    width:660px;
+}
+
+section.local-experts-active .sub-excerpt {
+    font-size:11px;
+    line-height:18px;
+    padding-bottom:16px;
+    border-style:solid;
+    border-bottom-width:1px;
+    margin-bottom:23px;
+}
+section.local-experts-active .loop-activity {
+    width:190px;
+    margin-right:30px;
+    margin-bottom:20px;
+    display:block;
+    float:left;
+}
+section.local-experts-active .loop-activity img {
+    display:block;
+    margin-bottom:3px;
+}
+section.local-experts-active .loop-activity em {
+    font-size:14px;
+    font-weight:bold;
+    line-height:18px;
+}
+section.local-experts-active .loop-activity b {
+    display:block;
+}
+section.local-experts-active hr {
+    clear:both;
+    visibility:hidden;
+    margin:0;
+    padding:0;
+}
+
+div.local_expert_links {
+    margin-bottom: 12px;
+}
+
+div.local_expert_links h3 {
+    display: inline;
+    font-weight: bold;
+}
