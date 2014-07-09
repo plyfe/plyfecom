@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+  /*
+Name: Brandscape Creative Template CSS
+Version: 2.0 (new FN.com)
+Site: FoodNetwork.com
+Modified: 04-10-2014
+*/
+
+body {
+  background:#e6efe6;
+}
+
+body>.module.header{
+	position:relative;
+	z-index:5000;
+	background: #efece3 url('http://preview.foodnetwork.com/etc/designs/food/clientlib/img/pattern-cross-hatch.png') repeat;
+}
+/* move main content back up to compensate for brandscape height */
+.container[role="main"]{
+	position:relative;
+	background: none;
+	margin-top:-465px; /*height of brandscape (pushdown_adtag) minus 175px */
+	z-index:2000;
+}
+
+/* add default background to footer */
+.container[role="footer"]{
+	background: #efece3 url('http://preview.foodnetwork.com/etc/designs/food/clientlib/img/pattern-cross-hatch.png') repeat;
+}
+	.popover{
+		z-index:3000;	
+	}
+
+#pushdown_adtag {
+	position:relative;
+	width: 100%;
+	height: 640px; /* set to the height you need for your background image. Max height 800px */
+	margin: 0 auto;
+	border-top:2px solid #77be54;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 43%, rgba(230,239,230,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(43%,rgba(255,255,255,1)), color-stop(100%,rgba(230,239,230,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 43%,rgba(230,239,230,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 43%,rgba(230,239,230,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 43%,rgba(230,239,230,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 43%,rgba(230,239,230,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6efe6',GradientType=0 ); /* IE6-9 */
+	z-index:1000;
+}
+
+/* for food.com */
+#rz-bd{
+	border-top: solid 1px #CCC;	
+}
+
+
+
+/* add client specific CSS below */
+.iax_inner {
+  width: 100%;
+  margin:0 auto;
+  overflow:hidden;
+}
+.brandscapeBg{
+	position:relative;
+	left:50%;
+	top:-2px;
+	width:1254px;
+	margin-left:-672px;
+}
+.CTA_btn{
+	position:absolute;
+	left:50%;
+	margin-left:182px;
+	top:125px;	
+	transition:-webkit-transform 0.5s;
+	transition:-ms-transform 0.5s;
+	transition:transform 0.5s;
+}
+	
+.clickableArea{
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left: -497px;
+	width:994px;
+	height:175px;
+	cursor:pointer;	
+}
+	.clickableArea:hover .CTA_btn{
+		transform:scale(1.1);
+		-webkit-transform:scale(1.1);
+		-ms-transform:scale(1.1);
+	}
+
+
+

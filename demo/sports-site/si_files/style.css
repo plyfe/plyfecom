@@ -656,6 +656,7 @@ margin-top:15px;
 }
 
 DIV.sidebar {
+opacity: 0.4;
 float:left;
 margin-right:6px;
 padding-top:6px;
