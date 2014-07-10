@@ -1,5 +1,5 @@
 .mainSpriteICN {
-    background: transparent url(../i/sprite/mainskin/icn/icn.png) no-repeat;
+    background: transparent url('icn.png') no-repeat;
     border-width: 0;
 }
 
@@ -2337,7 +2337,7 @@
 }
 
 .mainSpriteHDR {
-    background: url(../i/sprite/mainskin/hdr/hdr.png) no-repeat;
+    background: url('hdr.png') no-repeat;
     border-width: 0;
 }
 
@@ -8248,13 +8248,13 @@ a span.count,a:visited span.count,a:hover span.count,a:active span.count,a:link 
 }
 
 .atlasHeader #globalNav_wide .findButton input {
-    background: url(../i/sprite/mainskin/header/018_ICN-Search_17x17.png) no-repeat;
+    background: url() no-repeat;
     background-position: 31px 11px;
 }
 
-@media print,(-o-min-device-pixel-ratio:5/4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi) {
+@media print,(-o-min-device-pixel-ratio:5/4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dppx) {
     .atlasHeader #globalNav_wide .findButton input {
-        background-image: url(../i/sprite/mainskin/header/018_ICN-Search_17x17@2x.png);
+        background-image: url();
         background-size: 16px;
     }
 }
@@ -10613,14 +10613,14 @@ a.wmBTN_orange17,a.wmBTN_blue17,a.wmBTN_gray17 {
 }
 
 .spa118_BTN_minus_15x15_1 {
-    background: url(/i/search/img_bluearrow_closed_14x14.gif) no-repeat;
+    background: url() no-repeat;
     display: block;
     border-width: 0;
     cursor: pointer;
 }
 
 .spa119_BTN_plus_15x15_1 {
-    background: url(/i/search/img_bluearrow_open_14x14.gif) no-repeat;
+    background: url() no-repeat;
     display: block;
     border-width: 0;
     cursor: pointer;
@@ -10629,7 +10629,7 @@ a.wmBTN_orange17,a.wmBTN_blue17,a.wmBTN_gray17 {
 .icn_colorSwatchSm {
     width: 19px;
     height: 13px;
-    background: url(/i/search/icn_colorSwatches.png) no-repeat 0 0;
+    background: url() no-repeat 0 0;
     display: inline-block;
 }
 
