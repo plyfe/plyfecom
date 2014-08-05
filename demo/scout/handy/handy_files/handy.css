@@ -1,0 +1,160 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased!important;
+}
+
+header #header-subnav .content .site-logo {
+    background: url('handy.png') center center no-repeat;
+    font-size: 0;
+}
+
+.ctx-color-bright {
+    color: #fd0!important;
+}
+
+.ctx-color-dark {
+    color: #404041!important;
+}
+
+.ctx-color-bright-hover:hover {
+    color: #fd0!important;
+}
+
+.ctx-color-dark-hover:hover {
+    color: #404041!important;
+}
+
+.ctx-bg-bright {
+    background-color: #fd0;
+}
+
+.ctx-bg-dark {
+    background-color: #404041;
+}
+
+.ctx-bg-bright-imp {
+    background-color: #fd0!important;
+}
+
+.ctx-bg-dark-imp {
+    background-color: #404041!important;
+}
+
+.ctx-bg-bright-hover:hover {
+    color: #fd0!important;
+}
+
+.ctx-bg-dark-hover:hover {
+    color: #404041!important;
+}
+
+.ctx-border-bright {
+    border-color: #fd0;
+}
+
+.ctx-border-dark {
+    border-color: #404041;
+}
+
+.ctx-border-bright-imp {
+    border-color: #fd0!important;
+}
+
+.ctx-border-dark-imp {
+    border-color: #404041!important;
+}
+
+.ctx-border-bright:hover {
+    border-color: #fd0;
+}
+
+.ctx-border-dark:hover {
+    border-color: #404041;
+}
+
+.ctx-border-bright-imp:hover {
+    border-color: #fd0!important;
+}
+
+.ctx-border-dark-imp:hover {
+    border-color: #404041!important;
+}
+
+a {
+    color: #404041;
+}
+
+a:hover {
+    color: #fd0;
+}
+
+.story-content blockquote,.story-content blockquote p {
+    color: #404041!important;
+}
+
+.mediamodule .topbar a:hover {
+    color: #fd0;
+}
+
+.avatar {
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    -ms-border-radius: 50%!important;
+    -o-border-radius: 50%!important;
+    border-radius: 50%!important;
+    left: 0!important;
+}
+
+.tweet {
+    padding-left: 0!important;
+}
+
+.header {
+    padding-left: 58px!important;
+    min-height: 60px!important;
+}
+
+.header .p-name {
+    color: #202020!important;
+    display: block!important;
+    font-family: Roboto;
+}
+
+.header .p-name:hover {
+    color: #454545!important;
+}
+
+.header .p-nickname {
+    color: #fd0!important;
+    display: block!important;
+    font-family: Roboto;
+}
+
+.e-entry-content {
+    color: #454545!important;
+    font-size: 13px!important;
+    font-family: Roboto;
+}
+
+.e-entry-content a {
+    color: #202020!important;
+    word-wrap: break-word!important;
+    word-break: break-all!important;
+}
+
+.e-entry-content a:hover {
+    text-decoration: underline;
+}
+
+.e-entry-title {
+    color: #454545!important;
+    font-size: 13px!important;
+    font-family: Roboto;
+}
+
+.timeline .stream {
+    box-sizing: border-box!important;
+    padding-right: 20px!important;
+}
