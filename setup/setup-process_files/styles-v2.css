@@ -36,13 +36,6 @@
   text-shadow: none;
 }
 
-@media (max-width: 768px) {
-  #product h1 {
-    padding: 140px 20px;
-    font-size: 42px;
-  }
-}
-
 #product ul.features {
   padding: 0 20px;
   margin: 0;
@@ -51,7 +44,7 @@
 
 #product ul.features li {
   display: inline-block;
-  height: 330px;
+  height: 300px;
   padding: 0 34px;
   vertical-align: top;
 }
@@ -64,4 +57,14 @@
 
 #product ul.features li p {
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  #product h1 {
+    padding: 140px 20px;
+    font-size: 42px;
+  }
+  #product ul.features li p {
+  font-size: 14px;
+}
 }
