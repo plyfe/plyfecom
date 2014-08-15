@@ -7180,7 +7180,7 @@ p {
 
 #product {
   position: relative;
-  min-height: 85%;
+  min-height: 95%;
   overflow: hidden;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
   background: white;
