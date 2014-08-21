@@ -2072,6 +2072,7 @@ width: 33px; height: 33px; background-position: 0 -140px; }
 #buzz_sub_buzz .quiz .quiz_answer span.quiz_checkbox .quiz_checkmark { float: none; display: none; color: #111; font-size: 0px; line-height: 18px; position: absolute; bottom: 1px; left: 0; margin: 0; }
 .ie8 #buzz_sub_buzz .quiz .quiz_answer span.quiz_checkbox .quiz_checkmark { left: -1px; bottom: 3px; }
 #buzz_sub_buzz .quiz .quiz_answer.selected span.quiz_checkbox .quiz_checkmark { display: block; background: url('check.png') no-repeat; width: 22px; height: 22px; }
+#buzz_sub_buzz .quiz span.quiz_text {font-family: 'helvetica'; font-weight: lighter;}
 #buzz_sub_buzz .quiz_question.image .quiz_answer span.quiz_checkbox { margin-top: 10px; }
 #buzz_sub_buzz .quiz_question.image .quiz_answer .quiz_checkbox_wrp span { margin-top: 12px; }
 
