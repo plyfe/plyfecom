@@ -264,7 +264,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 /*For Mobile devises*/
 
 @media (max-width: 600px) {
-	body {margin: 0px}
+	body {margin: 0px; overflow: hidden;}
 	.quiz {width: 100%; }
 	.quiz_cover {width: 100%; margin: auto; }
 	.c {clear: both; float: none; width: 100%; margin: auto;}
