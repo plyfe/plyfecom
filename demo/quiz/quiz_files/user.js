@@ -1,4 +1,3 @@
-
 var BF_Quiz = function () {
         this.quizes = {};
         this.answerResponse = "#{a} is the correct answer.";
@@ -321,9 +320,6 @@ var BF_Quiz = function () {
                     $(n.el).show();
                     if (typeof window.BF_Effect != "undefined") {
                         BF_Effect.ScrollIntoView($(n.el))
-                    }
-                    if (n) {
-                        c.hide()
                     }
                 }
             } else {
