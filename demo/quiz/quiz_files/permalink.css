@@ -261,9 +261,40 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 	#buzz_sub_buzz .quiz .quiz_tally_results h1 { font: 24px/24px 'helvetica'; }
 }
 
-/*For Mobile devises*/
+/*For bigger phones*/
+@media (min-width: 330px) and (max-width: 479px) {
+	body {margin: 0px;}
+	.quiz {width: 100%; }
+	.quiz_cover {width: 100%; margin: auto; }
+	.c {clear: both; float: none; width: 100%; margin: auto;}
+	.quiz_img {width: 100%}
+	#buzz_sub_buzz .quiz .quiz_question.legacy .quiz_question_header img,#buzz_sub_buzz .quiz .quiz_question.text .quiz_question_header img  { width: 320px; }
+	#buzz_sub_buzz .quiz ul, #buzz_sub_buzz .quiz ol, #buzz_sub_buzz.suplist_long .quiz ol, #buzz_sub_buzz.suplist_long .quiz ul { margin:10px 0; }
+	#buzz_sub_buzz .quiz .quiz_question .quiz_question_header { float: none; margin-bottom: 15px; width: 100%; margin-right: auto; margin-left: auto; display: block; margin-top: 30px;}
+	#buzz_sub_buzz .quiz .quiz_question { overflow: hidden; width: 100%; margin: auto; }
+	#buzz_sub_buzz .quiz { float:none; margin: auto;}
+	#buzz_sub_buzz .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: top; width: 90px; min-height: 90px; max-width: 90px }
+	#buzz_sub_buzz .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 320px }
+	#buzz_sub_buzz .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: 0px; margin-right: auto;  border-spacing: 14px}
+	#buzz_sub_buzz .quiz_question.image ol { border-spacing: 10px 0; }
+	#buzz_sub_buzz .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 100px; }
+	#buzz_sub_buzz .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 14px 0 0 0; margin: auto; width: 99%}
+	#buzz_sub_buzz .quiz .quiz_result .quiz_img_and_source, #buzz_sub_buzz .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 100%; float: left; margin: 0 0 10px 0; }
+	#buzz_sub_buzz .quiz .quiz_result .quiz_img_and_source img, #buzz_sub_buzz .quiz .quiz_reveal img { width: 99%; height: auto; display: block; margin: auto; }
+	#buzz_sub_buzz .quiz_result.has_result_image .headline-1.answer_response, #buzz_sub_buzz .quiz_result.has_result_image h2, #buzz_sub_buzz .quiz_question .quiz_reveal p { width: 99%; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
+	.adlink {width: 100%}
+	.share {width: 300px; margin-top: 5px}
+	#buzz_sub_buzz .quiz .answer_shares { clear: both; overflow: hidden; background-color: #e6e8e9; padding: 3px 10px; }
+	#buzz_sub_buzz .quiz .answer_shares h2 { float: left; margin: 15px 15px 0px 0; padding: 0; text-align: center;  }
+	#buzz_sub_buzz .quiz .quiz_tally_results h1 { font: 20px/20px 'helvetica'; line-height: 26px}
+	#buzz_sub_buzz .quiz .quiz_answer span.quiz_checkbox { width: 12px; height: 12px; }
+	#buzz_sub_buzz .quiz .quiz_answer.selected span.quiz_checkbox .quiz_checkmark { display: block; background: url('check.png') no-repeat; width: 21px; }
+	#buzz_sub_buzz .quiz_question.image .quiz_answer .quiz_checkbox_wrp span { margin-top: 8px; }
+}
 
-@media (max-width: 600px) {
+
+/*For iPhone*/
+@media (min-width: 300px) and (max-width: 329px) {
 	body {margin: 0px; overflow: hidden;}
 	.quiz {width: 100%; }
 	.quiz_cover {width: 100%; margin: auto; }
