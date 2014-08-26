@@ -264,6 +264,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 /*For Mobile devises*/
 
 @media (max-width: 600px) {
+	body {margin: 0px}
 	.quiz {width: 100%; }
 	.quiz_cover {width: 100%; margin: auto; }
 	.c {clear: both; float: none; width: 100%; margin: auto;}
@@ -275,14 +276,14 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 	#buzz_sub_buzz .quiz { float:none; margin: auto;}
 	#buzz_sub_buzz .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: top; width: 90px; min-height: 90px; max-width: 90px }
 	#buzz_sub_buzz .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 320px }
-	#buzz_sub_buzz .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: -9px; margin-right: auto;  }
+	#buzz_sub_buzz .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: -9px; margin-right: auto;  border-spacing: 14px}
 	#buzz_sub_buzz .quiz_question.image ol { border-spacing: 10px 0; }
 	#buzz_sub_buzz .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 79px; }
 	#buzz_sub_buzz .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 14px 0 0 0; margin: auto; width: 318px}
 	#buzz_sub_buzz .quiz .quiz_result .quiz_img_and_source, #buzz_sub_buzz .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 150px; float: left; margin: 0 0 10px 0; }
 	#buzz_sub_buzz .quiz .quiz_result .quiz_img_and_source img, #buzz_sub_buzz .quiz .quiz_reveal img { width: 280px; height: auto; }
 	#buzz_sub_buzz .quiz_result.has_result_image .headline-1.answer_response, #buzz_sub_buzz .quiz_result.has_result_image h2, #buzz_sub_buzz .quiz_question .quiz_reveal p { width: 280px; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
-	.adlink {width: 320px}
+	.adlink {width: 100%}
 	.share {width: 300px; margin-top: 5px}
 	#buzz_sub_buzz .quiz .answer_shares { clear: both; overflow: hidden; background-color: #e6e8e9; padding: 3px 10px; }
 	#buzz_sub_buzz .quiz .answer_shares h2 { float: left; margin: 15px 15px 0px 0; padding: 0; text-align: center;  }
