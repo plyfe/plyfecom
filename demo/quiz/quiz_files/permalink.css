@@ -207,7 +207,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source, #plyfe_sub_plyfe .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 300px; float: left; margin: 0 0 10px 0; }
 #plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source img, #plyfe_sub_plyfe .quiz .quiz_reveal img { width: 300px; height: auto; }
 
-#plyfe_sub_plyfe .quiz_question.text .quiz_answer:hover, #plyfe_sub_plyfe .quiz_question.image .quiz_answer:hover{background-color: #fff195; cursor: pointer;}
+#plyfe_sub_plyfe .quiz_question.text .quiz_answer:hover, #plyfe_sub_plyfe .quiz_question.image .quiz_answer:hover{background-color: #ff0000; cursor: pointer;}
 
 #plyfe_sub_plyfe .quiz_question.text .quiz_answer.selected,
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer.selected {

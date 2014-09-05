@@ -6209,7 +6209,7 @@ function toggleGraphicImage(c, g) {
 
 
 
-/* user: This is where the quiz happens*/
+/* user: This is where the quiz happens */
 
 var PL_Quiz = function () {
         this.quizes = {};
@@ -6400,6 +6400,8 @@ var PL_Quiz = function () {
                 }
             }
         };
+
+        /* quiz answer happens here */
         this.toggleSelection = function (l, e, j) {
             var d = pl_quiz.quizes[l];
             var g = d.questions[e];
@@ -6438,6 +6440,8 @@ var PL_Quiz = function () {
             }
             pl_quiz.gaTrack("[ttp]:content", "quiz-answer", [f, c].join("="))
         };
+
+/*here's the answer's logic */
         this.submit_quiz = function (d) {
             if (pl_quiz.quiz_complete(d) && !d.completed) {
                 if (d.type != "single question") {
@@ -6514,6 +6518,8 @@ var PL_Quiz = function () {
                 params: g
             })
         };
+
+        /* result is here */
         this.show_results = function (d) {
             var e = d.swap;
             var g = d.questions;
