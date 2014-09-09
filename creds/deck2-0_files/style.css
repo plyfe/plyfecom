@@ -455,8 +455,8 @@ textarea {
   width: 310px;
   height: 300px;
   display: block;
-  background-color: #eeeeee;
-  border: #c0c0c0;
+  background-color: rgba(162, 147, 186, 0.5);
+  border: #a293ba;
   border-style: solid;
   border-radius: 10px;
   padding: 10px 20px;
