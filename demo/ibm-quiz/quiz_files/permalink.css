@@ -197,7 +197,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_answer .quiz_img_and_source .sub_plyfe_source_via, #plyfe_sub_plyfe .quiz_answer .quiz_img_and_source .sub_plyfe_source_via:hover { bottom: 0; right: 0; max-width: 164px; overflow-x: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; }
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 180px; }
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer span.quiz_answer_text, #plyfe_sub_plyfe .quiz_question.image .quiz_answer span.quiz_answer_description { width: 141px; }
-#plyfe_sub_plyfe .quiz_question.image ol { display: table; border-collapse: separate; border-spacing: 12px 0; margin-bottom: 12px; margin-left: -12px; margin-right: -12px}
+#plyfe_sub_plyfe .quiz_question.image ol { display: table; border-collapse: separate; border-spacing: 12px 0; margin-bottom: 12px; margin-left: 0px; margin-right: 0px}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer.last { margin-right: 0; border-spacing: 0px}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer.first { margin-right: 0; border-spacing: 0px}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { clear: left; }
@@ -265,7 +265,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz .quiz_result .headline-1 { font: 30px/37px 'LetterGothicStd'; margin: 0 0 20px 0; }
 #plyfe_sub_plyfe .quiz_result.has_result_image .headline-1.answer_response, #plyfe_sub_plyfe .quiz_result.has_result_image h2, #plyfe_sub_plyfe .quiz_question .quiz_reveal p { width: 340px; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
 #plyfe_sub_plyfe .quiz .quiz_answer.deactivated { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; filter: alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6; }
-.adlink {width: 625px}
+.adlink {width: 100%}
 .share {margin-top:-9px; }
 img.results {width: 300px; display: block; margin-left: 0px; margin-bottom: 20px;}
 img.share { width: 100%; margin: auto; display: block;}
