@@ -238,8 +238,8 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_question.text .quiz_answer.def_answer:hover,#plyfe_sub_plyfe .quiz_question.image .quiz_answer.def_answer,
 #plyfe_sub_plyfe .quiz_question.text .quiz_answer.deactivated:hover,#plyfe_sub_plyfe .quiz_question.image .quiz_answer.deactivated:hover{background: #f2f2f2;}
 
-#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 250px; vertical-align: middle;}
-#plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 20px; text-align: center; margin-top: 105px; height: 100px; }
+#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 200px; vertical-align: middle;}
+#plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 20px; text-align: center; margin-top: 56px; height: 55px; }
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer span {text-align: center; display: table-cell; height: 100%; vertical-align: middle; margin: auto; font-size: 20px}
 
 .quiz_shadow { -moz-box-shadow: 1px 1px 0 #bfbfbf; -webkit-box-shadow: 1px 1px 0 #bfbfbf; box-shadow: 1px 1px 0 #bfbfbf; -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#bfbfbf')"; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#bfbfbf'); }
@@ -308,8 +308,8 @@ img.share { width: 100%; margin: auto; display: block;}
 	.quiz_cover {width: 100%; margin: auto; }
 	.c {clear: both; float: none; width: 100%; margin: auto;}
 	.quiz_img {width: 100%}
-	#plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 13px; text-align: center; margin-top: 78px; height: 100px; margin-bottom: -30px}
-	#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 180px; vertical-align: middle;}
+	#plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 13px; text-align: center; margin-top: 11px; height: 50px; margin-bottom: -30px}
+	#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 120px; vertical-align: middle;}
 	#plyfe_sub_plyfe .quiz .quiz_question.legacy .quiz_question_header img,#plyfe_sub_plyfe .quiz .quiz_question.text .quiz_question_header img  { width: 320px; }
 	#plyfe_sub_plyfe .quiz ul, #plyfe_sub_plyfe .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ul { margin:10px 0; }
 	#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: none; margin-bottom: 15px; width: 100%; margin-right: auto; margin-left: auto; display: block; margin-top: 30px;}
