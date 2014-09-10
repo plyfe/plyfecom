@@ -131,7 +131,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz { float:left; width:70%; padding:15px 40px 15px 15px; border-radius: 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px;}
 #plyfe_sub_plyfe .quiz h4 { margin:2px 0 5px 0;}
 #plyfe_sub_plyfe .quiz h5 { margin:0 0 5px 0;}
-#plyfe_sub_plyfe .quiz ul, #plyfe_sub_plyfe .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ul { margin:10px 0; padding:0; }
+#plyfe_sub_plyfe .quiz ul, #plyfe_sub_plyfe .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ul { margin:0; padding:0; }
 #plyfe_sub_plyfe .quiz li { list-style:none; }
 .quiz-result { float:left;width:100%;margin-bottom:10px; }
 .quiz-result img { float:left; margin-right:10px; }
@@ -195,13 +195,13 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: left; clear: both; }
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: top; width: 190px; min-height: 200px; }
 #plyfe_sub_plyfe .quiz_answer .quiz_img_and_source .sub_plyfe_source_via, #plyfe_sub_plyfe .quiz_answer .quiz_img_and_source .sub_plyfe_source_via:hover { bottom: 0; right: 0; max-width: 164px; overflow-x: hidden; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; }
-#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 180px; }
+#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 200px; }
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer span.quiz_answer_text, #plyfe_sub_plyfe .quiz_question.image .quiz_answer span.quiz_answer_description { width: 141px; }
-#plyfe_sub_plyfe .quiz_question.image ol { display: table; border-collapse: separate; border-spacing: 12px 0; margin-bottom: 12px; margin-left: 0px; margin-right: 0px}
+#plyfe_sub_plyfe .quiz_question.image ol { display: table; border-collapse: separate; border-spacing: 12px 0; margin-left: -12px; margin-right: -12px; margin-bottom: -19px;}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer.last { margin-right: 0; border-spacing: 0px}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer.first { margin-right: 0; border-spacing: 0px}
 #plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { clear: left; }
-#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: left; margin-bottom: 15px; width: 100%; }
+#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: left; margin-bottom: 0px; width: 100%; }
 #plyfe_sub_plyfe .quiz.image_checklist_quiz.numbered .answer_number{position: absolute; margin: 0; padding: 0 6px; z-index: 2; background: #fff; font-size: 18px; line-height: 24px; font-weight: bold; }
 
 /* LARGE QUIZ IMAGE */
@@ -238,7 +238,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_question.text .quiz_answer.def_answer:hover,#plyfe_sub_plyfe .quiz_question.image .quiz_answer.def_answer,
 #plyfe_sub_plyfe .quiz_question.text .quiz_answer.deactivated:hover,#plyfe_sub_plyfe .quiz_question.image .quiz_answer.deactivated:hover{background: #f2f2f2;}
 
-#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 200px; vertical-align: middle;}
+#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); padding: 0px; overflow: hidden; height: 200px; vertical-align: middle;}
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 20px; text-align: center; margin-top: 56px; height: 55px; }
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer span {text-align: center; display: table-cell; height: 100%; vertical-align: middle; margin: auto; font-size: 20px}
 
@@ -252,11 +252,11 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_question.image .quiz_answer .quiz_checkbox_wrp span { margin-top: 12px; }
 
 #plyfe_sub_plyfe .quiz .quiz_result { clear: both; display: block; overflow: hidden; }
-#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: #ffffff; padding: 20px 10px; width: 220px; float: right; margin-top: -140px;}
+#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: rgba(250, 250, 250, 0.1); padding: 20px 10px; width: 220px; float: right; margin-top: -140px;}
 #plyfe_sub_plyfe .quiz .answer_shares_buttons { float: left; }
 #plyfe_sub_plyfe .quiz .answer_shares h2 { margin: 8px 15px 0px 0; padding: 0; text-align: center;}
 #plyfe_sub_plyfe .quiz .answer_shares a { float: left; margin: 0 15px 0 0; }
-#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 20px 0 0 0; margin: 20px 0; }
+#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: rgba(250, 250, 250, 0.5); border: 1px solid #dddddd; padding: 20px 0 0 0; margin: 20px 0; }
 #plyfe_sub_plyfe .quiz .quiz_tally_results { padding: 0 20px; }
 #plyfe_sub_plyfe .quiz .quiz_tally_results h1 { font: 28px/24px 'LetterGothicStd'; }
 #plyfe_sub_plyfe .quiz .quiz_tally_results .headline-1 { font: 30px/26px 'LetterGothicStd'; }
@@ -289,13 +289,13 @@ img.share { width: 100%; margin: auto; display: block;}
 	#plyfe_sub_plyfe .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 574px }
 	#plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: none; clear: both; }
 	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 140px; }
-	#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 20px 0 0 0; margin: auto; width: 550px}
+	#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: rgba(250, 250, 250, 0.5); border: 1px solid #dddddd; padding: 20px 0 0 0; margin: auto; width: 550px; margin-top: 25px}
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source, #plyfe_sub_plyfe .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 250px; float: left; margin: 0 0 10px 0; }
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source img, #plyfe_sub_plyfe .quiz .quiz_reveal img { width: 250px; height: auto; }
 	#plyfe_sub_plyfe .quiz_result.has_result_image .headline-1.answer_response, #plyfe_sub_plyfe .quiz_result.has_result_image h2, #plyfe_sub_plyfe .quiz_question .quiz_reveal p { width: 240px; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
 	.adlink {width: 550px}
 	.share {width: 320px; margin-top: -3px}
-	#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: #ffffff; padding: 3px 10px; float: right; margin-top: -140px; }
+	#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: rgba(250, 250, 250, 0.1); padding: 3px 10px; float: right; margin-top: -140px; }
 	#plyfe_sub_plyfe .quiz .answer_shares h2 { float: left; margin: 21px 15px 0px 0; padding: 0; }
 	#plyfe_sub_plyfe .quiz .quiz_tally_results h1 { font: 24px/24px 'LetterGothicStd'; }
 }
@@ -315,18 +315,18 @@ img.share { width: 100%; margin: auto; display: block;}
 	#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: none; margin-bottom: 15px; width: 100%; margin-right: auto; margin-left: auto; display: block; margin-top: 30px;}
 	#plyfe_sub_plyfe .quiz .quiz_question { overflow: hidden; width: 100%; margin: auto; vertical-align: middle;}
 	#plyfe_sub_plyfe .quiz { float:none; margin: auto;}
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: middle; width: 90px; min-height: 90px; max-width: 90px }
+	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: middle; width: 110px; min-height: 90px; max-width: 90px; height: 110px }
 	#plyfe_sub_plyfe .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 320px; vertical-align: middle; }
-	#plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: 0px; margin-right: auto;  border-spacing: 14px}
+	#plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: 0px; margin-right: 0px;  border-spacing: 12px; margin-bottom: -23px; margin-top: -10px}
 	#plyfe_sub_plyfe .quiz_question.image ol { border-spacing: 10px 0; }
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 100px; }
-	#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 14px 0 0 0; margin: auto; width: 99%}
+	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: 110px; width: 110px; }
+	#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: rgba(250, 250, 250, 0.5); border: 1px solid #dddddd; padding: 14px 0 0 0; margin: auto; width: 99%; margin-top: 30px}
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source, #plyfe_sub_plyfe .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 100%; float: left; margin: 0 0 10px 0; }
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source img, #plyfe_sub_plyfe .quiz .quiz_reveal img { width: 99%; height: auto; display: block; margin: auto; }
 	#plyfe_sub_plyfe .quiz_result.has_result_image .headline-1.answer_response, #plyfe_sub_plyfe .quiz_result.has_result_image h2, #plyfe_sub_plyfe .quiz_question .quiz_reveal p { width: 99%; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
 	.adlink {width: 100%}
 	.share {width: 300px; margin-top: 5px}
-	#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: #ffffff; padding: 10px 10px; float: none; margin: auto; }
+	#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: rgba(250, 250, 250, 0.1); padding: 10px 10px; float: none; margin: auto; }
 	#plyfe_sub_plyfe .quiz .answer_shares h2 { float: left; margin: 15px 15px 0px 0; padding: 0; text-align: center;  }
 	#plyfe_sub_plyfe .quiz .quiz_tally_results h1 { font: 20px/20px 'LetterGothicStd'; line-height: 26px}
 	#plyfe_sub_plyfe .quiz .quiz_answer span.quiz_checkbox { width: 12px; height: 12px; }
