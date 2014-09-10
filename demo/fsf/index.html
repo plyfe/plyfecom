@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" class=""><!--<![endif]-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" async="" src="./fsf_files/yQuery.js"></script>
+  <script async="" src="./fsf_files/fbds.js"></script>
+  <script type="text/javascript" async="" src="./fsf_files/dc.js"></script>
+  <script type="text/javascript" src="./fsf_files/jquery.min.js"></script>
+  <script type="text/javascript">
+	
+/*
+ * jQuery dropdown: A simple dropdown plugin
+ *
+ * Copyright 2013 Cory LaViska for A Beautiful Site, LLC. (http://abeautifulsite.net/)
+ *
+ * Licensed under the MIT license: http://opensource.org/licenses/MIT
+ *
+*/
+if (jQuery) (function ($) {
+
+    $.extend($.fn, {
+        dropdown: function (method, data) {
+
+            switch (method) {
+                case 'show':
+                    show(null, $(this));
+                    return $(this);
+                case 'hide':
+                    hide();
+                    return $(this);
+                case 'attach':
+                    return $(this).attr('data-dropdown', data);
+                case 'detach':
+                    hide();
+                    return $(this).removeAttr('data-dropdown');
+                case 'disable':
+                    return $(this).addClass('dropdown-disabled');
+                case 'enable':
+                    hide();
+                    return $(this).removeClass('dropdown-disabled');
+            }
+
+        }
+    });
+
+    function show(event, object) {
+
+        var trigger = event ? $(this) : object,
+			dropdown = $(trigger.attr('data-dropdown')),
+			isOpen = trigger.hasClass('dropdown-open');
+
+        // In some cases we don't want to show it
+        if (event) {
+            if ($(event.target).hasClass('dropdown-ignore')) return;
+
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            if (trigger !== object.target && $(object.target).hasClass('dropdown-ignore')) return;
+        }
+        hide();
+
+        if (isOpen || trigger.hasClass('dropdown-disabled')) return;
+
+        // Show it
+        trigger.addClass('dropdown-open');
+        dropdown
+			.data('dropdown-trigger', trigger)
+			.show();
+
+        // Position it
+        position();
+
+        // Trigger the show callback
+        dropdown
+			.trigger('show', {
+				dropdown: dropdown,
+				trigger: trigger
+			});
+
+    }
+
+    function hide(event) {
+
+        // In some cases we don't hide them
+        var targetGroup = event ? $(event.target).parents().addBack() : null;
+
+        // Are we clicking anywhere in a dropdown?
+        if (targetGroup && targetGroup.is('.dropdown')) {
+            // Is it a dropdown menu?
+            if (targetGroup.is('.dropdown-menu')) {
+                // Did we click on an option? If so close it.
+                if (!targetGroup.is('A')) return;
+            } else {
+                // Nope, it's a panel. Leave it open.
+                return;
+            }
+        }
+
+        // Hide any dropdown that may be showing
+        $(document).find('.dropdown:visible').each(function () {
+            var dropdown = $(this);
+            dropdown
+				.hide()
+				.removeData('dropdown-trigger')
+				.trigger('hide', { dropdown: dropdown });
+        });
+
+        // Remove all dropdown-open classes
+        $(document).find('.dropdown-open').removeClass('dropdown-open');
+
+    }
+
+    function position() {
+
+        var dropdown = $('.dropdown:visible').eq(0),
+			trigger = dropdown.data('dropdown-trigger'),
+			hOffset = trigger ? parseInt(trigger.attr('data-horizontal-offset') || 0, 10) : null,
+			vOffset = trigger ? parseInt(trigger.attr('data-vertical-offset') || 0, 10) : null;
+
+        if (dropdown.length === 0 || !trigger) return;
+
+        // Position the dropdown relative-to-parent...
+        if (dropdown.hasClass('dropdown-relative')) {
+            dropdown.css({
+                left: dropdown.hasClass('dropdown-anchor-right') ?
+					trigger.position().left - (dropdown.outerWidth(true) - trigger.outerWidth(true)) - parseInt(trigger.css('margin-right'), 10) + hOffset :
+					trigger.position().left + parseInt(trigger.css('margin-left'), 10) + hOffset,
+                top: trigger.position().top + trigger.outerHeight(true) - parseInt(trigger.css('margin-top'), 10) + vOffset
+            });
+        } else {
+            // ...or relative to document
+            dropdown.css({
+                left: dropdown.hasClass('dropdown-anchor-right') ?
+					trigger.offset().left - (dropdown.outerWidth() - trigger.outerWidth()) + hOffset : trigger.offset().left + hOffset,
+                top: trigger.offset().top + trigger.outerHeight() + vOffset
+            });
+        }
+    }
+
+    $(document).on('click.dropdown', '[data-dropdown]', show);
+    $(document).on('click.dropdown', hide);
+    $(window).on('resize', position);
+
+})(jQuery);	
+	
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="robots" content="index,follow">
+    <title>
+        Shop superfoods and herbs online | Four Sigma Foods Webstore
+    </title>
+    <meta name="description" content="Four Sigma Foods is a British company specialized in superfoods, medicinal mushrooms and adaptogenic herbs. We serve customers worldwide.">    
+    <meta property="og:site_name" content="Four Sigma Foods">
+    <meta name="author" content="Four Sigma Foods">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+    <!-- Stylesheets -->
+    <link href="./fsf_files/styles.css" rel="stylesheet" type="text/css" media="all">
+    <!--[if lte IE 9]>
+      <link href="//cdn.shopify.com/s/files/1/0166/8072/t/3/assets/ie.css?3828" rel="stylesheet" type="text/css"  media="all"  />
+    <![endif]-->
+    <!--[if lte IE 7]>
+      //cdn.shopify.com/s/files/1/0166/8072/t/3/assets/lte-ie7.js?3828
+    <![endif]-->
+
+    <!-- Icons -->
+    <link rel="canonical" href="./fsf_files/fsf.html">
+
+    <!-- Custom Fonts -->
+    <link href="./fsf_files/css.css" rel="stylesheet" type="text/css">    
+    <script type="text/javascript" src="./fsf_files/ga_urchin_forms.js"></script>
+    <link type="text/css" rel="stylesheet" href="./fsf_files/css1.css">
+    <style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+  
+
+  <body class="index"><nav id="cart" class="mmenu mmenu-right mmenu-horizontal">
+          <ul class="mmenu-opened">
+            <li><a class="close continue" href="http://store.foursigmafoods.com/#cart">Continue Shopping</a></li>
+              <li class="mmenu-label">Your Cart is Empty</li>
+          </ul>
+        </nav>
+        <nav id="nav" class="mmenu mmenu-left mmenu-horizontal">  
+          <ul id="mmenu-p1-0" class="mmenu-opened">
+                <li><a href="http://store.foursigmafoods.com/collections/all" title="PRODUCTS">PRODUCTS</a></li>
+                <li><a href="http://www.foursigmafoods.com/about" title="ABOUT">ABOUT</a></li>
+                <li><a href="http://www.foursigmafoods.com/team" title="TEAM">TEAM</a></li>
+                <li><a href="http://www.foursigmafoods.com/community" title="COMMUNITY">COMMUNITY</a></li>
+                <li class="mmenu-selected"><a href="./fsf_files/fsf.html" title="&lt;u&gt;WEBSTORE&lt;/u&gt;"><u>WEBSTORE</u></a></li>
+                <li><a href="http://www.foursigmafoods.com/resellers" title="RESELLERS">RESELLERS</a></li>
+                <li><a href="http://www.foursigmafoods.com/contact" title="CONTACT">CONTACT</a></li>
+                <li><a href="http://www.foursigmafoods.com/blog" title="BLOG">BLOG</a></li>
+                <li><a class="mmenu-subopen" href="http://store.foursigmafoods.com/#mmenu-s1-0"></a><a href="http://store.foursigmafoods.com/#">Social</a></li>
+                <li>
+                  <a href="http://store.foursigmafoods.com/account" title="My Account ">My Account</a>
+                </li>
+          </ul>
+          <ul class="mmenu-submenu" id="mmenu-s1-0"><li class="mmenu-subtitle"><a class="mmenu-subclose" href="http://store.foursigmafoods.com/#mmenu-p1-0">Social</a></li></ul>
+        </nav> 
+	<!-- ClickTale end of Top part -->
+    <div class="mmenu-page">
+      <div id="header">
+        <a href="http://store.foursigmafoods.com/#nav" class="icon-menu"> <span>Menu</span></a>
+        <a href="http://store.foursigmafoods.com/#cart" class="icon-cart right"> <span>Cart</span></a>
+      </div>
+      <div class="hidden"></div>
+        <div class="header">
+          <div class="container">
+          <!--<div class="fourteencenter"> <!-- Changed by Ilpo -->
+          <div class="two columns logo"><!-- Changed by Ilpo -->
+            <a href="http://www.foursigmafoods.com/" title="Four Sigma Foods">
+                <img src="./fsf_files/logo.png" alt="Four Sigma Foods" data-src="//cdn.shopify.com/s/files/1/0166/8072/t/3/assets/logo.png?3828">
+            </a>
+          </div>
+          <div class="twelve columns nav mobile_hidden"><!-- Changed by Ilpo -->
+            <ul class="menu">
+                  <li class="textlink"><a href="http://store.foursigmafoods.com/collections/all" title="PRODUCTS" class="top-link ">PRODUCTS</a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/about" title="ABOUT" class="top-link ">ABOUT</a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/team" title="TEAM" class="top-link ">TEAM</a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/community" title="COMMUNITY" class="top-link ">COMMUNITY</a></li>
+                  <li class="textlink"><a href="./fsf_files/fsf.html" title="&lt;u&gt;WEBSTORE&lt;/u&gt;" class="top-link active"><u>WEBSTORE</u></a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/resellers" title="RESELLERS" class="top-link ">RESELLERS</a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/contact" title="CONTACT" class="top-link ">CONTACT</a></li>
+                  <li class="textlink"><a href="http://www.foursigmafoods.com/blog" title="BLOG" class="top-link ">BLOG</a></li>
+                <li>
+                  <a href="http://store.foursigmafoods.com/account" title="My Account " class="icon-user"></a>
+                </li>
+              <li class="othermenu">
+                <a href="http://store.foursigmafoods.com/#cart" class="icon-cart cart-button"> <span>Cart</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--</div> Changed by Ilpo -->
+      
+<div class="container main content"></div>  
+  <div class="homepage_content clearfix">
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="section clearfix">
+          <div class="topsellers">
+<center>
+  <div style="display:inline-flex" >
+    <img class="frontbanner" src="./fsf_files/webstorebanner.jpg" style="border-bottom: 3px; border-top: 3px; border-color: #a1a1a1; border-style: solid; width: 682px; height: 100%;">
+    <div class="plyfe-widget ready" data-height="250" data-id="119" data-treatment="tokyo" data-type="vc" data-transparent-bg="true" data-venue="wh-179" data-theme-overrides="{}"></div>
+  </div>
+</center>
+<br>
+<center><a href="#" data-dropdown="#dropdown-1"><img src="./fsf_files/overwhelmed.jpg"></a></center>
+<br>
+<h2>This is what we are proudly offering</h2>
+<div class="topsellersproduct">
+  <a href="#">
+    <img class="frontkuva" src="./fsf_files/front_instants2.jpg"><br>
+<h2>Mushroom Beverages</h2>
+  <br> Effective, easy and ecological <span style="color: #eb6262;" color="#eb6262">/</span> Each box contains 20 easy-to-use mushroom beverages <span style="color: #eb6262;" color="#eb6262">/</span> Tasty and strongly support your health <span style="color: #eb6262;" color="#eb6262">/</span> Made from all-natural mushrooms and herbs <span style="color: #eb6262;" color="#eb6262">/</span>Vegan, gluten-free, sugar-free, and no additives or preservatives<br><br><br><span class="green">View products</span></a></div>
+
+<div class="vali">&nbsp;</div>
+
+
+<div class="topsellersproduct">
+  <a href="http://store.foursigmafoods.com/collections/herbal-beverages">
+    <img class="frontkuva" src="./fsf_files/front_herbs2.jpg"><br>
+<h2>Adaptogenic Herbs</h2>
+  <br> Effective and easy-to-use adaptogenic drinks <span style="color: #eb6262;" color="#eb6262">/</span> Each box contains 10 versatile powder sticks <span style="color: #eb6262;" color="#eb6262">/</span> Strongly support your health, and they taste good! <span style="color: #eb6262;" color="#eb6262">/</span> Gluten-free, caffeine-free, sugar-free, and no additives or preservatives<br><br><br><span class="green">View products</span></a></div>
+  <div class="vali">&nbsp;</div>
+
+
+<div class="topsellersproduct">
+  <a href="http://store.foursigmafoods.com/collections/fsf-blends">
+     <div class="plyfe-widget" data-height="250" data-id="120" data-treatment="tokyo" data-type="tr" data-transparent-bg="false" data-venue="wh-179" data-theme="light" style="margin-bottom: 4px;"></div><br>
+<h2>Mushroom Facts</h2>
+  <br>Take this short quiz and find out how much you really know about this amazing mashroom world that we are discovering together!<br>
+  We would recommend you using Adaptogenic drinks to stay focused!<br><br><br><span class="green">#MushroomFacts</span></a></div></div>
+  <br class="clear"><br><br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container content" style="padding-top: 20px">
+  <div class="sixteen columns"><br class="clear"></div></div>  
+  <div class="homepage_content clearfix">
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="section clearfix">
+          <div class="topsellers"><h2>Our top selling products</h2><div class="topsellersproduct"><a href="http://store.foursigmafoods.com/products/instant-reishi" onclick="trackOutboundLink(&#39;http://store.foursigmafoods.com/products/instant-reishi&#39;); return false;"><img class="frontkuva" src="./fsf_files/reishi-topseller.jpg"><br><h2>Instant Reishi</h2><br></a> Reduces stress <span style="color: #eb6262;" color="#eb6262">/</span> Improves sleep quality <span style="color: #eb6262;" color="#eb6262">/</span> Improves blood circulation <br><br><br><br><div class="info"><span class="price"><span class="money" data-currency-usd="$30.00">$30.00</span></span></div></div><div class="vali">&nbsp;</div><div class="topsellersproduct"><a href="http://store.foursigmafoods.com/products/mind-herbs" onclick="trackOutboundLink(&#39;http://store.foursigmafoods.com/products/mind-herbs&#39;); return false;"><img class="frontkuva" src="./fsf_files/mind_topseller.jpg"><br><h2>Mind Herbs</h2><br></a> Improves memory and learning function <span style="color: #eb6262;" color="#eb6262">/</span> Creates calm, relaxed concentration <span style="color: #eb6262;" color="#eb6262">/</span> Restores balance and reduces stress <br><br><br><div class="info"><span class="price"><span class="money" data-currency-usd="$15.00">$15.00</span></span></div></div><div class="vali">&nbsp;</div><div class="topsellersproduct"><a href="http://store.foursigmafoods.com/products/fsf-winning" onclick="trackOutboundLink(&#39;http://store.foursigmafoods.com/products/fsf-winning&#39;); return false;"><img class="frontkuva" src="./fsf_files/winningx_topseller.jpg"><br><h2>Winning X</h2><br></a> Boosts an inactive immune system and calms down a hyperactive one <span style="color: #eb6262;" color="#eb6262">/</span> Helps the body adapt to stress <span style="color: #eb6262;" color="#eb6262">/</span> Protects the body from all kinds of pathogens <br><br><br><div class="info"><span class="price"><span class="money" data-currency-usd="$30.00">$30.00</span></span></div></div></div><br class="clear"><br><br><br><img src="./fsf_files/frontlogot.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container content" style="padding-top: 20px">
+    <div class="section clearfix"></div>
+      <div class="hakudiv">
+        <div class="hakupalkki">
+          <form method="get" action="http://store.foursigmafoods.com/search" class="haku">
+            <input type="hidden" name="type" value="product">
+            <span> <input type="text" name="q"></span>
+              <span> <input type="submit" value="Search" class="hakunappi"></span>
+              </form>&nbsp;&nbsp;&nbsp; Popular tags:
+              <a href="http://store.foursigmafoods.com/search?type=product&q=reishi">Reishi</a>, 
+              <a href="http://store.foursigmafoods.com/search?type=product&q=cordyceps">Cordyceps</a>,
+              <a href="http://store.foursigmafoods.com/search?type=product&q=Herbs">Herbs</a>, 
+              <a href="http://store.foursigmafoods.com/search?type=product&q=sleep+quality">Sleep quality</a>, 
+              <a href="http://store.foursigmafoods.com/search?type=product&q=energy">Energy</a>, 
+              <a href="http://store.foursigmafoods.com/search?type=product&q=detox">Detox</a>...
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="four columns">
+              <h6 class="title">'Now You Know' Newsletter</h6>
+                <form action="http://foursigmafoods.us2.list-manage.com/subscribe/post?u=747e6cefb56d95a2e662fba56&id=b14f9aa19c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="contact-form" target="_blank">
+                  <input type="email" value="" name="EMAIL" class="required email" id="contact_email" placeholder="Enter your email address...">
+                  <input onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;CTA-buttons&#39;, &#39;Subscribe&#39;]);" type="submit" value="Sign Up" id="sign_up" name="subscribe" class="action_button">
+                </form>
+                  <p>‘Now You Know’ is a biweekly newsletter that brings to you those tiny bites of knowledge about subjects ranging from sleep to foraging the best foods. Each newsletter will also include a special discount for FSF webstore.</p>
+          </div>
+
+          <div class="four columns">
+            
+              <h6 class="title">Four Sigma Foods</h6>
+              <p><span>Four Sigma Foods is a health food company founded by a group of passionate funguys in 2012.&nbsp;</span><span>Our mission is to bring ancient wisdom to modern times.</span></p>
+            
+          </div>
+
+          <div class="four columns">       
+            
+              <h6 class="title">Follow Us</h6>
+              <p><a href="https://www.facebook.com/FourSigmaFoods" target="_blank" title="Four Sigma Foods Facebook"><img src="./fsf_files/facebook_icon.png"></a>&nbsp;<a href="https://twitter.com/FourSigmaFoods" target="_blank" title="Four Sigma Foods Twitter"><img src="./fsf_files/twitter_icon.png"></a>&nbsp;<a href="http://www.youtube.com/user/foursigmafoods"><img src="./fsf_files/youtube.png"></a>&nbsp;<a href="http://instagram.com/foursigmafoods" target="_blank" title="Four Sigma Foods Instagram"><img src="./fsf_files/instagram_icon.png"></a>&nbsp;<a href="http://www.foursigmafoods.com/feed" target="_blank" title="Four Sigma Foods RSS"><img src="./fsf_files/rss_icon.png"></a></p>
+            
+          </div>
+
+          <div class="four columns">
+            <h6 class="title">Footer</h6>
+            <ul class="footer_menu">
+              
+                <li><a href="http://store.foursigmafoods.com/pages/faq" title="FAQ">FAQ</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/pages/become-an-affiliate" title="Become an Affiliate">Become an Affiliate</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/pages/store-policies" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/pages/full-site-disclaimer" title="Full Site Disclaimer">Full Site Disclaimer</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/pages/refund-policy" title="Refund Policy">Refund Policy</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/pages/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+              
+                <li><a href="http://store.foursigmafoods.com/account/login" title="Sign Up">Sign Up</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div> 
+    
+      <div class="footer">
+        <div class="container">
+          <div class="ten columns">
+          <!-- Changed by Markus -->
+            <p class="credits">
+              Statements throughout this publication have not been evaluated by the FDA. 
+              <br>These products are not intended to diagnose, treat, cure or prevent any disease process. <a href="http://www.foursigmafoods.com/disclaimer">Please read our Full Site Disclaimer.</a>
+              <br><br>© 2014 Four Sigma Foods. 
+             <!-- 
+              <a href="http://www.shopify.com?ref=out-of-the-sandbox" target="_blank">Ecommerce Software by Shopify</a>-->
+            </p>
+          </div>
+
+          <div class="six columns credits_right">
+            <div class="payment_methods ">
+              <img src="./fsf_files/cc-paypal.png" alt="PayPal">
+              <img src="./fsf_files/cc-visa.png" alt="Visa">
+              <img src="./fsf_files/cc-visaelectron.png" alt="Visa Electron">
+              <img src="./fsf_files/cc-mastercard.png" alt="Mastercard">
+              
+              
+              
+              <img src="./fsf_files/cc-discover.png" alt="Discover">
+              
+              
+              
+              
+              <img src="./fsf_files/cc-solo.png">
+              <img src="./fsf_files/cc-maestro.png">
+              <img src="./fsf_files/cc-directdebit.png">
+              <br><br>Contact us: 1-800-859-4896 or <a href="http://www.foursigmafoods.com/contact"><u>here</u></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async="true" data-domain="demo.plyfe.me" src="https://d1ldbzs0x7elv3.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v0.min.js"></script>
+</body></html>

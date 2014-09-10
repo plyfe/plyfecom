@@ -1,0 +1,78 @@
+
+<!-- saved from url=(0082)http://www.factmag.com/wp-content/themes/neo_factmag/system/forms/form-tipnews.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" media="all" href="style(2).css">
+</head><body><form action="http://www.factmag.com/wp-content/themes/neo_factmag/system/emails/email-tip-news.php" id="tip-news-form" method="post">
+	<table class="form-container padding-gap">
+		<tbody><tr>
+			<td class="sub-heading dark-gray column-150"><span class="right right-padding-gap">E-mail&nbsp;*</span></td>
+			<td><input id="tip-email" name="tip-email" type="text" class="sub-heading"></td>
+		</tr>
+		<tr>
+			<td class="sub-heading dark-gray column-150"><span class="right right-padding-gap">Link</span></td>
+			<td><input id="tip-link" name="tip-link" type="text" class="sub-heading"></td>
+		</tr>
+		<tr>
+			<td class="sub-heading dark-gray column-150"><span class="right right-padding-gap">Tip&nbsp;*</span></td>
+			<td><textarea id="tip-content" name="tip-content" class="small-sub-heading dark-gray" cols="18" rows="7"></textarea></td>
+		</tr>
+	</tbody></table>
+	<div class="clear top-gap bottom-gap bottom-solid-border"></div>
+	<a href="http://www.factmag.com/wp-content/themes/neo_factmag/system/forms/form-tipnews.php#" id="tip-submit" class="button right display-block">Send</a><br>
+	<span id="form-error-display" class="facit bold" style="color:red;"></span>
+</form>
+<script type="text/javascript" src="jquery.min(1).js"></script>
+<script type="text/javascript">
+   	
+   	// Tip News Buttons
+   	$('#tip-submit').click(function(){
+   		if(validate_form())
+   			$('#tip-news-form').submit();
+   			
+	});
+	
+	// Forms Validations
+	function validate_form() {
+		
+		$('#form-error-display').text('');
+		if(!is_valid_email($('#tip-email').val() || is_field_empty('#tip-email'))){
+			set_field_border('#tip-email');
+			$('#form-error-display').text('Please make sure that email address is entered correctly.');	
+			return false;
+		} else {
+			unset_field_border('#tip-email');
+		}
+		
+		if(is_field_empty('#tip-content')){
+			set_field_border('#tip-content');
+			$('#form-error-display').text('Please make sure that tip is not left blank.');
+			return false;	
+		} else {
+			unset_field_border('#tip-content');
+		}
+		
+		return true;
+	}
+	
+	function is_valid_email(email) {
+  		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  		if(!emailReg.test(email))
+    		return false;
+  		else 
+   		 	return true;
+  	}
+  	
+  	function is_field_empty(elem) {
+  		if($(elem).val() == '')
+  			return true;
+  		else
+  			return false;
+  	}
+  	
+  	function set_field_border(elem) {
+  		$(elem).css('border', '2px solid red');
+  	}
+  	
+  	function unset_field_border(elem) {
+  		$(elem).css('border', '');
+  	}
+</script></body></html>

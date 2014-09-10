@@ -1,0 +1,177 @@
+body{
+	background-color:#e6e6e6;
+	margin:0;
+}
+
+/* -13- */
+
+.turntable > .hand{
+	position:absolute;
+	top:-100px;
+	left:-100px;
+	z-index:12;
+	pointer-events:none;
+	margin-left:-37px;
+	margin-top:-42px;
+	display:none;
+	width:75px;
+	height:85px;
+	background-image:url("../res/hand-right.png");
+}
+
+/* -12- */
+
+.vinyl-cover{
+	width:232px;
+	height:232px;
+	position:absolute;
+	background-color: green;
+	border-radius:116px;
+	top:9px;
+	left:5px;
+	z-index:10;
+	opacity:0.0;
+	filter:alpha(opacity=0);
+	cursor:none;
+}
+
+/* -11- */
+
+.button{
+	width:37px;
+	height:37px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:12;
+	background-color:grey;
+	opacity:0.0;
+	filter:alpha(opacity=0);
+}
+
+/* -10- */
+
+.tma{
+	width:60px;
+	height:250px;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:11;
+	background-color:grey;
+	opacity:0.0;
+	filter:alpha(opacity=0);
+}
+
+
+/* -9- */
+
+.turntable > .on{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9;
+	pointer-events:none;
+	display:none;
+}
+
+
+/* -8- */
+
+.tma-image{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	pointer-events:none;
+	display:none;
+}
+
+/* -7- */
+
+.turntable > .top{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:7;
+	pointer-events:none;
+}
+
+/* -6- */
+
+
+.vinyl > .top{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:6;
+}
+
+/* 5 */
+
+.vinyl > .bottom{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:5;
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+}
+
+.vinyl{
+	width:232px;
+	height:232px;
+	position:absolute;
+	top:9px;
+	left:5px;
+	z-index:5;
+}
+
+
+/* 4 */
+
+.turntable > .bottom{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:4;
+}
+
+
+/* -none- */
+
+
+
+.turntable{
+	width:300px;
+	height:250px;
+	position:absolute;
+	cursor:relative;
+	overflow:hidden;
+	cursor:pointer;
+	display:none;
+	z-index:3;
+}
+
+.loading{
+	position:absolute;
+	left:0;
+	top:0;
+	width:300px;
+	height:250px;
+	z-index:0;
+}
+
+.loading div{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-100px;
+	width:200px;
+	height:20px;
+	font-size:16px;
+	font-family:arial;
+	color:black;
+	text-align:center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0417)http://press.aiaiai.dk/turntable/index.php?clickTag=http://adclick.g.doubleclick.net/aclk?sa=L&ai=BAEn1aFW9U8PLIMT2lgfUx4DwBKuJz7IFAAAAEAEgh_2qEjgAWNOpipfbAWDJ3o6LwKTYD7IBD3d3dy5mYWN0bWFnLmNvbboBCWdmcF9pbWFnZcgBCdoBF2h0dHA6Ly93d3cuZmFjdG1hZy5jb20v4AECmALYNqkC9nOt7vavvD7AAgLgAgDqAhFDRU5URVJfQ09MVU1OX01QVfgCgdIekAPgA5gDjAaoAwHgBAGgBhY&num=0&sig=AOD64_0iutvWuPxlG8iTdKL_Kxc2Zh4UIQ&client=ca-pub-6072974375241882&adurl= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>AIAIAI Turntable</title>
+
+	<link rel="stylesheet" href="style(1).css" type="text/css">
+
+	<script src="jquery-1.11.0.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		var url = document.URL;
+
+		url = url.split("?");
+		url.shift(); //remove first part of url
+		url = url.join("?");
+
+		url = url.split("=");
+		url.shift();
+		url = url.join("=");
+
+		var clickTag = url;
+		$("#tma").attr("data-link", clickTag+"http://www.aiaiai.dk/tma-1-stones-throw");
+	});
+	</script>
+
+	<script src="script.min.js"></script>
+	
+
+</head>
+<body>
+
+<div class="turntable" id="turntable" style="display: block;">
+
+	<div class="hand" id="hand"></div>
+
+	<div class="vinyl-cover" id="vinyl-cover"></div>
+
+	<div class="button" id="button">.</div>
+
+	<div class="tma" data-link="http://adclick.g.doubleclick.net/aclk?sa=L&amp;ai=BAEn1aFW9U8PLIMT2lgfUx4DwBKuJz7IFAAAAEAEgh_2qEjgAWNOpipfbAWDJ3o6LwKTYD7IBD3d3dy5mYWN0bWFnLmNvbboBCWdmcF9pbWFnZcgBCdoBF2h0dHA6Ly93d3cuZmFjdG1hZy5jb20v4AECmALYNqkC9nOt7vavvD7AAgLgAgDqAhFDRU5URVJfQ09MVU1OX01QVfgCgdIekAPgA5gDjAaoAwHgBAGgBhY&amp;num=0&amp;sig=AOD64_0iutvWuPxlG8iTdKL_Kxc2Zh4UIQ&amp;client=ca-pub-6072974375241882&amp;adurl=http://www.aiaiai.dk/tma-1-stones-throw" id="tma"></div>
+
+	<img class="on" src="turntable_on.png">
+
+	<img class="tma-image" id="tma-image" src="tma-top.png">
+
+	<img class="top" src="turntable_top.png">
+
+	<div class="vinyl" id="vinyl">
+		<img class="bottom" src="vinyl_bottom.png">
+		<img class="top" src="vinyl_top.png">
+	</div>
+
+	<img class="bottom" src="turntable_bottom.png">
+
+</div>
+
+<div class="loading" id="laoding"><div>Loading...</div></div>
+
+	
+
+</body></html>
