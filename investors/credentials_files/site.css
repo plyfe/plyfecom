@@ -589,12 +589,70 @@ span {
 
 .overview3 {
     width: 1240px;
-    background: url('newbg-3.png') no-repeat;
+    background: url('newbg-3b.png') no-repeat;
     background-size: contain;
     min-height: 810px;
-    margin-top: -1px;
+    margin-top: -49px;
     font-weight: 200;
     z-index: 1
+}
+.stage {
+  float: none;
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  max-width: 950px;
+  z-index: 10;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  padding-top: 150px;
+}
+
+.cbImage {
+  width: 414px;
+  height: 450px;
+  float: left;
+  margin: 25px 0px 25px 0px;
+  color: white;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.cbImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.inactiveLeft {
+  -webkit-transform: perspective(900px) rotateY(40deg);
+  -O-transform: perspective(900px) rotateY(40deg);
+  transform: perspective(900px) rotateY(40deg);
+  -webkit-transition: all .5s ease-out;
+  -O-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  opacity: 0.5;
+}
+
+.inactiveRight {
+  -webkit-transform: perspective(900px) rotateY(-40deg);
+  -O-transform: perspective(900px) rotateY(-40deg);
+  transform: perspective(900px) rotateY(-40deg);
+  -webkit-transition: all .5s ease-out;
+  -O-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  opacity: 0.5;
+}
+
+.active {
+  z-index: 100;
+  -webkit-transform: perspective(500px) rotateY(0deg);
+  -O-transform: perspective(500px) rotateY(0deg);
+  transform: perspective(500px) rotateY(0deg);
+  -webkit-transition: all .5s ease-out;
+  -O-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 
 .overview4 {
