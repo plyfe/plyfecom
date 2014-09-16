@@ -1034,16 +1034,6 @@ span {
 #buildlistlight ul li p { padding:2px 9px 3px 20px; font-style:normal; font-size:13px; color:#444444; border-left: 5px solid #444444; text-align: left; line-height: 20px;}  
 
 
-@media screen and (max-width:1450px) {
-.section, .section-header, .row, .hr {
-    padding-left: 155px;
-}
-}
-
-
-
-
-
 @media screen and (max-width:840px) {
     .span1of4,.span2of4 {
         width: 50%;
@@ -5710,6 +5700,12 @@ footer.section:after:after {
         -webkit-opacity: 1;
         opacity: 1;
     }
+}
+
+@media screen and (max-width:1500px) {
+.section, .section-header, .row, .hr {
+    padding-left: 155px;
+}
 }
 
 @media screen and (max-width:840px) {
