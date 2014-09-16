@@ -493,7 +493,7 @@ span {
 
 .overview7 {
     min-width: 1240px;
-    background: #d8dbde url('newbg-7.png') no-repeat;
+    background: #d8dbde;
     background-size: contain;
     min-height: 645px;
     margin-top: -50px;
@@ -510,12 +510,13 @@ span {
 
 .overview0 {
     min-width: 1240px;
-    background: #272829 url('newbg-0.png') no-repeat;
+    background: #272829;
     background-size: contain;
     min-height: 749px;
     margin-top: -40px;
-
+    border-radius: 15px;
 }
+
 .overview0 p {
     color: white;
     line-height: 60px;
@@ -528,10 +529,13 @@ span {
 
 .overview1 {
     min-width: 1240px;
-    background: #484848 url('newbg-1.png') no-repeat;
+    background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
     min-height: 662px;
-    margin-top: -41px;
+    margin-top: -53px;
 
 }
 .overview1 p {
@@ -551,8 +555,10 @@ span {
 
 .overview2 {
     min-width: 1240px;
-    background-color: #484848;
-    background: #d8dbde url('newbg-2.png') no-repeat;
+    background: #d8dbde;
+    background-image:url('arrow2-d8dbde.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
     min-height: 742px;
     margin-top: -50px;
@@ -585,7 +591,7 @@ span {
     min-width: 1240px;
     background: url('newbg-3.png') no-repeat;
     background-size: contain;
-    min-height: 769px;
+    min-height: 810px;
     margin-top: -1px;
     font-weight: 200;
     z-index: 1
@@ -595,43 +601,44 @@ span {
     min-width: 1240px;
     vertical-align: middle;
     background: #ffffff;
+    background-image:url('arrow2-ffffff.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
-    min-height: 556px;
-    margin-top: -67px;
+    min-height: 500px;
+    margin-top: -45px;
 }
 .overview4 p {
     color: #444444;
-    font-size: 67px;
+    font-size: 45px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
-    font-weight: bold;
+    padding-top: 100px;
 }
 
 .overview5 {
     min-width: 1240px;
     vertical-align: middle;
-    background: url('newbg-5.png');
+    background: #ffffff;
     background-size: contain;
-    min-height: 598px;
-    margin-top: -67px;
+    min-height: 500px;
+    margin-top: -45px;
 }
-
-.overview6 {
-    min-width: 1240px;
-    vertical-align: middle;
-    background: #272727 url('newbg-6.png');
-    background-size: contain;
-    min-height: 798px;
-    margin-top: 0px;
+.overview5 p {
+    color: #444444;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
 }
 
 .build0 {
     min-width: 1240px;
-    background: #272829 url('newbg-0b.png') no-repeat;
+    background: #272829;
     background-size: contain;
     min-height: 843px;
     margin-top: -40px;
+    border-radius: 15px;
 
 }
 .build0 p {
@@ -647,18 +654,25 @@ span {
 .build1 {
     min-width: 1240px;
     background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
-    min-height: 631px;
-    margin-top: -20px;
+    min-height: 780px;
+    margin-top: -30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 
 }
 
 .publish0 {
     min-width: 1240px;
-    background: #272829 url('newbg-0p.png') no-repeat;
+    background: #272829;
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
 }
 .publish0 p {
@@ -691,9 +705,14 @@ span {
 .publish1 {
     min-width: 1240px;
     background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
-    min-height: 1131px;
+    min-height: 730px;
     margin-top: -40px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .publish1 p {
@@ -702,13 +721,13 @@ span {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 70px;
     font-weight: 200;
 }
 
 .desktopdemo {
     float: right;
-    background: url('desktopsize.png') no-repeat;
+    background: ;
     width: 781px;
     height: 899px;
     margin-right: 0px;
@@ -716,11 +735,10 @@ span {
 }
 
 .desktopwidget {
-    padding-top: 224px;
+    padding: 0px;
     display:block; 
     margin:auto; 
-    width:300px;
-    padding-right: 341px;
+    width:80%;
 }
 
 .desktopdemo {
@@ -732,14 +750,16 @@ span {
 
 .report0 {
     min-width: 1240px;
-    background: #d8dbde url('newbg-0r.png') no-repeat;
+    background: #272829;
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .report0 p {
-    color: #444444;
+    color: white;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
@@ -754,7 +774,10 @@ span {
 
 .report1 {
     min-width: 1240px;
-    background: #05171c;
+    background-color: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
@@ -766,25 +789,27 @@ span {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 70px;
     font-weight: 200;
 }
 
 .report2 {
     min-width: 1240px;
-    background: #999999;
-    background-size: contain;
+    background-color: #d8dbde;
+    background-image:url('arrow2-d8dbde.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     min-height: 1033px;
     margin-top: -40px;
 }
 
 .report2 p {
-    color: white;
+    color: #444444;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 90px;
     font-weight: 200;
 }
 
@@ -794,28 +819,38 @@ span {
 
 .report3 {
     min-width: 1240px;
-    background: #05171c;
+    background: #ffffff;
+    background-image:url('arrow2-ffffff.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .report3 p {
-    color: white;
+    color: black;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 70px;
     font-weight: 200;
+}
+.report3 span {
+    color: #e96d6d
 }
 
 .platform0 {
     min-width: 1240px;
-    background: #05171c;
+    background: #272829;
     background-size: contain;
-    min-height: 1033px;
+    min-height: 700px;
     margin-top: -40px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .platform0 p {
@@ -832,21 +867,34 @@ span {
     color: #e96d6d
 }
 
+.platform0 table {
+
+}
+
+.platform0 tr td {
+
+}
+
 .platform1 {
     min-width: 1240px;
-    background: #999999;
+    background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
     background-size: contain;
-    min-height: 1033px;
+    min-height: 1233px;
     margin-top: -40px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .platform1 p {
-    color: #222222;
+    color: #ffffff;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 70px;
     font-weight: 200;
 }
 
@@ -854,8 +902,10 @@ span {
     min-width: 1240px;
     background: #f8f8f8;
     background-size: contain;
-    min-height: 1033px;
+    min-height: 100%;
     margin-top: -40px;
+    padding-bottom: 50px;
+    border-radius: 15px
 }
 
 .customers0 p {
@@ -874,6 +924,7 @@ span {
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
+    border-radius: 15px
 }
 
 .business0 p {
@@ -892,6 +943,7 @@ span {
     background-size: contain;
     min-height: 1033px;
     margin-top: -40px;
+    border-radius: 15px
 }
 
 .team0 p {
@@ -903,6 +955,57 @@ span {
     padding-top: 50px;
     font-weight: 200;
 }
+
+.grids {
+    border: 2px dotted #aaaaaa; width:345px; border-radius:10px; margin-left:20px; float:left;
+}
+
+.grids p {
+    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#272829; margin-bottom: 0px;
+}
+
+.grids ul {
+    list-style: none;
+}
+
+.grids li {
+    line-height: 50px; color: #aaaaaa; text-transform: uppercase; margin-left: -20px;
+}
+.grids img {
+    width:30px; vertical-align: middle; padding-right: 10px;
+}
+.grids span {
+    color: #444444;
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 40px
+}
+
+.cells {
+    border: 2px dotted #f8f8f8; width:550px; border-radius:10px; margin-left:20px; float:left; height: 300px
+}
+
+.cells p {
+    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#999999; margin-bottom: 0px;
+}
+
+.cells ul {
+    list-style: none;
+}
+
+.cells li {
+    line-height: 30px; color: #f8f8f8; text-transform: uppercase; margin-left: auto; text-align: center; font-size: 10px; color: #ff71be;
+}
+.cells img {
+    width:30px; vertical-align: middle; padding-right: 10px;
+}
+.cells span {
+    color: #f8f8f8;
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 80px
+}
+
 
 /* buildlist */
 #buildlist { width:400px; float: left;}
@@ -2851,7 +2954,7 @@ html:hover [class^="ss-"] {
 }
 
 .masthead figure.a-look-back {
-    top: 50px;
+    top: 200px;
     position: absolute;
     z-index: 10;
     text-align: center;
@@ -2952,12 +3055,12 @@ html:hover [class^="ss-"] {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 10%;
+    width: 150px;
 }
 
 .site-nav .container {
     position: fixed;
-    width: 8%;
+    width: 150px;
     padding-top: 14%;
     top: 0;
     left: 30px;
@@ -3025,6 +3128,18 @@ html:hover [class^="ss-"] {
 }
 
 .site-nav .link-good-ideas .site-link.selected {
+    color: #444444;
+}
+
+.site-nav .link-customers .site-link.selected {
+    color: #444444;
+}
+
+.site-nav .link-business .site-link.selected {
+    color: #444444;
+}
+
+.site-nav .link-team .site-link.selected {
     color: #444444;
 }
 
@@ -3191,7 +3306,8 @@ body.bg-g1 .site-nav .site-link {
     padding-bottom: 30%;
     position: relative;
     z-index: 10;
-    min-width: 600px;
+    width: 1240px;
+    min-width: 1240px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" 0 ")";
     filter: alpha(opacity=0);
     -o-opacity: 0;
