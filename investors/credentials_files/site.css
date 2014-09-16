@@ -604,7 +604,7 @@ span {
     font-size: 67px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 260px;
+    padding-top: 20px;
     font-weight: bold;
 }
 
@@ -787,6 +787,11 @@ span {
     padding-top: 50px;
     font-weight: 200;
 }
+
+.report2 span {
+    color: #e96d6d
+}
+
 .report3 {
     min-width: 1240px;
     background: #05171c;
@@ -797,6 +802,100 @@ span {
 
 .report3 p {
     color: white;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.platform0 {
+    min-width: 1240px;
+    background: #05171c;
+    background-size: contain;
+    min-height: 1033px;
+    margin-top: -40px;
+}
+
+.platform0 p {
+    color: white;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.platform0 span {
+    color: #e96d6d
+}
+
+.platform1 {
+    min-width: 1240px;
+    background: #999999;
+    background-size: contain;
+    min-height: 1033px;
+    margin-top: -40px;
+}
+
+.platform1 p {
+    color: #222222;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.customers0 {
+    min-width: 1240px;
+    background: #f8f8f8;
+    background-size: contain;
+    min-height: 1033px;
+    margin-top: -40px;
+}
+
+.customers0 p {
+    color: #222222;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.business0 {
+    min-width: 1240px;
+    background: #222222;
+    background-size: contain;
+    min-height: 1033px;
+    margin-top: -40px;
+}
+
+.business0 p {
+    color: #f8f8f8;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.team0 {
+    min-width: 1240px;
+    background: #222222;
+    background-size: contain;
+    min-height: 1033px;
+    margin-top: -40px;
+}
+
+.team0 p {
+    color: #f8f8f8;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
