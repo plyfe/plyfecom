@@ -306,7 +306,7 @@ img.share { width: 100%; margin: auto; display: block;}
 }
 
 /*For bigger phones*/
-@media (min-width: 321px) and (max-width: 479px) {
+@media (min-width: 320px) and (max-width: 479px) {
 	body {margin: 0px;}
 	span { font-size:13px !important; letter-spacing:0; text-transform:none; line-height:1.3em; text-align: center; display: table-cell; height: 100%; vertical-align: middle; margin: auto;}
 	.quiz {width: 100%; }
@@ -314,17 +314,17 @@ img.share { width: 100%; margin: auto; display: block;}
 	.c {clear: both; float: none; width: 100%; margin: auto;}
 	.quiz_img {width: 100%}
 	#plyfe_sub_plyfe .quiz_question.image .quiz_answer p {font-size: 13px; text-align: center; margin-top: 11px; height: 50px; margin-bottom: -30px}
-	#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 9px 0px 9px; overflow: hidden; height: 120px; vertical-align: middle;}
+	#plyfe_sub_plyfe .quiz_question.image .quiz_answer { background-color: rgba(255,255,255,0.5); border: 0px solid #d2d2d2; padding: 0px; overflow: hidden; height: 90px; vertical-align: middle;}
 	#plyfe_sub_plyfe .quiz .quiz_question.legacy .quiz_question_header img,#plyfe_sub_plyfe .quiz .quiz_question.text .quiz_question_header img  { width: 320px; }
 	#plyfe_sub_plyfe .quiz ul, #plyfe_sub_plyfe .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ul { margin:10px 0; }
 	#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: none; margin-bottom: 15px; width: 100%; margin-right: auto; margin-left: auto; display: block; margin-top: 30px;}
 	#plyfe_sub_plyfe .quiz .quiz_question { overflow: hidden; width: 100%; margin: auto; vertical-align: middle;}
 	#plyfe_sub_plyfe .quiz { float:none; margin: auto;}
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: middle; width: 110px; min-height: 90px; max-width: 90px; height: 110px }
+	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: middle; width: 90px; min-height: 90px; max-width: 90px; height: 90px }
 	#plyfe_sub_plyfe .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 320px; vertical-align: middle; }
 	#plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: auto; margin-right: auto;  border-spacing: 12px; margin-bottom: -23px; margin-top: -10px}
 	#plyfe_sub_plyfe .quiz_question.image ol { border-spacing: 12px 0; }
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: 110px; width: 110px; }
+	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: 90px; width: 90px; }
 	#plyfe_sub_plyfe .quiz .quiz_result_area {padding: 0px 0 0 0; margin: auto; width: 100%; margin-top: 30px}
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source, #plyfe_sub_plyfe .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 100%; float: left; margin: 0 0 10px 0; }
 	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source img, #plyfe_sub_plyfe .quiz .quiz_reveal img { width: 99%; height: auto; display: block; margin: auto; }
@@ -341,35 +341,4 @@ img.share { width: 100%; margin: auto; display: block;}
 }
 
 
-/*For iPhone*/
-@media (min-width: 300px) and (max-width: 320px) {
-	body {margin: 0px; overflow: hidden;}
-	span { font-size:16px; letter-spacing:0; text-transform:none; line-height:1.3em; text-align: center; display: table-cell; height: 100%; vertical-align: middle; margin: auto;}
-	.quiz {width: 100%; }
-	.quiz_cover {width: 100%; margin: auto; }
-	.c {clear: both; float: none; width: 100%; margin: auto;}
-	.quiz_img {width: 100%}
-	#plyfe_sub_plyfe .quiz .quiz_question.legacy .quiz_question_header img,#plyfe_sub_plyfe .quiz .quiz_question.text .quiz_question_header img  { width: 320px; }
-	#plyfe_sub_plyfe .quiz ul, #plyfe_sub_plyfe .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ol, #plyfe_sub_plyfe.suplist_long .quiz ul { margin:10px 0; }
-	#plyfe_sub_plyfe .quiz .quiz_question .quiz_question_header { float: none; margin-bottom: 15px; width: 100%; margin-right: auto; margin-left: auto; display: block; margin-top: 30px;}
-	#plyfe_sub_plyfe .quiz .quiz_question { overflow: hidden; width: 100%; margin: auto; }
-	#plyfe_sub_plyfe .quiz { float:none; margin: auto;}
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer { display: table-cell; vertical-align: top; width: 90px; min-height: 90px; max-width: 90px }
-	#plyfe_sub_plyfe .quiz_question.image ol { margin-left: auto; margin-right: auto; width: 320px }
-	#plyfe_sub_plyfe .quiz_question ol.smallImgAnswers { float: left; clear: both; width: 100%; margin-left: -9px; margin-right: auto;  border-spacing: 14px}
-	#plyfe_sub_plyfe .quiz_question.image ol { border-spacing: 10px 0; }
-	#plyfe_sub_plyfe .quiz_question .smallImgAnswers .quiz_answer img { height: auto; width: 79px; }
-	#plyfe_sub_plyfe .quiz .quiz_result_area { background-color: #fefefe; border: 1px solid #dddddd; padding: 14px 0 0 0; margin: auto; width: 318px}
-	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source, #plyfe_sub_plyfe .quiz_question .quiz_reveal .quiz_img_and_source { position: relative; width: 150px; float: left; margin: 0 0 10px 0; }
-	#plyfe_sub_plyfe .quiz .quiz_result .quiz_img_and_source img, #plyfe_sub_plyfe .quiz .quiz_reveal img { width: 280px; height: auto; }
-	#plyfe_sub_plyfe .quiz_end.has_result_image .headline-1.answer_response, #plyfe_sub_plyfe .quiz_end.has_result_image h2, #plyfe_sub_plyfe .quiz_question .quiz_reveal p { width: 280px; overflow-x: hidden; text-overflow: ellipsis; float: left; margin-right: 10px; }
-	.adlink {width: 100%}
-	.share {width: 300px; margin-top: 5px}
-	#plyfe_sub_plyfe .quiz .answer_shares { clear: both; overflow: hidden; background-color: #e6e8e9; padding: 3px 10px; }
-	#plyfe_sub_plyfe .quiz .answer_shares h2 { float: left; margin: 15px 15px 0px 0; padding: 0; text-align: center;  }
-	#plyfe_sub_plyfe .quiz .quiz_tally_results h1 { font: 20px/20px 'LetterGothicStd'; line-height: 26px}
-	#plyfe_sub_plyfe .quiz .quiz_answer span.quiz_checkbox { width: 12px; height: 12px; }
-	#plyfe_sub_plyfe .quiz .quiz_answer.selected span.quiz_checkbox .quiz_checkmark { display: block; background: url('check.png') no-repeat; width: 21px; }
-	#plyfe_sub_plyfe .quiz_question.image .quiz_answer .quiz_checkbox_wrp span { margin-top: 8px; }
-}
 
