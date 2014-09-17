@@ -716,7 +716,7 @@ span {
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 780px;
+    min-height: 720px;
     margin-top: -30px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -863,7 +863,7 @@ border-bottom: 2px solid #444444;
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 1033px;
+    min-height: 833px;
     margin-top: -40px;
 }
 
@@ -883,7 +883,7 @@ border-bottom: 2px solid #444444;
     background-image:url('arrow2-d8dbde.png');
     background-repeat:no-repeat;
     background-position:center top;
-    min-height: 1033px;
+    min-height: 933px;
     margin-top: -40px;
 }
 
