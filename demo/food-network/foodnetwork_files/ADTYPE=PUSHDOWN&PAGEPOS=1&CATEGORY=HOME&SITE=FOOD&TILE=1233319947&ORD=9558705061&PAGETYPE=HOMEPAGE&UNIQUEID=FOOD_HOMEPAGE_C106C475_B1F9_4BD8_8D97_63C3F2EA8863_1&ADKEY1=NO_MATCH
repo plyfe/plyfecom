@@ -1,6 +1,0 @@
-document.write('<!-- Control Scripts First Look URL --><!-- HTML COMMENT JOSH SANDBOX URL-->\n<!-- Control Scripts First Look -->\n<div style=\"display:none;\"><iframe src=http://adsremote.scrippsnetworks.com/html.ng/adtype=COOKIE&userType=firstlook width=1 height=1 frameborder=0 scrolling=no marginheight=\"0\" marginwidth=\"0\"></iframe>\n	');
-var url = document.URL;
-var ref = document.referrer;
-var detailID = mdManager.getParameter("DetailId");
-var builder= "http://iax-secure.scrippsnetworks.com/md_scrapper/index.php?site=FOOD&ref=" + ref + "&adkey1=NO_MATCH&adkey2=&category=HOME&unique_id=FOOD_HOMEPAGE_C106C475_B1F9_4BD8_8D97_63C3F2EA8863_1&detail_id=" + detailID +"&page_type=HOMEPAGE&url=" + url +"&sponsorship=";
-document.write("<iframe src=" + builder + " height='0' width='0'></iframe>");document.write('</div>');
