@@ -270,7 +270,7 @@ input.action { *width:1;*overflow:visible;*padding:0 6px; }
 #plyfe_sub_plyfe .quiz_end.has_result_image {background-color: rgba(250, 250, 250, 0.5); border: 1px solid #dddddd; height: 350px; padding: 20px;}
 #plyfe_sub_plyfe .quiz_short.has_result_image {background-color: rgba(250, 250, 250, 0.5); border: 1px solid #dddddd; height: 300px; padding: 20px;}
 .adlink {width: 100%}
-img.adlink {padding-top: 30px}
+img.adlink {padding-top: 20px}
 .share {margin-top:-9px; }
 img.results {width: 300px; display: block; margin-left: 0px; margin-bottom: 20px;}
 img.share { width: 100%; margin: auto; display: block;}
