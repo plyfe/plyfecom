@@ -572,6 +572,8 @@ span {
     font-size: 28px;
     line-height: 35px;
     font-weight: 200;
+    padding-bottom: 60px
+
 }
 
 .overview2 span {
@@ -711,13 +713,13 @@ span {
 
 .build1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
+    background: #d8dbd3;
+    background-image:url('arrow2-d8dbde.png');
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
     min-height: 720px;
-    margin-top: -30px;
+    margin-top: -50px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 
@@ -929,12 +931,14 @@ border-bottom: 2px solid #444444;
 
 .platform0 {
     width: 1240px;
-    background: #272829;
+    background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size: contain;
     background-size: contain;
     min-height: 700px;
-    margin-top: -40px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    margin-top: -50px;
 }
 
 .platform0 p {
@@ -943,7 +947,7 @@ border-bottom: 2px solid #444444;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 90px;
     font-weight: 200;
 }
 
@@ -961,15 +965,13 @@ border-bottom: 2px solid #444444;
 
 .platform1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-size: contain;
+    background: #272829;
     min-height: 1233px;
     margin-top: -40px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .platform1 p {
@@ -1049,7 +1051,7 @@ border-bottom: 2px solid #444444;
 }
 
 .grids p {
-    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#272829; margin-bottom: 0px;
+    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#484848; margin-bottom: 0px;
 }
 
 .grids ul {
