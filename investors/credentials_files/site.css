@@ -727,9 +727,9 @@ span {
 
 .publish0 {
     width: 1240px;
-    background: #272829;
-    background-size: contain;
-    min-height: 733px;
+    background: #272829 url('phonesize.png') no-repeat;
+    background-position: 76% 120%;
+    min-height: 910px;
     margin-top: -40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
