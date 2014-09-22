@@ -45,7 +45,7 @@ function neon3() {
 
 //fixpng
 var blank = new Image();
-blank.src = '.gif';
+blank.src = '/images/1.gif';
 $(document).ready(function() {
     var badBrowser = (/MSIE ((5\.5)|6)/.test(navigator.userAgent) && navigator.platform == "Win32");
     if (badBrowser) {
