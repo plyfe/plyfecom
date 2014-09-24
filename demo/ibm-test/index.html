@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>IBM Cloud survey</title>
+<style type="text/css">
+	body {
+		background: #EAEAEA url('./ibm-test_files/survey_bg.jpg') center top repeat-y;
+	}
+   @media (min-width: 320px) and (max-width: 400px){
+    body {
+      width: 100%
+    }
+  }
+
+	#survey {
+		width: 100%;
+		margin: 0 auto;
+		padding: 100px 0px;
+	}
+</style>
+<script type="text/javascript">(function() {
+  var MESSAGE_PREFIX = 'plyfe-pq:';
+
+  function handleMessage(name, data) {
+    // console.log('host recieved data: ', name, ':', data);
+    switch(name) {
+      case 'resize':
+        var el = document.getElementById('plyfe-personality-quiz');
+        el.style.height = data.height + 'px';
+        break;
+      case 'scrollBottom':
+        document.body.scrollTop = 1000 * 1000;
+        document.documentElement.scrollTop = 1000 * 1000;
+        break;
+    }
+  }
+
+  window.onmessage = function(e) {
+    // If we get a message but are in a browser with no JSON.parse then ignore.
+    if(!window.JSON) { return; }
+
+    var payload = e.data;
+
+    // We don't care what the message's origin is as long as it has the proper
+    // prefix.
+    var messageForUs = payload.substr(0, MESSAGE_PREFIX.length) === MESSAGE_PREFIX;
+
+    if(messageForUs) {
+      var newlinePos = payload.indexOf('\n', MESSAGE_PREFIX.length);
+      var name = payload.substring(MESSAGE_PREFIX.length, newlinePos);
+      var data = JSON.parse(payload.substr(newlinePos + 1)); // +1 is '\n'
+
+      handleMessage(name, data);
+    }
+  }
+})();</script>
+</head>
+<body style="margin: 0;width: 100%;">
+  <div id="survey" class="container">
+	<iframe id="plyfe-personality-quiz" src="https://plyfe.me/prototypes/personality" width="100%" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+  </div>
+
+  </body></html>
