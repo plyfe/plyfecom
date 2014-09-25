@@ -598,6 +598,25 @@ span {
     font-weight: 200;
     z-index: 1
 }
+
+.process {
+    width: 1240px;
+    background: url('steps-bg.png') no-repeat;
+    background-size: contain;
+    min-height: 1000px;
+    margin-top: -49px;
+    font-weight: 200;
+    z-index: 1
+}
+
+.process img {
+    float: left;
+    width: 380px;
+    padding-right: 30px;
+    padding-top: 100px;
+}
+
+
 .stage {
   float: none;
   height: 500px;
