@@ -6346,6 +6346,7 @@ var PL_Quiz = function () {
                 })
             })
         pl_quiz.broadcast_size();
+        pl_quiz.add_click_event_listeners();
     };
     this.style = function (b, c, f) {
         var e = (typeof window.jQuery != "undefined") ? "parents" : "up";
@@ -6633,14 +6634,14 @@ var PL_Quiz = function () {
         return userAnswerChoices;
     };
     this.get_quiz_result_header = function() {
-        var elements = document.getElementsByClassName("quiz_result")
+        var elements = document.getElementsByClassName("quiz_result");
         for (var i = 0, length = elements.length; i < length; i++) {
             element = elements[i];
             if (element.style.display === "") {
                 break;
             }
         };
-        return element.getElementsByClassName("headline-1")[0].getElementsByTagName('b')[0].innerText;
+        return getInnerText(element.getElementsByClassName("headline-1")[0].getElementsByTagName('b')[0]);
     };
 
     this.send_analytics = function(categories, answers, result) { // sends analytics to mixpanel
@@ -6657,6 +6658,21 @@ var PL_Quiz = function () {
         mixpanel.track("Quiz Result", {
             "Category": result,
             "Personality Index": personalityIndex()
+        });
+    };
+    this.add_click_event_listeners = function() {
+        var adElements = document.getElementsByClassName("adlink");
+        for (var i = 0, length = adElements.length; i < length; i++) {
+            var category = adElements[i].getAttribute("data-ad-category");
+            adElements[i].addEventListener("click", function() {
+                pl_quiz.setup_ad_click_event(category);
+            });
+        }
+    };
+    this.setup_ad_click_event = function(category) {
+        console.log(pl_quiz.catResult);
+        mixpanel.track("Ad click", {
+            "Category": category
         });
     };
     this.broadcast_size = function() {
@@ -7179,26 +7195,32 @@ plyfeLoader.register(function () {
     flagComment.init()
 }, 1);
 
+function getInnerText(element) {
+    var text = element.textContent || element.innerText || "";
+    return text.trim();
+}
+
 function getResult() {
     var elements = document.getElementsByClassName("quiz_result"),
-    question = document.getElementsByClassName("question")[0].innerText.trim(),
-    description = document.getElementsByClassName("fb_description")[0].innerText.trim(),
-    element, result;
+    question = getInnerText(document.getElementsByClassName("question")[0]),
+    description = getInnerText(document.getElementsByClassName("fb_description")[0]),
+    element, result, header;
 
     for(var i = 0, length = elements.length; i < length; i++) {
       element = elements[i];
       if(element.style.display === "") {
         break;
+        }
     }
-}
 
-result = element.getElementsByClassName("headline-1")[0].getElementsByTagName('b')[0].innerText;
+    header = element.getElementsByClassName("headline-1")[0]
+    result = getInnerText(header.getElementsByTagName('b')[0]);
 
-return {
-    title: "I got " + result + ". " + question,
-    description: description,
-    image: element.getElementsByClassName("result_img")[0].src
-};
+    return {
+        title: "I got " + result + ". " + question,
+        description: description,
+        image: element.getElementsByClassName("results")[0].src
+    };
 }
 
 function twShare(url, twitterUser, winWidth, winHeight) {
@@ -7209,22 +7231,24 @@ function twShare(url, twitterUser, winWidth, winHeight) {
     window.open("http://www.twitter.com/share?text=" + results.title + "&url=" + tweetURL + "&via=" + twitterUser, "share", "top=" + winTop + ", left=" + winLeft + ", toolbar=0, status=0, width=" + winWidth + ", height=" + winHeight);
 };
 
-function fbShare(url, winWidth, winHeight, app_id) {
-    var results = getResult();
-    var shareURL = encodeURIComponent(url),
-    shareTitle = encodeURIComponent(results.title),
-    shareDesc = encodeURIComponent(results.description),
-    shareImg = encodeURIComponent(results.image);
-    var fbAppId = app_id;
-    var winTop = (screen.height / 2) - (winHeight / 2);
-    var winLeft = (screen.width / 2) - (winWidth / 2);
-    window.open("https://www.facebook.com/dialog/feed?app_id=" + fbAppId + "&display=popup&href=" + shareURL + "&redirect_uri=" + shareURL + "&link=" + shareURL + "&name=" + shareTitle + "&description=" + shareDesc + "&picture=" + shareImg, "sharer", "top=" + winTop + ", left=" + winLeft + ", toolbar=0, status=0, width=" + winWidth + ", height=" + winHeight);
+function fbShare(url, winWidth, winHeight, app_id, cUrl) {
+    var results    = getResult(),
+        shareURL   = encodeURIComponent(url),
+        closeUrl   = encodeURIComponent(cUrl),
+        shareTitle = encodeURIComponent(results.title),
+        shareDesc  = encodeURIComponent(results.description),
+        shareImg   = encodeURIComponent(results.image),
+        fbAppId    = app_id,
+        winTop     = (screen.height / 2) - (winHeight / 2),
+        winLeft    = (screen.width / 2) - (winWidth / 2);
+    window.open("https://www.facebook.com/dialog/feed?app_id=" + fbAppId + "&display=popup&href=" + shareURL + "&redirect_uri=" + closeUrl + "&link=" + shareURL + "&name=" + shareTitle + "&description=" + shareDesc + "&picture=" + shareImg, "sharer", "top=" + winTop + ", left=" + winLeft + ", toolbar=0, status=0, width=" + winWidth + ", height=" + winHeight);
 };
 
 function emailShare(url) {
     var emailURL = encodeURIComponent(url);
     var results = getResult();
     var emailSubject = encodeURIComponent(results.title),
-    emailBody = encodeURIComponent(results.description);
-    window.open("mailto:?subject=" + emailSubject + "&body=" + emailBody);
+        emailBody = encodeURIComponent(results.description);
+    window.open("mailto:?subject=" + emailSubject + "&body=" + emailBody + "%0A%0A" + emailURL);
 };
+
