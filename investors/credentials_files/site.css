@@ -713,8 +713,8 @@ span {
 
 .build1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
+    background: #d8dbd3;
+    background-image:url('arrow2-d8dbde.png');
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
@@ -933,11 +933,14 @@ border-bottom: 2px solid #444444;
 
 .platform0 {
     width: 1240px;
-    background: #272829;
+    background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size: contain;
+    background-size: contain;
     min-height: 700px;
     margin-top: -50px;
-     border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
 }
 
 .platform0 p {
@@ -961,19 +964,15 @@ border-bottom: 2px solid #444444;
 .platform0 tr td {
 
 }
-
 .platform1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-size: contain;
+    background: #272829;
     min-height: 1233px;
     margin-top: -40px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .platform1 p {
