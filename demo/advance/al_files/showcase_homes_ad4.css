@@ -1,0 +1,308 @@
+.showcase-ad *, body { margin: 0; padding: 0; }
+.showcase-ad .clear { clear: both; }
+
+.showcase-ad { 
+	position: relative; 
+	width: 619px; 
+	height: 168px; 
+	display: inline-block; 
+	border-bottom: 1px solid #eaecec; 
+	font-family: Arial; 
+	font-size: 12px; 
+	overflow: hidden; 
+	white-space: nowrap; 
+}
+
+.showcase-aff-logo, .showcase-listings { float: left; height: 100%; }
+
+.showcase-aff-logo { 
+	margin: 0; 
+	width: 216px; 
+	display: table; 
+	background: url(../images/bg_logo.png) repeat-x; 
+	border-right: 1px solid #eaecec; 
+}
+
+.showcase-aff-logo img {
+	position: relative;
+	left: -8px;
+	width: auto;
+	max-width: 130px;	
+}
+ 
+.showcase-aff-logo .logo-s { display: none; }
+
+.showcase-aff-logo p span {
+	width: 107px; 
+	display: inline-block; 
+}
+
+.showcase-aff-logo p { 
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	padding: 20px 13px 10px;
+}
+
+.showcase-aff-logo em { 
+	display: block; 
+	color: #363636; 
+	font-size: 23px; 
+	font-style: normal; 
+	font-weight: normal; 
+	color: #333333; 
+	line-height: 32px;
+}
+
+.showcase-listings { 
+	margin: 0; 
+	height: 100%; 
+}
+
+.showcase-listings ul li { 
+	position: relative; 
+	margin: 0 0 0 2px; 
+	color: #fff; 
+	display: block; 
+	float: left; 
+	list-style: none;
+	background-color: White;
+}
+
+.showcase-listings ul li p { display: block; }
+
+.showcase-listings .s-image { 
+	position: relative; 
+	background: #363636 no-repeat center center; 
+	cursor: pointer; 
+}
+
+.showcase-listings li:hover .s-overlay { display: block; }
+
+.showcase-listings .s-info, .showcase-listings .s-image { 
+	width: 199px; 
+	height: 135px; 
+} 
+
+.showcase-listings .s-location { 
+	margin: 0; 
+	padding: 7px 0; 
+	color: #363636; 
+	font-size: 12px; 
+	line-height: 20px; 
+	text-align: center; 
+	font-family: Arial; 
+	color: gray; 
+	border-left: 1px solid #eaecec; 
+	border-right: 1px solid #eaecec; 
+}
+
+
+.showcase-listings .s-specs .s-bedbath { font-family: Arial; }
+
+/* overlay info */
+.showcase-listings .s-overlay { 
+	height: 167px; 
+	display: none; 
+	cursor: pointer; 
+}
+
+.showcase-listings .s-info { position: absolute; top: 0; }
+
+.showcase-listings .s-darkbg { 
+	position: absolute; 
+	top: 0; 
+	width: 100%; 
+	height: 169px; 
+	background-color: #000; 
+	opacity:0.5; 
+	filter:alpha(opacity=50); 
+}
+
+.showcase-listings .s-specs { margin: 4px 0 0 7px; }
+
+.showcase-listings .s-agent, 
+.showcase-listings .s-broker { 
+	margin: 0 0 4px 0;
+	padding: 0 0 0 7px; 
+	width: 194px; 
+	min-height: 58px; 
+	display: table; 
+}
+
+.showcase-listings .s-broker { margin-top: 10px; }
+
+.showcase-listings .s-agent img { 
+	float: left; 
+	margin: 0 6px 0 0;
+	width: 56px; 
+	height: 56px;
+	border: 1px solid #363636; 
+}
+
+.showcase-listings .s-agent p.name {
+	float: left;
+	margin: 0;
+	padding: 3px 0 0 0;
+	width: 192px;
+	display: table-cell;
+	vertical-align: top;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	font-family: Arial;
+	white-space: normal;
+	min-height: 65px;
+	overflow: hidden;
+	text-shadow: -1px 1px black;
+}
+
+.showcase-listings .s-agent em { 
+	width: 134px; 
+	white-space: normal; 
+	display: inline-block; 
+	font-weight: bold; 
+	font-style: normal; 
+	line-height: 12px; 
+}
+
+.showcase-listings .s-agent span {
+	margin: 3px 0 0 0; 
+	display: block; 
+	font-size: 10px; 
+	line-height: 15px; 
+}
+
+.showcase-listings .s-specs p { line-height: 15px; }
+
+.showcase-listings .s-specs .s-bedbath { 
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	text-shadow: -1px 1px black;
+}
+
+.showcase-listings .s-specs .s-sqrfootage { 
+	font-size: 14px; 
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.showcase-listings .s-specs .s-brokername { 
+	font-size: 11px; 
+	line-height: 18px; 
+}
+
+.showcase-listings .more-info { 
+	position: absolute; 
+	top: 0;
+	width: 100%;
+	height: 168px;
+	display: block; 
+	cursor: pointer;  
+}
+
+.showcase-listings .more-info-btn { 
+	position: absolute;
+	bottom: -34px;
+	left: 118px;
+	margin: 0;
+	padding: 0 0 0 5px;
+	display: inline-block; 
+	background-color: #c8e500; 
+	height: 29px; 
+	width: 76px; 
+	line-height: 30px !important;
+	font-size: 10px;
+	color: #333333; 
+}
+
+.showcase-listings .logo_108x48 { 
+	position: absolute;
+	bottom: -33px;
+	margin: 0 0 0 -7px; 
+	width: 108px; 
+	height: 48px;
+	cursor: pointer;
+}
+
+.showcase-listings .logo_108x48 img {
+	width: 108px; 
+	height: 48px;
+}
+
+.mobile-wrapper .s-image:hover .s-overlay { display: none; }
+
+.showcase-listings li span.floatedlabel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	padding: 2px 4px 2px 4px;
+	margin: 4px 0 0 4px;
+	vertical-align: middle;
+	color: #444e5c;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: linen;
+	opacity: .9;
+	font-family: Arial;
+	line-height: 12px;
+}
+
+
+
+@media screen and (max-width: 599px), screen and (orientation:portrait) {
+  
+  .showcase-ad {
+	width: 402px;
+  	display: block; 
+	border-top: none; 
+	height: inherit;
+	left: -2px; 
+	}
+  
+  .showcase-aff-logo {
+	margin: 0 0 2px; 
+	padding: 0;
+	width: 400px;
+	height: 32px;
+  	display: block; 
+	background: url(../images/bg_logo_s.png) repeat-x;
+	border: 1px solid #eaecec;
+	}
+	
+  .showcase-aff-logo .logo-m { display: none; }
+  
+  .showcase-aff-logo .logo-s { 
+  	display: inline-block; 
+	vertical-align: middle; 
+	max-height: 24px; 
+	}
+  
+  .showcase-aff-logo p { 
+  	font-size: 1px; padding: 5px 0 0 0;
+	text-align: center;
+	display: block; 
+	}
+  
+  .showcase-aff-logo p span { width: auto; } /* ie8 fix */
+  
+  .showcase-aff-logo em { 
+  	display: inline-block; 
+	line-height: 20px; 
+	margin: 0; 
+	padding: 0px 10px; 
+	vertical-align: middle;
+	font-size: 20px;
+	}
+	
+  .showcase-aff-logo, .showcase-listings { float: none; }
+  
+  .showcase-listings { margin: 0px 0 0 0px; }
+  
+  .showcase-listings ul li { margin: 0 0 0 2px; }
+
+}
