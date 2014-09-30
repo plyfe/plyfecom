@@ -12,42 +12,7 @@
   }
   </style>
 
-  <script type="text/javascript">(function() {
-  var MESSAGE_PREFIX = 'plyfe-pq:';
 
-  function handleMessage(name, data) {
-    // console.log('host recieved data: ', name, ':', data);
-    switch(name) {
-      case 'resize':
-        var el = document.getElementById('plyfe-personality-quiz');
-        el.style.height = data.height + 'px';
-        break;
-      case 'scrollBottom':
-        document.body.scrollTop = 1000 * 1000;
-        document.documentElement.scrollTop = 1000 * 1000;
-        break;
-    }
-  }
-
-  window.onmessage = function(e) {
-    // If we get a message but are in a browser with no JSON.parse then ignore.
-    if(!window.JSON) { return; }
-
-    var payload = e.data;
-
-    // We don't care what the message's origin is as long as it has the proper
-    // prefix.
-    var messageForUs = payload.substr(0, MESSAGE_PREFIX.length) === MESSAGE_PREFIX;
-
-    if(messageForUs) {
-      var newlinePos = payload.indexOf('\n', MESSAGE_PREFIX.length);
-      var name = payload.substring(MESSAGE_PREFIX.length, newlinePos);
-      var data = JSON.parse(payload.substr(newlinePos + 1)); // +1 is '\n'
-
-      handleMessage(name, data);
-    }
-  }
-})();</script>
 
 </head>
 <body>
@@ -83,11 +48,6 @@
   <div class="plyfe-widget" data-height="250" data-id="166" data-theme-overrides="{}" data-transparent-bg="true" data-treatment="tokyo" data-type="tr" data-venue="wh-185" style="width: 300px"></div>
 </div>
 
-
-<div style="margin-left: auto; margin-right:auto; width: 300px; margin-top:20px">
-  <h4>Gas Pipeline Article - Personality Quiz</h4>
-</div>
-<iframe id="plyfe-personality-quiz" src="http://plyfe.com/demo/quiz-advance" width="100%"></iframe>
 
 
 
