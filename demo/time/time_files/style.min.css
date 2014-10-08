@@ -1,0 +1,988 @@
+.hatmain div,.hatmain h1,.hatmain h2,.hatmain h3,.hatmain center,.hatmain ul,.hatmain li,.hatmain table,.hatmain body,.hatmain p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+.hatmain ol,.hatmain ul {
+  list-style: none;
+}
+
+.hatmain table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#hatmain {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+@media only screen and (max-width:800px) {
+  #hatmain {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1250px) {
+  .hatmenu ul#hatslots li.hat1250 {
+    display: none;
+  }
+
+  .hatmenu ul#hatslots ul#hatmore li.hat1250 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:1175px) {
+  .hatmenu ul#hatslots li.hat1175 {
+    display: none;
+  }
+
+  .hatmenu ul#hatslots ul#hatmore li.hat1175 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .hatmenu ul#hatslots li.hat1100 {
+    display: none;
+  }
+
+  .hatmenu ul#hatslots ul#hatmore li.hat1100 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .hatmenu ul#hatslots li.hat1024 {
+    display: none;
+  }
+
+  .hatmenu ul#hatslots ul#hatmore li.hat1024 {
+    display: block;
+  }
+}
+
+.hatmain {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  line-height: normal;
+  width: 100%;
+  height: auto;
+  min-width: 800px;
+  max-height: 35px;
+}
+
+.hatmain #hatgrey {
+  background: #dedddd;
+  width: 100%;
+}
+
+.hatmain #hatblack {
+  background: #323332;
+  width: 100%;
+}
+
+.hatmenu {
+  width: 100%;
+  height: 35px;
+}
+
+.hatmenu #hattitle {
+  float: left;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-left: 10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.hatmenu #hattitle:after {
+  content: ":";
+}
+
+#hatblack #hattitle {
+  color: #fff;
+}
+
+.hatmenu #hatslots {
+  padding: 0;
+  display: table;
+  list-style: none;
+  float: left;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  margin: auto;
+  overflow-y: hidden;
+  position: absolute;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  max-width: 1500px;
+}
+
+.hatmain ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.hatmenu ul {
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.hatmenu ul li {
+  display: table-cell;
+  list-style-type: none;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#hatgrey ul#hatslots li a {
+  background-color: #dedddd;
+  color: #000;
+}
+
+#hatblack ul#hatslots li a {
+  background-color: #323332;
+  color: #fff;
+}
+
+#hatblack ul#hatslots li a p {
+  color: #fff;
+}
+
+.hatmain ul#hatslots li a {
+  display: block;
+  padding: 5px 11px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: normal;
+  margin-right: 18px;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+@-moz-document url-prefix() {
+  .hatmenu ul#hatslots li a {
+    padding-top: 5px;
+  }
+}
+
+.hatmenu ul#hatslots li a p {
+  text-align: left;
+  padding-left: 10px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000;
+}
+
+#hatgrey ul#hatslots li a.current,#hatgrey ul#hatslots li a:hover,#hatblack ul#hatslots li a.current,#hatblack ul#hatslots li a:hover {
+  background-color: #fff;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 5px;
+  border-radius: 12px;
+  padding-bottom: 5px;
+  color: #000;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul#hatslots li a.current p,#hatblack ul#hatslots li a:hover p {
+  color: #000;
+}
+
+@-moz-document url-prefix() {
+  .hatmenu ul#hatslots li a.current {
+    padding-top: 5px;
+  }
+}
+
+@-moz-document url-prefix() {
+  #hatblack ul#hatslots li a:hover {
+    padding-top: 5px;
+  }
+}
+
+.hatmenu ul#hatslots li a.current p {
+  font-weight: 500;
+}
+
+.hatmenu ul#hatslots li a:hover p {
+  font-weight: 500;
+}
+
+.hatmain #hatgrey ul#hatslots ul {
+  background: #dedddd;
+}
+
+.hatmain ul ul {
+  display: none;
+}
+
+.hatmain ul li:hover>ul {
+  display: block;
+}
+
+.hatmain #hatblack ul#hatslots ul {
+  background: #dedddd;
+}
+
+.hatmain ul#hatslots ul#hatmore {
+  border-radius: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 92.5%;
+  list-style: none;
+  margin: 0;
+  line-height: 1em;
+  border-right: 0 solid #dedddd;
+  border-bottom: 0 solid #dedddd;
+  -moz-box-shadow: 3px 3px 5px #404040;
+  -webkit-box-shadow: 3px 3px 5px #404040;
+  box-shadow: 3px 3px 5px #404040;
+  z-index: 99999;
+  padding-bottom: 10px;
+  width: 165px;
+}
+
+.hatmain ul#hatslots ul li {
+  clear: both;
+  float: none;
+  border-bottom: 0 solid #dedddd;
+  position: relative;
+  display: block;
+  border-radius: 0;
+  padding-left: 2em;
+  text-indent: -.7em;
+  padding: 5px 11px;
+  width: 165px;
+}
+
+.hatmain ul#hatslots ul#hatmore li:before {
+  content: "";
+  line-height: 1em;
+  width: .4em;
+  height: .4em;
+  background-color: #b40431;
+  float: left;
+  margin: .35em .25em 0;
+  margin-left: 13px;
+  border-radius: 50%;
+}
+
+.hatmain #hatgrey ul#hatslots ul#hatmore li a {
+  color: #000;
+}
+
+.hatmain #hatblack ul#hatslots ul#hatmore li a {
+  color: #000;
+}
+
+.hatmenu ul#hatslots ul#hatmore li a {
+  padding: 0;
+  font-weight: normal;
+  background: 0;
+  background-position: 0 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+}
+
+.hatmain #hatgrey ul#hatslots ul#hatmore li a p {
+  color: #000;
+  text-transform: capitalize;
+}
+
+.hatmain #hatblack ul#hatslots ul#hatmore li a p {
+  color: #000;
+}
+
+.hatmain ul#hatslots ul#hatmore li a p {
+  margin-left: 20px;
+  font-weight: 600;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 11px;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  margin-right: 15px;
+}
+
+.hatmenu ul#hatslots ul#hatmore li.hatslot-one,.hatmenu ul#hatslots ul#hatmore li.hatslot-two,.hatmenu ul#hatslots ul#hatmore li.hatslot-three,.hatmenu ul#hatslots ul#hatmore li.hatslot-four,.hatmenu ul#hatslots ul#hatmore li.hatslot-five,.hatmenu ul#hatslots ul#hatmore li.hatslot-six,.hatmenu ul#hatslots ul#hatmore li.hatslot-seven {
+  display: none;
+}
+
+#hatgrey ul li#timehat a {
+  background: #dedddd url('time_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#timehat a:hover,#hatgrey ul li#timehat a.current {
+  background: #fff url('time_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#timehat a {
+  background: #323332 url('time_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#timehat a:hover,#hatblack ul li#timehat a.current {
+  background: #fff url('time_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#peoplehat a {
+  background: #dedddd url('people_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#peoplehat a:hover,#hatgrey ul li#peoplehat a.current {
+  background: #fff url('people_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#peoplehat a {
+  background: #323332 url('people_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#peoplehat a:hover,#hatblack ul li#peoplehat a.current {
+  background: #fff url('people_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#fortunehat a {
+  background: #dedddd url('fortune_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#fortunehat a:hover,#hatgrey ul li#fortunehat a.current {
+  background: #fff url('fortune_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#fortunehat a {
+  background: #323332 url('fortune_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#fortunehat a:hover,#hatblack ul li#fortunehat a.current {
+  background: #fff url('fortune_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#sihat a {
+  background: #dedddd url('si_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#sihat a:hover,#hatgrey ul li#sihat a.current {
+  background: #fff url('si_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#sihat a {
+  background: #323332 url('si_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#sihat a:hover,#hatblack ul li#sihat a.current {
+  background: #fff url('si_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#ewhat a {
+  background: #dedddd url('ew_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#ewhat a:hover,#hatgrey ul li#ewhat a.current {
+  background: #fff url('ew_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#ewhat a {
+  background: #323332 url('ew_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#ewhat a:hover,#hatblack ul li#ewhat a.current {
+  background: #fff url('ew_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#moneyhat a {
+  background: #dedddd url('money_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#moneyhat a:hover,#hatgrey ul li#moneyhat a.current {
+  background: #fff url('money_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#moneyhat a {
+  background: #323332 url('money_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#moneyhat a:hover,#hatblack ul li#moneyhat a.current {
+  background: #fff url('money_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#golfhat a {
+  background: #dedddd url('golf_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#golfhat a:hover,#hatgrey ul li#golfhat a.current {
+  background: #fff url('golf_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#golfhat a {
+  background: #323332 url('golf_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#golfhat a:hover,#hatblack ul li#golfhat a.current {
+  background: #fff url('golf_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#allyouhat a {
+  background: #dedddd url('allyou_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#allyouhat a:hover,#hatgrey ul li#allyouhat a.current {
+  background: #fff url('allyou_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#allyouhat a {
+  background: #323332 url('allyou_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#allyouhat a:hover,#hatblack ul li#allyouhat a.current {
+  background: #fff url('allyou_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#cookinglighthat a {
+  background: #dedddd url('cookinglight_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#cookinglighthat a:hover,#hatgrey ul li#cookinglighthat a.current {
+  background: #fff url('cookinglight_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#cookinglighthat a {
+  background: #323332 url('cookinglight_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#cookinglighthat a:hover,#hatblack ul li#cookinglighthat a.current {
+  background: #fff url('cookinglight_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#coastalhat a {
+  background: #dedddd url('coastal_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#coastalhat a:hover,#hatgrey ul li#coastalhat a.current {
+  background: #fff url('coastal_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#coastalhat a {
+  background: #323332 url('coastal_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#coastalhat a:hover,#hatblack ul li#coastalhat a.current {
+  background: #fff url('coastal_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#realsimplehat a {
+  background: #dedddd url('realsimple_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#realsimplehat a:hover,#hatgrey ul li#realsimplehat a.current {
+  background: #fff url('realsimple_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#realsimplehat a {
+  background: #323332 url('realsimple_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#realsimplehat a:hover,#hatblack ul li#realsimplehat a.current {
+  background: #fff url('realsimple_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#healthhat a {
+  background: #dedddd url('health_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#healthhat a:hover,#hatgrey ul li#healthhat a.current {
+  background: #fff url('health_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#healthhat a {
+  background: #323332 url('health_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#healthhat a:hover,#hatblack ul li#healthhat a.current {
+  background: #fff url('health_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#sunsethat a {
+  background: #dedddd url('sunset_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#sunsethat a:hover,#hatgrey ul li#sunsethat a.current {
+  background: #fff url('sunset_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#sunsethat a {
+  background: #323332 url('sunset_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#sunsethat a:hover,#hatblack ul li#sunsethat a.current {
+  background: #fff url('sunset_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#essencehat a {
+  background: #dedddd url('essence_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#essencehat a:hover,#hatgrey ul li#essencehat a.current {
+  background: #fff url('essence_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#essencehat a {
+  background: #323332 url('essence_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#essencehat a:hover,#hatblack ul li#essencehat a.current {
+  background: #fff url('essence_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#instylehat a {
+  background: #dedddd url('instyle_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#instylehat a:hover,#hatgrey ul li#instylehat a.current {
+  background: #fff url('instyle_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#instylehat a {
+  background: #323332 url('instyle_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#instylehat a:hover,#hatblack ul li#instylehat a.current {
+  background: #fff url('instyle_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#myrecipeshat a {
+  background: #dedddd url('myrecipes_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#myrecipeshat a:hover,#hatgrey ul li#myrecipeshat a.current {
+  background: #fff url('myrecipes_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#myrecipeshat a {
+  background: #323332 url('myrecipes_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#myrecipeshat a:hover,#hatblack ul li#myrecipeshat a.current {
+  background: #fff url('myrecipes_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#travelleisurehat a {
+  background: #dedddd url('travelleisure_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#travelleisurehat a:hover,#hatgrey ul li#travelleisurehat a.current {
+  background: #fff url('travelleisure_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#travelleisurehat a {
+  background: #323332 url('travelleisure_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#travelleisurehat a:hover,#hatblack ul li#travelleisurehat a.current {
+  background: #fff url('travelleisure_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#foodwinehat a {
+  background: #dedddd url('foodwine_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#foodwinehat a:hover,#hatgrey ul li#foodwinehat a.current {
+  background: #fff url('foodwine_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#foodwinehat a {
+  background: #323332 url('foodwine_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#foodwinehat a:hover,#hatblack ul li#foodwinehat a.current {
+  background: #fff url('foodwine_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#espanolhat a {
+  background: #dedddd url('espanol_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#espanolhat a:hover,#hatgrey ul li#espanolhat a.current {
+  background: #fff url('espanol_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#espanolhat a {
+  background: #323332 url('espanol_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#espanolhat a:hover,#hatblack ul li#espanolhat a.current {
+  background: #fff url('espanol_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#departureshat a {
+  background: #dedddd url('departures_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#departureshat a:hover,#hatgrey ul li#departureshat a.current {
+  background: #fff url('departures_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#departureshat a {
+  background: #323332 url('departures_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#departureshat a:hover,#hatblack ul li#departureshat a.current {
+  background: #fff url('departures_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#southernlivinghat a {
+  background: #dedddd url('southernliving_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#southernlivinghat a:hover,#hatgrey ul li#southernlivinghat a.current {
+  background: #fff url('southernliving_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#southernlivinghat a {
+  background: #323332 url('southernliving_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#southernlivinghat a:hover,#hatblack ul li#southernlivinghat a.current {
+  background: #fff url('southernliving_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#tohhat a {
+  background: #dedddd url('toh_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#tohhat a:hover,#hatgrey ul li#tohhat a.current {
+  background: #fff url('toh_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#tohhat a {
+  background: #323332 url('toh_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#tohhat a:hover,#hatblack ul li#tohhat a.current {
+  background: #fff url('toh_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#cozihat a {
+  background: #dedddd url('cozi_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#cozihat a:hover,#hatgrey ul li#cozihat a.current {
+  background: #fff url('cozi_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#cozihat a {
+  background: #323332 url('cozi_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#cozihat a:hover,#hatblack ul li#cozihat a.current {
+  background: #fff url('cozi_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#lifehat a {
+  background: #dedddd url('life_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#lifehat a:hover,#hatgrey ul li#lifehat a.current {
+  background: #fff url('life_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#lifehat a {
+  background: #323333 url('life_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#lifehat a:hover,#hatblack ul li#lifehat a.current {
+  background: #fff url('life_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#myhomeideashat a {
+  background: #dedddd url('myhomeideas_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#myhomeideashat a:hover,#hatgrey ul li#myhomeideashat a.current {
+  background: #fff url('myhomeideas_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#myhomeideashat a {
+  background: #323333 url('myhomeideas_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#fansidedhat a {
+  background: #dedddd url('fansided_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul li#fansidedhat a:hover,#hatgrey ul li#fansidedhat a.current {
+  background: #fff url('fansided_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#fansidedhat a {
+  background: #323332 url('fansided_color_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#fansidedhat a:hover,#hatblack ul li#fansidedhat a.current {
+  background: #fff url('fansided_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatblack ul li#myhomeideashat a:hover,#hatblack ul li#myhomeideashat a.current {
+  background: #fff url('myhomeideas_bw_16_logo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+.hatmenu ul li#morelink a {
+  background: url('morelogo.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+}
+
+#hatgrey ul#hatslots li#morelink a:hover,#hatgrey ul#hatslots li#morelink a:active {
+  background: #dedddd url('morelogo_hover.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+  border-radius: 0;
+}
+
+#hatblack ul#hatslots li#morelink a:hover,#hatblack ul#hatslots li#morelink a:active {
+  background: #323333 url('morelogo_hover.png') no-repeat;
+  background-position: 11px 4px;
+  background-size: 16px 16px;
+  border-radius: 0;
+  color: #fff;
+}
+
+#hatblack ul#hatslots li#morelink a:hover p,#hatblack ul#hatslots li#morelink a:active p {
+  color: #fff;
+}
+
+#hatgrey ul#hatslots li#morelink ul#hatmore a:hover,#hatblack ul#hatslots li#morelink ul#hatmore a:hover {
+  background: 0;
+  background-position: 0 0;
+}

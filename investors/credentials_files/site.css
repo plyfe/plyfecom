@@ -568,10 +568,12 @@ span {
     color: black;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 190px;
+    padding-top: 120px;
     font-size: 28px;
     line-height: 35px;
     font-weight: 200;
+    padding-bottom: 60px
+
 }
 
 .overview2 span {
@@ -589,7 +591,7 @@ span {
 
 .overview3 {
     width: 1240px;
-    background: url('newbg-3b.png') no-repeat;
+    background: url('newbg-3.png') no-repeat;
     background-size: contain;
     min-height: 810px;
     margin-top: -49px;
@@ -711,13 +713,13 @@ span {
 
 .build1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
+    background: #d8dbd3;
+    background-image:url('arrow2-d8dbde.png');
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 780px;
-    margin-top: -30px;
+    min-height: 720px;
+    margin-top: -50px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 
@@ -725,9 +727,9 @@ span {
 
 .publish0 {
     width: 1240px;
-    background: #272829;
-    background-size: contain;
-    min-height: 1033px;
+    background: #272829 url('phonesize.png') no-repeat;
+    background-position: 76% 120%;
+    min-height: 910px;
     margin-top: -40px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -745,11 +747,8 @@ span {
 
 .phonedemo {
     float: right;
-    background: url('phonesize.png') no-repeat;
-    width: 500px;
-    height: 766px;
-    margin-right: 50px;
-    background-position:50% 50%;
+    width: 820px;
+    margin-right: 20px;
 }
 
 .mobilewidget {
@@ -767,7 +766,7 @@ span {
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 730px;
+    min-height: 830px;
     margin-top: -40px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -783,6 +782,37 @@ span {
     font-weight: 200;
 }
 
+.publish2 {
+    width: 1240px;
+    background: #d8dbde;
+    background-image:url('arrow2-d8dbde.png');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size: contain;
+    min-height: 930px;
+    margin-top: -40px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.publish2 p {
+    color: #444444;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 70px;
+    font-weight: 200;
+}
+
+.publish2 span {
+    color: #e96d6d;
+}
+
+.publish2 dt {
+color: #444444;
+border-bottom: 2px solid #444444;
+}
+
 .desktopdemo {
     float: right;
     background: ;
@@ -796,7 +826,7 @@ span {
     padding: 0px;
     display:block; 
     margin:auto; 
-    width:80%;
+    width:90%;
 }
 
 .desktopdemo {
@@ -837,7 +867,7 @@ span {
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 1033px;
+    min-height: 833px;
     margin-top: -40px;
 }
 
@@ -857,7 +887,7 @@ span {
     background-image:url('arrow2-d8dbde.png');
     background-repeat:no-repeat;
     background-position:center top;
-    min-height: 1033px;
+    min-height: 933px;
     margin-top: -40px;
 }
 
@@ -889,7 +919,7 @@ span {
 }
 
 .report3 p {
-    color: black;
+    color: #444444;
     line-height: 60px;
     font-size: 40px;
     text-align: center;
@@ -903,12 +933,14 @@ span {
 
 .platform0 {
     width: 1240px;
-    background: #272829;
+    background: #484848;
+    background-image:url('arrow2-484848.png');
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size: contain;
     background-size: contain;
     min-height: 700px;
-    margin-top: -40px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    margin-top: -50px;
 }
 
 .platform0 p {
@@ -917,7 +949,7 @@ span {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 50px;
+    padding-top: 90px;
     font-weight: 200;
 }
 
@@ -932,18 +964,15 @@ span {
 .platform0 tr td {
 
 }
-
 .platform1 {
     width: 1240px;
-    background: #484848;
-    background-image:url('arrow2-484848.png');
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-size: contain;
+    background: #272829;
     min-height: 1233px;
     margin-top: -40px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .platform1 p {
@@ -1023,7 +1052,7 @@ span {
 }
 
 .grids p {
-    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#272829; margin-bottom: 0px;
+    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#272727; margin-bottom: 0px;
 }
 
 .grids ul {

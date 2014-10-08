@@ -1,0 +1,1 @@
+Bootstrapper.bindDOMParsed(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;if(window.jQuery)$("div#emailOverlay form#emailSignUp button#email-submit").bind("mousedown",function(){s_clickInteraction("ca general: Popup Signup Email: submit button clicked")})},367003,214010);
