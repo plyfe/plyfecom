@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0000 - fonts
+We have cross domain issue, please load font files within same domain
+--------------------------------------------------------------------------------------------------------------------------------------- */
+@font-face 													{font-family: 'MontrealTS-DemiBold';src: url('../fonts/2A5700_0_0.eot');src: url('../fonts/2A5700_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_0_0.woff') format('woff'),url('../fonts/2A5700_0_0.ttf') format('truetype');}
+@font-face 													{font-family: 'MontrealTS-Regular';src: url('..fonts/2A5700_1_0.eot');src: url('../fonts/2A5700_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_1_0.woff') format('woff'),url('../fonts/2A5700_1_0.ttf') format('truetype');}
+@font-face 													{font-family: 'MontrealTS-Light';src: url('../fonts/2A5700_2_0.eot');src: url('../fonts/2A5700_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_2_0.woff') format('woff'),url('../fonts/2A5700_2_0.ttf') format('truetype');}

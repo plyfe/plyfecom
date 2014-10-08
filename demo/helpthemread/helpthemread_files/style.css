@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0000 - fonts
+
+@font-face 													{font-family: 'MontrealTS-DemiBold';src: url('../fonts/2A5700_0_0.eot');src: url('../fonts/2A5700_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_0_0.woff') format('woff'),url('../fonts/2A5700_0_0.ttf') format('truetype');}
+@font-face 													{font-family: 'MontrealTS-Regular';src: url('..fonts/2A5700_1_0.eot');src: url('../fonts/2A5700_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_1_0.woff') format('woff'),url('../fonts/2A5700_1_0.ttf') format('truetype');}
+@font-face 													{font-family: 'MontrealTS-Light';src: url('../fonts/2A5700_2_0.eot');src: url('../fonts/2A5700_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2A5700_2_0.woff') format('woff'),url('../fonts/2A5700_2_0.ttf') format('truetype');}
+--------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0001 - Global
+--------------------------------------------------------------------------------------------------------------------------------------- */
+html,body													{background:#00bcef; width:100%;height:100%;}
+#main-container												{width:960px; margin:0 auto; height: 100%}
+*, *:before, *:after 										{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.rounded													{border-radius:6px;}
+.rounded-left												{border-top-left-radius:6px; border-bottom-left-radius:6px;}
+.rounded-right												{border-top-right-radius:6px; border-bottom-right-radius:6px;}
+.rounded-top												{border-top-right-radius:6px; border-top-left-radius:6px;}
+.rounded-bottom												{border-bottom-right-radius:6px; border-bottom-left-radius:6px;}
+.anchor														{position:relative;}
+.text-center												{text-align:center;}
+.mobile														{display:none;}
+.desktop													{display:block;}
+.disabled													{opacity:.7;}
+.align-left													{float:left;}
+.align-right												{float:right;}
+h1, h2, h3													{font-family:'MontrealTS-Regular', Arial, Helvetica, sans-serif;}
+.button-blue												{background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/icon/arrow-blue.png) no-repeat 100% 50% #00bcef; padding: 8px 35px 8px 8px;margin: 8px 0;display: inline-block;color: #fff!important;text-decoration: none; border-radius:4px;font-family:'MontrealTS-Regular', Arial, Helvetica, sans-serif; text-transform:uppercase;font-size:18px; cursor:pointer;}
+.button-white												{color:#fff!important; border:1px solid #fff; padding:6px 20px 6px 10px; display:inline-block;text-transform:uppercase;text-decoration: none; vertical-align:bottom; background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/icon/arrow-white.png) no-repeat 96% 50%;font-size: 14px;}
+.button														{cursor: hand; cursor: pointer;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0002 - Header
+--------------------------------------------------------------------------------------------------------------------------------------- */
+header														{background-repeat:no-repeat; background-position:center top; background-size:cover; overflow:auto;}
+header.alt													{background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/background/pattern.gif); background-size:auto;overflow: visible;}
+header #logo												{width:178px; display:block; padding:4.4% 0 0 3.1%;}
+header.alt #logo											{padding:4.4% 0;margin: 0 auto;}
+header .twenty-five											{position:absolute; right:3%; top:4%; width:84px;}
+header .twenty-five	img										{width:100%;}
+
+header h1													{color:#fff; text-transform:uppercase; text-align: center;font-size: 38px;padding: 0 14%;letter-spacing: 4px;line-height: 40px;}
+header h2													{font-size: 20px;color: #fff;font-weight: normal;text-align: center;margin: 8px 0 0;}
+.headerline													{width:93%; margin:3.2% auto; background:rgba(0,0,0,0.4); padding:2%;}
+.headerline h2 a											{color:#f9c101; text-decoration:none;}
+header ul#social-share 										{padding: 0;list-style: none;text-align: center;position: absolute;top:-42px;right: 0;background: #00bcef;padding: 6px 4px;
+border-radius: 6px;}
+header ul#social-share li									{display:inline-block;margin: 0 2px;}
+header .facebook a, header .twitter a						{display: block;background: url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/icon/social-network-white.png) no-repeat;height: 22px; width:21px;}
+header .facebook a											{background-position:0 0}
+header .twitter a											{background-position:0 -36px;}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0003 - Body
+--------------------------------------------------------------------------------------------------------------------------------------- */
+.body-content												{background:#ffc600; padding: 3.4% 4.5%;}
+.body-content p												{font-family:'MontrealTS-Regular', Arial, Helvetica, sans-serif; font-size: 16px;line-height: 24px; padding:6px 0;}
+.body-content strong										{font-family: 'MontrealTS-DemiBold', Arial, Helvetica, sans-serif;font-weight: normal;}
+.body-content ul											{margin:14px 0;}
+.body-content li											
+.body-content u												{color:#fff;font-family: 'MontrealTS-DemiBold', Arial, Helvetica, sans-serif;font-weight: normal; text-decoration:none;}
+.body-content a												{color:#000;}
+#quiz-info													{margin:2% 0;}
+#quiz-info .left-col										{width: 55.8%;}
+#quiz-info .right-col										{width:41%;}
+.quiz-background, .quiz-background img						{width:100%; display:block;}
+.quiz-background h2											{position:absolute; top:7%; left:4%; background:rgba(255,255,255,0.9);padding: 2%; width:92%;}
+.name-capture												{background: #ffe27e; padding:4%;}
+.name-capture .left-col										{width:70%!important;}
+.name-capture .right-col									{width:28%!important; margin-left:2%;}
+.name-capture .button-blue 									{padding: 11px 35px 11px 8px;margin: 2px 0;}
+.name-capture .row											{margin:4px 0;}
+.statistic													{border-bottom:1px solid #fff; padding:5.3% 0; color:#fff;}
+.statistic p												{line-height: 20px;padding:0;}
+.statistic span												{display:block; text-align:center; font-size: 4.6em;}
+.statistic span.nearly										{background:url(../images/background/txt-almost.png) no-repeat; padding-left:20px; text-align:left;}
+.stat-first													{border-top:1px solid #fff;}
+#info .right-col											{width: 55.8%; margin:0 0 2% 2%;}
+
+.form-container												{margin:3%; background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/background/vertical-line.gif) repeat-y 46% 0}
+.selection													{width:54%; padding-left:3%;}
+.selection li												{margin:18px 0; background:none; padding:0;}
+.selection li a												{font-family:'MontrealTS-Light', Arial, Helvetica, sans-serif; color:#000; text-decoration:none;background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/icon/check.png) no-repeat 0 2px;padding-left:24px;}
+.selection li.active a										{background-position:0 -586px;}
+.selection li a strong										{font-family: 'MontrealTS-Regular', Arial, Helvetica, sans-serif;}
+.selection .other-book										{width:60%;}
+
+.facebook-connect											{text-align:center;}
+.form														{width:80%; margin:3% 0 0 auto;}
+.form .or													{text-align:center; color: #CCAB3B; margin:16px 0 10px;font-size: 24px; background:url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/background/dash-line.gif) 0 50% repeat-x;}
+.form .or span												{background:#ffe27e; display:inline-block; padding:0 10px;}
+.two-col													{float: left;width: 49%;}
+.first														{margin-right:2%;}
+label														{margin: 5px 0;font-family:'MontrealTS-Light', Arial, Helvetica, sans-serif;display: block;font-size: 12px;}
+.form p														{text-align:right; padding:4% 0;font-size: 12px;}
+.form .location												{text-align:right; margin-top:10px;}
+
+#closing													{margin-top:3%;}
+#closing h2													{color:#fff;font-family:'MontrealTS-Light', Arial, Helvetica, sans-serif;text-transform: uppercase;font-size: 33px; display:inline-block; margin-right:10px;}
+#closing .button-white										{margin-bottom:4px;}
+#closing .button-location									{text-align:right;}
+
+#thanks h1, #thanks h2, #thanks h3							{text-align:center;color:#fff;font-family:'MontrealTS-Light', Arial, Helvetica, sans-serif; text-transform:uppercase;}
+#thanks h1													{font-size:40px; margin-bottom:6px;}
+#thanks h2													{font-size:35px; margin-bottom:10px;}
+#thanks h3													{font-size: 23px;line-height: 34px; margin-bottom:10px; color:#00bcef;}
+#thanks ul#social-share 									{padding: 0;list-style: none;}
+#thanks ul#social-share li									{display:inline-block;margin: 0 2px; background:none;}
+#thanks .facebook a, #thanks .twitter a						{display: block;background: url(http://pursuant.s3.amazonaws.com/2014/BBFFL/helpthemread/images/icon/social-network-alt.png) no-repeat;height: 61px; width:61px;}
+#thanks .facebook a											{background-position:0 0}
+#thanks .twitter a											{background-position:-84px 0;}
+
+.container-small											{width:60%; margin:0 auto;}
+.container-title											{background:#00bcef; color:#fff; padding:2% 4%;}
+.container-body												{background:#ffe27e; padding:4%;}
+p.large-font												{font-size:22px;}
+
+
+/*.video-container 											{position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;}
+.video-container iframe,.video-container object,
+.video-container embed 										{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}*/
+.psa-video													{width:48%;}
+.psa-content												{width:50%;}
+.dad-video													{width:75%; margin:35px auto;}
+.video-container 											{position: relative; padding-bottom: 46.25%; height: 0; overflow: hidden; width:75%; margin:35px auto;}
+.video-container iframe, 
+.video-container object, 
+.video-container embed 										{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.dad-content												{width:75%; margin:35px auto;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0004 - Other
+--------------------------------------------------------------------------------------------------------------------------------------- */
+input[type="text"], 
+input[type="password"]										{border:none; padding:8px; border-radius:4px; width:100%; height:28px;}
+select														{width:100%; height:33px;-webkit-appearance: menulist-button;border: 1px solid #ccc;}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0005 - Quiz
+--------------------------------------------------------------------------------------------------------------------------------------- */
+.quiz-container												{background-color:#ffe27e; position:relative; padding:2%;}
+.quiz-container	h2											{background: #00bcef;padding: 19px 10px;text-align: center;text-transform: uppercase;font-family: 'MontrealTS-Light', Arial, Helvetica, sans-serif; color:#fff;}
+.quiz-container	h3											{margin: 30px 0 0px 12px;font-size: 26px;font-weight: 400;} 
+.quiz-container	table										{width:100%;}
+.quiz-container	table td									{width:100%; background:#e700e2; padding:0 4%; border-radius:6px; text-align:center; vertical-align:middle; color:#fff;font-family: 'MontrealTS-DemiBold', Arial, Helvetica, sans-serif; font-size:34px; line-height:34px; cursor:pointer; height:144px;}
+.quiz-container td.active									{background-color:#00bcef;}	
+.quiz-container	table td span								{font-size:28px;line-height: 30px;}	
+.quiz-question .button-location								{text-align:right; margin-right:12px;}							
+.quiz-question												{position:absolute; left:0; top:0; width:100%; display:none;}
+.quiz-question .three-col									{width:31.3%; float:left; margin:1%;}
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+0006 - Footer
+--------------------------------------------------------------------------------------------------------------------------------------- */
+footer														{color:#fff; text-align:left;font-size: 10px;line-height: 20px; margin:30px 0; padding:0 2%;}
+footer a													{color:#fff;}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------
+9999 - Clear
+--------------------------------------------------------------------------------------------------------------------------------------- */
+.row:after, .clear:after									{display:block; clear:both; content:'.'; visibility:hidden; height:0;}

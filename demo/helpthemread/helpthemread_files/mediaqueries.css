@@ -1,0 +1,61 @@
+/* ---------------------------------------- */
+/* responsive */
+
+/*  */
+/* Tablet (Portrait), Design for a width of 768px */
+@media (max-width: 1023px) {
+	body 											{min-width: 768px !important;}	
+	#main-container			 						{width:768px!important;}
+	header .twenty-five								{width:68px;}
+	.name-capture .left-col,
+	.name-capture .right-col						{width:100%!important;}
+	.name-capture .right-col						{margin:2% 0; text-align:center;}
+	#thanks h3 										{padding: 0 9%;}
+	.statistic span									{font-size: 3.6em;line-height: 72px;}
+	.container-small								{width:90%;}
+	#psa .button-blue								{font-size:17px!important;}		
+}
+
+/* Mobile (Landscape), Design for a width of 480px */
+@media (max-width: 767px) {
+	body 											{min-width: 480px !important;}
+	#main-container									{width:480px!important;}
+	header #logo									{margin: 18px auto; padding:8px; width:93%;background:rgba(255,255,255,0.6); text-align:center;border-radius:6px;}
+	header.alt #logo								{background:none;}
+	header h1										{font-size: 27px;padding: 0 4%;letter-spacing: 3px;line-height: 30px;}
+	header .twenty-five								{right: 5%;}												
+	ul#social-share 								{top: -24px;right: 2px;}
+	.align-left	, .align-right						{float:none;}
+	#quiz-info .left-col,
+	#quiz-info .right-col							{width:100%!important;}
+	#quiz-info .right-col							{margin-bottom:4%;}
+	#info .right-col								{width:100%; margin:2% 0;}
+	.quiz-question .row								{margin:0;}
+	.quiz-question .three-col						{float:none; width:100%; margin:2% 0;}
+	.quiz-container table td						{height:auto;padding:4%;}
+	
+	.statistic span									{display:block; text-align:center; font-size: 4.6em;}
+	.statistic span.nearly							{margin-left: 18px;}
+	.selection										{width:100%;}	
+	#info #vote-container							{margin: 3% 0;padding: 1.8% 1.8%;}
+	#thanks h1										{font-size:38px; margin-bottom:6px;}
+	#thanks h2										{font-size:33px; margin-bottom:10px;}
+	#thanks h3										{font-size: 18px;line-height: 25px;padding: 0 4%;}
+	.selection li									{margin:11px 0;}
+	.psa-video, .psa-content						{width:100%;}
+	
+}
+/* Mobile (Portrait), Design for a width of 320px */
+@media (max-width: 479px) {
+	body 											{min-width: 320px !important;}
+	#main-container									{width:320px!important;}
+	header .twenty-five 							{width: 38px;}
+	.statistic span.nearly							{margin-left: 50px;}
+	#thanks h2										{font-size:29px;}
+	#thanks h3										{padding:0;}
+	.two-col										{width:100%; float:none;}
+	.first											{margin:0;}
+	.container-small								{width:100%;}
+	.name-capture .first							{margin-bottom:4px;}
+	
+}
