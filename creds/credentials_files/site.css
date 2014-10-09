@@ -1,4 +1,4 @@
-@charset "UTF-8";
+cases1charset "UTF-8";
 
 body,.helvetica {
     font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
@@ -611,7 +611,9 @@ span {
 
 .cases1 {
     width: 1240px;
-    background: #d8dbde;
+    background: #d8dbde url('ibm-blue.png') no-repeat;
+    background-size: 90px;
+    background-position: 5% 5%;
     min-height: 742px;
     margin-top: -50px;
     border-radius: 15px;
@@ -638,12 +640,66 @@ span {
     text-shadow: 1px 1px #333333;
 }
 
-.cases1 table td p {
-    font-size: 10px;
-    vertical-align: top;
-    padding-top: 0px;
-    line-height: 18px;
-    padding: 0px 5px 0px 5px;
+.cases2 {
+    width: 1240px;
+    background: #d8dbde url('usatoday-logo.png') no-repeat;
+    background-size: 130px;
+    background-position: 5% 5%;
+    min-height: 742px;
+    margin-top: -50px;
+    border-radius: 15px;
+    margin-bottom: 40px
+}
+
+.cases2 p {
+    color: #e96d6d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.cases2 span {
+    color: #e96d6d;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
+}
+
+.cases3 {
+    width: 1240px;
+    background: #d8dbde url('phoenix-logo.png') no-repeat;
+    background-size: 100px;
+    background-position: 5% 5%; 
+    min-height: 742px;
+    margin-top: -50px;
+    border-radius: 15px;
+    margin-bottom: 40px
+}
+
+.cases3 p {
+    color: #e96d6d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.cases3 span {
+    color: #e96d6d;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
 }
 
 .process img {
