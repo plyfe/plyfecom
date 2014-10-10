@@ -1,0 +1,15 @@
+#disneyid-background.disneyid-background {
+    opacity: 0.75;
+    background-color: #080808 !important;
+    background-image: none !important;
+}
+#disneyid-background.disneyid-background:after {
+    content: "";
+    position: absolute;
+    background-color: #080808;
+    width: 100%;
+    height: 100%;
+    margin-top: 0
+}
+
+
