@@ -591,9 +591,9 @@ span {
 
 .overview3 {
     width: 1240px;
-    background: url('newbg-3.png') no-repeat;
+    background: url('newbg-3_2.png') no-repeat;
     background-size: contain;
-    min-height: 810px;
+    min-height: 850px;
     margin-top: -49px;
     font-weight: 200;
     z-index: 1
@@ -753,8 +753,8 @@ span {
 
 .mobilewidget {
     padding-top: 107px;
-    display:block; 
-    margin:auto; 
+    display:block;
+    margin:auto;
     width:300px;
     padding-left: 10px;
 }
@@ -822,8 +822,8 @@ border-bottom: 2px solid #444444;
 
 .desktopwidget {
     padding: 0px;
-    display:block; 
-    margin:auto; 
+    display:block;
+    margin:auto;
     width:90%;
 }
 
@@ -1106,7 +1106,7 @@ border-bottom: 2px solid #444444;
 #buildlist ol li p { padding:2px 9px 3px 10px; font-style:normal; font-size:13px; color:#ffffff; border-left: 1px solid #f8f8f8; }
 #buildlist ol li p em { display:block; }
 #buildlist ul li { }
-#buildlist ul li p { padding:2px 9px 3px 20px; font-style:normal; font-size:13px; color:#ffffff; border-left: 5px solid #f8f8f8; text-align: left; line-height: 20px;}  
+#buildlist ul li p { padding:2px 9px 3px 20px; font-style:normal; font-size:13px; color:#ffffff; border-left: 5px solid #f8f8f8; text-align: left; line-height: 20px;}
 
 /* buildlistlight */
 #buildlistlight { width:400px; float: left;}
@@ -1117,7 +1117,7 @@ border-bottom: 2px solid #444444;
 #buildlistlight ol li p { padding:2px 9px 3px 10px; font-style:normal; font-size:13px; color:#444444; border-left: 1px solid #444444; }
 #buildlistlight ol li p em { display:block; }
 #buildlistlight ul li { }
-#buildlistlight ul li p { padding:2px 9px 3px 20px; font-style:normal; font-size:13px; color:#444444; border-left: 5px solid #444444; text-align: left; line-height: 20px;}  
+#buildlistlight ul li p { padding:2px 9px 3px 20px; font-style:normal; font-size:13px; color:#444444; border-left: 5px solid #444444; text-align: left; line-height: 20px;}
 
 
 @media screen and (max-width:840px) {
