@@ -899,7 +899,7 @@ span {
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 930px;
+    min-height: 730px;
     margin-top: -40px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -944,6 +944,20 @@ border-bottom: 2px solid #444444;
     width: 781px;
     height: 899px;
     margin-right: 0px;
+}
+
+.publishspaces {
+    float:right;
+    margin: 10px;
+
+
+}
+
+.publishspaces p {
+    font-size: 15px;
+    line-height: 45px;
+    padding-top: 0px;
+    text-align: left;
 }
 
 .report0 {
