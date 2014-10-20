@@ -745,6 +745,101 @@ span {
     font-weight: 200;
 }
 
+
+.cases1 {
+    width: 1240px;
+    background: #d8dbde url('ibm-blue.png') no-repeat;
+    background-size: 90px;
+    background-position: 5% 5%;
+    min-height: 742px;
+    margin-top: -50px;
+    border-radius: 15px;
+    margin-bottom: 40px
+}
+
+.cases1 p {
+    color: #e96d6d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.cases1 span {
+    color: #e96d6d;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
+}
+
+.cases2 {
+    width: 1240px;
+    background: #d8dbde url('usatoday-logo.png') no-repeat;
+    background-size: 130px;
+    background-position: 5% 5%;
+    min-height: 742px;
+    margin-top: -50px;
+    border-radius: 15px;
+    margin-bottom: 40px
+}
+
+.cases2 p {
+    color: #e96d6d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.cases2 span {
+    color: #e96d6d;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
+}
+
+.cases3 {
+    width: 1240px;
+    background: #d8dbde url('phoenix-logo.png') no-repeat;
+    background-size: 100px;
+    background-position: 5% 5%;
+    min-height: 742px;
+    margin-top: -50px;
+    border-radius: 15px;
+    margin-bottom: 40px
+}
+
+.cases3 p {
+    color: #e96d6d;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.cases3 span {
+    color: #e96d6d;
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px #333333;
+}
+
+
 .phonedemo {
     float: right;
     width: 820px;
@@ -785,14 +880,10 @@ span {
 .publish2 {
     width: 1240px;
     background: #d8dbde;
-    background-image:url('arrow2-d8dbde.png');
-    background-repeat:no-repeat;
-    background-position:center top;
     background-size: contain;
-    min-height: 930px;
+    min-height: 830px;
     margin-top: -40px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
 }
 .publish2 p {
     color: #444444;
@@ -811,6 +902,26 @@ span {
 .publish2 dt {
 color: #444444;
 border-bottom: 2px solid #444444;
+}
+
+.publishspaces {
+    float:right;
+    margin: 10px;
+
+
+}
+
+.publishspaces p {
+    font-size: 15px;
+    line-height: 45px;
+    padding-top: 0px;
+    text-align: left;
+}
+
+.phonedemo {
+    float: right;
+    width: 310px;
+    margin-right: 120px;
 }
 
 .desktopdemo {

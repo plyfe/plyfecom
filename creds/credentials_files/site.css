@@ -1,4 +1,4 @@
-cases1charset "UTF-8";
+@charset "UTF-8";
 
 body,.helvetica {
     font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
@@ -560,7 +560,7 @@ span {
     background-repeat:no-repeat;
     background-position:center top;
     background-size: contain;
-    min-height: 742px;
+    min-height: 792px;
     margin-top: -50px;
 }
 
@@ -859,8 +859,8 @@ span {
 
 .phonedemo {
     float: right;
-    width: 820px;
-    margin-right: 20px;
+    width: 310px;
+    margin-right: 120px;
 }
 
 .mobilewidget {
@@ -895,14 +895,10 @@ span {
 .publish2 {
     width: 1240px;
     background: #d8dbde;
-    background-image:url('arrow2-d8dbde.png');
-    background-repeat:no-repeat;
-    background-position:center top;
     background-size: contain;
-    min-height: 730px;
+    min-height: 830px;
     margin-top: -40px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
 }
 .publish2 p {
     color: #444444;
