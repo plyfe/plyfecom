@@ -1,0 +1,3 @@
+var om_app_pix = new Array();
+om_app_pix[0] = new Image();
+om_app_pix[0].src = "http://ad.yieldlab.net/m?dm_id=50707&ext_id=202704951484";

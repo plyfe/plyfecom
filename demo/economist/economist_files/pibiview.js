@@ -1,0 +1,2 @@
+function IBPartner(){this.Go='239630';this.Xid='RXPOt6l6AscSvC';this.Ida='';this.Pid='45';this.Id1='';}
+(function(){try{var s=window.document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('src','//ev.ib-ibi.com/ibiview.js?go=239630&xid=RXPOt6l6AscSvC&pid=45&ida=&id1=');(window.document.getElementsByTagName('body')[0]||window.document.getElementsByTagName('head')[0]).appendChild(s);}catch(e){}})();
