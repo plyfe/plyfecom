@@ -699,9 +699,30 @@ span {
     min-height: 843px;
     margin-top: -40px;
     border-radius: 15px;
+}
+
+.build0 p {
+    color: white;
+    line-height: 60px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.buildd {
+    width: 1240px;
+    background: #272829;
+    background-size: contain;
+    min-height: 683px;
+    margin-top: -40px;
+    border-radius: 15px;
 
 }
-.build0 p {
+
+
+.buildd p {
     color: white;
     line-height: 60px;
     font-size: 40px;
@@ -1156,6 +1177,20 @@ border-bottom: 2px solid #444444;
     text-transform: uppercase;
     padding-top: 50px;
     font-weight: 200;
+}
+
+.description {
+    padding-top: 30px;
+}
+.description ul {
+    font-size: 2em;
+    list-style: none;
+}
+.description li {
+    padding-left: 20px;
+    line-height: 20px;
+    margin-top: 70px;
+
 }
 
 .grids {
