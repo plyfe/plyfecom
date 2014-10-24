@@ -186,6 +186,7 @@ input[type=checkbox]:checked ~ #menu{
 
   .widgets {
     width: auto;
+    padding: 10px 0;
   }
 
   .title {
@@ -207,7 +208,7 @@ input[type=checkbox]:checked ~ #menu{
     margin: auto;
     display: block;
     width: 300px;
-    padding: 10px;
+    padding: 10px 0;
   }
 
   /*Responsive Menu Styles*/
@@ -246,11 +247,11 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 @media (min-width: 301) and (max-width: 500px) {
-.scrollup {
-  width: 50px;
-  height: 50px;
-  bottom: 0px;
-  left:0px;
-  background-size: 50px;
+  .scrollup {
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    left:0px;
+    background-size: 50px;
   }
 }
