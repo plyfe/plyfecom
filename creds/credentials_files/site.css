@@ -1169,11 +1169,11 @@ border-bottom: 2px solid #444444;
 }
 
 .grids {
-    border: 2px dotted #aaaaaa; width:345px; border-radius:10px; margin-left:20px; float:left;
+    border: 2px dotted #aaaaaa; width:445px; border-radius:10px; margin-left:116px; float:left;
 }
 
 .grids p {
-    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#484848; margin-bottom: 0px;
+    color: #ff71be; padding-top:0px; font-size:30px; width:249px; margin-top:-31px; margin-left:45px; background:#272727; margin-bottom: 0px;
 }
 
 .grids ul {
@@ -1181,7 +1181,7 @@ border-bottom: 2px solid #444444;
 }
 
 .grids li {
-    line-height: 50px; color: #aaaaaa; text-transform: uppercase; margin-left: -20px;
+    line-height: 50px; color: #aaaaaa; text-transform: uppercase; margin-left: 20px; font-size: 20px;
 }
 .grids img {
     width:30px; vertical-align: middle; padding-right: 10px;

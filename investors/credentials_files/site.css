@@ -1194,7 +1194,7 @@ border-bottom: 2px solid #444444;
 }
 
 .grids {
-    border: 2px dotted #aaaaaa; width:345px; border-radius:10px; margin-left:20px; float:left;
+    border: 2px dotted #aaaaaa; width:445px; border-radius:10px; margin-left:116px; float:left;
 }
 
 .grids p {
@@ -1206,7 +1206,7 @@ border-bottom: 2px solid #444444;
 }
 
 .grids li {
-    line-height: 50px; color: #aaaaaa; text-transform: uppercase; margin-left: -20px;
+    line-height: 50px; color: #aaaaaa; text-transform: uppercase; margin-left: 20px; font-size: 20px;
 }
 .grids img {
     width:30px; vertical-align: middle; padding-right: 10px;
