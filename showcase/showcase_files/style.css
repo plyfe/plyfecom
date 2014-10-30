@@ -26,6 +26,11 @@
     padding: 10px;
   }
 
+ .example-single {
+    float: left;
+    padding: 10px;
+  }
+
   .description p {
     font-size: 0.79em;
     font-style: italic;
