@@ -18,7 +18,15 @@
     height: 370px;
     margin: auto;
     margin-top: 50px;
+    height: 450px;
+  }
 
+    .section-swipe {
+    width: 960px;
+    height: 370px;
+    margin: auto;
+    margin-top: 50px;
+    height: 550px;
   }
 
   .example {
@@ -189,6 +197,14 @@ input[type=checkbox]:checked ~ #menu{
 
   }
 
+.section-swipe {
+  width: auto;
+  height: 980px;
+  margin: auto;
+  height: 520px;
+
+  }
+
   .widgets {
     width: auto;
     padding: 10px 0;
@@ -209,6 +225,14 @@ input[type=checkbox]:checked ~ #menu{
   }
 
   .example {
+    float: none;
+    margin: auto;
+    display: block;
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .example-single {
     float: none;
     margin: auto;
     display: block;
