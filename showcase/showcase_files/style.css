@@ -6,7 +6,7 @@
   }
 
   .widgets {
-    width: 960px;
+    width: 760px;
     margin: auto;
     padding: 10px;
     height: 100%;
@@ -14,29 +14,31 @@
   }
 
   .section {
-    width: 960px;
+    width: 660px;
     height: 370px;
-    margin: auto;
+    margin-left: 80px;
     margin-top: 50px;
     height: 450px;
   }
 
-    .section-swipe {
-    width: 960px;
+  .section-swipe {
+    width: 660px;
     height: 370px;
-    margin: auto;
+    margin-left: 80px;
     margin-top: 50px;
     height: 550px;
   }
 
   .example {
-    float: right;
+    float: left;
     padding: 10px;
+    margin-right: 35px;
   }
 
  .example-single {
     float: left;
     padding: 10px;
+    margin-right: 35px;
   }
 
   .description p {
@@ -192,7 +194,7 @@ input[type=checkbox]:checked ~ #menu{
 
   .section {
     width: auto;
-    height: 980px;
+    height: 680px;
     margin: auto;
 
   }
@@ -201,7 +203,7 @@ input[type=checkbox]:checked ~ #menu{
   width: auto;
   height: 980px;
   margin: auto;
-  height: 520px;
+  height: 1000px;
 
   }
 
@@ -238,7 +240,9 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
     width: 300px;
     padding: 10px 0;
+
   }
+
 
   /*Responsive Menu Styles*/
   
