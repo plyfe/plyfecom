@@ -1,0 +1,1 @@
+yieldbot.updateState({"url_prefix": "http://ads-useast1n.yldbt.com/m/", "slots": [{"slot": "_8904_R29_Partner_Greatist_Homepage_Homepage_300x250_Bottom", "cpm": 200, "size": "300x250"}], "subdomain_iframe": "ads-useast1n"});
