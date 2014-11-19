@@ -1,0 +1,115 @@
+/* CSS Document */
+
+/* Content Area Fonts */
+
+html {
+
+}
+
+body {
+	background-image:url('background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color: #333333
+}
+
+h1
+ { font-family:"Proxima nova", helvetica, arial, sans-serif;
+ letter-spacing: 0.35em;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 40px;
+	color: #d7ff91;
+	font-size: 1.6em;
+
+  }
+
+/* Paragraph Font */
+
+p
+{font-family:"Proxima nova", helvetica, arial, sans-serif;
+text-transform:none; 
+line-height: 25px;
+color: white;
+font-weight: 400;
+font-size: 16px;
+
+}
+
+.logo {
+	margin: auto;
+	padding: 5px 0px 0px 0px;
+	display: block;
+	width: 90px
+}
+
+.logo img {
+	width: 90px;
+}
+
+.headline {
+	max-width: 1300px;
+	padding-top: 0px;
+	margin: auto;
+	display: block;
+
+}
+
+.maintext {
+	padding-top: 0px;
+	max-width: 900px;
+	margin: auto;
+	display: block;
+
+}
+
+.widget {
+	padding: 0px 0px 20px 0px;
+	width: 300px;
+	margin: auto;
+	display: block;
+}
+
+@media (max-width: 900px) {
+	h1 {
+		font-size: 1.5em
+	}
+
+	p {
+		font-size: 1em;
+		padding: 10px
+	}
+
+	}
+
+	@media (max-width: 600px) {
+	h1 {
+		font-size: 1.2em;
+		padding:10px;
+	}
+
+	p {
+		font-size: 0.9em;
+		line-height: 30px;
+	}
+
+	}
+
+		@media (max-width: 400px) {
+	h1 {
+		font-size: 0.8em;
+		padding:0px;
+	}
+
+	p {
+		font-size: 0.9em;
+		line-height: 30px;
+		font-weight: 100;
+	}
+
+	.logo {
+		width: 70px;
+	}
+	.logo img {
+	width: 70px;
+}
