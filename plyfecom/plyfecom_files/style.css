@@ -18,9 +18,9 @@ h1
  letter-spacing: 0.35em;
 	font-weight: bolder;
 	text-align: center;
-	line-height: 40px;
+	line-height: 44px;
 	color: #d7ff91;
-	font-size: 1.6em;
+	font-size: 2em;
 
   }
 
@@ -29,10 +29,10 @@ h1
 p
 {font-family:"Proxima nova", helvetica, arial, sans-serif;
 text-transform:none; 
-line-height: 25px;
+line-height: 28px;
 color: white;
 font-weight: 400;
-font-size: 16px;
+font-size: 18px;
 
 }
 
@@ -63,11 +63,18 @@ font-size: 16px;
 
 }
 
-.widget {
+.widgetsection {
 	padding: 0px 0px 20px 0px;
-	width: 300px;
+	width: 900px;
 	margin: auto;
 	display: block;
+}
+
+.widget {
+	margin: auto;
+	display: block;
+	width: 300px;
+	margin-top: -45px;
 }
 
 @media (max-width: 900px) {
@@ -92,6 +99,10 @@ font-size: 16px;
 		font-size: 0.9em;
 		line-height: 30px;
 	}
+
+	.widget {
+		margin-top: 0px;
+}
 
 	}
 
