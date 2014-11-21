@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="One-stop booking for your China trip! Find China vacation packages, flight + hotel package deals & China tours. Book your China trip with Ctrip and save 30%!" />
+    <meta name="keywords" content="vacation packages, cheap vacation packages, vacation deals, vacation package deals, China vacation, China vacation package, cheap holidays, vacation, cheap hotels, cheap flights, Ctrip, holiday package, holiday deals" />
+    <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <meta name="google-site-verification" content="2SufDase4RsyuRa8UZknyjIHX84ArUPzm2jDUzffcn8" />
+    
+    <title>Vacation packages - Save 30% on cheap vacation deals | Ctrip</title>
+    <link rel="canonical" ref="http://english.ctrip.com/packages/" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" type="image/x-icon" />
+    <Link Rel="ICON" href="/favicon.ico" />
+        
+    <!--各个页面的css-->
+    <link href="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/css/common/pub-multi.css?2014_11_12_17_46_50" rel="stylesheet" type="text/css" />
+    <link href="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/css/common/c-multi.css?2014_11_12_17_46_50" rel="stylesheet" type="text/css" />
+    <link href="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/css/packages130118/packages.css?2014_11_12_17_46_50" rel="stylesheet" type="text/css" />
+    <link href="http://webresource.english.c-ctrip.com/styles/common/public_flights_logo1200412.css?2014_11_12_17_46_50" rel="stylesheet" type="text/css" /> 
+    <!--各个页面的css end-->
+        <script type="text/javascript" src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/logger.js?2014_07_30" charset="utf-8"></script>
+    <script type="text/javascript">
+        logger.debug = 1;
+        logger.url = '/packages/Home/LogJSError';
+    </script>
+    <!--//页面action共用-->
+    <script src="http://webresource.c-ctrip.com/code/cquery/LABjs/LAB.js?2014_11_12_17_46_50" charset="utf-8" type="text/javascript"></script>
+
+    <script src="http://webresource.english.c-ctrip.com/code/cquery/cQuery_110421.js?2014_11_12_17_46_50" charset="utf-8" type="text/javascript"></script>
+    <script src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/packagesMsg/packages_en.js?2014_11_12_17_46_50" charset="utf-8" type="text/javascript"></script>
+    <script src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/city_new/city_new_en.js?2014_11_12_17_46_50" charset="utf-8" type="text/javascript"></script>
+    <script src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/flt_new/flt_new_en.js?2014_11_12_17_46_50" charset="utf-8" type="text/javascript"></script>
+    <script src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/jquery-1.8.3.min.js" charset="utf-8" type="text/javascript"></script>
+    <script type="text/javascript" src="http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/_english_global.js?2014_11_12_17_46_50" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">        
+        var initPageName = {
+            List: "List",
+            Mpas: "Maps",
+            Detail: "Detail",
+            Flight: "Flight",
+            Book: "Book",
+            PrintOrder: "PrintOrder",
+            ViewOrder: "ViewOrder",
+            Error: "Error",
+            PackageHome: "PackageHome",
+            Complete: "Complete",
+            SEODepartPkg: "SEODepartPkg",
+            SEOArrivePkg: "SEOArrivePkg"
+        };
+        var initModule = {
+            Language: 'english',
+            MultiLangHostName: 'english.ctrip.com',
+            EnglishHostName: 'english.ctrip.com',
+            Index: 0,
+            Domain: 'packages',
+            Tour: 'packages'
+        };
+        var LANGUAGECODE = 'en';
+        var ResourceUrl = {
+            hotelCityNewUrl: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/city_new/city_new_en.js?2014_11_12_17_46_50",
+            fltCityNewUrl: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/flt_new/flt_new_en.js?2014_11_12_17_46_50",
+            GoogleMapapi: "http://maps.googleapis.com/maps/api/js?sensor=false&amp;language=en&amp;libraries=geometry,places",
+            CtripGoogleMap: "http://webresource.english.c-ctrip.com/js/Packages/MultiLanguage/ctrip_packages_google_map.js?2014_11_12_17_46_50",
+            CtripPackagesMaps: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite//js/Packages/MultiLanguage/ctrip_packages_maplist.js?2014_11_12_17_46_50",
+            CtripPackagesMap: "http://webresource.english.c-ctrip.com/js/Packages/MultiLanguage/ctrip_packages_map.js?2014_11_12_17_46_50"
+        };
+    </script>
+
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T2SD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({ 'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T2SD');</script>
+<!-- End Google Tag Manager -->
+
+<!-- InstanceBegin name="position" -->
+    
+           <div class="multi-header">         <div class="multi-header-inner">             <a href="http://english.ctrip.com/" class="logo ">Travel to China with Ctrip</a>             <ul class="multi-usermenu"> 	            <li class="multi-userinfo" id="liUserInfo" tag="showUserInfo"> 		            <a href="javascript:void(0);" rel="nofollow" tag="showUserInfo"><strong>My account</strong><span class="multi-usermenu-arrow" tag="showUserInfo"></span></a> 		            <div id="divUserInfo" class="milti-popover" style="display: none;"> 		            <ul>                         <li><a href="javascript:void(0);" rel="nofollow" onmousedown="GotoLogin('https://accounts.ctrip.com/global/english/signin/', 'GET', '0um3fhulq1eikaalmlblb0qb330144');">Sign in</a></li> 		            		<li><a href="https://accounts.ctrip.com/global/english/register/" onmousedown="window.location.href='https://accounts.ctrip.com/global/english/register/'">Register</a></li> 		            		<li><a href="https://accounts.ctrip.com/global/english/guestorders/" onmousedown="window.location.href='https://accounts.ctrip.com/global/english/guestorders/'">Guest bookings</a></li> 		            	</ul> 		            </div> 	            </li><li><a rel="nofollow" href="http://english.ctrip.com/main/feedback/" onmousedown="window.location.href='http://english.ctrip.com/main/feedback/'">Website Feedback</a></li><li><a rel="nofollow" href="http://pages.english.ctrip.com/faq/en/index.html" onmousedown="window.location.href='http://pages.english.ctrip.com/faq/en/index.html'">FAQs</a></li> 	            <li class="multi-tel">400 619 9999</li> 	            <li class="multi-currency" id="money" tag="showMoney"> 		            <a href="javascript:void(0);" tag="showMoney" rel="nofollow">Currency:<strong>CNY</strong><span class="multi-usermenu-arrow"  tag="showMoney"></span></a> 		            <div class="milti-popover"  style="display: none;">     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'CNY']);"><span>CNY</span> - Chinese Yuan</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'USD']);"><span>USD</span> - United States Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'EUR']);"><span>EUR</span> - Euro</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'GBP']);"><span>GBP</span> - United Kingdom Pound</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'AUD']);"><span>AUD</span> - Australian Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'CAD']);"><span>CAD</span> - Canadian Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'CHF']);"><span>CHF</span> - Swiss Franc</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'DKK']);"><span>DKK</span> - Danish Kroner</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'HKD']);"><span>HKD</span> - Hong Kong Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'TWD']);"><span>TWD</span> - New Taiwan Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'JPY']);"><span>JPY</span> - Japanese Yen</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'KRW']);"><span>KRW</span> - Korean Won</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'MOP']);"><span>MOP</span> - Macau Pataca</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'MYR']);"><span>MYR</span> - Malaysian Ringgit</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'NZD']);"><span>NZD</span> - New Zealand Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'SEK']);"><span>SEK</span> - Swedish Kronor</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'SGD']);"><span>SGD</span> - Singapore Dollar</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'PHP']);"><span>PHP</span> - Philippine Peso</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'RUB']);"><span>RUB</span> - Russian Ruble</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'VND']);"><span>VND</span> - Vietnamese Dong</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'THB']);"><span>THB</span> - Thai Baht</a>
+     <a href="javascript:void(0);" rel="nofollow" onmousedown="_gaq.push(['_trackEvent', 'Package_MultiCurrency', 'click', 'IDR']);"><span>IDR</span> - Indonesia Rupiahs</a>
+                     <input type="hidden" value="CNY" name="showPricesDisplayedCurrencyType" id="showPricesDisplayedCurrencyType" />
+ 		            </div> 	            </li> 	            <li class="multi-version" id="liLanguage" tag="showLanguage"> 		            <a href="javascript:void(0);" rel="nofollow" tag="showLanguage"><span class="ico-country ico-country-us"></span>English<span class="multi-usermenu-arrow" tag="showLanguage"></span></a>
+ 		            <div id="divLanguage" class="milti-popover" style="display: none;"><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('english');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','english');"><span class="ico-country ico-country-us"></span>English</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('hk');SelectOptionChange('http://www.ctrip.com.hk/packages/','english','GET','hk');"><span class="ico-country ico-country-hk"></span>中文繁體</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('jp');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','jp');"><span class="ico-country ico-country-jp"></span>日本語</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('kr');SelectOptionChange('http://www.ctrip.co.kr/packages/','english','GET','kr');"><span class="ico-country ico-country-kr"></span>한국어</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('fr');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','fr');"><span class="ico-country ico-country-fr"></span>Français</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('de');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','de');"><span class="ico-country ico-country-de"></span>Deutsch</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('es');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','es');"><span class="ico-country ico-country-es"></span>Español</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('ru');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','ru');"><span class="ico-country ico-country-ru"></span>Русский</a><a href="javascript:void(0);" rel="nofollow" onmousedown="___SetLanguageCookie4Ctrip('vn');SelectOptionChange('http://english.ctrip.com/packages/','english','GET','vn');"><span class="ico-country ico-country-vn"></span>Tiếng Việt</a><a href="http://www.ctrip.com/#ctm_ref=nb_cn_top"  onmousedown="window.location.href='http://english.ctrip.com/main/home/linktoCn'" rel="nofollow"><span class="ico-country ico-country-cn"></span>中文简体</a> 		            </div> 	            </li>             </ul>             <ul class="multi-nav"> 	            <li class="nav-home"><a  title="Home" href="http://english.ctrip.com/#ctm_ref=nb_hp_top" rel="nofollow"><span>Home</span></a></li> 	            <li class="nav-flights"><a  title="Flights" href="http://english.ctrip.com/flights/#ctm_ref=nb_fl_top"><span>Flights</span></a></li> 	            <li class="nav-hotels"><a   title="Hotels" href="http://english.ctrip.com/hotels/#ctm_ref=nb_hl_top"><span>Hotels</span></a></li> 	            <li class="nav-trains"><a  title="Trains" href="http://english.ctrip.com/trains/#ctm_ref= nb_tn_top"><span>Trains</span></a></li> 	            <li class="nav-packages"><a class="nav-cur" title="Vacation Packages" href="http://english.ctrip.com/packages/#ctm_ref=nb_pkg_top"><span>Vacation Packages</span></a></li> 	            <li class="nav-activities"><a  title="Tours" href="http://english.ctrip.com/tours/#ctm_ref=nb_tr_top"><span>Tours</span></a></li>              <li class="nav-fb"><a target="_blank" href="http://www.facebook.com/ctripcom"><span></span></a></li><li onmouseover="getElementById('dimen').style.display='block';" onmouseout="getElementById('dimen').style.display='none';" class="nav_app"><a title="Mobile Apps" href="javascript:void(0)"><span>Mobile Apps</span></a>		<div id="dimen" class="dimensional_show" style="display:none;"><img alt="" src="http://pic.english.c-ctrip.com/common_v2/app_dimensional.png">			<a class="show_title" rel="nofollow" href="http://pages.english.ctrip.com/mobile/index.html" target="_blank">Mobile Apps<span class="arrow_right"><span class="arrow_01">◆</span><span class="arrow_02">◆</span></span></a>			<a href="javascript:void(0)" onclick="getElementById('dimen').style.display='none';" class="close">×</a>		</div></li>             </ul>         </div>     </div><script type="text/javascript">var requestMethod='GET';var Cookie_Global_Domain='.ctrip.com';</script>
+    
+
+<div class="multi-wrapper">
+    <div class="main-550">
+        <div style="width:600px; height:304px;">
+            <div class="mod_hd">
+                <span class="hook"></span>
+                <h1>Check out #TravelChina on Instagram!</h1>
+            </div>
+        <script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v0.min.js"></script>
+        <div class="plyfe-widget" style="width:600px; height:450px;" data-slot="Sk"></div></div>
+        <div class="c_box_mod c_box_mod_mini popular_destin" style="width:600px; margin-top:180px">
+            <div class="mod_hd">
+				<span class="hook"></span>
+				<h2>Popular vacation destinations</h2>
+			</div>
+            <div class="mod_bd">
+                <a href="http://english.ctrip.com/packages/1-beijing-travel-packages/">Beijing vacation</a>
+                <a href="http://english.ctrip.com/packages/28-chengdu-travel-packages/">Chengdu vacation</a>
+                <a href="http://english.ctrip.com/packages/6-dalian-travel-packages/">Dalian vacation</a>
+                <a href="http://english.ctrip.com/packages/32-guangzhou-travel-packages/">Guangzhou vacation</a>
+                <a href="http://english.ctrip.com/packages/33-guilin-travel-packages/">Guilin vacation</a>
+                <a href="http://english.ctrip.com/packages/5-harbin-travel-packages/">Harbin vacation</a>
+                <a href="http://english.ctrip.com/packages/17-hangzhou-travel-packages/">Hangzhou vacation</a>
+                <a href="http://english.ctrip.com/packages/34-kunming-travel-packages/">Kunming vacation</a>
+                <a href="http://english.ctrip.com/packages/376-nanchang-travel-packages/">Nanchang vacation</a>
+                <a href="http://english.ctrip.com/packages/12-nanjing-travel-packages/">Nanjing vacation</a>
+                <a href="http://english.ctrip.com/packages/7-qingdao-travel-packages/">Qingdao vacation</a>
+                <a href="http://english.ctrip.com/packages/43-sanya-travel-packages/">Sanya vacation</a>
+                <a href="http://english.ctrip.com/packages/2-shanghai-travel-packages/">Shanghai vacation</a>
+                <a href="http://english.ctrip.com/packages/30-shenzhen-travel-packages/">Shenzhen vacation</a>
+                <a href="http://english.ctrip.com/packages/451-shenyang-travel-packages/">Shenyang vacation</a>
+                <a href="http://english.ctrip.com/packages/3-tianjin-travel-packages/">Tianjin vacation</a>
+                <a href="http://english.ctrip.com/packages/477-wuhan-travel-packages/">Wuhan vacation</a>
+                <a href="http://english.ctrip.com/packages/10-xi'an-travel-packages/">Xi&#39;an vacation</a>
+                <a href="http://english.ctrip.com/packages/25-xiamen-travel-packages/">Xiamen vacation</a>
+                <a href="http://english.ctrip.com/packages/4-chongqing-travel-packages/">Chongqing vacation</a>
+            </div>
+        </div>
+		<!-- /top_vacation -->
+	</div> 
+	<div class="side-390">
+    	<div class="findbox_v2">
+            <form id="FlightHotelForm">
+			<div class="findbox_inner">
+				<dl id="fhWhere">
+					<dt>Where &amp; when? </dt>
+					<dd>
+						<ul class="findbox_choose" id="FHflightSubSwitch">
+							<li data-index="1"><label><input checked  type="radio" id="radFHRoundTrip" name="radFHOneWay" />Round trip</label></li>
+						</ul>
+						<ul class="findbox_form findbox_form_2col">
+							<li class="findbox_base"><label>From</label>
+                                <input id="FHhomecity_name" name="FHhomecity_name" autocomplete="off" value=""/>                                    
+                            </li>
+							<li class="findbox_base"><label>To</label>
+                                <input id="FHdestcity1_name" name="FHdestcity1_name" autocomplete="off" value=""/>
+                            </li>
+						</ul>
+						<ul class="findbox_form findbox_form_2col">
+							<li id="divFHOneWay">
+								<div class="findbox_date" ><label>Depart</label>
+                                    <input id="FHDDatePeriod1" name="starttime" class="ipt_date" value=""/>
+                                </div>
+							</li>
+							<li id="FHflightBackFlag" style="display:block">
+								<!-- 选择单程时，这部分增加display:none，隐藏内容 -->
+								<div class="findbox_date"><label>Return</label>
+                                    <input id="FHADatePeriod1" name="deptime" class="ipt_date" value=""/>
+                                </div>
+							</li>
+						</ul>	
+		
+					</dd>
+				</dl>                                
+				<dl id="fhGuest">
+					<dt>Hotel rooms &amp; guests? </dt>
+					<dd>
+						<ul class="findbox_form">
+							<li class="findbox_num" style="width:auto;margin-bottom:0;"><label>Adult</label>                                
+                                <select name="adult_num" id="adult_num"> 
+                                    <option  value="1">1</option>
+                                    <option selected=&quot;selected&quot; value="2">2</option>
+                                    <option  value="3">3</option>
+                                    <option  value="4">4</option>
+                                    <option  value="5">5</option>
+                                    <option  value="6">6</option>
+                                    <option  value="7">7</option>
+                                    <option  value="8">8</option>
+                                </select></li>
+							<li class="findbox_num"><label>Child(2-12)</label>
+                                <select name="children_num" id="children_num"> 
+                                    <option selected=&quot;selected&quot; value="0">0</option>
+                                    <option  value="1">1</option>
+                                    <option  value="2">2</option>
+                                    <option  value="3">3</option>
+                                    <option  value="4">4</option>
+                                    <option  value="5">5</option>
+                                    <option  value="6">6</option>
+                                    <option  value="7">7</option>
+                                    <option  value="8">8</option>
+                                </select>
+                            </li>
+						</ul>
+						<p class="findbox_check"><label id="FHNeedHotel">
+                        <input type="checkbox" name="trip_city" id="trip_city" /> I need a hotel for part of my trip only</label></p>
+						<ul class="findbox_form" id="RoomDate" style="display:none;"> 
+							<!-- 选加display:none，隐藏内容 -->
+					        <li class="findbox_date">
+					            <label>Check in</label>
+                                    <input id="FHNeedHotelDDatePeriod1" name="check_in_date" class="ipt_date">
+					        </li>
+					        <li class="findbox_date">
+					            <label>Check out</label>
+                                    <input id="FHNeedHotelADatePeriod1" name="check_out_date" class="ipt_date">
+					        </li>
+					    </ul>
+						<p  id="FHStayingCitySubSwitch" class="findbox_check">
+                        <label><input type="checkbox" id="FHStayingCityNo"/> I am not staying in my flight&#39;s arrival city</label>
+                        </p>
+
+						<ul id="FHStayingCityOptions" class="findbox_form findbox_form_2col" style="display:none;">	<!-- 点击上面显示这里的内容 -->
+                            <li class="findbox_check"  id="FHStayingCityOptionsLI"> 
+                             <label > 
+                                <input type="checkbox" id="FHStayingCityYes">I&#39;ll be staying in...</label>
+                            </li>
+						    <li class="findbox_base"><p>
+                                    <input id="FHStayingCity_name" name="FHStayingCity_name" autocomplete="off" value="" autocomplete="off" _cqnotice="undefined" style="" mod_notice_tip="Staying in..."/>                                    
+                                </p>
+                            </li>
+						</ul>
+					</dd>
+				</dl>
+				<div class="findbox_control" id="divFindFH">
+					<input type="submit" id="btnSubmitData" style="cursor:pointer;" value="Find flights + hotels" class="c_btn c_btn_step findbox_submit" />
+				</div>
+			</div>
+            <input id="FHStayingCity" name="FHStayingCity" type="hidden" value=""/>
+            <input type="hidden" id="fhFlightWay" value="D" name="FlightWay"/>
+            <input name="today" type="hidden" value="2014-11-22"/>		
+            <input id="FHdestcity1" name="FHdestcity1" type="hidden" value=""/>
+            <input id="FHhomecity" name="FHhomecity" type="hidden" value=""/>
+            </form>
+		</div>
+        <div id="div-gpt-ad-1348650690695-0" name="enhomepage_googleadtag" class="ad_390" style="width:380px; height:92px;">
+        </div>
+		<div class="c_box_mod c_box_mod_mini contact_box">
+			<div class="mod_hd">
+				<span class="hook"></span>
+				<h2>Contact us, call now!</h2>
+			</div>
+			<div class="mod_bd">
+				<i class="ico_phone"></i>
+				<ul>
+					<li>Mainland China: <strong>400 619 9999</strong></li>
+					<li>International: <strong>(86 21) 3210 4669</strong></li>
+				</ul>
+			</div>
+			<div class="btn_box">
+                <a class="c_btn_mini" id="btChat" name="btChat" onclick="javascript:window.open('http://livechat.english.ctrip.com/Login.aspx?FromPage=HotelAll');" style="cursor:pointer;">Chat</a>
+                <a class="c_btn_mini" id="btEmail" name="btEmail" onclick="javascript:window.location='mailto:e_service@ctrip.com';" style="cursor:pointer;">Mail</a>
+            </div>
+		</div>
+		<div class="c_box_mod c_box_mod_mini mailfeed_box">
+        <form id="HomeIndexSubmitEmailForm" onsubmit="return false;">
+			<div class="mod_hd">
+				<span class="hook"></span>
+				<h2>Get great deals delivered to your inbox!</h2>
+			</div>
+			<div class="mod_bd">
+				<i class="ico_mail"></i>
+				<table>
+					<tr>
+						<td class="getdeals_input_box">
+                            <input id="txtSubscribeEmail" name="txtSubscribeEmail" type="text"  value="Enter email address" class="getdeals-input" onblur="if (this.value == '') {this.value = 'Enter email address';}" onfocus="if (this.value == 'Enter email address') {this.value = '';}" value="Enter email address"/>
+                        </td>
+						<td>
+                            <input type="button" id="btSendMail" name="btSendMail" value="Sign up" class="c_btn_mini" onclick="return HomeIndex_SubmitEmail('http://english.ctrip.com/main/EDMSubscription/EmailSubscription.asp');"/>
+                        </td>
+					</tr>
+				</table>
+			</div>
+        </form>
+		</div>
+		<div class="c_box_mod c_box_mod_mini slogan_company">
+			<div class="mod_hd">
+				<span class="hook"></span>
+				<h2>Why book your vacation package with Ctrip</h2>
+			</div>
+			<ul class="list">
+				<li><strong>China's Leading Travel Agent:</strong> Trusted by 60,000,000 members.</li>
+				<li><strong>Biggest Network:</strong> Over 18,000 package hotels, 2,000 China flight routes.</li>
+				<li><strong>Great Savings:</strong> Cheap Flight + Hotel vacation deals.</li>
+				<li><strong>Award-winning Service:</strong> English-speaking customer service.</li>
+			</ul>
+		</div>
+
+    </div>
+    <input type="hidden" id="page_id" value="2000101" />
+    <input id="CurrPageName" name="CurrPageName" type="hidden" value="PackageHome"/>
+</div>
+
+<script type="text/javascript">
+    //机酒首页
+    var TOP_DEALS_AJAX = '/packages/home/TopDealsCity';
+    var strMDY = 'mm-dd-yyyy';
+    $LAB
+        .script({ src: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/ctrip_packages_index_en.js?2014_11_12_17_46_50", charset: "utf-8" }).wait(logTimer)
+        .script({ src: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/home/index/HomeMsg/home_en.js?2014_11_12_17_46_50", charset: "utf-8" }).wait(logTimer)
+        .script({ src: "http://webresource.english.c-ctrip.com/js/__nts.js?2014_11_12_17_46_50", charset: "utf-8" }).wait(logTimer)
+        .script({ src: "http://webresource.c-ctrip.com/code/cquery/mod/jmp-1.0.js?2014_11_12_17_46_50", charset: "utf-8" }).wait(logTimer)
+        .script({ src: "http://webresource.english.c-ctrip.com/ResGlobalOnline/R2/EnglishSite/js/Packages/MultiLanguage/ctrip_packages_lang_en.js?2014_11_12_17_46_50", charset: "utf-8" }).wait(logTimer)
+</script>
+
+    <div class="multi-footer" id="divMultiFooter">
+   
+    <div class="multi-global-links"><div class="multi-links"><span class="hook"></span><span class="multi-links-ico"></span><span class="links"><strong>Ctrip Services: </strong><a href="http://english.ctrip.com/travel/">China Travel Guide</a> | <a href="http://ct.ctrip.com/en/corporatetravel/" >Corporate Travel</a> | <a href="http://pages.english.ctrip.com/Ctriprewards/en/Ctriprewards1-1.html" rel="nofollow">Ctrip Rewards</a> | <a href="http://pages.english.ctrip.com/affiliates/welcome.html" rel="nofollow">Affiliates</a><br><strong>About Ctrip: </strong><a href="http://pages.english.ctrip.com/about/en/company-profile.html"  rel="nofollow">About Us</a> | <a href="http://pages.english.ctrip.com/about/en/contact.html"  rel="nofollow">Contact Us</a> | <a href="http://pages.english.ctrip.com/about/en/privacy-policy.html" rel="nofollow">Privacy policy</a> | <a href="http://ir.ctrip.com/" rel="nofollow">Investor Relations</a> | <a href="http://pages.english.ctrip.com/Links/Welcome.html">Links & Partners</a> | <a href="http://pages.english.ctrip.com/sitemap/sitemap.html">Site map</a> | <a href="http://english.ctrip.com/main/feedback/">Website Feedback</a> | <a href="http://hotels.ctrip.com/international/HotelAffiliationRegister.aspx" rel="nofollow">List your hotel</a></div><div class="app_dimensional"><a href="http://pages.english.ctrip.com/mobile/index.html"  rel="nofollow"> <img src="http://pic.english.c-ctrip.com/multi_common/app_dimensional.jpg"></a></div><div class="app_download"><strong>Download Ctrip</strong> <b><a href="http://pages.english.ctrip.com/mobile/index.html" rel="nofollow"> mobile app</a></b><p><a class="app_anoroid" h="" href="https://play.google.com/store/apps/details?id=ctrip.english" rel="nofollow"><i></i></a><a class="app_iphone" href="https://itunes.apple.com/us/app/ctrip/id681752345" rel="nofollow"><i></i></a></p></span></div><div class="multi-global"><strong>Global sites:</strong><a href="http://www.ctrip.com" onmousedown="window.location.href='http://english.ctrip.com/main/home/linktoCn'" class="ico-country ico-country-cn">中文</a><a href="http://english.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://english.ctrip.com');window.location.href='http://english.ctrip.com'" class="ico-country ico-country-us">English</a><a href="http://www.ctrip.com.hk" onmousedown="___SetLanguageCookie4Ctrip('http://www.ctrip.com.hk');window.location.href='http://www.ctrip.com.hk'" class="ico-country ico-country-hk">中文繁體</a><a href="http://jp.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://jp.ctrip.com');window.location.href='http://jp.ctrip.com'" class="ico-country ico-country-jp">日本語</a><a href="http://www.ctrip.co.kr" onmousedown="___SetLanguageCookie4Ctrip('http://www.ctrip.co.kr');window.location.href='http://www.ctrip.co.kr'" class="ico-country ico-country-kr">한국어</a><a href="http://fr.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://fr.ctrip.com');window.location.href='http://fr.ctrip.com'" class="ico-country ico-country-fr">Français</a><a href="http://de.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://de.ctrip.com');window.location.href='http://de.ctrip.com'" class="ico-country ico-country-de">Deutsch</a><a href="http://es.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://es.ctrip.com');window.location.href='http://es.ctrip.com'" class="ico-country ico-country-es">Español</a><a href="http://ru.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://ru.ctrip.com');window.location.href='http://ru.ctrip.com'" class="ico-country ico-country-ru">Русский</a><a href="http://vn.ctrip.com" onmousedown="___SetLanguageCookie4Ctrip('http://vn.ctrip.com');window.location.href='http://vn.ctrip.com'" class="ico-country ico-country-vn">Tiếng Việt</a></div></div><div class="multi-copyright">Copyright &copy; 1999-2014 Ctrip.com International, Ltd. All rights reserved.</div></div>
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-2871753-7']);
+   _gaq.push(['_setDomainName', '.english.ctrip.com']);
+   _gaq.push(['_setAllowHash', false]);
+   _gaq.push(['_trackPageview']);
+   (function () {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+   pageTracker={   _trackEvent:function(arg1,arg2){   _gaq.push(['_trackEvent', arg1, 'click', arg2]);   }}; 
+</script>
+<script type="text/javascript" language="javascript">
+    function InitUserInfo(ot,s,t,n,uid,param) {
+       try{
+           var hkUrl = 'http://www.ctrip.com.hk/main/LoginAgent/RedirectToHKStie?param='+param+'&callback=?';
+           j.jsonp({
+               dataType: "jsonp",
+               url: hkUrl,
+               jsonp: "callback",
+               success: function (data) {
+                   if(data.success == true){__SSO_loginShow(ot,s,t,n,uid);}
+               },
+               error: function () {
+                   __SSO_loginShow(ot,s,t,n,uid);
+               }
+           });
+       }catch(err){ 
+           __SSO_loginShow(ot,s,t,n,uid);
+       }
+    }
+</script>  
+
+<input type="hidden" id="PostHiddenFields" value="&lt;input type=&#39;hidden&#39; id=&#39;responsemethod&#39; name=&#39;responsemethod&#39; value=&#39;GET&#39; /&gt;" />
+    
+    </div>
+            <iframe id="__SSO_iframe_1" frameborder="0" scrolling="no" width="595px" height="650px" style="display:none;"></iframe>
+        <iframe id="__SSO_iframe_0" frameborder="0" scrolling="no" width="442px" height="661px" style="display:none;"></iframe>
+        <iframe id="__SSO_iframe_3" frameborder="0" scrolling="no" width="442px" height="387px" style="display:none;"></iframe>
+        <iframe id="__SSO_iframe_2" frameborder="0" scrolling="no" width="662px" height="387px" style="display:none;"></iframe>
+        <script language="javascript" type="text/javascript">
+        //元素id,快速预订
+        function __SSO_booking(a,t){
+            if($("__SSO_iframe_"+t)){
+                $("__SSO_iframe_"+t).src="https://accounts.ctrip.com/global/{0}//Mask?a="+a+"&t="+t+"&b=7DFCB6F75073A462";
+            }
+            return false;
+        }
+        //操作类型（0不跳转(当前页登录)，1跳转(登录后跳转)）,是否弹出登录框,快速预订,是否执行js函数
+        function __SSO_loginShow(ot,s,t,n,uid){
+            var el=$("#__SSO_iframe_"+t);            if(s){
+                if(el[0]){
+                    el.mask();
+                    j(el).scrollCenter(true);
+                    el[0].src="http://english.ctrip.com/packages/LoginAgent?operatorType="+ot+"&loginType="+t+"&UserName="+uid+"";
+                }
+            }else{
+                    el.unmask();
+                    try{$("#__SSO_iframe_0").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_1").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_2").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_3").unmask();}catch(e){}
+                if(n){
+                    if(ot==0){
+                         location.reload();
+                    }
+                    else{
+                        el[0].src = "";
+                        __SSO_submit();
+                    }
+                 }
+            }
+        }
+        
+        //操作类型（0不跳转(当前页登录)，1跳转(登录后跳转)）,是否弹出登录框,快速预订,是否执行js函数
+        function __SSO_loginShow4SecretDeals(ot,s,t,n,uid){
+            var el=$("#__SSO_iframe_"+t);            if(s){
+                if(el[0]){
+                    el.mask();
+                    $(el).scrollCenter(true);
+                    el[0].src="http://english.ctrip.com/packages/LoginAgent?operatorType="+ot+"&loginType="+t+"&UserName="+uid+"&pageFrom=detail";
+                }
+            }else{
+                    el.unmask();
+                    try{$("#__SSO_iframe_0").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_1").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_2").unmask();}catch(e){}
+                    try{$("#__SSO_iframe_3").unmask();}catch(e){}
+                if(n){
+                    if(ot==0){
+                         location=location;
+                         location.reload();
+                    }
+                    else{
+                        el[0].src = "";
+                        __SSO_submit();
+                    }
+                 }
+            }
+        }
+        
+        </script>
+
+    
+    
+<div class="popup_search_loading" id="loading" style="display:none;">
+    <div class="tit" id="loadingTitle">Updating your search...</div>
+    <img alt="loading..." src="http://pic.english.c-ctrip.com/pub_common/loading_50_g.gif"/>
+</div>
+
+<div class="popup_search_loading" id="valenceInfo" style="display:none;">
+    <div class="tit">The price of the package you selected has changed.</div>    
+    <div class="tit">Current price (&nbsp;CNY&nbsp;<span id="spnPrice"></span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Original price (&nbsp;CNY&nbsp;<span id="spnOldPrice"></span>)</div>    
+    <div class="tit"><a rel="nofollow" href="http://english.ctrip.com/packages">Select a new package >></a>&nbsp;&nbsp;<a rel="nofollow" href="javascript:maskHidValenceTip();">Continue booking >></a></div>    
+</div>
+
+<div id="loading-tip" class="pop_loading" style="display:none;">
+ <p class="title">Updating your search...</p>
+ <div class="pic"></div>
+</div> 
+
+ <div id="maskshowdiv" class="m-loading_box" style="display:none;">
+	<div class="loading_head">
+		<a class="loading_logo" href="http://english.ctrip.com/"></a>
+	</div>
+	<div class="loading_tip">
+		<p>please do not close this tab <strong>english.ctrip.com is now searching...</strong></p>
+	</div>
+	<div class="load_btn"></div>
+	<div class="loading_ad">		
+        <div id='div-gpt-ad-1347265926701-0' name="enhomepage_googleadtag" style='width:300px; height:255px;'>
+        </div>
+	</div>
+</div>
+<script type="text/javascript">
+    maskShowValenceTip = function (newPrice, oldPrice) {
+        document.getElementById('spnPrice').innerHTML=newPrice;
+        document.getElementById('spnOldPrice').innerHTML = oldPrice;
+        $("#valenceInfo").mask();
+    }
+    maskHidValenceTip = function () {
+        $("#valenceInfo").unmask();
+        $("#valenceInfo")[0].style.display = "none";
+        document.getElementById('spnPrice').innerHTML = '';
+        document.getElementById('spnOldPrice').innerHTML = '';
+    }
+</script>
+
+    
+<!-- InstanceEnd name="position" -->
+    <input type="hidden" id="SiteName" name="SiteName" value="packages" />
+</body>
+</html>
