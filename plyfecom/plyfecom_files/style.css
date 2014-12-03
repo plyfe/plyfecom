@@ -45,6 +45,8 @@ font-size: 18px;
 
 .logo img {
 	width: 90px;
+	margin: auto;
+	display: block;
 }
 
 .headline {
@@ -75,6 +77,12 @@ font-size: 18px;
 	display: block;
 	width: 300px;
 	margin-top: -45px;
+}
+
+.widget-wide {
+	margin: auto;
+	display: block;
+	width: 600px;
 }
 
 @media (max-width: 900px) {
