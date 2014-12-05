@@ -24,6 +24,41 @@ h1
 
   }
 
+h2
+ { font-family: "Proxima nova", helvetica, arial, sans-serif;
+	letter-spacing: 0.2em;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 25px;
+	color: #d7ff91;
+	font-size: .9em;
+	text-transform: uppercase;
+
+  }
+
+h3
+ { font-family: "Proxima nova", helvetica, arial, sans-serif;
+	letter-spacing: 0.2em;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 25px;
+	color: #d7ff91;
+	font-size: .9em;
+	text-transform: uppercase;
+	text-decoration: none;
+  }
+
+  a
+ { font-family: "Proxima nova", helvetica, arial, sans-serif;
+	letter-spacing: 0.2em;
+	font-weight: lighter;
+	text-align: center;
+	line-height: 25px;
+	color: #d7ff91;
+	font-size: .9em;
+	text-transform: uppercase;
+	text-decoration: none;
+  }
 /* Paragraph Font */
 
 p
