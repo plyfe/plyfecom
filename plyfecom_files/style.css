@@ -24,6 +24,17 @@ h1
 
   }
 
+  span
+ { font-family:"Proxima nova", helvetica, arial, sans-serif;
+ letter-spacing: 0.35em;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 44px;
+	color: #e96d6d;
+	font-size: 1em;
+
+  }
+
 h2
  { font-family: "Proxima nova", helvetica, arial, sans-serif;
 	letter-spacing: 0.2em;
@@ -125,6 +136,10 @@ font-size: 18px;
 		font-size: 1.5em
 	}
 
+	span {
+		font-size: 0.8em
+	}
+
 	p {
 		font-size: 1em;
 		padding: 10px
@@ -151,6 +166,11 @@ font-size: 18px;
 
 		@media (max-width: 400px) {
 	h1 {
+		font-size: 0.8em;
+		padding:0px;
+	}
+
+	span {
 		font-size: 0.8em;
 		padding:0px;
 	}
