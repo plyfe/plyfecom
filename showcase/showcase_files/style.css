@@ -54,7 +54,7 @@
   }
 
   .title {
-    margin: 10px; 
+    margin: 10px;
     width: 300px;
   }
 
@@ -72,9 +72,9 @@
   }
 
   /* Menu Starts Here */
-  
+
  .home {
- } 
+ }
 
 .scrollup {
   width: 50px;
@@ -103,6 +103,7 @@ li {
   display:inline-block;
   float: left;
   margin-right: 1px;
+  margin-bottom: 1px;
 }
 
 /*Style for menu links*/
@@ -180,7 +181,7 @@ input[type=checkbox]{
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
     display: block;
-}  
+}
 
 
   /* Menu Ends Here */
@@ -213,7 +214,7 @@ input[type=checkbox]:checked ~ #menu{
   }
 
   .title {
-    margin: auto; 
+    margin: auto;
     width: 300px;
   }
 
@@ -245,7 +246,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
   /*Responsive Menu Styles*/
-  
+
   .menu {
     display: block;
   }
