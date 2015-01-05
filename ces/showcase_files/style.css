@@ -1,0 +1,296 @@
+@media screen {
+
+  h1, h2, h3, h4, p {
+    font-family: "helvetica";
+    color: #333333;
+  }
+  p {
+    padding-left: 20px;
+  }
+
+  .widgets {
+    width: 760px;
+    margin: auto;
+    padding: 10px;
+    height: 100%;
+
+  }
+
+  .section {
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 200px;
+  }
+
+  .section-swipe {
+    width: 660px;
+    height: 370px;
+    margin-left: 80px;
+    margin-top: 50px;
+    height: 550px;
+  }
+
+  .example {
+    float: left;
+    padding: 10px;
+    margin-right: 35px;
+  }
+
+ .example-single {
+    float: left;
+    padding: 10px;
+    margin-right: 35px;
+  }
+
+  .description p {
+    font-size: 0.79em;
+    font-style: italic;
+    color: #555555
+  }
+
+  .description span {
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .title {
+    margin: 10px; 
+    width: 300px;
+  }
+
+  .title h4 {
+    text-align: left;
+    font-family: 'helvetica';
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 8px;
+    background: rgb(112, 252, 205);
+    width: 300px;
+    color: #333333;
+    margin-bottom: 0px;
+    margin-left: 10px
+  }
+
+  /* Menu Starts Here */
+  
+ .home {
+ } 
+
+.scrollup {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+  text-indent: -9999px;
+  background: url('scroll.png') no-repeat;
+  background-size: 50px;
+  }
+
+  /*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: inherit;
+  padding-bottom: 30px;
+
+}
+
+/*Create a horizontal list with spacing*/
+li {
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+  display: block;
+  min-width: 140px;
+  height: 40px;
+  text-align: center;
+  line-height: 44px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: rgba(62, 58, 91, 0.7);
+  text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+  background: rgb(183, 127, 216);
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+  background: rgb(183, 127, 216);
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+  background: rgb(183, 127, 216);
+  color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #FA4B80;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}  
+
+
+  /* Menu Ends Here */
+
+}
+
+@media (max-width: 960px) {
+  h1 {
+    text-align: center;
+  }
+  p {
+    font-size: 0.8em;
+    padding-left: 20;
+  }
+
+  .section {
+    width: auto;
+    height: 250px;
+    margin: auto;
+
+  }
+
+.section-swipe {
+  width: auto;
+  height: 980px;
+  margin: auto;
+  height: 1000px;
+
+  }
+
+  .widgets {
+    width: auto;
+    padding: 10px 0;
+  }
+
+  .title {
+    margin: auto; 
+    width: 300px;
+  }
+
+  .title h4 {
+    font-size: 1.2em;
+    margin-left: 0px;
+    width: 285px;
+    text-align: center;
+    margin-top: 30px;
+
+  }
+
+  .example {
+    float: none;
+    margin: auto;
+    display: block;
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .example-single {
+    float: none;
+    margin: auto;
+    display: block;
+    width: 300px;
+    padding: 10px 0;
+
+  }
+
+
+  /*Responsive Menu Styles*/
+  
+  .menu {
+    display: block;
+  }
+  #menu ul {
+    padding-bottom: 150px;
+  }
+
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
+    padding-bottom: 150px;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul li, li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+  }
+}
+
+@media (min-width: 501) and (max-width: 700px) {
+.scrollup {
+  right: 30px;
+  }
+}
+
+@media (min-width: 301) and (max-width: 500px) {
+  .scrollup {
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    left:0px;
+    background-size: 50px;
+  }
+}
