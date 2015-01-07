@@ -4,6 +4,9 @@
     font-family: "helvetica";
     color: #333333;
   }
+  p {
+    padding-left: 20px;
+  }
 
   .widgets {
     width: 760px;
@@ -14,11 +17,10 @@
   }
 
   .section {
-    width: 660px;
-    height: 370px;
+    width: 100%;
     margin-left: 80px;
     margin-top: 50px;
-    height: 450px;
+    height: 200px;
   }
 
   .section-swipe {
@@ -54,7 +56,7 @@
   }
 
   .title {
-    margin: 10px;
+    margin: 10px; 
     width: 300px;
   }
 
@@ -65,23 +67,23 @@
     font-size: 1.5em;
     padding: 8px;
     background: rgb(112, 252, 205);
-    width: 190px;
+    width: 300px;
     color: #333333;
     margin-bottom: 0px;
     margin-left: 10px
   }
 
   /* Menu Starts Here */
-
+  
  .home {
- }
+ } 
 
 .scrollup {
   width: 50px;
   height: 50px;
   position: fixed;
-  bottom: 50px;
-  right: 30px;
+  bottom: 0px;
+  left: 0px;
   display: none;
   text-indent: -9999px;
   background: url('scroll.png') no-repeat;
@@ -103,7 +105,6 @@ li {
   display:inline-block;
   float: left;
   margin-right: 1px;
-  margin-bottom: 1px;
 }
 
 /*Style for menu links*/
@@ -181,7 +182,7 @@ input[type=checkbox]{
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
     display: block;
-}
+}  
 
 
   /* Menu Ends Here */
@@ -192,10 +193,14 @@ input[type=checkbox]:checked ~ #menu{
   h1 {
     text-align: center;
   }
+  p {
+    font-size: 0.8em;
+    padding-left: 20;
+  }
 
   .section {
     width: auto;
-    height: 680px;
+    height: 250px;
     margin: auto;
 
   }
@@ -214,7 +219,7 @@ input[type=checkbox]:checked ~ #menu{
   }
 
   .title {
-    margin: auto;
+    margin: auto; 
     width: 300px;
   }
 
@@ -246,7 +251,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
   /*Responsive Menu Styles*/
-
+  
   .menu {
     display: block;
   }
