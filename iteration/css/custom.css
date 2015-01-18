@@ -248,6 +248,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #d7ff91;
 }
 
+#pq-small {
+    display: none;
+}
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -471,6 +475,15 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+
+#pq-wide {
+   display: none;
+}
+
+#pq-small {
+   display: block;
+}
+
 }
 
 .timeline {
