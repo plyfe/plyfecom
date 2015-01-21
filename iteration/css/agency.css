@@ -481,6 +481,19 @@ section h3.section-subheading {
         margin: 0 0 30px;
     }
 
+    header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background: url('../images/header-bg-3.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 #pq-wide {
    display: none;
 }
@@ -737,7 +750,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-panel {
-        padding: 0 260px 20px 10px;
+        padding: 0 225px 20px 10px;
     }
 
     .timeline>li .timeline-image {
@@ -765,7 +778,7 @@ section h3.section-subheading {
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 10px 20px 260px;
+        padding: 0 10px 20px 225px;
     }
 }
 
