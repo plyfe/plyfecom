@@ -61,6 +61,15 @@ h6 {
     font-weight: 1000;
 }
 
+.dropdown .dropdown-menu li a {
+    color: #3a3e41!important;
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #e96d6d!important;
+}
+
+
 .img-centered {
     margin: 0 auto;
 }
@@ -193,6 +202,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle {
@@ -257,7 +267,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: #3a3e41;
+        background-color: transparent;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -722,7 +732,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-circle h4 {
-        margin-top: 57px;
+        margin-top: 45px;
         font-size: 18px;
         line-height: 26px;
     }
@@ -750,7 +760,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-panel {
-        padding: 0 225px 20px 10px;
+        padding: 0 200px 20px 10px;
     }
 
     .timeline>li .timeline-image {
@@ -759,13 +769,13 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-circle {
-        width: 120px;
-        height: 120px;
-        margin-left: -60px;
+        width: 140px;
+        height: 140px;
+        margin-left: -70px;
     }
 
     .timeline>li .timeline-circle h4 {
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     .timeline>li .timeline-image {
@@ -778,7 +788,7 @@ section h3.section-subheading {
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 10px 20px 225px;
+        padding: 0 10px 20px 200px;
     }
 }
 
