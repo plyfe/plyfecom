@@ -286,7 +286,14 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
-    
+    background-attachment: scroll;
+    background: url('../images/header-bg.png');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -308,15 +315,6 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 40px;
-}
-
-video#bgvid {
-position: fixed; right: 0; bottom: 0;
-min-width: 100%; min-height: 100%;
-width: auto; height: auto; z-index: -100;
-background: url('./videos/plyfecom-video.png') no-repeat;
-background-size: cover;
-background: #272829;
 }
 
 .team-img {
@@ -603,6 +601,7 @@ section h3.section-subheading {
 
 .timeline>li:last-child {
     margin-bottom: 0;
+    min-height: 60px;
 }
 
 .timeline .timeline-heading h4 {
@@ -625,8 +624,9 @@ section h3.section-subheading {
     }
 
     .timeline>li {
-        margin-bottom: 40px;
-        min-height: 60px;
+        min-height: 240px;
+        margin-bottom: 0;
+
     }
 
     .timeline>li .timeline-panel {
@@ -634,7 +634,7 @@ section h3.section-subheading {
         width: 50%;
         padding: 0 160px 20px 0px;
         text-align: right;
-        margin-top: -20px;
+        margin-top: -16px;
     }
 
     .timeline>li .timeline-image {
@@ -669,8 +669,8 @@ section h3.section-subheading {
 
 @media(min-width:992px) {
     .timeline>li {
-        min-height: 60px;
-        margin-bottom: 150px;
+        min-height: 290px;
+        margin-bottom: 20px;
     }
 
     .timeline>li .timeline-panel {
@@ -705,8 +705,8 @@ section h3.section-subheading {
 
 @media(min-width:1200px) {
     .timeline>li {
-        min-height: 60px;
-        margin-bottom: 200px;
+        min-height: 250px;
+        margin-bottom: 50px;
     }
 
     .timeline>li .timeline-panel {
@@ -729,8 +729,8 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-image {
-        width: 500px;
-        margin-left: -250px;
+        width: 400px;
+        margin-left: -200px;
     }
 
     .timeline>li .timeline-image h4 {
