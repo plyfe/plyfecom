@@ -202,7 +202,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
-    background-color: transparent;
+    background-color: #3a3e41;
 }
 
 .navbar-default .navbar-toggle {
@@ -267,7 +267,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #3a3e41;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -385,8 +385,8 @@ section {
 
 section h1.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 60px;
+    margin-bottom: 85px;
+    font-size: 40px;
 }
 
 section h2.section-heading {
@@ -502,6 +502,12 @@ section h3.section-subheading {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+section h1.section-heading {
+    margin-top: 0;
+    margin-bottom: 85px;
+    font-size: 20px;
 }
 
 #pq-wide {
