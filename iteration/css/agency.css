@@ -42,7 +42,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #d7ff91;
+    color: #EF9898;
 }
 
 h1 {
@@ -98,7 +98,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #d7ff91;
+    background-color: #EF9898;
 }
 
 .btn-primary:active,
@@ -150,7 +150,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #d7ff91;
+    background-color: #EF9898;
 }
 
 .btn-xl:active,
@@ -197,7 +197,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #d7ff91;
+    color: #EF9898;
 }
 
 .navbar-default .navbar-collapse {
@@ -256,7 +256,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #d7ff91;
+    background-color: #EF9898;
 }
 
 #pq-small {
@@ -406,7 +406,11 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 100px 0;
+    }
+
+    section#theplyfeplatform {
+        padding: 170px 0;
     }
 }
 
