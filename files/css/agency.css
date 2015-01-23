@@ -724,6 +724,12 @@ section h1.section-heading {
     font-style: italic;
     }
 
+    form.form-inline {
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
     .timeline>li {
         min-height: 290px;
         margin-bottom: 20px;
@@ -766,6 +772,12 @@ section h1.section-heading {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 13px;
     font-style: italic;
+}
+
+form.form-inline {
+    width: 70%;
+    margin: auto;
+    display: block;
 }
     .timeline>li {
         min-height: 250px;
@@ -898,6 +910,12 @@ section#contact .text-danger {
 @media(max-width: 992px) {
     footer ul.madeinny img {
     margin-top: 10px;
+}
+
+form.form-inline {
+    width: 100%;
+    margin: auto;
+    display: block;
 }
 }
 

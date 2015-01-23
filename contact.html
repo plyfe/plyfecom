@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Plyfe | Sweepstakes</title>
+    <title>Plyfe | Contact</title>
     <link rel="icon" href="files/images/favicon.png" sizes="16x16" type="image/png">
 
     <!-- Bootstrap Core CSS -->
@@ -32,10 +32,59 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -125px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push {
+        height: 0px;
+      }
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 0px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
 
 </head>
 
 <body id="page-top" class="index">
+  <div id="wrap">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -55,7 +104,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Case Studies</a></li>
-            <li><a href="http://plyfe.com/contact">Contact</a></li>
           </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -63,23 +111,56 @@
         <!-- /.container-fluid -->
     </nav>
 
-        <!-- Why section -->
-    <div id="works"></div>
+        <!-- Form section -->
       <section id="portfolio" style="background:#fff">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Sweepstakes</h2>
-                    <h3 class="section-subheading text-muted">Incentivize and reward engagement</h3>
-                    <div style="width:300px; margin:auto; display:block; margin-bottom: 10px; margin-top:30px">
-                        <div class="plyfe-widget" data-slot="5oR"></div>
-                    </div>
+                  <h2 class="section-heading">Contact us</h2>
+                    <h3 class="section-subheading text-muted">Sign up to stay in touch with us</h3>
                 </div>
+                <!-- Begin Signup Form -->
+                <form action="http://plyfe.us3.list-manage.com/subscribe/post?u=9aec5006b343b0757da8d8b4d&amp;id=b3cee24e59" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                  
+                <div class="form-group">
+                  <label for="mce-FNAME">Name </label>
+                  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="mce-EMAIL">Email </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="mce-MMERGE2">I want to: </label>
+                  <select name="MMERGE2" class="required form-control" id="mce-MMERGE2">
+                  <option value=""></option>
+                  <option value="Get Plyfe's Newsletter">Get Plyfe's Newsletter</option>
+                <option value="Request a demo">Request a demo</option>
+                <option value="Get Started!">Get Started!</option>
+
+                  </select>
+                </div>
+                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_9aec5006b343b0757da8d8b4d_b3cee24e59" tabindex="-1" value=""></div>
+                    <button type="submit" value="Subscribe" name="send" id="mc-embedded-subscribe" class="btn btn-danger">Send</button></div>
+                      <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div> 
+                    </div>
+                </form>
+                <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+                <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
             </div>
         </div>
     </section>
 
-        <footer style="background:#f7f7f7">
+    <div id="push"></div>
+    </div>
+
+      <footer style="background:#f7f7f7;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -113,6 +194,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- jQuery -->
     <script src="files/js/jquery.js"></script>
