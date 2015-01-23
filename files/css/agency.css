@@ -263,6 +263,8 @@ fieldset[disabled] .btn-xl.active {
     display: none;
 }
 
+
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -712,6 +714,7 @@ section h1.section-heading {
     }
 }
 
+
 @media(min-width:992px) {
 
     #portfolio .portfolio-item .portfolio-caption p {
@@ -891,6 +894,14 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+
+@media(max-width: 992px) {
+    footer ul.madeinny img {
+    margin-top: 10px;
+}
+}
+
+
 footer {
     padding: 25px 0;
     text-align: center;
@@ -972,10 +983,6 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
-    margin-bottom: 30px;
-}
-
-.portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
 
