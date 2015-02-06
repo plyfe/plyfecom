@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Plyfe | Social Gallery</title>
+    <title>Plyfe | Contact</title>
     <link rel="icon" href="files/images/favicon.png" sizes="16x16" type="image/png">
 
     <!-- Bootstrap Core CSS -->
@@ -32,10 +32,62 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -125px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push {
+        height: 0px;
+      }
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #wrap {
+        min-height: 50%;
+        height: 50%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -15px;
+      }
+      .form-control {
+        width: 55%
+      }
+      }
+
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 0px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+    </style>
 
 </head>
 
 <body id="page-top" class="index">
+  <div id="wrap">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -54,8 +106,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://plyfe.com/contact">Case Studies</a></li>
-            <li><a href="http://plyfe.com/contact">Contact</a></li>
+            <li><a href="#">Case Studies</a></li>
           </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -63,23 +114,44 @@
         <!-- /.container-fluid -->
     </nav>
 
-        <!-- Why section -->
-    <div id="works"></div>
+        <!-- Form section -->
       <section id="portfolio" style="background:#fff">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Social Gallery</h2>
-                    <h3 class="section-subheading text-muted">Real-time curation of images</h3>
-                    <div style="width:600px; margin:auto; display:block; margin-bottom: 10px; margin-top:30px">
-                        <div class="plyfe-widget" data-slot="t3s"></div>
-                    </div>
+                  <h2 class="section-heading">Contact us</h2>
+                    <h3 class="section-subheading text-muted">Sign up to stay in touch with us</h3>
                 </div>
+                <!-- Begin Signup Form -->
+                <div id="wufoo-z3m35c40g1mc7g">
+                  <a href="https://armandobraun.wufoo.com/forms/z3m35c40g1mc7g"></a>.
+                </div>
+
+
+                  <script type="text/javascript">var z3m35c40g1mc7g;(function(d, t) {
+                  var s = d.createElement(t), options = {
+                  'userName':'armandobraun',
+                  'formHash':'z3m35c40g1mc7g',
+                  'autoResize':true,
+                  'height':'400',
+                  'async':true,
+                  'host':'wufoo.com',
+                  'header':'show',
+                  'ssl':true};
+                  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                  s.onload = s.onreadystatechange = function() {
+                  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                  try { z3m35c40g1mc7g = new WufooForm();z3m35c40g1mc7g.initialize(options);z3m35c40g1mc7g.display(); } catch (e) {}};
+                  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                  })(document, 'script');</script>
             </div>
         </div>
     </section>
 
-        <footer style="background:#f7f7f7">
+    <div id="push"></div>
+    </div>
+
+      <footer style="background:#f7f7f7;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -113,6 +185,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- jQuery -->
     <script src="files/js/jquery.js"></script>

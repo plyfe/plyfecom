@@ -263,7 +263,12 @@ fieldset[disabled] .btn-xl.active {
     display: none;
 }
 
-
+@media(max-width: 570px) {
+    iframe.vimeo {
+    width: 300px!important;
+    height: auto!important;
+}
+}
 
 @media(min-width:768px) {
     .navbar-default {
