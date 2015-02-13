@@ -1,1 +1,0 @@
-Tynt.sc({"d":true,"ap":"Read more at","w":"newyorkobserver","f":"newyorkobserver","ss":"fglt"})
