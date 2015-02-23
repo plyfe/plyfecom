@@ -76,6 +76,9 @@ h6 {
 
 .bg-light-gray {
     background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .bg-darkest-gray {
@@ -409,6 +412,7 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+    line-height: 1.5em;
 }
 
 @media(min-width:768px) {
@@ -425,6 +429,34 @@ section h3.section-subheading {
     margin: 15px 0;
     text-transform: none;
 }
+
+#get-started {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-top: 120px;
+    padding-top: 20px;
+}
+
+#get-started-about {
+    margin-bottom: -10px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#sign-up {
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding-top: 0px; 
+}
+form.sign-up {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
 
 #portfolio .portfolio-item {
     right: 0;
@@ -513,6 +545,19 @@ section h3.section-subheading {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+#sign-up {
+    width: 300px;
+    margin: auto;
+    display: block;
+    padding-top: 0px; 
+}
+form.sign-up {
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 section h1.section-heading {

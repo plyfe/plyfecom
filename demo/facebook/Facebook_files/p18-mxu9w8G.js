@@ -1,5 +1,0 @@
-/*!CK:1406844168!*//*1398047009,178158613*/
-
-if (self.CavalryLogger) { CavalryLogger.start_js(["j7eC\/"]); }
-
-__d("BookmarksPopoverMenu",["Arbiter","DOM","CSS","Parent"],function(a,b,c,d,e,f,g,h,i,j){function k(l){this.popoverMenu=l;}k.init=function(l,m){var n=l.popoverMenu,o=function(){var p=j.byClass(m,'homeSideNav');if(p&&p.getAttribute('id')!='pinnedNav'){var q=h.find(n.getMenu().getRoot(),'.rearrange');i.addClass(q,'hidden_elem');}n.getMenu().subscribe('itemclick',function(r,s){g.inform('sideNavPopoverMenuItemClicked',{bookmarkNode:m,menuItemNode:s.item.getRoot(),menuNode:n.getMenu().getRoot()});});};n.getPopover().subscribeOnce('show',o);n.getPopover().subscribe('show',function(){g.inform('sideNavPopoverMenuCheckFavorite',{bookmarkNode:m,menuNode:n.getMenu().getRoot()});});};e.exports=k;});

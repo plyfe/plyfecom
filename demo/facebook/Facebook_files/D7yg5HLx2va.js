@@ -1,5 +1,0 @@
-/*!CK:2035292536!*//*1398047003,178146853*/
-
-if (self.CavalryLogger) { CavalryLogger.start_js(["FIPw+"]); }
-
-__d("BroadcastRequestTokenizer.react",["React","XUITokenizer.react","fbt"],function(a,b,c,d,e,f,g,h,i){var j=g.createClass({displayName:'BroadcastRequestTokenizer',propTypes:{entries:g.PropTypes.array.isRequired,searchSource:g.PropTypes.object.isRequired,onTokenChange:g.PropTypes.func.isRequired},render:function(){var k=("Search for Recommendations");return (h({entries:this.props.entries,onAddEntryAttempt:this._onAddRecommendationEntryAttempt,onRemoveEntryAttempt:this._onRemoveRecommendationEntryAttempt,placeholder:k,searchSource:this.props.searchSource}));},_onAddRecommendationEntryAttempt:function(k){var l=this.props.entries,m=l.indexOf(k);if(m===-1){l.push(k);this._onTokenChange(l);}},_onRemoveRecommendationEntryAttempt:function(k){var l=this.props.entries,m=l.indexOf(k);if(m!==-1){l.splice(m,1);this._onTokenChange(l);}},_onTokenChange:function(k){this.props.onTokenChange&&this.props.onTokenChange(k);}});e.exports=j;});
