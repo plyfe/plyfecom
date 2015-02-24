@@ -445,18 +445,27 @@ section h3.section-subheading {
 }
 
 #sign-up {
-    width: 500px;
+    
     margin: auto;
     display: block;
-    padding-top: 0px; 
+    padding-top: 150px; 
+    margin-top: 50px;
+    padding-bottom: 150px;
+    margin-bottom: 400px;
+
 }
 form.sign-up {
     background-color: #f2f2f2;
     padding: 20px;
     border-radius: 20px;
+    width: 400px;
+    margin: auto;
+    display:block;
 }
 
-
+#started-steps img {
+    width: 300px
+}
 
 #portfolio .portfolio-item {
     right: 0;
