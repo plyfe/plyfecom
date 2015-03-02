@@ -6,27 +6,30 @@
   }
 
   .widgets {
-    width: 760px;
+    width: auto;
     margin: auto;
     padding: 10px;
-    height: 100%;
-
+    height: auto;
+    display: block;
   }
 
   .section {
-    width: 660px;
-    height: 370px;
+    width: auto;
+    height: auto;
     margin-left: 80px;
     margin-top: 50px;
-    height: 450px;
+  }
+
+  .container {
+    max-width: 800px;
   }
 
   .section-swipe {
-    width: 660px;
-    height: 370px;
+    width: auto;
+    height: auto;
     margin-left: 80px;
-    margin-top: 50px;
-    height: 550px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .example {
@@ -65,7 +68,6 @@
     font-size: 1.5em;
     padding: 8px;
     background: rgb(112, 252, 205);
-    width: 190px;
     color: #333333;
     margin-bottom: 0px;
     margin-left: 10px
@@ -195,22 +197,23 @@ input[type=checkbox]:checked ~ #menu{
 
   .section {
     width: auto;
-    height: 680px;
+    height: 100%;
     margin: auto;
 
   }
 
 .section-swipe {
   width: auto;
-  height: 980px;
+  height: 100%;
   margin: auto;
-  height: 1000px;
 
   }
 
   .widgets {
     width: auto;
     padding: 10px 0;
+    margin: auto;
+    display: block;
   }
 
   .title {
@@ -224,7 +227,6 @@ input[type=checkbox]:checked ~ #menu{
     width: 285px;
     text-align: center;
     margin-top: 30px;
-
   }
 
   .example {
@@ -233,15 +235,6 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
     width: 300px;
     padding: 10px 0;
-  }
-
-  .example-single {
-    float: none;
-    margin: auto;
-    display: block;
-    width: 300px;
-    padding: 10px 0;
-
   }
 
 
