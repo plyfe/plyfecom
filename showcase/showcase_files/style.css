@@ -1,8 +1,25 @@
 @media screen {
 
+
+
   h1, h2, h3, h4, p {
     font-family: "helvetica";
     color: #333333;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  span {
+    font-weight: lighter;
+    font-size: 1.5em;
+  }
+
+  a {
+    background: rgba(233,109,109,0.6);
+    padding: 5px;
+    color: white;
+    font-style: normal;
+    text-decoration: inherit;
   }
 
   .widgets {
@@ -11,6 +28,44 @@
     padding: 10px;
     height: auto;
     display: block;
+    margin-left: 10px;
+  }
+
+  .card-type ul {
+    display: inline;
+    list-style-type: none;
+    float: none;
+  }
+
+   .card-type li {
+    float: none;
+    vertical-align: top;
+    margin-right: 50px;
+  }
+
+  .sizes {
+    width: 300px;
+    margin-bottom: -30px;
+    padding-right: 20px;
+    display: table;
+  }
+
+  .scale {
+    width: 30px;
+    height: 30px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-top-width: 10px;
+    border-left-width: 10px;
+    border-color: #e96d6d;
+    float: left;
+  }
+
+  p.sizetext  {
+    margin: 10px;
+    display: block;
+    margin-top: -3px;
+    margin-left: 50px;
   }
 
   .section {
@@ -76,6 +131,7 @@
   /* Menu Starts Here */
 
  .home {
+  overflow: hidden;
  }
 
 .scrollup {
@@ -91,7 +147,7 @@
   }
 
   /*Strip the ul of padding and list styling*/
-ul {
+ ul#menu {
   list-style-type:none;
   margin:0;
   padding:0;
@@ -195,6 +251,23 @@ input[type=checkbox]:checked ~ #menu{
     text-align: center;
   }
 
+  ul.card-type {
+    display: block;
+    position: relative;
+    padding: 0;
+  }
+
+  .sizes {
+    margin-left: -20px;
+  }
+
+  .card-type li{
+    display: block;
+    position: relative;
+    width: 300px;
+    margin: auto;
+  }
+
   .section {
     width: auto;
     height: 100%;
@@ -204,8 +277,9 @@ input[type=checkbox]:checked ~ #menu{
 
 .section-swipe {
   width: auto;
-  height: 100%;
+  height: auto;
   margin: auto;
+  margin-bottom: 60px
 
   }
 
@@ -248,7 +322,7 @@ input[type=checkbox]:checked ~ #menu{
   }
 
   /*Make dropdown links appear inline*/
-  ul {
+   ul#menu {
     position: static;
     display: none;
     padding-bottom: 150px;
