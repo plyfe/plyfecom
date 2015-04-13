@@ -1,0 +1,701 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 ie" > <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 ie" > <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 ie" > <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-ie"> <!--<![endif]-->
+<head>
+    <script>
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "chubbies.myshopify.com";
+      Shopify.theme = {"name":"Chubbies Desktop","id":4729293,"theme_store_id":null,"role":"main"};
+
+//]]>
+</script>
+
+<script type="text/javascript" src="https://cdn.optimizely.com/js/128064957.js?shop=chubbies.myshopify.com"></script>
+<script>
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["http:\/\/social-referral.appspot.com\/b\/shopify\/load\/buttons.js?app_uuid=a8fc9854a65345dc\u0026v=10-6.358809884814551537\u0026shop=chubbies.myshopify.com","http:\/\/beacon.riskified.com?shop=chubbies.myshopify.com","https:\/\/beacon.jirafe.com\/shopify\/1511563\/shopify.js?shop=chubbies.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script id="__st">
+//<![CDATA[
+var __st={"a":770432,"offset":-14400,"reqid":"1c383aa9-78a6-4aa4-92d2-26d56ca56e0d","pageurl":"www.chubbiesshorts.com\/","u":"8172d31ef1fa","p":"home"};
+//]]>
+</script>
+<script>
+//<![CDATA[
+      (function() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+
+//]]>
+</script>
+<script type="text/javascript" src="http://cdn.shopify.com/s/global/ga_urchin_forms.js?efae047e3200ba0220e391a73790029deb879353"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <title>Chubbies Shorts </title>
+  
+    
+    
+    
+    <link rel="canonical" href="http://www.chubbiesshorts.com/" />
+   
+	
+  	<!-- Facebook Stuff -->
+    
+  
+
+
+	<meta name="robots" content="follow">
+    <link href="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/chubbies.css?4423433415848266434" rel="stylesheet" type="text/css"  media="all"  />
+  	<link href="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/nav-rc.css?4423433415848266434" rel="stylesheet" type="text/css"  media="all"  />
+
+    
+  <link rel="icon" type="image/jpg" href="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash3/c52.105.649.649/s160x160/523408_392008844142699_1327999637_n.jpg">
+    <!-- Finally some scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/nav-rc.js?4423433415848266434" type="text/javascript"></script>
+  	<script src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/chubbies.js?4423433415848266434" type="text/javascript"></script>
+  
+  	
+	<!-- Qubit Universal Variable start -->
+<script>
+(function () {
+
+  var uv = window.universal_variable = window.universal_variable || {};
+
+
+  /*
+   * Liquid variable setting
+   * Take a bunch of the shopify variables and pass them into local JS variables
+   * to enable the mapping to Universal Variable.
+   */
+
+    // http://docs.shopify.com/themes/liquid-variables/global
+    var template = "index";
+    var pageTitle = "Chubbies Shorts";
+    
+
+  /*
+   * Generic functions
+   * Useful for parsing shopify data into a UV-compitable format, among other things.
+   */
+
+    // Get the page category
+    var getPageCategory = function () {
+      if (template.indexOf('product') > -1)
+      {
+       	return 'product'; 
+      }
+      else if (template.indexOf('collection') > -1)
+      {
+       	return 'category';
+      }
+      else if (template.indexOf('page') > -1)
+      {
+       	return 'page'; 
+      }
+      
+      switch (template) {
+        case "index": 
+          return "home";
+          break;
+        case "page":
+          return "content";
+          break;
+        case "article":
+          return "blog";
+          break;
+        case "product":
+          return "product";
+          break;
+        case "search":
+          return "search";
+          break;
+        case "collection": 
+          return "category";
+          break;
+        case "cart":
+          return "basket";
+          break;
+
+        // Handle other templates 
+        default:
+          
+          if (window.location.href.indexOf('thank_you') > -1)
+          {
+            return 'Confirmation';
+          }
+          else
+          {
+          	return template;
+          }
+      }
+    };
+
+     
+  var getBreadcrumb = function() {
+    
+    var category = getPageCategory();
+
+    if (category.toLowerCase().indexOf('product') > -1) {
+      return [ "" ];
+    } else if (category.toLowerCase().indexOf('category') > -1) {
+      return [ "" ];
+    } else {
+      return [ pageTitle ];
+    }
+  }
+  
+  /*
+   * Page
+   */
+   
+
+    uv.page = {
+
+      type: getPageCategory(),
+
+      breadcrumb: getBreadcrumb()
+
+     };
+
+
+
+  /*
+   * Product
+   */
+     
+    // http://docs.shopify.com/api/product
+     
+
+
+  
+  
+  
+  
+  
+  /*
+   * Listing - collection pages
+   */
+
+    // http://docs.shopify.com/themes/liquid-variables/collection
+    
+      
+
+  
+  
+
+  /*
+   * Listing - search pages
+   */
+
+    // http://docs.shopify.com/themes/liquid-variables/search
+
+      
+  
+  
+  
+
+ 
+  
+  
+  /*
+   * Basket
+   */
+    
+    
+    // http://docs.shopify.com/themes/liquid-variables/cart
+    var basketProducts = [];
+
+    uv.basket =  {
+
+      currency: "USD",
+
+      
+      subtotal: parseFloat("0.00"),
+      subtotal_include_tax: false,
+
+      
+      
+      
+      tax: parseFloat("0.00"),
+     
+      total: parseFloat("0.00"),
+
+      // The items purcahased
+      line_items: []
+    };
+     
+     
+
+    // Add items to the line_items array. See 
+    // http://docs.shopify.com/themes/liquid-variables/line_item for reference.
+    // Note that the below does not create an exhaustive `product` UV parameter,
+    // it just takes the variables from within the Shopify line_item object and 
+    // passes them to the UV.
+       
+     
+
+
+
+  /*
+   * User
+   */
+
+     
+    // http://docs.shopify.com/themes/liquid-variables/customer
+    // TODO: has_transacted
+/*
+      uv.user = {
+        name: "",
+        user_id: "",
+        email: ""
+      };
+*/
+
+  
+  /*
+   * Events
+   */
+
+    uv.events = [];
+
+
+  /*
+   * Version
+   */
+
+    uv.version = "1.2.0";
+
+
+}());
+</script>
+<!-- Qubit Universal Variable end -->
+
+
+<!-- Opentag container -->
+<script src="//d3c3cq33003psk.cloudfront.net/opentag-104118-1397003.js" async defer></script>
+<!-- Opentag container end -->
+  
+  	<script type="text/javascript">
+   var __jirafe_meta = {
+   "customer": {
+     "id": "",
+     "firstname": "",
+     "lastname": "",
+     "email": ""
+   }
+   };
+   
+       var __jirafe_page_type = "other";
+   
+</script>
+  
+  
+  
+    <script type="text/javascript">var _kmq = _kmq || [];
+var _kmk = _kmk || '712a6d2c88506c9928d846cbac96e3f644bcfa34';
+function _kms(u){
+  setTimeout(function(){
+    var d = document, f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = u;
+    f.parentNode.insertBefore(s, f);
+  }, 1);
+}
+_kms('//i.kissmetrics.com/i.js');
+_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+	
+  
+  <script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1403745789907145']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=1403745789907145&amp;ev=NoScript" /></noscript>
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '745242925507493']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+  
+<noscript><img height="1" width="1" border="0" alt="" style="display:none" src="https://www.facebook.com/tr?id=745242925507493&amp;ev=NoScript" /></noscript>
+
+  <!-- Qubit Universal Variable Init -->
+  <script>
+    var universal_variable;
+  </script>
+
+	<link href="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/perfect-promo.css?4423433415848266434" rel="stylesheet" type="text/css"  media="all"  />
+
+</head>
+
+<body>
+  
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=195048493899620";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <script src="https://apis.google.com/js/platform.js"></script>
+	<header id="header">
+    <div id="headercontainer">
+		<div id="cartwrapper">
+			<span class="freeshipping"><a href="/pages/the-experience">Free exchanges. Free returns. Free shipping on orders  > $35.</a></span> 
+            844.278.3554 | 
+            <a href="http://www.chubbiesshorts.com/pages/the-contact-info">Contact</a> | 
+            
+            <div id="cart"><a href="http://www.chubbiesshorts.com/cart">Cart (<span class="cart-count">0</span>)<span id="cart-arr">&nbsp;</span></a>
+                <div id="carthover">
+    			    <div class="sub-nav-niblet"></div>
+<div class="sub-nav-box">
+<h2>Shopping Cart</h2>
+<form action="/cart" method="post" id="cartform">
+    <ul>
+    
+    </ul>
+    <div class="clearfix"></div>
+    <h4 class="subtotal">Subtotal: $0.00</h4>
+    <input class="button checkout" type="submit" name="checkout" value="Checkout" />
+</form>
+  
+  
+  
+</div>
+			    </div>    
+            </div>
+			
+		</div>
+        
+      <a href="http://www.chubbiesshorts.com"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/logo.png?4423433415848266434" alt="Chubbies Shorts: Radical Shorts for Men" /></a>
+		
+        <nav id="nav">
+  <ul class="rc-nav-2 animated-click"><li class="nav-item dropdown"><a href="#">The Shorts</a><div class="sub-nav"><div class="sub-nav-niblet"></div><div class="sub-nav-box"><ul class="hover-links" id="panels-hover"><li class="sub-nav-item"><a class=" new-badge" href="#"><span>All Shorts</span></a></li><li class="sub-nav-item"><a class="" href="#"><span>New Arrivals</span></a></li><li class="sub-nav-item"><a class="no-arrow" href="http://www.chubbiesshorts.com/collections/the-swim-trunks/"><span>The New Swim Trunks</span></a></li><li class="sub-nav-item"><a class="no-arrow" href="http://www.chubbiesshorts.com/collections/the-best-sellers-1"><span>THE BEST SELLERS</span></a></li><li class="sub-nav-item"><a class="no-arrow" href="/collections/warehouse-finds"><span>Warehouse Finds</span></a></li></ul><div class="hover-panels" id="panels-container"><div class="panel active"><ul><li><a href="/collections/the-originals/" class="new-badge"><span>The Originals</span><div class="brand active" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Originals-20150211_035849.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Originals</h3><p>Our classic Chubbies. 5.5&quot; inseam with a zipper fly and an elastic waistband. They do a body good.</p></div></a></li><li><a href="/collections/the-swim-trunks/"><span>The Swim Trunks</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/Website_Nav_oldswim-20150203_053455.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Swim Trunks</h3><p>Like your pop's trunks back in the day &ndash; elastic waistband, comfortable fabrics and the classic Chubseam to keep them quads liberated in all your aquatic debauchery.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-golf-chubbies" class="new-badge"><span>The Golf Chubbies</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Golf-20150407_041637.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Golf Chubbies</h3><p>Whether your busting out the ol&rsquo; wooden stick or just hitting knockdown wedges with the boys, these green jackets for your thighs should do the trick.</p></div></a></li><li><a href="/collections/the-americans/"><span>The Americans</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Americans-20150211_040016.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Americans</h3><p>American flag shorts, state flag shorts, and just general badassery contained within.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-seersucker-collection"><span>THE GINGHAM SEERSUCKER</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_SeerSucker-20150408_043527.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE GINGHAM SEERSUCKER</h3><p>Look, I'm just gonna be honest with you - I've never worn a finer pair of shorts in my many years of existence.   Whether you're doing the damn thing inside or out, these gingham seersucker shorts will definitely get you there.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-state-flag-shorts"><span>The State Flag Shorts</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_states-20150211_100412.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The State Flag Shorts</h3><p>Rep yo state like a boss.</p></div></a></li></ul></div><div class="panel"><ul><li><a href="http://www.chubbiesshorts.com/collections/the-originals/products/the-buy-lows"><span>THE BUY LOWS</span><div class="brand active" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_BuyLows-20150409_085041.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE BUY LOWS</h3><p>Another sound investment and bold strategy. Let's see how this one pays off for 'em, Cotton.  No these blue shorts aren't just cotton, they're oxford. So they like their brunches bottomless and their weekends extra long.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-originals/products/the-sell-highs"><span>THE SELL HIGHS</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_SellHighs-20150409_085148.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE SELL HIGHS</h3><p>Sell! Sell! Sell! All your knee swaddling capris and thigh shielding cargos, that is. These righteously mint green oxford shorts ain't got no tiiiiime for that.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-golf-chubbies/products/the-jacks"><span>THE JACKS</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Jacks-20150407_100304.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE JACKS</h3><p>Go ahead and tap it in. That&rsquo;s about all you'll ever have to do in these historically righteous plaid shorts.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-swim-trunks/products/the-pura-vidas"><span>THE PURA VIDA'S</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_PuraVidas-20150407_095527.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE PURA VIDA'S</h3><p>Living the good life on the reg.  These knock-out-your-grillz neon orange trunks have yet to find a slip'n slide that's long enough.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-swim-trunks/products/the-temple-of-booms"><span>THE TEMPLE OF BOOMS</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Templeofbooms-20150407_095246.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE TEMPLE OF BOOMS</h3><p>Laying the smackdown on your way to splashtown.   It's fairly common to empty Olympic sized pools with a single cannon ball in these hyper neon funkaholics.</p></div></a></li><li><a href="http://www.chubbiesshorts.com/collections/the-swim-trunks/products/da-unda-da-seas"><span>THE UNDA DA SEAS</span><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_undadaseas_-20150407_095029.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE UNDA DA SEAS</h3><p>Take it from some seashell serving swimwear, there is no better place to be than unda da sea. Hell, I'd spend my whole damn day down there, but you know I don't mess with gills.</p></div></a></li></ul></div><div class="panel"><ul><li><div class="brand" ><h3>The New Swim Trunks</h3><p></p></div></li></ul></div><div class="panel"><ul><li><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Bestof2014-20150127_062107.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>THE BEST SELLERS</h3><p></p></div></li></ul></div><div class="panel"><ul><li><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/warefind2-20140610_112552.png?4423433415848266434') center center no-repeat; background-size: cover;"><h3>Warehouse Finds</h3><p></p></div></li></ul></div></div></div></div></li><li class="nav-item dropdown"><a href="#">The Shirts</a><div class="sub-nav no-children"><div class="sub-nav-niblet"></div><div class="sub-nav-box"><ul class="hover-links" id="panels-hover"><li class="sub-nav-item"><a class="no-arrow new-badge" href="http://www.chubbiesshorts.com/collections/the-nutter-collection"><span>The Nutters</span></a></li><li class="sub-nav-item"><a class="no-arrow" href="http://www.chubbiesshorts.com/collections/the-tanks"><span>The Tank Tops</span></a></li></ul><div class="hover-panels" id="panels-container"><div class="panel active"><ul><li><div class="brand active" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/WN_Nutter-20150409_051524-20150409_054314.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Nutters</h3><p>The Nutter is your perfect weekend shirt. No top buttons, unbelievably comfortable - and custom engineered for maximal chest hair growthage.</p></div></li></ul></div><div class="panel"><ul><li><div class="brand" style="background: url('//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/website_tanks_2-20150219_060324.jpg?4423433415848266434') center center no-repeat; background-size: cover;"><h3>The Tank Tops</h3><p>Complete your Spring kickoff outfit right about MEOW with these silky smooth tanks.</p></div></li></ul></div></div></div></div></li><li class="nav-item"><a href="http://www.chubbiesshorts.com/pages/manifesto">The Company</a></li><li class="nav-item"><a href="/pages/the-look">The Look</a></li><li class="nav-item"><a href="/pages/facts">The Facts</a></li></ul>
+  
+  <audio id="WeekendSounds">
+        <source src=//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/Boomshakalaka_copy.wav?4423433415848266434 type="audio/wav">
+        <!--<source src=//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/TightyWhiteys.mp3?4423433415848266434 type="audio/mpeg">-->
+    </audio>
+    <h2 onclick="document.getElementById('WeekendSounds').play()" ><a href="#">The Quad Liberation Depot.</a></h2>
+</nav>
+      
+
+    </div>
+	</header>
+  
+
+     
+
+<section id="homehero">
+  <a href="http://www.chubbiesshorts.com/collections/the-originals/"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/slide1.jpg?4423433415848266434" /></a>
+</section>
+
+
+
+
+<section id="index" class="content">
+    <div class="container">
+      <div class="ctafours" >
+			<div class="ctafoursbox">
+				<div class="ctashown">
+                    <a href="http://bit.ly/1fGCCkW" target="_blank">
+					<div class="ctafoursimg" ><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/yt.png?4423433415848266434" /></div>
+                    </a>
+				</div>
+  				<div id="YTsubscribe" class="g-ytsubscribe homesocial" data-channelid="UCSJRqPvf2jo4a-m--vlJrPQ" data-layout="default" data-count="default"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+      <div class="ctafours" > <!-- CTA 2 -->
+			<div class="ctafoursbox">
+				<div class="ctashown">
+                <a href="http://www.facebook.com/chubbies" target="_blank">
+					<div class="ctafoursimg" ><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/faacebook.png?4423433415848266434" /></div>
+                </a>
+				</div>
+                <div class="homesocial" ><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fchubbies&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+      <div class="ctafours" > <!-- CTA 3 -->
+			<div class="ctafoursbox">
+				<div class="ctashown">
+                  <a href="http://www.twitter.com/chubbies" target="_blank">
+                    <div class="ctafoursimg"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/teitter.png?4423433415848266434" /></div>
+                    </a>
+				</div>
+              <div class="homesocial"><a href="https://twitter.com/chubbies" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @Chubbies</a></div>
+
+				
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+      <div class="ctafours" > <!-- CTA 3 -->
+			<div class="ctafoursbox">
+				<div class="ctashown">
+                  <a href="http://www.instagram.com/chubbies" target="_blank">
+                    <div class="ctafoursimg"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/insta.png?4423433415848266434" /></div>
+                    </a>
+				</div>
+              <div class="homesocial"><a href="http://instagram.com/chubbies?ref=badge" class="ig-b- ig-b-v-24"><img src="http://badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" /></a></div>
+
+				
+			
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+      <div class="subhomerow">
+        <a href="http://www.chubbiesshorts.com/collections/the-swim-trunks/products/the-temple-of-booms">
+        <div class="subleft">
+          <h2>THE TEMPLE OF BOOMS</h2>
+          <span>Laying the smackdown on your way to splashtown.   It's fairly common to empty Olympic sized pools with a single cannon ball in these hyper neon funkaholics.</span>
+          <div class="subleftimg">
+            <img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/subleft.jpg?4423433415848266434" />
+          </div>
+        </div>
+        </a>
+        <a href="https://itunes.apple.com/us/app/chubbies-shorts/id893686491?mt=8">
+          <div class="subright">
+          <h2>DOWNLOAD THE CHUBBIES iPHONE APP</h2>
+          <div class="subrightimg">
+            <img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/subright.jpg?4423433415848266434" />
+          </div>
+          <span>The Chubbies app will boom all of the shakalakas, beat every other app in a footrace, and krump ... nonstop .... it might be defect .... we're looking into it.</span>
+        </div>
+        </a>
+      </div>
+	
+        	<div class="clearfix"></div>
+  
+    
+      <div class="bigbottomasset">
+        <div class="bigbottomtext">
+          <h2>Find Your Short</h2>
+          <h3>Take the Personality Quiz and go straight to your perfect short</h3>
+        </div>
+        <div class="bigbottomimg" style="padding-top: 30px; padding-bottom: 30px;">
+          <a><script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v0.min.js"></script>
+<div class="plyfe-widget" data-slot="zhx" style="width:600px"></div></a>
+        </div>
+      </div>
+    </div>
+  	<div class="clearfix"></div>
+  
+ 
+    <div class="bigbottomvid">
+        
+        <div class="bigbottomiframe">
+          <iframe src="https://www.youtube.com/embed/YBfhELGgixg?rel=0&amp;controls=0&amp;showinfo=0" width="460" height="257" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+        </div>
+		<div class="bigbottomtext">
+          <h2>SHORTS ARE COOL.</h2>
+          <h3><br> And It's Shorts Season. 
+            
+</h3>
+          <a href="http://www.chubbiesshorts.com/collections/the-originals/" target="_blank" ><span>SHOP DEM SHORTS</span></a>
+        </div>
+      </div>
+      
+     
+ 	  
+
+	</section>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script src="//tags.extole.com/c/clients/5318008/brand/advocatelandingpage.js"></script> 
+	<footer id="footer" class="clearfix">
+		<div class="container">
+			<div class="footercol">
+				<h3>Mailing List Awesomeness</h3>
+                    <div id="kickofflabs_embed_form" data-error_message="There was a problem with your email address!" data-promote_text="You Friggin' Know It!" data-input_css_class="input" data-button_css_class="button" data-influenced_count_text="Influenced so far:" data-share_text="Share this mother!" data-button_text="Boomshakalaka!" data-placeholder_text="Join our Mailing List" data-signup_text="" data-landing_page_id="6063">
+                    <form id="kol-signup-form">
+                        <input id="kol-signup-email" type="text" placeholder="Join our Mailing List" name="email" size="30" />
+                        <input id="kol-signup-submit" type="submit" value="Boomshakalaka!" />
+                        <input id="social_id" type="hidden" value="null" name="social_id" />
+                    </form>
+                </div>
+              <script type="text/javascript" src="//api.kickofflabs.com/embed/v1/embed.js"></script>
+			</div>
+			<div class="footercol contact">
+				<h3>Talk to an Actual Human</h3>
+				<div class="phone">
+				844.278.3554
+				</div>
+              <a class="hit-us-up button" href="#">Or hit us up on chat</a>
+			</div>
+			<div class="footercol">
+				<h3>Share if you hate pants</h3>
+				<a href="http://twitter.com/chubbies"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/tw.png?4423433415848266434" /></a><a href="http://facebook.com/chubbies"><img src="http://cdn.shopify.com/s/files/1/0077/0432/t/8/assets/fb.png?4423433415848266434" /></a><br/><br/>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fchubbies&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=true&amp;font=arial&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+
+			</div>
+			<div class="clearfix"></div>
+			<p class="copyright">
+            
+                <a class="footer-link" href="/pages/the-contact-info">Contact Us</a>
+            
+                <a class="footer-link" href="/pages/manifesto">The Company</a>
+            
+                <a class="footer-link" href="/pages/chubjobs">The Chubjobs</a>
+            
+                <a class="footer-link" href="/pages/the-faq">The FAQ</a>
+            
+                <a class="footer-link" href="/pages/the-look">The Look</a>
+            
+                <a class="footer-link" href="/pages/the-experience">The Experience</a>
+            </p>
+            <p class="copyright">
+              <span class="grey">Copyright 2014 Chubbies Shorts.  All Rights Reserved.</span></p>
+		</div>
+	</footer>
+
+
+<script src="//cdn.shopify.com/s/shopify/api.jquery.js?efae047e3200ba0220e391a73790029deb879353" type="text/javascript"></script>
+  
+
+<script type="text/javascript">
+adroll_adv_id = "MXJOWM7NEZD4VM46IJPYD7";
+adroll_pix_id = "U6RTWJAKYBBNVHYZIAAPHR";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+  
+  $(function() {
+    // adroll targeting
+    $('#addtocart').on('click', function() {
+      	try{
+    		__adroll.record_user({"adroll_segments": "cartclick"})    
+		} catch(err) {}
+    });
+  });
+</script>
+<script type="text/javascript" src="//cdn.shopify.com/s/files/1/0077/0432/t/8/assets/avmws_1011893-1.js?4423433415848266434"></script>
+
+  <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0020/1656.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+  <script type="text/javascript">
+  var _learnq = _learnq || [];
+
+  _learnq.push(['account', 'bzwRkd']);
+
+  (function () {
+  var b = document.createElement('script'); b.type = 'text/javascript'; b.async = true;
+  b.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'a.klaviyo.com/media/js/analytics/analytics.js';
+  var a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(b, a);
+  })();
+</script>
+  
+<!-- Twitter -->
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l52c9');</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l52c9&p_id=Twitter" />
+<img height="1" width="1" style="display:none;" alt="" src="http://t.co/i/adsct?txn_id=l52c9&p_id=Twitter" /></noscript>
+  
+  <!-- Zopim Live Chat -->
+  <script type="text/javascript">
+  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+  $.src='//v2.zopim.com/?2ihuV9eJRB82wc6gLXQ6L7YE4XB9ptIH';z.t=+new Date;$.
+  type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+  </script>
+  <!-- /Zopim -->
+
+  <script>
+	$(document).ready(function()
+    {
+      $('.hit-us-up, .chat-click').on('click', function(e)
+      {
+        e.preventDefault();
+        $('.zopim').css('display', 'block');
+        
+         $zopim(function()
+         {
+         	$zopim.livechat.window.toggle();
+         });
+        
+      });
+    });
+  </script>
+
+	
+
+	
+
+	<script>
+		var _perf = Array();
+		
+		(function()
+		{
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.id = 'perfect-promo-script';
+			s.src = 'https://perfect-promo.rocketcode.io/perfect/688CA5DFDA44AFB4AECC40654A06040E58B60CD9.js?promo=' + encodeURIComponent(JSON.stringify(_perf));
+			document.getElementsByTagName('head')[0].appendChild(s);
+		})();
+	</script>
+</body>
