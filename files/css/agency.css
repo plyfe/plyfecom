@@ -266,6 +266,84 @@ fieldset[disabled] .btn-xl.active {
     display: none;
 }
 
+#lists {
+    list-style-type: none;  
+    display: inline;
+    color: #999999;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #d7d7d7;
+    line-height: 50px;
+    cursor: pointer;
+}
+.sel {
+    color: white!important;
+    background-color: #e96d6d!important;
+}
+
+#mydiv {
+  width: 800px;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+
+}
+.show300 {
+  float: left;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border-left: #BCBCBC 1px solid;
+
+}
+.showtitle {
+  font-weight: 100;
+  font-size: 3em;
+}
+.frame300 {
+    float: left;
+}
+.filtergroup {
+    float: left;
+}
+.filterschoice {
+    float: left;
+    width: auto;
+    padding-left: 15px;
+    margin: 10px;
+    list-style-type: none;
+    display: inline;
+}
+.showpoints {
+      background-color: #6d6de9;
+  color: white;
+  padding: 5px;
+  width: 50%;
+  font-size: 1.5em;
+
+}
+.filterschoice h3 {
+    margin-bottom: 0;
+  width: 245px;
+  color: white;
+  font-weight: 100;
+  font-style: italic;
+  padding: 6px;
+  background: #f4b6b6;
+  margin-top: 6px;
+}
+.showlist {
+    list-style-type: none;
+}
+.project {
+  padding-top: 0;
+  padding-bottom: 52px;
+  overflow: hidden;
+  margin-top: -50px;
+}
 @media(max-width: 570px) {
     iframe.vimeo {
     width: 300px!important;
@@ -583,6 +661,85 @@ section h1.section-heading {
    display: block;
 }
 
+#lists {
+    list-style-type: none;  
+    display: inline;
+    color: #999999;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #d7d7d7;
+    line-height: 50px;
+    cursor: pointer;
+}
+.sel {
+    color: white!important;
+    background-color: #e96d6d!important;
+}
+
+#mydiv {
+  width: 300px;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+
+}
+.show300 {
+  float: none;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border-left: #BCBCBC 1px solid;
+  margin-bottom: 20px;
+}
+.showtitle {
+  font-weight: 100;
+  font-size: 2em;
+}
+.frame300 {
+    float: none;
+}
+.filtergroup {
+    float: none;
+}
+.filterschoice {
+    float: none;
+    width: auto;
+    padding-left: 0px;
+    margin: 10px;
+    list-style-type: none;
+    display: block;
+}
+.showpoints {
+  background-color: #6d6de9;
+  color: white;
+  padding: 5px;
+  width: 70%;
+  font-size: 1.5em;
+
+}
+.filterschoice h3 {
+  margin-bottom: 0;
+  width: 245px;
+  color: white;
+  font-weight: 100;
+  font-style: italic;
+  padding: 6px;
+  background: #f4b6b6;
+  margin-top: 6px;
+}
+.showlist {
+    list-style-type: none;
+}
+.project {
+  padding-top: 0;
+  padding-bottom: 52px;
+  overflow: hidden;
+  margin-top: -50px;
+}
+
 }
 
 .timeline {
@@ -717,6 +874,8 @@ section h1.section-heading {
 .timeline .timeline-body>ul {
     margin-bottom: 0;
 }
+
+
 
 @media(min-width:768px) {
     #portfolio .portfolio-item .portfolio-caption p {
