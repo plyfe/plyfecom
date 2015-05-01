@@ -283,8 +283,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #e96d6d!important;
 }
 
+.set {
+    color: white!important;
+    background-color: #e96d6d!important;
+}
+
 #mydiv {
-  width: 800px;
+  width: 900px;
   margin: auto;
   display: block;
   overflow: hidden;
@@ -297,8 +302,17 @@ fieldset[disabled] .btn-xl.active {
   padding: 0;
   padding-left: 20px;
   border-left: #BCBCBC 1px solid;
-
 }
+
+.show600 {
+  float: left;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border-left: #BCBCBC 1px solid;
+}
+
 .showtitle {
   font-weight: 100;
   font-size: 3em;
@@ -326,7 +340,6 @@ fieldset[disabled] .btn-xl.active {
     margin: 10px;
     list-style-type: none;
     display: inline;
-    height: 150px;
     width: 600px;
 }
 
@@ -334,7 +347,7 @@ fieldset[disabled] .btn-xl.active {
       background-color: #6d6de9;
   color: white;
   padding: 5px;
-  width: 50%;
+  width: 60%;
   font-size: 1.5em;
 
 }
@@ -687,10 +700,6 @@ section h1.section-heading {
     border: 1px solid #d7d7d7;
     line-height: 50px;
     cursor: pointer;
-}
-.sel {
-    color: white!important;
-    background-color: #e96d6d!important;
 }
 
 #mydiv {
