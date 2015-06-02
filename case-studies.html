@@ -62,6 +62,16 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 			<li><a href="http://plyfe.com/contact">Contact</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Go to<b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				<li><a href="http://plyfe.com/#theplyfeplatform">The Plyfe Platform</a></li>
+				<li><a href="http://plyfe.com/#cards">Cards</a></li>
+				<li><a href="http://plyfe.com/#howitworks">How It Works</a></li>
+				<li><a href="http://plyfe.com/#pq">Find Your Card</a></li>
+				<li><a href="http://plyfe.com/#clients">Clients</a></li>                
+			  </ul>
+			</li>
 		  </ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -70,7 +80,7 @@
 	</nav>
 
 	<!-- Why section -->
-	  <section id="theplyfeplatform" class="cases1">
+	<section id="theplyfeplatform" class="cases2">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -78,47 +88,94 @@
 				</div>
 			</div>
 			<div class="row text-center">
-				<h2 class="case-study">KITCHEN BRAINS // Timed Trivia</h2>
+				<h2 class="case-study" >IBM // Personality Quiz</h2>
 				<div class="col-md-7" style="border-left: 2px solid;">
 					<h4 class="case-study">Challenge</h4>
-					<p class="case-study text-muted">Activate Booth At Trade Show.</p>
+					<p class="case-study text-muted">Drive traffic to personalized information.</p>
 					<h4 class="case-study">Results</h4>
 					<div>
 						<div class="case-metrics">
-							<img src="files/images/case-regsitration.png">
-							<span>1.8&#37;</span><br>
-							<h5>registered</h5><br>
-							<p class="case-study text-muted">1.8% of all conference attendees participated and registered.</p>
-						</div>
-						<div class="case-metrics">
-							<img src="files/images/case-engagement.png">
-							<span>47&#37;</span><br>
-							<h5>engagement</h5><br>
-							<p class="case-study text-muted">47% of participants that landed on the page, interacted with the trivia.</p>
-						</div>
-						<div class="case-metrics">
 							<img src="files/images/case-completion.png">
-							<span>84&#37;</span><br>
+							<span>89&#37;</span><br>
 							<h5>completed</h5><br>
-							<p class="case-study text-muted">the 3-question trivia and proved their knowledge on HIPAA.</p>
+							<p class="case-study text-muted">89% of participants completed the 3 quiz questions.</p>
+						</div>
+						<div class="case-metrics">
+							<img src="files/images/case-click_thrus.png">
+							<span>48&#37;</span><br>
+							<h5>clicked</h5><br>
+							<p class="case-study text-muted">on the result they got to get more information.</p>
+						</div>
+						<div class="case-metrics">
+							<img src="files/images/case-sharing.png">
+							<span>53&#37;</span><br>
+							<h5>shared</h5><br>
+							<p class="case-study text-muted">the quiz with their friends on different social networks.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-5">
 					<div class="case-example">
-						<img src="files/images/case-kitchen_brains.png">
+						<img src="files/images/case-ibm.png">
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="case-arrow" id="arrow-kitchen"> <img src="files/images/arrow-down.png"/> <div>
+		<div class="case-arrow" id="arrow-ibm"><img src="files/images/arrow-down.png"/></div>
 		<script type="text/javascript">
-			$("#arrow-kitchen").click(function() {
+			$("#arrow-ibm").click(function() {
 			    $('html,body').animate({
-			        scrollTop: $("#aetna").offset().top},
+			        scrollTop: $("#kitchen").offset().top},
 			        'slow');
 			});
-	</script>
+		</script>
+	</section>
+
+	<div id="kitchen" style="padding-top:-20px"></div>
+	  <section id="casestudies" class="cases1">
+	  	<div class="container">
+				<div class="row text-center">
+					<h2 class="case-study">KITCHEN BRAINS // Timed Trivia</h2>
+					<div class="col-md-7" style="border-left: 2px solid;">
+						<h4 class="case-study">Challenge</h4>
+						<p class="case-study text-muted">Activate Booth At Trade Show.</p>
+						<h4 class="case-study">Results</h4>
+						<div>
+							<div class="case-metrics">
+								<img src="files/images/case-regsitration.png">
+								<span>1.8&#37;</span><br>
+								<h5>registered</h5><br>
+								<p class="case-study text-muted">1.8% of all conference attendees participated and registered.</p>
+							</div>
+							<div class="case-metrics">
+								<img src="files/images/case-engagement.png">
+								<span>47&#37;</span><br>
+								<h5>engagement</h5><br>
+								<p class="case-study text-muted">47% of participants that landed on the page, interacted with the trivia.</p>
+							</div>
+							<div class="case-metrics">
+								<img src="files/images/case-completion.png">
+								<span>84&#37;</span><br>
+								<h5>completed</h5><br>
+								<p class="case-study text-muted">the 3-question trivia and proved their knowledge on HIPAA.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="case-example">
+							<img src="files/images/case-kitchen_brains.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="case-arrow" id="arrow-kitchen"> <img src="files/images/arrow-down.png"/> <div>
+			<script type="text/javascript">
+				$("#arrow-kitchen").click(function() {
+				    $('html,body').animate({
+				        scrollTop: $("#aetna").offset().top},
+				        'slow');
+				});
+		</script>
 	</section>
 
 <div id="aetna" style="padding-top:-20px"></div>
@@ -281,7 +338,7 @@
 				</div>
 				<div class="col-md-4">
 					<ul class="list-inline quicklinks">
-						<li  style="display:none"><a href="#">Careers</a>
+						<li><a href="http://plyfe.com/tutorials">Tutorials</a>
 						</li>
 						<li><a href="http://blog.plyfe.me/">Blog</a>
 						</li>

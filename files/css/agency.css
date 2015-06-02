@@ -461,6 +461,67 @@ h4.case-study {
     width: 300px!important;
     height: auto!important;
 }
+
+.btn {
+  padding: 9px 12px;
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+h2.case-study {
+    text-align: left;
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 20px;
+      letter-spacing: 6px;
+}
+h4.case-study {
+    font-size: 2em;
+    text-transform:none;
+}
+.case-metrics {
+    float: left;
+    width: 33%;
+    text-align: left;
+    overflow: hidden;
+    color: white;
+}
+.case-metrics span {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.case-metrics h3 {
+    font-size: 1.7em;
+  text-align: center;
+  line-height: 1.5em;
+  text-transform: lowercase;
+  margin-top: 10px;
+}
+
+.case-metrics p {
+   padding: 10px;
+   color: white;
+}
+
+.case-metrics h5 {
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 0em;
+  text-transform: lowercase;
+  margin-top: 0px;
+}
+.case-metrics img {
+    width: 100%;
+}
+.case-example img {
+    margin-top: 0px;
+}
 }
 
 @media(min-width:768px) {
@@ -1055,6 +1116,19 @@ section h1.section-heading {
         padding: 0 0px 20px 160px;
         text-align: left;
     }
+}
+
+.case-metrics h5 {
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 0em;
+  text-transform: lowercase;
+  margin-top: 0px;
+}
+
+.case-arrow img{
+   width: 50px;
+}
 }
 
 
