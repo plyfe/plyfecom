@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.content .tnc {
+.content .privacy-policy {
   width: 100%;
   padding: 10px;
   margin-bottom: 5%;
@@ -11,6 +11,10 @@
 
 p {
   margin: 20px 0;
+}
+
+ul {
+  list-style: none;
 }
 
 ul li {
