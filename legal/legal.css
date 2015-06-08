@@ -20,3 +20,7 @@ ul {
 ul li {
   padding: 10px 0;
 }
+
+.content a, .content a > span {
+  color: #e96d6d !important;
+}
