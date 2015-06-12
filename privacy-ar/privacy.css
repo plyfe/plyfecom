@@ -1,0 +1,43 @@
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content .privacy-policy {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5%;
+}
+
+.c0, h4 {
+  widows: 2;
+  orphans: 2;
+  direction: rtl;
+  text-transform: capitalize;
+}
+
+p {
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+.content a, .content a > span {
+  color: #e96d6d !important;
+}
+
+.address {
+  margin: 0;
+}
+
+/*title {
+  direction: rtl;
+  text-align: right;
+  float: right;
+}*/
