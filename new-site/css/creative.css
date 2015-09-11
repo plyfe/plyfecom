@@ -568,7 +568,7 @@ video#bgvid {
     display: none;
 
 }
-.header-content {
+header {
     background: url(../img/bg.png);
     background-size: cover;
 
@@ -724,7 +724,7 @@ header .header-content .header-content-inner h1 {
     font-weight: 700;
     text-align: left;
     font-size: 42px;
-    width: 70%
+    width: 80%;
 }
 
 header .header-content .header-content-inner hr {
