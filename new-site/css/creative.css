@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 aside {
@@ -132,6 +132,42 @@ aside {
     width: 170px;
 }
 
+#data {
+    position: relative;
+    overflow: hidden;
+}
+
+#data img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+
+.data-circle {
+    width: 150px;
+    background-color: #e96d6d;
+    border-radius: 115px;
+    height: 150px;
+    padding-top: 22px;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+}
+
+.data-circle-text {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.data-circle-text span {
+    font-size: 2em
+}
 
 #portfolio .portfolio-item {
     right: 0;
@@ -539,7 +575,7 @@ video#bgvid {
 }
 
 .header-content-inner {
-    width: 80%;
+    width: 70%;
 }
 
 h2.case-study {
@@ -661,16 +697,16 @@ header {
 }
 
 video#bgvid { 
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
     z-index: -100;
-    -webkit-transform: translateX(-58%) translateY(-50%);
-    transform: translateX(-58%) translateY(-50%);
+    /* -webkit-transform: translateX(-58%) translateY(-50%); */
+    /* transform: translateX(-58%) translateY(-50%); */
     background: url(../img/bg.png) no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    display: block;
+    background-color: #eee; 
 
 }
 
@@ -687,7 +723,8 @@ header .header-content .header-content-inner h1 {
     text-transform: uppercase;
     font-weight: 700;
     text-align: left;
-    font-size: 45px;
+    font-size: 42px;
+    width: 70%
 }
 
 header .header-content .header-content-inner hr {
@@ -703,9 +740,6 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:768px) {
-    header {
-        min-height: 100%;
-    }
 
     header .header-content {
         position: absolute;
@@ -970,7 +1004,7 @@ fieldset[disabled] .btn-primary.active {
 ::selection {
     text-shadow: none;
     color: #fff;
-    background: #222;
+    background: #f6c4c4;
 }
 
 img::selection {

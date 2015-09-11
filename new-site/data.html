@@ -19,19 +19,17 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-     <link rel="stylesheet" href="css/agency.css" type="text/css">
     <script src="js/jquery.js"></script>
 
     <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -78,10 +76,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://plyfe.com/new-site/data" style="color:#222">Data API</a>
+                        <a href="http://plyfe.com/new-site/cases" style="color:#222">Case Studies</a>
                     </li>
                     <li>
-                        <a href="http://plyfe.com/new-site/cases" style="color:#222">Case Studies</a>
+                        <a href="http://plyfe.com/new-site/contact" style="color:#222">Contact</a>
                     </li>
                     <li>
                         <a id="get-started" href="https://plyfe.me" style="color:#222">Get Started For Free</a>
@@ -92,82 +90,84 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <a  name="services"></a>
-    <div class="content-section-a">
 
-        <div id="matrix-overlay" class="container" >
+    <section id="data-intro" >
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact</h2>
+                    <h2 class="section-heading">Understand Your Audience</h2>
                     <hr class="primary">
-                    <p>Sign up and stay in touch.</p>
                 </div>
             </div>
         </div>
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-
-                  <form id="input-form" class="form-horizontal" action="https://docs.google.com/forms/d/1mPc3m9ydbp-mial55mcuZE9pSiqXr0QrNRW-jhvUJuQ/formResponse?" method="POST" target="no-target" style="padding:25px" >
-                    
-                    <div class="form-group">
-                      <label class="col-sm-4 control-label">Name</label>
-                      <div class="col-sm-8">
-                        <input id="input-name" class="form-control" placeholder="Your Name" name="entry.2026772626">
-                      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box">
+                        <img class="img-responsive" src="img/data-example-1.png"/>
+                        <h3 class="text-center">Psychographic Data</h3>
+                        <p class="text-center">Like / Dislike / Intent / Knowledge</p>
                     </div>
-
-                    <div class="form-group">
-                      <label for="mce-EMAIL" class="col-sm-4 control-label">Email </label>
-                      <div class="col-sm-8">
-                        <input id="input-email" class="form-control" placeholder="name@example.com" name="entry.1815599934">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <label for="mce-MMERGE2" class="col-sm-4 control-label">I want to: </label>
-                      <div class="col-sm-8"> 
-                        <select id="input-option" name="entry_109094650" class="form-control">
-                          <option value="Sign Up For Newsletter">Sign Up For Newsletter</option>
-                          <option value="Request Demo">Request a Demo</option>
-                          <option value="Get Started!">Get Started!</option>
-                        </select>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <div class="col-sm-offset-4 col-sm-8">
-                        <button name="submit" value="Submit" id="ss-submit" type="submit" class="btn btn-danger" onclick="showDiv()">Send</button>
-                      </div>
-                    </div>
-                  </form>
-                  <div id="text" style="display: none; text-align: center;"><h4>Thanks! We'll be in touch soon.</h4></div>
-
-                  <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
-
-                  <script>
-                      $('#input-form').one('submit',function(){
-                          var inputName = encodeURIComponent($('#input-name').val());
-                          var inputEmail = encodeURIComponent($('#input-email').val());
-                          var inputOption = encodeURIComponent($('#input-option').val());
-                          var baseURL = 'https://docs.google.com/forms/d/1mPc3m9ydbp-mial55mcuZE9pSiqXr0QrNRW-jhvUJuQ/formResponse?';
-                          var submitRef = '&submit=Submit';
-                          var submitURL = (baseURL + inputName + inputEmail + inputOption + submitRef);
-                          console.log(submitURL);
-                          $(this)[0].action=submitURL;
-                      });
-                  </script>
                 </div>
-                <div class="col-md-1 col-sm-1"></div>
-                <div class="col-md-4 col-sm-4">
-                    <img class="img-responsive" src="img/contact-phone.gif" alt="">
+                <div class="col-lg-6 col-md-6">
+                    <div class="service-box">
+                        <img class="img-responsive" src="img/data-example-3.png"/>
+                        <h3 class="text-center">Engagement &amp; Participation</h3>
+                        <p class="text-center">Based on starting, completing, and dropping-off.</p>
+                    </div>
                 </div>
-                <div class="col-md-1 col-sm-1"></div>
-              </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box">
+                        <img class="img-responsive" src="img/data-example-2.png"/>
+                        <h3 class="text-center">Drive Customer Action</h3>
+                        <p class="text-center">Download Apps and Content, share, drive to purchase, registration and lead gen.</p>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
+
+    <section id="data-title" style="background-color:#f8f8f8">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Actionable Data</h2>
+                    <hr class="primary">
+                    <p>3 API Options on top of the Plyfe reports dashboard</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                    <h3>1. Build 1st Party Audience Profiles</h3>
+                    <p>Add depth to existing audience profiles to inform your business, content and communication strategies and unlock new retargetting potential. Integrate data from Plyfe card interactions with your existing database and audience profiles via Plyfe Webhooks API.</p>
+                </div>
+                <div class="col-lg-5 col-sm-5">
+                    <img src="img/data-profiles.png" class="img-responsive" style="margin-top:30px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                    <h3>2. Integrate with 3rd Party Tracking </h3>
+                    <p>See all of your data collated in one place, making analysis and optimization that much easier. Add pixels to Plyfe card interactions to track each and every move your audience makes and preference they stake, integrating this data with your existing 3rd party tracking tools.</p>
+                </div>
+                <div class="col-lg-5 col-sm-5">
+                    <img src="img/data-integrate.png" class="img-responsive" style="margin-top:30px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-sm-7">
+                    <h3>3. Real-Time Data Benefits </h3>
+                    <p>Dynamically respond to audience interactions in real-time to provide contextual experiences. Utilize the Plyfe JavaScript API to monitor interactions with and data from your Plyfe cards in real-time. For example, use Plyfe cards as advertisements or sponsored units as an option for your audience to interact with to unlock content or an experience, opening new opportunities for monetizing your content.</p>
+                </div>
+                <div class="col-lg-5 col-sm-5">
+                    <img src="img/data-realtime.png" class="img-responsive" style="margin-top:30px">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer style="background-color:#eee">
         <div class="container">
@@ -200,16 +200,7 @@
         </div>
     </footer>
 
-                <!-- Begin Signup Form -->
-                  
-
-
-        <script type="text/javascript">
-        function showDiv() {
-          document.getElementById('text').style.display = "block";
-        }</script>
-
-    <!-- Bootstrap Core JavaScript -->
+        <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
@@ -219,7 +210,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <script src="js/agency.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/jqbootstrapvalidation.js"></script>
     <script src="js/cbpanimatedheader.min.js"></script>
