@@ -91,37 +91,49 @@
                     <hr>
                     <p>1. Create in minutes</br>2. Distribute everywhere</br>3. Learn and understand</p>
                 </div>
-                <a href="#uses" class="btn btn-primary btn-xl page-scroll" style="display:none">See How Plyfe Works</a>
+                <div class="video-content">
+                  <video autoplay loop poster="img/bg.png" id="bgvid">
+                    <source src="img/bg.webm" type="video/webm">
+                    <source src="img/bg.mov" type="video/mov">
+                  </video>
+                </div>
             </div>
-            <video autoplay loop poster="img/bg.png" id="bgvid">
-              <source src="img/bg.webm" type="video/webm">
-              <source src="img/bg.mov" type="video/mov">
-            </video>
-          <div class="proof">
-            <h2 class="section-heading color:white">Our Cards achieve</h2>
-            <hr class="primary">
-                <div class="proof-bullets">
-                    <div class="data-circle">
-                        <h3 class="data-circle-text"><span>46%</span> Engagement</h3>
-                    </div>
-                </div>
-                <div class="proof-bullets">
-                    <div class="data-circle">
-                        <h3 class="data-circle-text"><span>71%</span> Completion</h3>
-                    </div>
-                </div>
-                <div class="proof-bullets">
-                    <div class="data-circle">
-                        <h3 class="data-circle-text"><span>21%</span> Sharing</h3>
-                    </div>
-                </div>
-                <div class="proof-bullets">
-                    <div class="data-circle">
-                        <h3 class="data-circle-text"><span>49%</span> <br>click-thru<br>rate</h3>
-                    </div>
-                </div>
-          </div>
+             <a href="#uses" class="btn btn-primary btn-xl page-scroll" style="display:none">See How Plyfe Works</a>
     </header>
+
+    <section id="proof">
+      <div class="container">
+        <div class="row">
+          <div class="proof">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Our Cards Achieve</h2>
+                    <hr class="primary">
+                </div>
+                  <div class="proof-bullets">
+                      <div class="data-circle">
+                          <h3 class="data-circle-text"><span>46%</span> Engagement</h3>
+                      </div>
+                  </div>
+                  <div class="proof-bullets">
+                      <div class="data-circle">
+                          <h3 class="data-circle-text"><span>71%</span> Completion</h3>
+                      </div>
+                  </div>
+                  <div class="proof-bullets">
+                      <div class="data-circle">
+                          <h3 class="data-circle-text"><span>21%</span> Sharing</h3>
+                      </div>
+                  </div>
+                  <div class="proof-bullets">
+                      <div class="data-circle">
+                          <h3 class="data-circle-text"><span>49%</span> <br>click-thru<br>rate</h3>
+                      </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+    </section>
 
     <section id="customers">
         <div class="container">
@@ -193,11 +205,7 @@
               </a>
             </div>
           </div>
-        </div>
-        <div style="width:195px; margin:auto; display: block">
-            <a href="#howitworks" class="btn btn-primary btn-xl page-scroll">See How It Works</a>
-        </div>
-        
+        </div>        
       </section>
 
     <section id="howitworks" style="background-color:#f8f8f8">
@@ -245,278 +253,279 @@
 
 
     <section id="portfolio">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Interactive Cards</h2>
                     <hr class="primary">
                     <p>Engage, understand and convert audiences with our growing catalogue of Interactive Cards</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#swipeclick").click(function () {
+                    $("#swipeframe").attr("src", "https://plyfe.me/s/mk1");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal4" target="_blank" class="portfolio-link" data-toggle="modal" id="swipeclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
                 </div>
-            </div>
-          </div>
-        <div class="row">
-
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#swipeclick").click(function () {
-                $("#swipeframe").attr("src", "https://plyfe.me/s/mk1");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal4" target="_blank" class="portfolio-link" data-toggle="modal" id="swipeclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                <img src="files/images/widgets-swipe-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Swipe</h4>
+                <p class="text-muted">Tinder for everything</p>
               </div>
             </div>
-            <img src="files/images/widgets-swipe-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Swipe</h4>
-            <p class="text-muted">Tinder for everything</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#triviaclick").click(function () { 
-                $("#triviaframe").attr("src", "https://plyfe.me/s/xKo");
-              });
-            });
-          </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#triviaclick").click(function () { 
+                    $("#triviaframe").attr("src", "https://plyfe.me/s/xKo");
+                  });
+                });
+              </script>
 
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal5" target="_blank" class="portfolio-link" data-toggle="modal" id="triviaclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal5" target="_blank" class="portfolio-link" data-toggle="modal" id="triviaclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-trivia-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Trivia</h4>
+                <p class="text-muted">Test topic knowledge</p>
               </div>
             </div>
-            <img src="files/images/widgets-trivia-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Trivia</h4>
-            <p class="text-muted">Test topic knowledge</p>
-          </div>
-        </div>
 
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#ttriviaclick").click(function () { 
-                $("#ttriviaframe").attr("src", "https://plyfe.me/w/tt/1589");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal10" target="_blank" class="portfolio-link" data-toggle="modal" id="ttriviaclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#ttriviaclick").click(function () { 
+                    $("#ttriviaframe").attr("src", "https://plyfe.me/w/tt/1589");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal10" target="_blank" class="portfolio-link" data-toggle="modal" id="ttriviaclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-timed-trivia-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Timed Trivia</h4>
+                <p class="text-muted">Add a time component to your trivias</p>
               </div>
             </div>
-            <img src="files/images/widgets-timed-trivia-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Timed Trivia</h4>
-            <p class="text-muted">Add a time component to your trivias</p>
-          </div>
-        </div>
 
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#scoreboardclick").click(function () { 
-                $("#scoreboardframe").attr("src", "https://plyfe.me/w/sb/1588");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal13" target="_blank" class="portfolio-link" data-toggle="modal" id="scoreboardclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#scoreboardclick").click(function () { 
+                    $("#scoreboardframe").attr("src", "https://plyfe.me/w/sb/1588");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal13" target="_blank" class="portfolio-link" data-toggle="modal" id="scoreboardclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-scoreboard-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Scoreboard</h4>
+                <p class="text-muted">Display user rankings</p>
               </div>
             </div>
-            <img src="files/images/widgets-scoreboard-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Scoreboard</h4>
-            <p class="text-muted">Display user rankings</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#pollclick").click(function () { 
-                $("#pollframe").attr("src", "https://plyfe.me/s/G7O");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal7" target="_blank" class="portfolio-link" data-toggle="modal" id="pollclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#pollclick").click(function () { 
+                    $("#pollframe").attr("src", "https://plyfe.me/s/G7O");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal7" target="_blank" class="portfolio-link" data-toggle="modal" id="pollclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-poll-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Poll</h4>
+                <p class="text-muted">Image-based polling</p>
               </div>
             </div>
-            <img src="files/images/widgets-poll-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Poll</h4>
-            <p class="text-muted">Image-based polling</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#registrationclick").click(function () { 
-                $("#registrationframe").attr("src", "https://plyfe.me/w/rg/1592");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal11" target="_blank" class="portfolio-link" data-toggle="modal" id="registrationclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#registrationclick").click(function () { 
+                    $("#registrationframe").attr("src", "https://plyfe.me/w/rg/1592");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal11" target="_blank" class="portfolio-link" data-toggle="modal" id="registrationclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-registration-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Registration</h4>
+                <p class="text-muted">Allow everyone to join your business</p>
               </div>
             </div>
-            <img src="files/images/widgets-registration-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Registration</h4>
-            <p class="text-muted">Allow everyone to join your business</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#carouselclick").click(function () { 
-                $("#carouselframe").attr("src", "https://plyfe.me/w/cr/1591");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal12" target="_blank" class="portfolio-link" data-toggle="modal" id="carouselclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#carouselclick").click(function () { 
+                    $("#carouselframe").attr("src", "https://plyfe.me/w/cr/1591");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal12" target="_blank" class="portfolio-link" data-toggle="modal" id="carouselclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-carousel-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Carousel</h4>
+                <p class="text-muted">Display beautiful images on scrolling mode</p>
               </div>
             </div>
-            <img src="files/images/widgets-carousel-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Carousel</h4>
-            <p class="text-muted">Display beautiful images on scrolling mode</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#videopollclick").click(function () { 
-                $("#videopollframe").attr("src", "https://plyfe.me/s/43x");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal6" target="_blank" class="portfolio-link" data-toggle="modal" id="videopollclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#videopollclick").click(function () { 
+                    $("#videopollframe").attr("src", "https://plyfe.me/s/43x");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal6" target="_blank" class="portfolio-link" data-toggle="modal" id="videopollclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-video_poll-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Video Poll</h4>
+                <p class="text-muted">Increase engagement post-video view</p>
               </div>
             </div>
-            <img src="files/images/widgets-video_poll-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Video Poll</h4>
-            <p class="text-muted">Increase engagement post-video view</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#sweepsclick").click(function () { 
-                $("#sweepsframe").attr("src", "https://plyfe.me/s/5oR");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item" >
-          <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal" id="sweepsclick">
-            <div  class="portfolio-hover" >
-              <div class="portfolio-hover-content" >
-                <i class="fa fa-plus fa-3x"></i><p>Click to try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#sweepsclick").click(function () { 
+                    $("#sweepsframe").attr("src", "https://plyfe.me/s/5oR");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item" >
+              <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal" id="sweepsclick">
+                <div  class="portfolio-hover" >
+                  <div class="portfolio-hover-content" >
+                    <i class="fa fa-plus fa-3x"></i><p>Click to try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-sweeps-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Sweepstakes</h4>
+                <p class="text-muted">Incentivize and reward engagement</p>
               </div>
             </div>
-            <img src="files/images/widgets-sweeps-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Sweepstakes</h4>
-            <p class="text-muted">Incentivize and reward engagement</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#socialclick").click(function () { 
-                $("#socialframe").attr("src", "https://plyfe.me/s/t3s");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal3" target="_blank" class="portfolio-link" data-toggle="modal" id="socialclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#socialclick").click(function () { 
+                    $("#socialframe").attr("src", "https://plyfe.me/s/t3s");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal3" target="_blank" class="portfolio-link" data-toggle="modal" id="socialclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-social_gallery-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Social Gallery</h4>
+                <p class="text-muted">Real-time curation of social images</p>
               </div>
             </div>
-            <img src="files/images/widgets-social_gallery-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Social Gallery</h4>
-            <p class="text-muted">Real-time curation of social images</p>
-          </div>
-        </div>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $("#pqclick").click(function () { 
-                $("#pqframe").attr("src", "https://plyfe.me/s/1o1");
-              });
-            });
-          </script>
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal" id="pqclick">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#pqclick").click(function () { 
+                    $("#pqframe").attr("src", "https://plyfe.me/s/1o1");
+                  });
+                });
+              </script>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal2" target="_blank" class="portfolio-link" data-toggle="modal" id="pqclick">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Try this card</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-pq-b.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Personality Quiz</h4>
+                <p class="text-muted">Find the right personal fit</p>
               </div>
             </div>
-            <img src="files/images/widgets-pq-b.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Personality Quiz</h4>
-            <p class="text-muted">Find the right personal fit</p>
-          </div>
-        </div>
 
-        <div class="col-md-2 col-sm-6 portfolio-item">
-          <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-plus fa-3x"></i><p>Click to see what's next</p>
+            <div class="col-md-2 col-sm-6 portfolio-item">
+              <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i><p>Click to see what's next</p>
+                  </div>
+                </div>
+                <img src="files/images/widgets-more.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>More!</h4>
+                <p class="text-muted">New cards every month!</p>
               </div>
             </div>
-            <img src="files/images/widgets-more.jpg" class="img-responsive" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>More!</h4>
-            <p class="text-muted">New cards every month!</p>
           </div>
-        </div>
-
-      </div>
         </div>
     </section>
 
@@ -714,11 +723,7 @@
                 </div>
             </div>
         </div>
-        <div style="width: 227px; height: 150px; margin: auto; display: block; margin-top: 100px;">
-            <a href="#howitworks" class="btn btn-primary btn-xl page-scroll">See How It Works</a>
-        </div>
     </section>
-
 
 <footer style="background-color:#eee">
         <div class="container">
