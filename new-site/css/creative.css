@@ -604,6 +604,11 @@ header .header-content .header-content-inner p {
     margin-top: 0;
 }
 
+h2.section-heading {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
