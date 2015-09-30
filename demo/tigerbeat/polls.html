@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+    <html lang="en-US"
+	itemscope 
+	itemtype="http://schema.org/WebSite" 
+	prefix="og: http://ogp.me/ns#" > 
+	<head>
+	<title>Polls | BOP and Tiger Beat Online</title>
+	<meta charset="UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />	  
+    <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, user-scalable=no">
+	<meta name="description" content=""/>
+	<!--meta name="apple-itunes-app" content="app-id=583738278" /-->
+	<!--tigerbeat app--meta name="apple-itunes-app" content="app-id=649609189, affiliate-data=1l3v4iz"/-->
+	<!--meta name="apple-itunes-app" content="app-id=569394279">
+	<meta name="apple-itunes-app" content="app-id=649608170">-->
+	<link rel="shortcut icon" href="http://www.bopandtigerbeat.com/wp-content/themes/boptb2011/favicon-purple.ico" />
+
+    <link rel="pingback" href="http://www.bopandtigerbeat.com/xmlrpc.php" />
+ 	<link rel="apple-touch-icon" href="http://bopandtigerbeat.com/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="http://bopandtigerbeat.com/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://bopandtigerbeat.com/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="http://bopandtigerbeat.com/touch-icon-ipad-retina.png">
+	<link rel="stylesheet" href="http://www.bopandtigerbeat.com/wp-content/themes/gridly/css/default_skin.css"/>
+    <!-- styles -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://www.bopandtigerbeat.com/wp-content/themes/gridly/style.css' rel='stylesheet' type='text/css' />
+<!--php-->
+     
+        
+ 	<!-- wp head -->
+	<link rel="alternate" type="application/rss+xml" title="BOP and Tiger Beat Online &raquo; Feed" href="http://www.bopandtigerbeat.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BOP and Tiger Beat Online &raquo; Comments Feed" href="http://www.bopandtigerbeat.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BOP and Tiger Beat Online &raquo; Polls Category Feed" href="http://www.bopandtigerbeat.com/category/polls/feed/" />
+<link rel='stylesheet' id='theme-my-login-ajax-css'  href='http://www.bopandtigerbeat.com/wp-content/plugins/theme-my-login/modules/ajax/css/ajax.css?ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://www.bopandtigerbeat.com/wp-content/themes/gridly/style.css?38&#038;ver=3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='wppa_style-css'  href='http://www.bopandtigerbeat.com/wp-content/plugins/wp-photo-album-plus/theme/wppa-style.css?ver=5-4-23-000' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.9'></script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-content/plugins/wp-photo-album-plus/wppa.min.js?ver=5-4-23-000'></script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-includes/js/json2.min.js?ver=2011-02-23'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpAjax = {"noPerm":"You do not have permission to do that.","broken":"An unidentified error has occurred."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-includes/js/wp-ajax-response.min.js?ver=3.9'></script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-content/plugins/theme-my-login/modules/ajax/js/ajax.js?ver=3.9'></script>
+	<script	type='text/javascript'><!--
+	function prepare_attr_jl(str) {
+		return str.replace(/\ /g, "___");
+	}
+	function reaction_buttons_increment_button_ajax(post_id, button){
+		var already_voted_text = '';
+		var only_one_vote = false;
+		var show_after_votes = false;
+		var use_as_counter = false;
+		var use_percentages = false;
+		var buttons = ["LOL","OMG","Luv it","meh"];
+		
+		if(jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(button) + "_count").hasClass('voted')){
+			return;
+		}
+		
+		if(!use_as_counter){
+			// remove the href attribute before sending the request to make
+			// sure no one votes more than once by clicking ten times fast
+			if(only_one_vote){
+				// remove all the href's from the posts and replace it by the
+				// alert not to vote twice if set
+				if(already_voted_text){
+					jQuery("#reaction_buttons_post" + post_id + " .reaction_button").attr('href', 'javascript:alert(\'' + already_voted_text + '\');');
+				}
+				else{
+					jQuery("#reaction_buttons_post" + post_id + " .reaction_button").removeAttr('href');
+				}
+			}
+			else{
+				// remove/replace only on the clicked button
+				if(already_voted_text){
+					jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(button) + "_count").attr('href', 'javascript:alert(\'' + already_voted_text + '\');');
+				}
+				else{
+					jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(button) + "_count").removeAttr('href');
+				}
+			}
+		}
+		jQuery.ajax({
+				type: "post",url: "http://www.bopandtigerbeat.com/wp-admin/admin-ajax.php", dataType: 'json',
+					data: { action: 'reaction_buttons_increment_button_php', post_id: post_id, button: button, _ajax_nonce: '0618c4f246' },
+					success: function(data){
+						if(use_percentages){
+							var i;
+							var b;
+							for(i = 0; i < buttons.length; ++i){
+								b = buttons[i];
+								jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(b) + "_count .count").html("("+data['percentage'][b]+")");
+							}
+						}
+						else{
+							jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(button) + "_count .count").html("("+data['count']+")");
+						}
+						if(only_one_vote){
+							jQuery("#reaction_buttons_post" + post_id + " .reaction_button").addClass('voted');
+						}
+						else{
+							jQuery("#reaction_buttons_post" + post_id + " .reaction_button_" + prepare_attr_jl(button) + "_count .count").addClass('voted');
+						}
+						if(show_after_votes){
+							jQuery("#reaction_buttons_post" + post_id + " .reaction_button .count").removeAttr('style');
+						}
+					}
+			});
+		}
+	--></script>
+	<script src="//load.sumome.com/" data-sumo-site-id="62ba8ac79977fc8448466ed1ae8cd359fce25c33a56e7611b037ee31ce469fc2" async></script>
+<!-- All in One SEO Pack 2.2.4.1 by Michael Torbert of Semper Fi Web Design[134,181] -->
+<meta name="keywords" itemprop="keywords" content="hayes grier,news,polls,harry styles,justin bieber,liam payne,louis tomlinson,niall horan,one direction,dove cameron,ryan mccartan,olivia holt,sabrina carpenter,shawn mendes,little mix,ross lynch,rydel lynch,camila cabello,fifth harmony,jacob whitesides,next big thing,r5,radio disney,zendaya,austin &amp; ally,laura marano,nina dobrev,teen choice awards,5 seconds of sumemer,5sos,michael clifford,zayn malik,hailey baldwin,kendall jenner,austin mahone,becky g,ellington ratliff,riker lynch,rocky lynch,booboo stewart,cameron boyce,sofia carson,cameron dallas,jack &amp; jack,jack gilinsky,jack johnson,luke hemmings,nash grier,abigail breslin,dylan o\'brien,emma roberts,jennifer lawrence,josh hutcherson,keke palmer,lea michele,liam hemsworth,hot pics" />
+<link rel='next' href='http://www.bopandtigerbeat.com/category/polls/page/2/' />
+
+<link rel="canonical" href="http://www.bopandtigerbeat.com/category/polls/" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-419497-1']);
+		  _gaq.push(['_setDomainName', 'bopandtigerbeat.com']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<!-- WPPA+ BEGIN Page specific urls -->
+<script type="text/javascript">
+	wppaImageDirectory = "http://www.bopandtigerbeat.com/wp-content/plugins/wp-photo-album-plus/images/";
+	wppaWppaUrl = "http://www.bopandtigerbeat.com/wp-content/plugins/wp-photo-album-plus";
+	wppaIncludeUrl = "http://www.bopandtigerbeat.com/wp-includes";
+	wppaAjaxUrl = "http://www.bopandtigerbeat.com/wp-admin/admin-ajax.php";
+	wppaUploadUrl = "http://www.bopandtigerbeat.com/wp-content/uploads/wppa";
+</script>
+<!-- WPPA+ END Page specific urls --><script type="text/javascript">
+/* Warning: file wppa-init.en.js could not be created */
+/* The content is therefor output here */
+
+/* -- WPPA+ Runtime parameters
+/*
+/* Dynamicly Created on 2015-09-29T23:30:22+00:00
+/*
+*/
+
+	wppaVersion = "5-4-23-000";
+	wppaBackgroundColorImage = "#eeeeee";
+	wppaPopupLinkType = "photo";
+	wppaAnimationType = "fadeafter";
+	wppaAnimationSpeed = 800;
+	wppaThumbnailAreaDelta = 12;
+	wppaTextFrameDelta = 149;
+	wppaBoxDelta = 12;
+	wppaSlideShowTimeOut = 2500;
+	wppaPreambule = 3;
+	wppaFilmShowGlue = false;
+	wppaSlideShow = "Slideshow";
+	wppaStart = "Start";
+	wppaStop = "Stop";
+	wppaSlower = "Slower";
+	wppaFaster = "Faster";
+	wppaPhoto = "Photo";
+	wppaOf = "of";
+	wppaPreviousPhoto = "Previous photo";
+	wppaNextPhoto = "Next photo";
+	wppaPrevP = "Prev.";
+	wppaNextP = "Next";
+	wppaAvgRating = "Average&nbsp;rating";
+	wppaMyRating = "My&nbsp;rating";
+	wppaAvgRat = "Avg.";
+	wppaMyRat = "Mine";
+	wppaDislikeMsg = "You marked this image as inappropriate.";
+	wppaShowDislikeCount = true;
+	wppaNoDislikes = "No dislikes";
+	wppa1Dislike = "1 dislike";
+	wppaDislikes = "dislikes";
+	wppaIncludingMine = "including mine";
+	wppaMiniTreshold = 500;
+	wppaRatingOnce = false;
+	wppaPleaseName = "Please enter your name";
+	wppaPleaseEmail = "Please enter a valid email address";
+	wppaPleaseComment = "Please enter a comment";
+	wppaHideWhenEmpty = false;
+	wppaBGcolorNumbar = "#cccccc";
+	wppaBcolorNumbar = "#cccccc";
+	wppaBGcolorNumbarActive = "#333333";
+	wppaBcolorNumbarActive = "#333333";
+	wppaFontFamilyNumbar = "";
+	wppaFontSizeNumbar = "px";
+	wppaFontColorNumbar = "#777777";
+	wppaFontWeightNumbar = "bold";
+	wppaFontFamilyNumbarActive = "";
+	wppaFontSizeNumbarActive = "px";
+	wppaFontColorNumbarActive = "#777777";
+	wppaFontWeightNumbarActive = "bold";
+	wppaNumbarMax = "10";
+	wppaLang = "en";
+	wppaNextOnCallback = false;
+	wppaRatingUseAjax = true;
+	wppaStarOpacity = 0.2;
+	wppaSlideWrap = true;
+	wppaEmailRequired = true;
+	wppaSlideBorderWidth = 0;
+	wppaAllowAjax = false;
+	wppaUsePhotoNamesInUrls = false;
+	wppaThumbTargetBlank = false;
+	wppaRatingMax = 5;
+	wppaRatingDisplayType = "graphic";
+	wppaRatingPrec = 2;
+	wppaStretch = false;
+	wppaMinThumbSpace = 2;
+	wppaThumbSpaceAuto = false;
+	wppaMagnifierCursor = "magnifier-small.png";
+	wppaArtMonkyLink = "none";
+	wppaAutoOpenComments = true;
+	wppaUpdateAddressLine = false;
+	wppaFilmThumbTitle = "Double click to start/stop slideshow running";
+	wppaVoteForMe = "Vote for me!";
+	wppaVotedForMe = "Voted for me";
+	wppaSlideSwipe = true;
+	wppaMaxCoverWidth = 300;
+	wppaDownLoad = "Download";
+	wppaSlideToFullpopup = false; 
+	wppaComAltSize = 75;
+	wppaBumpViewCount = true;
+	wppaShareHideWhenRunning = false;
+	wppaFotomoto = false;
+	wppaArtMonkeyButton = true;
+	wppaFotomotoHideHideWhenRunning = false;
+	wppaCommentRequiredAfterVote = false;
+	wppaFotomotoMinWidth = 400;
+	wppaShortQargs = false;
+	wppaOvlHires = false;
+	
+</script>
+
+		
+<!-- WPPA+ Kickoff -->
+<!-- Browser detected = Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) -->
+<!-- WPPA+ Custom styles -->
+<style type="text/css" >
+
+</style>
+<!-- Rendering enabled -->
+<!-- /WPPA Kickoff -->
+
+	    
+<!--link href='http://www.bopandtigerbeat.com/wp-content/themes/gridly/css/style-takeover.css' rel='stylesheet' type='text/css' /-->
+
+<!--php end-->
+</head>
+<body class="archive category category-polls category-197">
+
+
+<!--************************************************>
+	ANALYTICS BEGINS
+<!--************************************************-->
+	
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "8045442" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=8045442&amp;cv=2.0&amp;cj=1" alt=""/>
+</noscript>
+<!-- End comScore Tag -->
+	
+<!-- Google Analytics Code for bopandtigerbeat.com -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-419497-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- Google Analytics Code for bopandtigerbeat.com ends-->
+
+<!-- Compete XL Code for bopandtigerbeat.com -->
+<script type="text/javascript">
+__compete_code = 'ca183de291a98afa6e2be8de6b5b1df3';
+/* Set control variables below this line. */ 
+</script>
+<script type="text/javascript" src="//c.compete.com/bootstrap/s/ca183de291a98afa6e2be8de6b5b1df3/bopandtigerbeat-com/bootstrap.js"></script>
+<noscript>
+<img width="1" height="1" src="https://ssl-bopandtigerbeat-com-ca183d.c-col.com" alt=""/>
+</noscript>
+<!-- Compete XL Code for bopandtigerbeat.com ends -->
+<!--************************************************
+	ANALYTICS ENDS
+<!--************************************************-->
+		
+<div id="wrap" data-role="page" data-theme="e">
+	<div id="header">
+	   
+	    <div id="follow">
+			<a href="http://www.twitter.com/tigerbeatnow" id="twitter" class="icon" target="_blank"></a>
+			<a href="http://instagram.com/tigerbeatnow/" id="instagram" class="icon" target="_blank"></a>
+			<a href="http://pinterest.com/tigerbeatnow/" id="pinterest" class="icon" target="_blank"></a>
+			<a href="http://www.youtube.com/tigerbeat" id="youtube" class="icon" target="_blank"></a>
+			<a href="http://www.facebook.com/tigerbeat" id="facebook" class="icon" target="_blank"></a>
+	    </div>
+        
+
+		
+		<div id="search-section">
+			<div id="login">
+										<a href="http://www.bopandtigerbeat.com/login">LOGIN</a>&nbsp;|&nbsp;
+						<a href="http://www.bopandtigerbeat.com/login/?action=register">SIGN UP</a>
+							</div>
+
+			<!-- END ADGARDEN CODE BLOCK -->
+</div>
+	
+	</div><!-- // header -->  
+        
+	<div id="nav">	
+					<div class="menu-main_nav-main-menu-container"><ul id="menu-main_nav-main-menu" class="menu"><li id="menu-item-138238" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138238"><a href="http://www.bopandtigerbeat.com/category/news-and-gossip/">news</a></li>
+<li id="menu-item-138232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138232"><a href="http://www.bopandtigerbeat.com/category/hot-pics/">hot pics</a></li>
+<li id="menu-item-138233" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138233"><a href="http://www.bopandtigerbeat.com/category/videos/">videos</a></li>
+<li id="menu-item-138245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138245"><a href="http://www.bopandtigerbeat.com/tag/love/">love</a></li>
+<li id="menu-item-138243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138243"><a href="http://www.bopandtigerbeat.com/tag/LOL/">LOL</a></li>
+<li id="menu-item-138234" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-138234"><a href="http://www.bopandtigerbeat.com/category/style-fashion/">style</a></li>
+<li id="menu-item-137403" class="celeb-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-137403"><a href="http://www.bopandtigerbeat.com/celebs/">celebs</a></li>
+<li id="menu-item-138235" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-138235"><a href="http://www.bopandtigerbeat.com/category/polls/">polls</a></li>
+<li id="menu-item-141195" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-141195"><a href="http://www.bopandtigerbeat.com/category/contests/">contests</a></li>
+</ul></div>	   			<a id="pull" href="#"><span>Menu</span></a>
+			
+	   <div id="login">
+						<a href="http://www.bopandtigerbeat.com/login">LOGIN</a>&nbsp;|&nbsp;
+				<a href="http://www.bopandtigerbeat.com/login/?action=register">SIGN UP</a>
+			</div><!-- //nav-->
+   </div>
+
+	<div id="logo">
+    	<a href="http://www.bopandtigerbeat.com/?1.1.2"  title="BOP and Tiger Beat Online" rel="home">
+           <img src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/logo.png?ggnoads" alt="BOP and Tiger Beat Online">
+        </a>
+    </div>
+	<div id="logo-small">
+    	<a href="http://www.bopandtigerbeat.com/?1.1.2"  title="BOP and Tiger Beat Online" rel="home">
+           <img src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/logo-small.png?ggnoads" alt="BOP and Tiger Beat Online">
+        </a>
+    </div>
+
+<div style="clear:both;"></div>   
+
+<div id="content">     
+<h1 class="page-title">Polls</h1>
+
+<div id="post-area">
+	<div class="masonry">
+
+<!--mfunc wp_is_mobile() --><!--/mfunc-->
+
+
+
+		
+
+				
+		<!-- STYLE POLL -->
+				<div class="post">
+			<div class="dominance-tag"><a href="/tag/style-poll">Style Polls</a></div>
+						<div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2014/12/poll-what-do-you-think-of-shopping-in-the-boys-section/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2014/12/KYLIE-300x300.png" class="attachment-summary-image wp-post-image" alt="KYLIE" /></a>
+			</div>
+					  
+       		<div id="gridly-copy">
+				<a name="pd_a_8532356"></a>
+<div class="PDS_Poll" id="PDI_container8532356" style="display:inline-block;"></div>
+<div id="PD_superContainer"></div>
+<script type="text/javascript" charset="UTF-8" src="//static.polldaddy.com/p/8532356.js"></script>
+<noscript><a href="http://polldaddy.com/poll/8532356">Take Our Poll</a></noscript>			</div>
+		</div>
+				
+		<!-- OMG POLL -->
+				<div class="post">
+			<div class="dominance-tag"><a href="/tag/omg-poll">OMG Polls</a></div>
+						<div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2013/02/poll-which-omg-would-be-worst/"><img width="300" height="199" src="http://www.bopandtigerbeat.com/wp-content/uploads/2013/02/omg-supermarket.jpg" class="attachment-summary-image wp-post-image" alt="JULIA GOLDANI TELLES" /></a>
+			</div>
+					  
+       		<div id="gridly-copy">
+				<a name="pd_a_6888254"></a>
+<div class="PDS_Poll" id="PDI_container6888254" style="display:inline-block;"></div>
+<div id="PD_superContainer"></div>
+<script type="text/javascript" charset="UTF-8" src="//static.polldaddy.com/p/6888254.js"></script>
+<noscript><a href="http://polldaddy.com/poll/6888254">Take Our Poll</a></noscript>			</div>
+		</div>
+				
+		<!-- BOY POLL -->
+				<div class="post">
+			<div class="dominance-tag"><a href="/tag/boy-poll">Boy Polls</a></div>
+						<div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2014/11/poll-who-makes-the-best-vines/"><img width="300" height="150" src="http://www.bopandtigerbeat.com/wp-content/uploads/2014/11/viners-poll-300x150.jpg" class="attachment-summary-image wp-post-image" alt="viners poll" /></a>
+			</div>
+					  
+       		<div id="gridly-copy">
+				<a name="pd_a_8480179"></a>
+<div class="PDS_Poll" id="PDI_container8480179" style="display:inline-block;"></div>
+<div id="PD_superContainer"></div>
+<script type="text/javascript" charset="UTF-8" src="//static.polldaddy.com/p/8480179.js"></script>
+<noscript><a href="http://polldaddy.com/poll/8480179">Take Our Poll</a></noscript>			</div>
+		</div>
+				
+		<!-- BEAUTY POLL -->
+				<div class="post" style="width:300px; height: 250px; display:block">
+						<div id="gridly-image" class="ggnoads">
+
+<div class="plyfe-widget" data-slot="XCM"></div>
+			</div>
+					  
+       		<div id="gridly-copy">
+		</div>
+		</div>
+				
+		<!-- VAMPIRE WEREWOLF POLL -->
+				<div class="post">
+			<div class="dominance-tag"><a href="/tag/vampires-werewolves-poll">Vampires &amp; Werewolves Polls</a></div>
+						<div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2013/07/poll-will-you-see-vampire-academy/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2013/07/vacademy.jpg" class="attachment-summary-image wp-post-image" alt="vacademy" /></a>
+			</div>
+					  
+       		<div id="gridly-copy">
+				<a name="pd_a_7270961"></a>
+<div class="PDS_Poll" id="PDI_container7270961" style="display:inline-block;"></div>
+<div id="PD_superContainer"></div>
+<script type="text/javascript" charset="UTF-8" src="//static.polldaddy.com/p/7270961.js"></script>
+<noscript><a href="http://polldaddy.com/poll/7270961">Take Our Poll</a></noscript>			</div>
+		</div>
+				
+		<!-- MUSIC POLL -->
+				<div class="post" style="width:300px; height: 250px; display:block">
+			<script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v1.5.min.js"></script>
+<div class="plyfe-widget" data-slot="Mht"></div>
+		</div>
+				
+	
+		
+					
+		<div id="post-157981" class="post-157981 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-hayes-grier">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/pick-your-hayes-grier-poster/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/IMG_3019-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_3019" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/hayes-grier">Hayes Grier</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/pick-your-hayes-grier-poster/">Pick Your Hayes Grier Poster!</a></h2>
+				
+				
+								
+				
+				<p>What do you think of this post?LOL&nbsp;(11) OMG&nbsp;(12) Luv it&nbsp;(40) meh&nbsp;(27)</p>
+
+<div id='reaction_buttons_post157981' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157981', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>11</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157981', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>12</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157981', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>40</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157981', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>27</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/pick-your-hayes-grier-poster/#comments">
+								<span class="commentnumber"> 
+								5								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/pick-your-hayes-grier-poster/&text=Pick Your Hayes Grier Poster!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/pick-your-hayes-grier-poster/&t=Pick Your Hayes Grier Poster!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157955" class="post-157955 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-harry-styles tag-justin-bieber tag-liam-payne tag-louis-tomlinson tag-niall-horan tag-one-direction">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/one-direction-vs-justin-bieber/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/IMG_3013-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_3013" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/justin-bieber">Justin Bieber</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/one-direction-vs-justin-bieber/">One Direction vs. Justin Bieber!</a></h2>
+				
+				
+								
+				
+				<p>OMG! Are you ready for this? One Direction announced that their new album, Made In The A.M. will be released November 13, but that we can pre-order it today. Yay! Wait&#8230;November 13. Doesn&#8217;t that date sound familiar? It should, because Justin Bieber is releasing his new album that day as well (gasp)! Looks like Harry [&hellip;]</p>
+
+<div id='reaction_buttons_post157955' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157955', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>16</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157955', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>19</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157955', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>15</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157955', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>21</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/one-direction-vs-justin-bieber/#comments">
+								<span class="commentnumber"> 
+								4								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/one-direction-vs-justin-bieber/&text=One Direction vs. Justin Bieber!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/one-direction-vs-justin-bieber/&t=One Direction vs. Justin Bieber!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157943" class="post-157943 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-dove-cameron tag-ryan-mccartan">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/hashtag-overload/"><img width="300" height="116" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/feature-300x116.jpg" class="attachment-summary-image wp-post-image" alt="feature" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/dove-cameron">Dove Cameron</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/hashtag-overload/">Hashtag Overload!</a></h2>
+				
+				
+								
+				
+				<p>“@ryanmccartan: #nofilter http://t.co/YwR7woOvxm” #NoMakeup #OneTakeWonders #NotPosing #JustWoKeUp #CameraJustWentOff #SoUgly #Lol &mdash; Dove Cameron (@DoveCameron) January 23, 2014 We love a good hashtag as much as the next person, but how many is enough? Cast your vote below, and let us know if there is such a thing as too many hashtags. What do you think [&hellip;]</p>
+
+<div id='reaction_buttons_post157943' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157943', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>8</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157943', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>3</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157943', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>10</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157943', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>4</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/hashtag-overload/#comments">
+								<span class="commentnumber"> 
+								0								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/hashtag-overload/&text=Hashtag Overload!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/hashtag-overload/&t=Hashtag Overload!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157897" class="post-157897 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-olivia-holt tag-sabrina-carpenter">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/who-wore-it-better-olivia-holt-or-sabrina-carpenter/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/IMG_2954-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_2954" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/olivia-holt">Olivia Holt</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/who-wore-it-better-olivia-holt-or-sabrina-carpenter/">Who Wore It Better: Olivia Holt or Sabrina Carpenter?</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; What do you think of this post?LOL&nbsp;(10) OMG&nbsp;(17) Luv it&nbsp;(39) meh&nbsp;(9)</p>
+
+<div id='reaction_buttons_post157897' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157897', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>10</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157897', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>17</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157897', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>39</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157897', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>9</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/who-wore-it-better-olivia-holt-or-sabrina-carpenter/#comments">
+								<span class="commentnumber"> 
+								5								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/who-wore-it-better-olivia-holt-or-sabrina-carpenter/&text=Who Wore It Better: Olivia Holt or Sabrina Carpenter?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/who-wore-it-better-olivia-holt-or-sabrina-carpenter/&t=Who Wore It Better: Olivia Holt or Sabrina Carpenter?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157886" class="post-157886 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-justin-bieber tag-shawn-mendes">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/justin-bieber-thinks-shawn-mendes-is-crushin-it/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/Image-300x300.jpg" class="attachment-summary-image wp-post-image" alt="Image" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/justin-bieber">Justin Bieber</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/justin-bieber-thinks-shawn-mendes-is-crushin-it/">Justin Bieber Thinks Shawn Mendes Is &#8220;Crushin&#8217; It!&#8221;</a></h2>
+				
+				
+								
+				
+				<p>After Justin Bieber announced that he doesn&#8217;t know who Shawn Mendes is in an interview with 95.5 PLJ two days ago, the internet panicked! Not only is Shawn&#8217;s new single, &#8220;Stitches&#8221; plastered across radio stations, but Shawn is also from southern Ontario, Canada like Justin. Hearing this news made Justin totally curious, so he promised to [&hellip;]</p>
+
+<div id='reaction_buttons_post157886' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157886', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>9</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157886', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>17</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157886', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>29</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157886', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>15</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/justin-bieber-thinks-shawn-mendes-is-crushin-it/#comments">
+								<span class="commentnumber"> 
+								1								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/justin-bieber-thinks-shawn-mendes-is-crushin-it/&text=Justin Bieber Thinks Shawn Mendes Is &#8220;Crushin&#8217; It!&#8221;&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/justin-bieber-thinks-shawn-mendes-is-crushin-it/&t=Justin Bieber Thinks Shawn Mendes Is &#8220;Crushin&#8217; It!&#8221;" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157822" class="post-157822 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-little-mix">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/little-mix-announces-new-single/"><img width="300" height="262" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/Screen-Shot-2015-09-09-at-5.04.11-PM-300x262.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-09-09 at 5.04.11 PM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/little-mix">Little Mix</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/little-mix-announces-new-single/">Little Mix Announces New Single!</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; A video posted by Little Mix (@littlemix) on Sep 9, 2015 at 8:18am PDT &nbsp; We are still absolutely obsessed with Little Mix&#8217;s &#8220;Black Magic,&#8221; so there is no doubt in our mind that we are going to love their second single, &#8220;Love Me Like You.&#8221; It&#8217;s going to be released on September 25th [&hellip;]</p>
+
+<div id='reaction_buttons_post157822' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157822', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>10</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157822', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>32</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157822', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>30</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157822', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>22</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/little-mix-announces-new-single/#comments">
+								<span class="commentnumber"> 
+								2								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/little-mix-announces-new-single/&text=Little Mix Announces New Single!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/little-mix-announces-new-single/&t=Little Mix Announces New Single!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157777" class="post-157777 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-ross-lynch tag-rydel-lynch">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/09/pda-alert-ross-lynch-kissing/"><img width="270" height="551" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/09/Screen-Shot-2015-09-03-at-12.07.36-PM.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-09-03 at 12.07.36 PM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/ross-lynch">Ross Lynch</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/09/pda-alert-ross-lynch-kissing/">PDA Alert: Ross Lynch Kissing&#8230;</a></h2>
+				
+				
+								
+				
+				<p>OMG! We are dying to know what you think of this Insta of Ross Lynch and Courtney Eaton kissing. Sometime Last Night A photo posted by ᎡᎾᏚᏚ (@rossr5) on Sep 2, 2015 at 6:53pm PDT Here is the full picture Rydel Lynch posted, because she was cut out of her brother, Ross&#8217;. LOL #Repost @rossr5 [&hellip;]</p>
+
+<div id='reaction_buttons_post157777' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157777', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>18</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157777', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>71</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157777', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>47</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157777', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>39</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/09/pda-alert-ross-lynch-kissing/#comments">
+								<span class="commentnumber"> 
+								13								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/09/pda-alert-ross-lynch-kissing/&text=PDA Alert: Ross Lynch Kissing&#8230;&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/09/pda-alert-ross-lynch-kissing/&t=PDA Alert: Ross Lynch Kissing&#8230;" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157727" class="post-157727 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-camila-cabello tag-fifth-harmony tag-shawn-mendes">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/would-shawn-mendes-and-camila-cabello-make-a-cute-couple/"><img width="300" height="316" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-25-at-1.41.01-PM-300x316.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-08-25 at 1.41.01 PM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/fifth-harmony">Fifth Harmony</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/would-shawn-mendes-and-camila-cabello-make-a-cute-couple/">Would Shawn Mendes and Camila Cabello Make A Cute Couple?</a></h2>
+				
+				
+								
+				
+				<p>remember that one time @shawnmendes and @schloss8 decided to turn me into a fruit basket while i was napping?&#8230;. KEEP YOUR EYES OPEN BOYS A photo posted by camila_cabello (@camila_cabello) on Jun 28, 2015 at 7:31pm PDT Do you ship Shawn Mendes and Fifth Harmony&#8216;s Camila Cabello? We sure do after seeing their flirtatious tweets! [&hellip;]</p>
+
+<div id='reaction_buttons_post157727' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157727', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>24</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157727', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>34</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157727', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>111</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157727', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>71</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/would-shawn-mendes-and-camila-cabello-make-a-cute-couple/#comments">
+								<span class="commentnumber"> 
+								4								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/would-shawn-mendes-and-camila-cabello-make-a-cute-couple/&text=Would Shawn Mendes and Camila Cabello Make A Cute Couple?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/would-shawn-mendes-and-camila-cabello-make-a-cute-couple/&t=Would Shawn Mendes and Camila Cabello Make A Cute Couple?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157709" class="post-157709 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-jacob-whitesides tag-next-big-thing tag-r5 tag-radio-disney">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/jacob-whitesides-named-radio-disneys-nbt/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/IMG_2323-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_2323" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle" href="#">MCM</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/jacob-whitesides-named-radio-disneys-nbt/">Jacob Whitesides Named Radio Disney&#8217;s NBT!</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; A major congratulations is in order for our man-crush-Monday Jacob Whitesides! Jacob has just been named Radio Disney&#8217;s &#8220;Next Big Thing!&#8221; YAY! It is no surprise to us that he has won over the hearts of thousands of girls while touring with R5 on their &#8220;Sometime Last Night&#8221; tour. This hottie sure knows how to [&hellip;]</p>
+
+<div id='reaction_buttons_post157709' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157709', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>4</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157709', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>15</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157709', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>25</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157709', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>53</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/jacob-whitesides-named-radio-disneys-nbt/#comments">
+								<span class="commentnumber"> 
+								1								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157676" class="post-157676 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-zendaya">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/zendaya-is-judging-the-miss-america-pageant/"><img width="300" height="590" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-19-at-10.40.03-AM-300x590.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-08-19 at 10.40.03 AM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/zendaya">Zendaya</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/zendaya-is-judging-the-miss-america-pageant/">Zendaya Is Judging the Miss America Pageant!</a></h2>
+				
+				
+								
+				
+				<p>We are so excited Zendaya has been signed on to judge the 95th Miss America pageant! What do you think of this post?LOL&nbsp;(29) OMG&nbsp;(57) Luv it&nbsp;(94) meh&nbsp;(24)</p>
+
+<div id='reaction_buttons_post157676' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157676', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>29</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157676', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>57</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157676', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>94</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157676', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>24</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/zendaya-is-judging-the-miss-america-pageant/#comments">
+								<span class="commentnumber"> 
+								10								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/zendaya-is-judging-the-miss-america-pageant/&text=Zendaya Is Judging the Miss America Pageant!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/zendaya-is-judging-the-miss-america-pageant/&t=Zendaya Is Judging the Miss America Pageant!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157656" class="post-157656 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-austin-ally tag-laura-marano tag-nina-dobrev tag-teen-choice-awards">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/who-wore-it-best-laura-marano-or-nina-dobrev/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/IMG_2233-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_2233" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/laura-marano">Laura Marano</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/who-wore-it-best-laura-marano-or-nina-dobrev/">Who Wore It Best: Laura Marano or Nina Dobrev?</a></h2>
+				
+				
+								
+				
+				<p>Laura Marano from Disney&#8217;s Austin &amp; Ally, and Nina Dobrev from The Vampire Diaries, both look amazing at the Teen Choice Awards right now in their gorgeous glitter dresses! &nbsp; &nbsp; What do you think of this post?LOL&nbsp;(31) OMG&nbsp;(38) Luv it&nbsp;(93) meh&nbsp;(32)</p>
+
+<div id='reaction_buttons_post157656' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157656', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>31</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157656', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>38</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157656', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>93</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157656', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>32</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/who-wore-it-best-laura-marano-or-nina-dobrev/#comments">
+								<span class="commentnumber"> 
+								15								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/who-wore-it-best-laura-marano-or-nina-dobrev/&text=Who Wore It Best: Laura Marano or Nina Dobrev?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/who-wore-it-best-laura-marano-or-nina-dobrev/&t=Who Wore It Best: Laura Marano or Nina Dobrev?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157632" class="post-157632 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-5-seconds-of-sumemer tag-5sos tag-michael-clifford tag-zayn-malik">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/who-pulls-off-crazy-hair-colors-better-zayn-malik-or-michael-clifford/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/IMG_2162-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_2162" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/zayn-malik">Zayn Malik</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/who-pulls-off-crazy-hair-colors-better-zayn-malik-or-michael-clifford/">Who Pulls Off Crazy Hair Colors Better: Zayn Malik or Michael Clifford?</a></h2>
+				
+				
+								
+				
+				<p>What do you think of this post?LOL&nbsp;(106) OMG&nbsp;(83) Luv it&nbsp;(174) meh&nbsp;(96)</p>
+
+<div id='reaction_buttons_post157632' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157632', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>106</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157632', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>83</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157632', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>174</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157632', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>96</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/who-pulls-off-crazy-hair-colors-better-zayn-malik-or-michael-clifford/#comments">
+								<span class="commentnumber"> 
+								58								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/who-pulls-off-crazy-hair-colors-better-zayn-malik-or-michael-clifford/&text=Who Pulls Off Crazy Hair Colors Better: Zayn Malik or Michael Clifford?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/who-pulls-off-crazy-hair-colors-better-zayn-malik-or-michael-clifford/&t=Who Pulls Off Crazy Hair Colors Better: Zayn Malik or Michael Clifford?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157607" class="post-157607 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-hailey-baldwin tag-kendall-jenner">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/kendall-jenner-hailey-baldwin-get-matching-tattoos/"><img width="300" height="523" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-12-at-10.49.45-AM-300x523.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-08-12 at 10.49.45 AM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/kendall-jenner">Kendall Jenner</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/kendall-jenner-hailey-baldwin-get-matching-tattoos/">Kendall Jenner &#038; Hailey Baldwin Get Matching Tattoos!</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; OMG! Kendall Jenner and BFF Hailey Baldwin showed the world their friendship is in it for the long hall when they Snapchatted that they got matching broken heart tattoos! Now these girls are bonded forever with their cute, little tattoos on the inside of their middle finger. Aww! &nbsp; &nbsp; What do you think of [&hellip;]</p>
+
+<div id='reaction_buttons_post157607' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157607', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>20</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157607', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>28</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157607', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>30</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157607', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>45</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/kendall-jenner-hailey-baldwin-get-matching-tattoos/#comments">
+								<span class="commentnumber"> 
+								0								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/kendall-jenner-hailey-baldwin-get-matching-tattoos/&text=Kendall Jenner &#038; Hailey Baldwin Get Matching Tattoos!&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/kendall-jenner-hailey-baldwin-get-matching-tattoos/&t=Kendall Jenner &#038; Hailey Baldwin Get Matching Tattoos!" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157602" class="post-157602 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-austin-mahone tag-becky-g">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/becky-g-and-austin-mahone-broke-up/"><img width="300" height="228" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-11-at-4.15.01-PM-300x228.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-08-11 at 4.15.01 PM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle" href="http://www.bopandtigerbeat.com/tag/poll">Poll</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/becky-g-and-austin-mahone-broke-up/">Becky G and Austin Mahone broke up&#8230;</a></h2>
+				
+				
+								
+				
+				<p>What do you think of this post?LOL&nbsp;(39) OMG&nbsp;(132) Luv it&nbsp;(41) meh&nbsp;(59)</p>
+
+<div id='reaction_buttons_post157602' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157602', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>39</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157602', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>132</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157602', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>41</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157602', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>59</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/becky-g-and-austin-mahone-broke-up/#comments">
+								<span class="commentnumber"> 
+								15								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/becky-g-and-austin-mahone-broke-up/&text=Becky G and Austin Mahone broke up&#8230;&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/becky-g-and-austin-mahone-broke-up/&t=Becky G and Austin Mahone broke up&#8230;" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157558" class="post-157558 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-ellington-ratliff tag-r5 tag-riker-lynch tag-rocky-lynch tag-ross-lynch tag-rydel-lynch">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/the-r5-babes/"><img width="300" height="200" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/20150205_DIG_1224_PRO-300x200.jpg" class="attachment-summary-image wp-post-image" alt="20150205_DIG_1224_PRO" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/ross-lynch">Ross Lynch</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/the-r5-babes/">Who&#8217;s Your Favorite R5 Member?</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; &nbsp; What do you think of this post?LOL&nbsp;(21) OMG&nbsp;(24) Luv it&nbsp;(80) meh&nbsp;(36)</p>
+
+<div id='reaction_buttons_post157558' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157558', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>21</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157558', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>24</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157558', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>80</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157558', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>36</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/the-r5-babes/#comments">
+								<span class="commentnumber"> 
+								25								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/the-r5-babes/&text=Who&#8217;s Your Favorite R5 Member?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/the-r5-babes/&t=Who&#8217;s Your Favorite R5 Member?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157493" class="post-157493 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-booboo-stewart tag-cameron-boyce tag-dove-cameron tag-sofia-carson">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/who-is-your-favorite-character-in-descendants/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/IMG_19301-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_1930" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/dove-cameron">Dove Cameron</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/who-is-your-favorite-character-in-descendants/">Who Is Your Favorite Character In Descendants?</a></h2>
+				
+				
+								
+				
+				<p>What do you think of this post?LOL&nbsp;(43) OMG&nbsp;(50) Luv it&nbsp;(172) meh&nbsp;(43)</p>
+
+<div id='reaction_buttons_post157493' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157493', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>43</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157493', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>50</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157493', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>172</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157493', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>43</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/who-is-your-favorite-character-in-descendants/#comments">
+								<span class="commentnumber"> 
+								37								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/who-is-your-favorite-character-in-descendants/&text=Who Is Your Favorite Character In Descendants?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/who-is-your-favorite-character-in-descendants/&t=Who Is Your Favorite Character In Descendants?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157489" class="post-157489 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-harry-styles tag-liam-payne tag-louis-tomlinson tag-niall-horan tag-one-direction">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/08/if-one-direction-broke-up/"><img width="300" height="230" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-04-at-10.25.43-AM-300x230.png" class="attachment-summary-image wp-post-image" alt="Screen Shot 2015-08-04 at 10.25.43 AM" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/one-direction">One Direction</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/08/if-one-direction-broke-up/">If One Direction Broke Up&#8230;</a></h2>
+				
+				
+								
+				
+				<p>&nbsp; What do you think of this post?LOL&nbsp;(17) OMG&nbsp;(114) Luv it&nbsp;(39) meh&nbsp;(44)</p>
+
+<div id='reaction_buttons_post157489' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157489', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>17</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157489', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>114</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157489', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>39</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157489', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>44</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/08/if-one-direction-broke-up/#comments">
+								<span class="commentnumber"> 
+								24								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/08/if-one-direction-broke-up/&text=If One Direction Broke Up&#8230;&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/08/if-one-direction-broke-up/&t=If One Direction Broke Up&#8230;" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157282" class="post-157282 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-cameron-dallas tag-harry-styles tag-jack-jack tag-jack-gilinsky tag-jack-johnson tag-luke-hemmings tag-nash-grier tag-ross-lynch tag-shawn-mendes">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/07/which-hottie-on-our-september-issue-cover-are-you-most-excited-about/"><img width="300" height="393" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/07/C1CAN_V3_TB09151-300x393.jpg" class="attachment-summary-image wp-post-image" alt="C1CAN_V3_TB0915" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle"  href="http://www.bopandtigerbeat.com/tag/harry-styles">Harry Styles</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/07/which-hottie-on-our-september-issue-cover-are-you-most-excited-about/">Which Hottie On Our September Issue Cover Are You Most Excited About?</a></h2>
+				
+				
+								
+				
+				<p>Our September issue goes on sale August 4, which is only THREE WEEKS away from today! Can you tell we are a little excited? Our cover features SO many hotties, because our issue is PACKED with awesome articles about them. What do you think of this post?LOL&nbsp;(40) OMG&nbsp;(64) Luv it&nbsp;(146) meh&nbsp;(54)</p>
+
+<div id='reaction_buttons_post157282' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157282', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>40</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157282', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>64</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157282', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>146</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157282', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>54</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/07/which-hottie-on-our-september-issue-cover-are-you-most-excited-about/#comments">
+								<span class="commentnumber"> 
+								49								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/07/which-hottie-on-our-september-issue-cover-are-you-most-excited-about/&text=Which Hottie On Our September Issue Cover Are You Most Excited About?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/07/which-hottie-on-our-september-issue-cover-are-you-most-excited-about/&t=Which Hottie On Our September Issue Cover Are You Most Excited About?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157261" class="post-157261 post type-post status-publish format-standard has-post-thumbnail hentry category-hot-pics category-polls tag-abigail-breslin tag-dylan-obrien tag-emma-roberts tag-jennifer-lawrence tag-josh-hutcherson tag-keke-palmer tag-lea-michele tag-liam-hemsworth">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/07/squad-goals/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/07/IMG_1034-300x300.jpg" class="attachment-summary-image wp-post-image" alt="IMG_1034" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle" href="http://www.bopandtigerbeat.com/tag/poll">Poll</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/07/squad-goals/">Squad Goals</a></h2>
+				
+				
+								
+				
+				<p>Several celebs made appearances at Comic-Con 2015 in sunny San Diego, California. The cast of Scream Queens, The Hunger Games: Mockingjay &#8211; Part 2 and Mazer Runner: The Scorch Trials were some of our favorite squads to see this weekend! What do you think of this post?LOL&nbsp;(21) OMG&nbsp;(23) Luv it&nbsp;(95) meh&nbsp;(40)</p>
+
+<div id='reaction_buttons_post157261' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157261', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>21</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157261', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>23</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157261', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>95</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157261', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>40</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/07/squad-goals/#comments">
+								<span class="commentnumber"> 
+								4								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/07/squad-goals/&text=Squad Goals&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/07/squad-goals/&t=Squad Goals" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<div id="post-157250" class="post-157250 post type-post status-publish format-standard has-post-thumbnail hentry category-news-and-gossip category-polls tag-5sos tag-jack-gilinsky tag-jack-johnson tag-nash-grier tag-one-direction tag-ross-lynch">
+			
+						  <div id="gridly-image" class="ggnoads">
+				<a href="http://www.bopandtigerbeat.com/2015/07/who-should-be-our-next-mcm/"><img width="300" height="300" src="http://www.bopandtigerbeat.com/wp-content/uploads/2015/07/IMG_0348-300x300.jpg" class="attachment-summary-image wp-post-image" alt="Cameron Dallas" /></a>
+			  </div>	
+						<div class="dominance-tag">
+							<a  class="navtitle" href="http://www.bopandtigerbeat.com/tag/mcm-2">#mcm</a>					  </div>
+			<div id="gridly-copy" class="ggnoads">
+				<h2><a href="http://www.bopandtigerbeat.com/2015/07/who-should-be-our-next-mcm/">Who Should Be Our Next #MCM?</a></h2>
+				
+				
+								
+				
+				<p>Who do you think is totally dreamy? Who do you love hanging posters up in your room of? Who are you crushing on? We want to know who YOU think should be our next man-crush-Monday! Vote now and check our Instagram on Monday, July 13 to find out who got the most votes! The votes [&hellip;]</p>
+
+<div id='reaction_buttons_post157250' class='reaction_buttons'>
+<div class="reaction_buttons_tagline">What do you think of this post?</div><a class='reaction_button reaction_button_LOL_count' href="javascript:reaction_buttons_increment_button_ajax('157250', 'LOL');">LOL&nbsp;<span class='count'>(<span class='count_number'>27</span>)</span></a> <a class='reaction_button reaction_button_OMG_count' href="javascript:reaction_buttons_increment_button_ajax('157250', 'OMG');">OMG&nbsp;<span class='count'>(<span class='count_number'>42</span>)</span></a> <a class='reaction_button reaction_button_Luv___it_count' href="javascript:reaction_buttons_increment_button_ajax('157250', 'Luv it');">Luv it&nbsp;<span class='count'>(<span class='count_number'>137</span>)</span></a> <a class='reaction_button reaction_button_meh_count' href="javascript:reaction_buttons_increment_button_ajax('157250', 'meh');">meh&nbsp;<span class='count'>(<span class='count_number'>44</span>)</span></a> </div>
+				<div class="postmetadata">
+					<div class="socialicons">
+						<div class="icon-comment">
+							<a href="http://www.bopandtigerbeat.com/2015/07/who-should-be-our-next-mcm/#comments">
+								<span class="commentnumber"> 
+								22								</span>
+							</a>
+						</div>
+
+						<div class="icon-twitter">
+							<a href="http://twitter.com/share?url=http://www.bopandtigerbeat.com/2015/07/who-should-be-our-next-mcm/&text=Who Should Be Our Next #MCM?&via=bopandtigerbeat" target="_blank" class="share-twitter">
+							<span>twitter</span>
+							</a>
+						</div>
+						
+						<div class="icon-facebook">
+							<a href="http://www.facebook.com/sharer.php?u=http://www.bopandtigerbeat.com/2015/07/who-should-be-our-next-mcm/&t=Who Should Be Our Next #MCM?" target="blank" class="share-facebook"><span>facebook</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+<div class="fetch">	
+	<a href="http://www.bopandtigerbeat.com/category/polls/page/2/" >more <span class="arrow-down">&raquo;</span></a></div>
+
+<div style="clear:both;"></div>	
+
+</div><!-- end #content -->
+
+<div id="Popup320">
+</div>
+
+<div id="Popup768">
+<!-- END ADGARDEN CODE BLOCK --></div>
+
+
+<!-----------------BOTTOM ANCHOR--------------->
+<div id="bottomAnchor768">
+<!-- BEGIN ADGARDEN CODE BLOCK -->
+<script type="text/javascript">
+document.write('<scr'+'ipt src="http://ads.adgarden.net/advertpro/servlet/view/banner/javascript/zone?zid=127&pid=1&crawler=true&align=center&closeable=false&polite=true&spacing=0&bgcolor=none&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+encodeURIComponent((window!=top&&window.location.ancestorOrigins)?window.location.ancestorOrigins[window.location.ancestorOrigins.length-1]:document.location)+'" type="text/javascript"></scr'+'ipt>');
+</script>
+<!-- END ADGARDEN CODE BLOCK -->
+</div>
+
+<div id="bottomAnchor320">
+<!-- BEGIN ADGARDEN CODE BLOCK -->
+<script type="text/javascript">
+document.write('<scr'+'ipt src="http://ads.adgarden.net/advertpro/servlet/view/banner/javascript/zone?zid=129&pid=1&crawler=true&align=center&closeable=false&polite=true&spacing=0&bgcolor=none&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+encodeURIComponent((window!=top&&window.location.ancestorOrigins)?window.location.ancestorOrigins[window.location.ancestorOrigins.length-1]:document.location)+'" type="text/javascript"></scr'+'ipt>');
+</script>
+<!-- END ADGARDEN CODE BLOCK -->
+</div>
+<!-----------------BOTTOM ANCHOR ENDS--------------->
+
+
+     
+      
+	 	<div id="footer-friends">
+			<div id="jjj" class="footlist">
+				<div class="execphpwidget">
+					<ul>
+					<li><a href="http://www.justjaredjr.com/" target="_blank"><img src="http://www.bopandtigerbeat.com/wp-content/themes/boptb2011/images/jjjlogo-site.png" alt="Just Jared Jr." width="195"/></a></li>
+							
+					<li><a href="http://www.justjaredjr.com/2015/09/29/lea-michele-hits-the-grove-for-you-first-book-signing/">Lea Michele Hits The Grove For &#039;You First&#039; Book Signing</a></li>
+		
+							
+					<li><a href="http://www.justjaredjr.com/2015/09/29/ian-somerhalder-hosts-event-alongside-wife-nikki-reed/">Ian Somerhalder Hosts Event Alongside Wife Nikki Reed</a></li>
+		
+							
+					<li><a href="http://www.justjaredjr.com/2015/09/29/cara-delevingne-gets-custom-fender-stratocaster-in-rio/">Cara Delevingne Gets Custom Fender Stratocaster In Rio!</a></li>
+		
+										</ul>
+				</div>
+			</div>
+	 		<div class="title">our friends</div>
+
+		</div>
+
+		<!--/////footer subscription banner/////--> 
+		<map name="subscribelinks">
+		<area shape="rect" coords="10,51,111,88" href="http://www.bopandtigerbeat.com/subscribe" alt="Subscribe">
+		<area shape="rect" coords="134,46,254,88" href="http://www.bopandtigerbeat.com/subscribe-digital" alt="Digital Subscription">
+		</map>
+  		<div class="bannerSubAd">
+	  		<div class="bannerSubAdContent">
+				<img usemap="#subscribelinks" class="bannerSubText" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/title-subscribe.png" alt=""/>
+				<!--<img class="bannerSubImage" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/mag-promo.png" alt=""/>-->
+				<a href="http://www.bopandtigerbeat.com/category/bop/"><img class="bannerSubImage" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/footer-mag-bop.png" alt=""/></a>
+				<a href="http://www.bopandtigerbeat.com/category/tiger-beat/"><img class="bannerSubImage" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/images/footer-mag-tb.png" alt=""/></a>
+				
+	        </div> 
+        </div>
+		<!--/////footer subscription banner/////-->   
+
+		<div id="footer-ad" role="contentinfo">
+			<div class="footerlinks" data-role="controlgroup">
+				<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-43129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43129"><a href="http://www.bopandtigerbeat.com/privacy/">Privacy</a></li>
+<li id="menu-item-43131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43131"><a href="http://www.bopandtigerbeat.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-45165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45165"><a href="http://www.bopandtigerbeat.com/subscribe/">Subscription Services: (386) 246-0182</a></li>
+</ul></div> 
+			</div>
+			<div class="footerlinks2" data-role="controlgroup">
+				<div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-137393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137393"><a href="http://www.bopandtigerbeat.com/contest-rules/">Contest, Giveaway &#038; Sweepstakes Rules</a></li>
+<li id="menu-item-137395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137395"><a href="http://bopandtigerbeat.com/advertising/">Advertise</a></li>
+<li id="menu-item-137394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137394"><a href="http://www.bopandtigerbeat.com/contact/">Contact Us!</a></li>
+</ul></div> 
+			</div>
+
+		</div>
+
+     
+</div><!--//wrap//-->   
+
+
+<!--////////////////JAVASCRIPT STARTS////////////////////////-->
+
+
+
+<!-- Do user upload -->
+<!-- Done user upload --><script type='text/javascript'>
+/* <![CDATA[ */
+var PushUpNotificationSettings = {"domain":"http:\/\/www.bopandtigerbeat.com","userID":"238","websitePushID":"web.com.bopandtigerbeat.www.pushup","webServiceURL":"https:\/\/push.10up.com","prompt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-content/plugins/pushup/js/pushup.min.js?ver=20140616a'></script>
+<script type='text/javascript' src='http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/functions.js'></script>
+		<!-- Facebook Comments for WPPA+ -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+	 
+
+<script type="text/javascript" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/jquery.sky.carousel-1.0.1.min.js"></script>
+<script type="text/javascript" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/home.js"></script>
+<script type="text/javascript" src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/comments.js"></script>
+
+<script src="http://masonry.desandro.com/masonry.pkgd.js" type="text/javascript"></script>
+<script src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/masonry.pkgd.min.js" type="text/javascript"></script>
+
+<script src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/jquery.infinitescroll.min.js" type="text/javascript"></script>
+<script src="http://www.bopandtigerbeat.com/wp-content/themes/gridly/js/manual-trigger.js" type="text/javascript"></script>
+
+
+
+<!--form fields autoclear on typing-->
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $(".clear_field input").focus(function () {
+        var origval = $(this).val();
+        $(this).val("");
+        //console.log(origval);
+        $(".clear_field input").blur(function () {
+            if($(this).val().length === 0 ) {
+                $(this).val(origval);
+                origval = null;
+            }else{
+                origval = null;
+            };
+        });
+    });
+});
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+ 
+    jQuery.fn.cleardefault = function() {
+    	return this.focus(function() {
+    		if( this.value == this.defaultValue ) {
+    			this.value = "";
+    		}
+    	}).blur(function() {
+    		if( !this.value.length ) {
+    			this.value = this.defaultValue;
+    		}
+    	});
+    };
+    jQuery(".gform_wrapper input[type='text'], .gform_wrapper input[type='email'], .gform_wrapper input[type='tel'], .gform_wrapper input[type='search'], .gform_wrapper input[type='url'], .gform_wrapper input[type='number'], .gform_wrapper textarea").cleardefault();
+});
+</script>
+<!--form fields autoclear on typing - end-->
+
+
+
+
+<script type="text/javascript" src="//s.skimresources.com/js/86874X1539524.skimlinks.js"></script>
+
+<!--////The turn.js script used to be here. Cool page-flip functionality. Try to troubleshoot and bring it back.-->
+
+<!--////////////////JAVSCRIPT ENDS////////////////////////-->
+
+<!--////////////////TRACKING CODES////////////////////////-->
+
+</body>
+</html>
+		
+
+<!-- Dynamic page generated in 0.475 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-09-29 16:30:23 -->
+
+<!-- super cache -->
