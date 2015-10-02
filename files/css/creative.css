@@ -33,11 +33,13 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
     color: #eb3812;
+    text-decoration: none;
 }
 
 h1,
@@ -47,12 +49,14 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-decoration: none;
 }
 
 p {
     margin-bottom: 20px;
     font-size: 13px;
     line-height: 1.5;
+    text-decoration: none;
 }
 
 .bg-primary {
@@ -510,11 +514,19 @@ h4.case-study {
 }
 
 .case-metrics h3 {
-    font-size: 3.2em;
+    font-size: 1.9em;
     text-align: center;
     line-height: 1em;
-    text-transform: lowercase;
-    margin-top: 30px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-style: italic;
+    font-weight: 800;
+    text-shadow: 1px 1px #333;
+    padding: 5px;
+    border-bottom-color: #d9e7e7;
+    border-bottom: 4px solid;
+    border-color: #d9e7e7;
+    margin-right: 15px;
 
 }
 
@@ -540,15 +552,23 @@ h4.case-study {
 }
 .case-arrow {
     margin:auto; 
-    display:block; 
-    width:35px; 
+    display:block;  
     margin-top: 50px;
-    margin-bottom: -30px;
-    color: #333;
-    font-size: 3em;
+    margin-bottom:30px;
+    width: 130px;
 }
 .case-arrow img{
    width: 35px;
+}
+
+.case-arrow a {
+   font-weight: 700;
+   background-color: #66a2a2;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+
 }
 
 header {
@@ -618,6 +638,78 @@ h2.section-heading {
 
 .service-box p {
     margin-bottom: 0;
+}
+
+.case-menu {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.case-menu img {
+    width:120px; 
+    margin:auto; 
+    display:block;
+    padding: 10px;
+}
+
+.case-menu a {
+    text-decoration: none;     
+}
+
+.case-menu .case-menu-caption {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    border: 1px solid;
+    background: rgba(65,139,139,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    border-color: white;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.case-menu .case-menu-caption .case-menu-caption-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.case-menu .case-menu-caption .case-menu-caption-content .project-category,
+.case-menu .case-menu-caption .case-menu-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-decoration: none;
+}
+
+.case-menu .case-menu-caption .case-menu-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.case-menu .case-menu-caption .case-menu-caption-content .project-name {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.case-menu:hover .case-menu-caption {
+    opacity: 1;
+    background-color: #8db9b9;
+    text-decoration: none;
 }
 
 .uses-box {
@@ -863,6 +955,16 @@ body {
         font-size: 22px;
     }
 
+     .case-menu .case-menu-caption .case-menu-caption-content .project-category {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .case-menu .case-menu-caption .case-menu-caption-content .project-name {
+        font-size: 18px;
+        text-decoration: none;
+    }
+
     header .header-content {
         position: absolute;
         /*top: 50%;
@@ -1035,11 +1137,12 @@ h4.case-study {
 }
 
 .case-metrics h3 {
-    font-size: 1.7em;
-  text-align: center;
-  line-height: 1.5em;
-  text-transform: lowercase;
-  margin-top: 10px;
+      font-size: 1em;
+    text-align: center;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    text-shadow: .5px .5px #333;
+}
 }
 
 .case-metrics p {
