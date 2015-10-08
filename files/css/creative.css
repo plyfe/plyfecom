@@ -481,7 +481,13 @@ ul.social-buttons li a:active {
 }
 .case-study {
     text-align: left;
+}
 
+hr.case-study {
+    max-width: 100%;
+    height: 5px;
+    background-color: #f4b6b6;
+    border-color: #fff;
 }
 
 h2.case-study {
@@ -514,7 +520,7 @@ h4.case-study {
 }
 
 .case-metrics h3 {
-    font-size: 1.9em;
+    font-size: 1.7em;
     text-align: center;
     line-height: 1em;
     text-transform: uppercase;
@@ -523,7 +529,6 @@ h4.case-study {
     font-weight: 800;
     text-shadow: 1px 1px #333;
     padding: 5px;
-    border-bottom-color: #d9e7e7;
     border-bottom: 4px solid;
     border-color: #d9e7e7;
     margin-right: 15px;
@@ -532,6 +537,7 @@ h4.case-study {
 
 .case-metrics p {
    padding: 10px;
+   text-align: center;
 
 }
 
@@ -676,8 +682,10 @@ h2.section-heading {
     -moz-transition: all .35s;
     transition: all .35s;
     border-color: white;
-    padding: 25px;
+    padding: 15px;
     text-decoration: none;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .case-menu .case-menu-caption .case-menu-caption-content {
