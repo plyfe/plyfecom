@@ -154,11 +154,11 @@ aside {
 }
 
 .data-circle {
-    width: 150px;
+    width: 200px;
     background-color: #e96d6d;
-    border-radius: 115px;
-    height: 150px;
-    padding-top: 22px;
+    border-radius: 200px;
+    height: 200px;
+    padding-top: 28px;
     margin: auto;
     display: block;
     margin-top: 25px;
@@ -169,11 +169,11 @@ aside {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .data-circle-text span {
-    font-size: 2em
+    font-size: 3em
 }
 
 #portfolio .portfolio-item {
@@ -587,15 +587,16 @@ header {
     -o-background-size: cover;
     background: url(../img/bg.jpg) no-repeat;
     background-size: cover;
-    height: 82%;
+    height: 90%;
     padding-top: 40px;
 }
 
 video#bgvid { 
-    width: 350px;
     z-index: -100;
     display: block;
     width: auto;
+    float: right;
+
 }
 
 header .header-content {
@@ -737,7 +738,7 @@ h2.section-heading {
     color: #fff;
     opacity: 1;
     border: 1px solid;
-    background: rgba(240,95,64,.9);
+    background: rgba(233,109,109,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -930,6 +931,40 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+@media(min-width:992px) and (max-width: 1200px) {
+    video#bgvid { 
+    width: 80%;
+    }
+    header {
+    height: 92%;
+}
+
+}
+
+@media(min-width:768px) and (max-width: 992px) {
+    video#bgvid { 
+    width: 80%;
+    }
+    header {
+    height: 90%;
+}
+
+.data-circle {
+    width: 170px;
+    height: 170px;
+    padding-top: 23px;
+    margin-top: 25px;
+}
+
+.data-circle-text {
+    font-size: 1.2em;
+}
+
+.data-circle-text span {
+    font-size: 3em
+}
+
+}
 
 @media(min-width:992px) {
     .service-box {
