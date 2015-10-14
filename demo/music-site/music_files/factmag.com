@@ -1,1 +1,0 @@
-PARSELY.pInit({"apikey":"factmag.com","customizations":null,"bundle":"/code/slim_v05.js","settings":{"debug":false,"widget":false,"tracker":true},"uuid":"7db51733-ab93-48bb-8533-8ed822b439d6"});
