@@ -55,11 +55,9 @@
 
 <script>
 $(document).ready(function(){
-    $("#demo-window").click(function(){
-        $("#demo-window").hide();
-    });
-    $("#demo").click(function(){
-        $("#demo-window").show();
+    $("#thumb").click(function(){
+      $("#thumb").hide();
+      $("#card").show("slow");
     });
 });
 </script>
@@ -597,9 +595,13 @@ if (s_code) document.write(s_code);</script>
               
 
 <article id="node-1049582" class="post short node node-article node-teaser clearfix" about="/news/how-best-shopping-deals-online-calendar-each-month" typeof="sioc:Item foaf:Document">
-  <div class="article-thumb" style="width:300px; height:250px">
-    <script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v1.5.min.js"></script>
-    <div class="plyfe-widget" data-slot="Rsa"></div>
+  <div class="article-thumb">
+    <img id="thumb" src="thumb.png" data-src="http://cdn-img.instyle.com/sites/default/files/styles/150x180/public/1444766645/101315-the-voice-gwen-slide-5.jpg?itok=yfUou8tH" alt="How Gwen Stefani Nailed a Gilded Look on The Voice Last Night&amp;nbsp;" />
+    <div id="card" style="width:300px; height:250px; display:none">
+      <script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v1.5.min.js"></script>
+      <div class="plyfe-widget" data-slot="Rsa"></div>
+    </div>
+    
   </div>
   <div class="wrn-content">
     <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-10-13T22:00:00-04:00">Oct 13, 2015 @ 10:00 PM</span>        
