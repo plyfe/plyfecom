@@ -1,0 +1,1328 @@
+
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Google Chrome Frame for IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title></title>
+
+		<!-- mobile meta (hooray!) -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
+		<link rel="apple-touch-icon" href="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/apple-icon-touch.png">
+		<link rel="icon" href="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/favicon.png?1">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/favicon.ico">
+		<![endif]-->
+		<!-- or, set /favicon.ico for IE10 win -->
+		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileImage" content="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/win8-tile-icon.png">
+
+		<link rel="pingback" href="http://www.freestdcheck.org/xmlrpc.php">
+		<link href="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/mobile-nav.css" rel="stylesheet">
+		<!-- wordpress head functions -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/js/color.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="FreeSTDcheck.org &raquo; Feed" href="http://www.freestdcheck.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="FreeSTDcheck.org &raquo; Comments Feed" href="http://www.freestdcheck.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="FreeSTDcheck.org &raquo; Home Comments Feed" href="http://www.freestdcheck.org/sample-page/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.freestdcheck.org\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='bones-stylesheet-css'  href='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/css/style.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='freestdcheck-stylesheet-css'  href='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/css/freestdcheck.min.css' type='text/css' media='' />
+<script type='text/javascript' src='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/js/libs/modernizr.custom.min.js'></script>
+<script type='text/javascript' src='http://www.freestdcheck.org/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://www.freestdcheck.org/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel='canonical' href='http://www.freestdcheck.org/' />
+<link rel='shortlink' href='http://www.freestdcheck.org/' />
+		<!-- end of wordpress head -->
+	
+		<!-- drop Google Analytics Here -->
+		
+		<script type="text/javascript">
+		$(document).ready(function(){
+			//location page - main search
+			$('input.locator_button.locator_submit').click(function(){
+				_gaq.push(['_trackEvent', 'Forms', 'Click', 'Location Search Submit' ]);
+				_gaq.push(['_trackEvent', 'Zip', 'Search', $('input#addressInput').val() ]);
+			});
+			
+			//all pages (except locations page) - quick search
+			$('#searchWidget').submit(function(){
+				_gaq.push(['_trackEvent', 'Forms', 'Click', 'Quick Location Search Submit' ]);
+				_gaq.push(['_trackEvent', 'Zip', 'Quick Search', $('.forminput #zip').val() ]);
+			});
+			
+			//all pages (except locations page) - go to map
+			$('.span4 a.slp-widget-submit').click(function(){
+				_gaq.push(['_trackEvent', 'Forms', 'Click', 'Go To Map Search Submit' ]);
+			});
+			
+		});
+		</script>
+		<!-- end ga.js event tracking -->
+		<!-- google tracking -->
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-718864-30']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+
+		<!-- end analytics -->
+
+	</head>
+
+	<body class="home page page-id-2 page-template page-template-page-home-new page-template-page-home-new-php">
+
+		<div id="container">
+
+			<header class="header" role="banner">
+
+				<div id="inner-header" class="wrap clearfix">
+
+				
+					
+
+					<!-- if you'd like to use the site description you can un-comment it below -->
+					
+
+					<nav role="navigation">
+						<a class="logo" href="http://www.freestdcheck.org" rel="nofollow"><img src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/base-logo.png" /></a>
+						<ul id="menu-main-menu" class="nav top-nav clearfix"><li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-10"><a href="http://www.freestdcheck.org/">Home</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://www.freestdcheck.org/faqs/">FAQs</a></li>
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://www.freestdcheck.org/std-basics/">STD Basics</a></li>
+<li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="http://www.freestdcheck.org/advertisements/">Advertisements</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://www.freestdcheck.org/locations/">Locations</a></li>
+</ul>					</nav>
+										<!-- start mobile nav -->
+					
+					
+					<div id="mobile-header">
+  <div id="trigger">
+	    <div class="line-1"></div>
+	    <div class="line-2"></div>
+	    <div class="line-2-1"></div>
+  </div>
+	  <div id="mob-menu">
+	  		<ul id="menu-main-menu-1" class="nav top-nav clearfix"><li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-10"><a href="http://www.freestdcheck.org/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://www.freestdcheck.org/faqs/">FAQs</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="http://www.freestdcheck.org/std-basics/">STD Basics</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><a href="http://www.freestdcheck.org/advertisements/">Advertisements</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="http://www.freestdcheck.org/locations/">Locations</a></li>
+</ul>	  </div>
+</div>  
+<script>
+$(document).ready(function(){
+  $('#trigger').click(function(event){
+    $('#mob-menu').stop().toggle({ marginRight: "0px"} , 1000);
+    $('#ahf-links').hide('slow');
+    $('.line-1').toggleClass('line-1-x');
+    $('.line-2').toggleClass('line-2-x');
+    $('.line-2-1').toggleClass('line-2-1-x');
+     event.stopImmediatePropagation();
+   }); 
+ 
+$('html').click(function() {
+ 	$('#mob-menu').hide('slow');
+ 	$('.line-1').removeClass('line-1-x');
+ 	$('.line-2').removeClass('line-2-x');
+ 	$('.line-2-1').removeClass('line-2-1-x');
+});  
+});  
+</script>
+
+				</div> <!-- end #inner-header -->
+
+			</header> <!-- end header -->
+<a href="http://www.aidshealth.org/#/archives/21664" target="_blank"><div id="warning">
+<div style="  max-width: 960px;margin: auto;">
+  <div class="firefox" style="  max-width: 850px; margin: auto;">
+<img src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/warning-icon.png"><h1>Chicago health dept. warns of invasive meningococcal disease (IMD) outbreak among gay men</h1><img src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/warning-icon.png">
+  </div>
+</div>
+</div>
+</a>
+
+			<div id="content" class="test">
+				
+		
+				<!-- <div class="indiv-banner"></div> -->
+				 <div id="home-slider">
+						<style>			
+	  #huge_it_loading_image_1 {
+		height:612px;
+		width:2000px;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	 }
+	  #huge_it_loading_image_1.display {
+		display: table-cell;
+	 }
+	  #huge_it_loading_image_1.nodisplay {
+		display: none;
+	 }
+	 #huge_it_loading_image_1 img {
+		margin: auto 0;
+		width: 20% !important;
+		
+	 }
+	 
+	 .huge_it_slideshow_image_wrap_1 {
+		height:612px;
+		width:2000px;
+		position:relative;
+		display: block;
+		text-align: center;
+		/*HEIGHT FROM HEADER.PHP*/
+		clear:both;
+				float:none; margin:0px auto;		
+		border-style:solid;
+		border-left:0px !important;
+		border-right:0px !important;
+	}
+	 .huge_it_slideshow_image_wrap1_1.display {
+		 width: 100%;
+		 height:100%;
+	 }
+	 .huge_it_slideshow_image_wrap1_1.display {
+		 display:block;
+	 }
+	 .huge_it_slideshow_image_wrap1_1.nodisplay {
+		 display:none;
+	 }
+	.huge_it_slideshow_image_wrap_1 * {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+		 
+
+	  .huge_it_slideshow_image_1 {
+			/*width:100%;*/
+	  }
+
+	  #huge_it_slideshow_left_1,
+	  #huge_it_slideshow_right_1 {
+		cursor: pointer;
+		display:none;
+		display: block;
+		
+		height: 100%;
+		outline: medium none;
+		position: absolute;
+
+		/*z-index: 10130;*/
+		z-index: 13;
+		bottom:25px;
+		top:50%;		
+	  }
+	 
+
+	  #huge_it_slideshow_left-ico_1,
+	  #huge_it_slideshow_right-ico_1 {
+		z-index: 13;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		cursor: pointer;
+		display: table;
+		left: -9999px;
+		line-height: 0;
+		margin-top: -15px;
+		position: absolute;
+		top: 50%;
+		/*z-index: 10135;*/
+	  }
+	  #huge_it_slideshow_left-ico_1:hover,
+	  #huge_it_slideshow_right-ico_1:hover {
+		cursor: pointer;
+	  }
+	  
+	  .huge_it_slideshow_image_container_1 {
+		display: table;
+		position: relative;
+		top:0px;
+		left:0px;
+		text-align: center;
+		vertical-align: middle;
+		width:100%;
+	  }	  
+		
+	  .huge_it_slideshow_title_text_1 {
+		text-decoration: none;
+		position: absolute;
+		z-index: 11;
+		display: inline-block;
+				
+		width:24%;
+		/*height:44%;*/
+		
+		right:3%;top:3%;		padding:2%;
+		text-align:right;  
+		font-weight:bold;
+		color:#000000;
+			
+		background:rgba(255,255,255,0.7)  !important;
+		border-style:solid;
+		font-size:13px;
+		border-width:0px;
+		border-color:#ffffff;
+		border-radius:4px;
+	  }
+	  	  
+	  .huge_it_slideshow_description_text_1 {
+		text-decoration: none;
+		position: absolute;
+		z-index: 11;
+		border-style:solid;
+		display: inline-block;
+				
+		width:64%;
+		/*height:44%;*/
+		right:3%;bottom:3%;		padding:3%;
+		text-align:justify;  
+		color:#ffffff;
+		
+		background:rgba(0,0,0,0.7) !important;
+		border-style:solid;
+		font-size:13px;
+		border-width:0px;
+		border-color:#ffffff;
+		border-radius:0px;
+	  }
+	  
+	   .huge_it_slideshow_title_text_1.none, .huge_it_slideshow_description_text_1.none,
+	   .huge_it_slideshow_title_text_1.hidden, .huge_it_slideshow_description_text_1.hidden	   {display:none;}
+	      
+	   .huge_it_slideshow_title_text_1 h1, .huge_it_slideshow_description_text_1 h1,
+	   .huge_it_slideshow_title_text_1 h2, .huge_it_slideshow_title_text_1 h2,
+	   .huge_it_slideshow_title_text_1 h3, .huge_it_slideshow_title_text_1 h3,
+	   .huge_it_slideshow_title_text_1 h4, .huge_it_slideshow_title_text_1 h4,
+	   .huge_it_slideshow_title_text_1 p, .huge_it_slideshow_title_text_1 p,
+	   .huge_it_slideshow_title_text_1 strong,  .huge_it_slideshow_title_text_1 strong,
+	   .huge_it_slideshow_title_text_1 span, .huge_it_slideshow_title_text_1 span,
+	   .huge_it_slideshow_title_text_1 ul, .huge_it_slideshow_title_text_1 ul,
+	   .huge_it_slideshow_title_text_1 li, .huge_it_slideshow_title_text_1 li {
+			padding:2px;
+			margin:0px;
+	   }
+
+	  .huge_it_slide_container_1 {
+		display: table-cell;
+		margin: 0 auto;
+		position: relative;
+		vertical-align: middle;
+		width:100%;
+		height:100%;
+		_width: inherit;
+		_height: inherit;
+	  }
+	  .huge_it_slide_bg_1 {
+		margin: 0 auto;
+		width:100%;
+		height:100%;
+		_width: inherit;
+		_height: inherit;
+	  }
+	  .huge_it_slider_1 {
+		width:100%;
+		height:100%;
+		display:table !important;
+		padding:0px !important;
+		margin:0px !important;
+		
+	  }
+	  .huge_it_slideshow_image_item_1 {
+		width:100%;
+		height:100%;
+		_width: inherit;
+		_height: inherit;
+		display: table-cell;
+		filter: Alpha(opacity=100);
+		opacity: 1;
+		position: absolute;
+		top:0px !important;
+		left:0px !important;
+		vertical-align: middle;
+		z-index: 1;
+		margin:0px !important;
+		padding:0px  !important;
+		border-radius: 0px !important;
+	  }
+	  .huge_it_slideshow_image_second_item_1 {
+		width:100%;
+		height:100%;
+		_width: inherit;
+		_height: inherit;
+		display: table-cell;
+		filter: Alpha(opacity=0);
+		opacity: 0;
+		position: absolute;
+		top:0px !important;
+		left:0px !important;
+		vertical-align: middle;
+		overflow:hidden;
+		margin:0px !important;
+		visibility:visible !important;
+		padding:0px  !important;
+		border-radius: 0px !important;
+	  }
+	  
+	   .huge_it_slideshow_image_second_item_1 a, .huge_it_slideshow_image_item_1 a {
+			display:block;
+			width:100%;
+			height:100%;	
+	   }
+	   
+	  .huge_it_grid_1 {
+		display: none;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+	  }
+	  .huge_it_gridlet_1 {
+		opacity: 1;
+		filter: Alpha(opacity=100);
+		position: absolute;
+	  }
+	  
+					
+	  .huge_it_slideshow_dots_container_1 {
+		display: table;
+		position: absolute;
+		width:100% !important;
+		height:100% !important;
+	  }
+	  .huge_it_slideshow_dots_thumbnails_1 {
+		margin: 0 auto;
+		overflow: hidden;
+		position: absolute;
+		width:100%;
+		height:30px;
+	  }
+	  
+	  .huge_it_slideshow_dots_1 {
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset, 1px 1px 1px rgba(255,255,255,0.1);
+		width:10px;
+		height: 10px;
+		border-radius: 10px;
+		background: #00f;
+		margin: 10px;
+		overflow: hidden;
+		z-index: 17;
+	  }
+	  
+	  .huge_it_slideshow_dots_active_1 {
+		opacity: 1;
+		filter: Alpha(opacity=100);
+	  }
+	  .huge_it_slideshow_dots_deactive_1 {
+	  
+	  }
+	  
+	
+		
+		.huge_it_slideshow_image_wrap_1 {
+			background:#ffffff;
+			border-width:0px;
+			border-color:#ffffff;
+			border-radius:0px;
+		}
+		.huge_it_slideshow_image_wrap_1.nocolor {
+			background: transparent;
+		}
+		
+		.huge_it_slideshow_dots_thumbnails_1 {
+						top:0px; 		}
+		
+		.huge_it_slideshow_dots_1 {
+			background:#000000;
+		}
+		
+		.huge_it_slideshow_dots_active_1 {
+			background:#ffffff;
+		}
+		
+							#huge_it_slideshow_left_1 {	
+						left:0px;
+						margin-top:-21px;
+						height:43px;
+						width:29px;
+						background:url(http://www.freestdcheck.org/wp-content/plugins/slider-image/Front_images/arrows/arrows.simple.png) left  top no-repeat; 
+					}
+					
+					#huge_it_slideshow_right_1 {
+						right:0px;
+						margin-top:-21px;
+						height:43px;
+						width:29px;
+						background:url(http://www.freestdcheck.org/wp-content/plugins/slider-image/Front_images/arrows/arrows.simple.png) right top no-repeat; 
+					}
+					</style>
+
+
+
+
+	
+	
+<script>
+	var data_1 = [];      
+	var event_stack_1 = [];
+	video_is_playing_1=false;
+	data_1["0"]=[];data_1["0"]["id"]="0";data_1["0"]["image_url"]="http://www.freestdcheck.org/wp-content/uploads/2015/09/tinder.jpg";data_1["0"]["description"]="";data_1["0"]["alt"]="";	
+	
+
+      var huge_it_trans_in_progress_1 = false;
+      var huge_it_transition_duration_1 = 1000;
+      var huge_it_playInterval_1;
+      // Stop autoplay.
+      window.clearInterval(huge_it_playInterval_1);
+	  
+     var huge_it_current_key_1 = '';
+	 function huge_it_move_dots_1() {
+        var image_left = jQuery(".huge_it_slideshow_dots_active_1").position().left;
+        var image_right = jQuery(".huge_it_slideshow_dots_active_1").position().left + jQuery(".huge_it_slideshow_dots_active_1").outerWidth(true);
+       
+      }
+      function huge_it_testBrowser_cssTransitions_1() {
+        return huge_it_testDom_1('Transition');
+      }
+      function huge_it_testBrowser_cssTransforms3d_1() {
+        return huge_it_testDom_1('Perspective');
+      }
+      function huge_it_testDom_1(prop) {
+        // Browser vendor CSS prefixes.
+        var browserVendors = ['', '-webkit-', '-moz-', '-ms-', '-o-', '-khtml-'];
+        // Browser vendor DOM prefixes.
+        var domPrefixes = ['', 'Webkit', 'Moz', 'ms', 'O', 'Khtml'];
+        var i = domPrefixes.length;
+        while (i--) {
+          if (typeof document.body.style[domPrefixes[i] + prop] !== 'undefined') {
+            return true;
+          }
+        }
+        return false;
+      }
+		function huge_it_cube_1(tz, ntx, nty, nrx, nry, wrx, wry, current_image_class, next_image_class, direction) {
+		
+        /* If browser does not support 3d transforms/CSS transitions.*/
+        if (!huge_it_testBrowser_cssTransitions_1()) {
+			jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");
+        jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+          return huge_it_fallback_1(current_image_class, next_image_class, direction);
+        }
+        if (!huge_it_testBrowser_cssTransforms3d_1()) {
+          return huge_it_fallback3d_1(current_image_class, next_image_class, direction);
+        }
+			//alert(current_image_class+' '+next_image_class);
+		  jQuery(current_image_class).css({'z-index': 'none'});
+          jQuery(next_image_class).css({'z-index' : 2});
+        huge_it_trans_in_progress_1 = true;
+        /* Set active thumbnail.*/
+		jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");  
+		jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+        jQuery(".huge_it_slide_bg_1").css('perspective', 1000);
+        jQuery(current_image_class).css({
+          transform : 'translateZ(' + tz + 'px)',
+          backfaceVisibility : 'hidden'
+        });
+		
+		 jQuery(".huge_it_slideshow_image_wrap_1,.huge_it_slide_bg_1,.huge_it_slideshow_image_item_1,.huge_it_slideshow_image_second_item_1 ").css('overflow', 'visible');
+		
+        jQuery(next_image_class).css({
+          opacity : 1,
+          filter: 'Alpha(opacity=100)',
+          backfaceVisibility : 'hidden',
+          transform : 'translateY(' + nty + 'px) translateX(' + ntx + 'px) rotateY('+ nry +'deg) rotateX('+ nrx +'deg)'
+        });
+        jQuery(".huge_it_slider_1").css({
+          transform: 'translateZ(-' + tz + 'px)',
+          transformStyle: 'preserve-3d'
+        });
+        /* Execution steps.*/
+        setTimeout(function () {
+          jQuery(".huge_it_slider_1").css({
+            transition: 'all ' + huge_it_transition_duration_1 + 'ms ease-in-out',
+            transform: 'translateZ(-' + tz + 'px) rotateX('+ wrx +'deg) rotateY('+ wry +'deg)'
+          });
+        }, 20);
+        /* After transition.*/
+        jQuery(".huge_it_slider_1").one('webkitTransitionEnd transitionend otransitionend oTransitionEnd mstransitionend', jQuery.proxy(huge_it_after_trans));
+        function huge_it_after_trans() {
+          /*if (huge_it_from_focus_1) {
+            huge_it_from_focus_1 = false;
+            return;
+          }*/
+		  jQuery(".huge_it_slide_bg_1,.huge_it_slideshow_image_item_1,.huge_it_slideshow_image_second_item_1 ").css('overflow', 'hidden');
+		  jQuery(".huge_it_slide_bg_1").removeAttr('style');
+          jQuery(current_image_class).removeAttr('style');
+          jQuery(next_image_class).removeAttr('style');
+          jQuery(".huge_it_slider_1").removeAttr('style');
+		 // alert(current_image_class+' '+next_image_class);
+          jQuery(current_image_class).css({'opacity' : 0, filter: 'Alpha(opacity=0)', 'z-index': 1});
+          jQuery(next_image_class).css({'opacity' : 1, filter: 'Alpha(opacity=100)', 'z-index' : 2});
+         // huge_it_change_watermark_container_1();
+          huge_it_trans_in_progress_1 = false;
+          if (typeof event_stack_1 !== 'undefined' && event_stack_1.length > 0) {
+            key = event_stack_1[0].split("-");
+            event_stack_1.shift();
+            huge_it_change_image_1(key[0], key[1], data_1, true,false);
+          }
+        }
+      }
+      function huge_it_cubeH_1(current_image_class, next_image_class, direction) {
+        /* Set to half of image width.*/
+        var dimension = jQuery(current_image_class).width() / 2;
+        if (direction == 'right') {
+          huge_it_cube_1(dimension, dimension, 0, 0, 90, 0, -90, current_image_class, next_image_class, direction);
+        }
+        else if (direction == 'left') {
+          huge_it_cube_1(dimension, -dimension, 0, 0, -90, 0, 90, current_image_class, next_image_class, direction);
+        }
+      }
+      function huge_it_cubeV_1(current_image_class, next_image_class, direction) {
+        /* Set to half of image height.*/
+        var dimension = jQuery(current_image_class).height() / 2;
+        /* If next slide.*/
+        if (direction == 'right') {
+          huge_it_cube_1(dimension, 0, -dimension, 90, 0, -90, 0, current_image_class, next_image_class, direction);
+        }
+        else if (direction == 'left') {
+          huge_it_cube_1(dimension, 0, dimension, -90, 0, 90, 0, current_image_class, next_image_class, direction);
+        }
+      }
+      /* For browsers that does not support transitions.*/
+      function huge_it_fallback_1(current_image_class, next_image_class, direction) {
+        huge_it_fade_1(current_image_class, next_image_class, direction);
+      }
+      /* For browsers that support transitions, but not 3d transforms (only used if primary transition makes use of 3d-transforms).*/
+      function huge_it_fallback3d_1(current_image_class, next_image_class, direction) {
+        huge_it_sliceV_1(current_image_class, next_image_class, direction);
+      }
+      function huge_it_none_1(current_image_class, next_image_class, direction) {
+        jQuery(current_image_class).css({'opacity' : 0, 'z-index': 1});
+        jQuery(next_image_class).css({'opacity' : 1, 'z-index' : 2});
+
+        /* Set active thumbnail.*/
+        jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");
+        jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+      }
+      function huge_it_fade_1(current_image_class, next_image_class, direction) {
+		if (huge_it_testBrowser_cssTransitions_1()) {
+			
+          jQuery(next_image_class).css('transition', 'opacity ' + huge_it_transition_duration_1 + 'ms linear');
+		  jQuery(current_image_class).css('transition', 'opacity ' + huge_it_transition_duration_1 + 'ms linear');
+          jQuery(current_image_class).css({'opacity' : 0, 'z-index': 1});
+          jQuery(next_image_class).css({'opacity' : 1, 'z-index' : 2});
+        }
+        else {
+		
+          jQuery(current_image_class).animate({'opacity' : 0, 'z-index' : 1}, huge_it_transition_duration_1);
+          jQuery(next_image_class).animate({
+              'opacity' : 1,
+              'z-index': 2
+            }, {
+              duration: huge_it_transition_duration_1,
+              complete: function () {return false;}
+            });
+          // For IE.
+          jQuery(current_image_class).fadeTo(huge_it_transition_duration_1, 0);
+          jQuery(next_image_class).fadeTo(huge_it_transition_duration_1, 1);
+        }
+
+		jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");
+		jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+      }
+      function huge_it_grid_1(cols, rows, ro, tx, ty, sc, op, current_image_class, next_image_class, direction) {
+        /* If browser does not support CSS transitions.*/
+        if (!huge_it_testBrowser_cssTransitions_1()) {
+			jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");
+        jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+          return huge_it_fallback_1(current_image_class, next_image_class, direction);
+		  
+        }
+        huge_it_trans_in_progress_1 = true;
+        /* Set active thumbnail.*/
+		jQuery(".huge_it_slideshow_dots_1").removeClass("huge_it_slideshow_dots_active_1").addClass("huge_it_slideshow_dots_deactive_1");
+        jQuery("#huge_it_dots_" + huge_it_current_key_1 + "_1").removeClass("huge_it_slideshow_dots_deactive_1").addClass("huge_it_slideshow_dots_active_1");
+        /* The time (in ms) added to/subtracted from the delay total for each new gridlet.*/
+        var count = (huge_it_transition_duration_1) / (cols + rows);
+        /* Gridlet creator (divisions of the image grid, positioned with background-images to replicate the look of an entire slide image when assembled)*/
+        function huge_it_gridlet(width, height, top, img_top, left, img_left, src, imgWidth, imgHeight, c, r) {
+          var delay = (c + r) * count;
+          /* Return a gridlet elem with styles for specific transition.*/
+          return jQuery('<div class="huge_it_gridlet_1" />').css({
+            width : width,
+            height : height,
+            top : top,
+            left : left,
+            backgroundImage : 'url("' + src + '")',
+            backgroundColor: jQuery(".huge_it_slideshow_image_wrap_1").css("background-color"),
+            /*backgroundColor: rgba(0, 0, 0, 0),*/
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition : img_left + 'px ' + img_top + 'px',
+            backgroundSize : imgWidth + 'px ' + imgHeight + 'px',
+            transition : 'all ' + huge_it_transition_duration_1 + 'ms ease-in-out ' + delay + 'ms',
+            transform : 'none'
+          });
+        }
+        /* Get the current slide's image.*/
+        var cur_img = jQuery(current_image_class).find('img');
+        /* Create a grid to hold the gridlets.*/
+        var grid = jQuery('<div />').addClass('huge_it_grid_1');
+        /* Prepend the grid to the next slide (i.e. so it's above the slide image).*/
+        jQuery(current_image_class).prepend(grid);
+        /* vars to calculate positioning/size of gridlets*/
+        var cont = jQuery(".huge_it_slide_bg_1");
+        var imgWidth = cur_img.width();
+        var imgHeight = cur_img.height();
+        var contWidth = cont.width(),
+            contHeight = cont.height(),
+            imgSrc = cur_img.attr('src'),/*.replace('/thumb', ''),*/
+            colWidth = Math.floor(contWidth / cols),
+            rowHeight = Math.floor(contHeight / rows),
+            colRemainder = contWidth - (cols * colWidth),
+            colAdd = Math.ceil(colRemainder / cols),
+            rowRemainder = contHeight - (rows * rowHeight),
+            rowAdd = Math.ceil(rowRemainder / rows),
+            leftDist = 0,
+            img_leftDist = (jQuery(".huge_it_slide_bg_1").width() - cur_img.width()) / 2;
+        /* tx/ty args can be passed as 'auto'/'min-auto' (meaning use slide width/height or negative slide width/height).*/
+        tx = tx === 'auto' ? contWidth : tx;
+        tx = tx === 'min-auto' ? - contWidth : tx;
+        ty = ty === 'auto' ? contHeight : ty;
+        ty = ty === 'min-auto' ? - contHeight : ty;
+        /* Loop through cols*/
+        for (var i = 0; i < cols; i++) {
+          var topDist = 0,
+              img_topDst = (jQuery(".huge_it_slide_bg_1").height() - cur_img.height()) / 2,
+              newColWidth = colWidth;
+          /* If imgWidth (px) does not divide cleanly into the specified number of cols, adjust individual col widths to create correct total.*/
+          if (colRemainder > 0) {
+            var add = colRemainder >= colAdd ? colAdd : colRemainder;
+            newColWidth += add;
+            colRemainder -= add;
+          }
+          /* Nested loop to create row gridlets for each col.*/
+          for (var j = 0; j < rows; j++)  {
+            var newRowHeight = rowHeight,
+                newRowRemainder = rowRemainder;
+            /* If contHeight (px) does not divide cleanly into the specified number of rows, adjust individual row heights to create correct total.*/
+            if (newRowRemainder > 0) {
+              add = newRowRemainder >= rowAdd ? rowAdd : rowRemainder;
+              newRowHeight += add;
+              newRowRemainder -= add;
+            }
+            /* Create & append gridlet to grid.*/
+            grid.append(huge_it_gridlet(newColWidth, newRowHeight, topDist, img_topDst, leftDist, img_leftDist, imgSrc, imgWidth, imgHeight, i, j));
+            topDist += newRowHeight;
+            img_topDst -= newRowHeight;
+          }
+          img_leftDist -= newColWidth;
+          leftDist += newColWidth;
+        }
+        /* Set event listener on last gridlet to finish transitioning.*/
+        var last_gridlet = grid.children().last();
+        /* Show grid & hide the image it replaces.*/
+        grid.show();
+        cur_img.css('opacity', 0);
+        /* Add identifying classes to corner gridlets (useful if applying border radius).*/
+        grid.children().first().addClass('rs-top-left');
+        grid.children().last().addClass('rs-bottom-right');
+        grid.children().eq(rows - 1).addClass('rs-bottom-left');
+        grid.children().eq(- rows).addClass('rs-top-right');
+        /* Execution steps.*/
+        setTimeout(function () {
+          grid.children().css({
+            opacity: op,
+            transform: 'rotate('+ ro +'deg) translateX('+ tx +'px) translateY('+ ty +'px) scale('+ sc +')'
+          });
+        }, 1);
+        jQuery(next_image_class).css('opacity', 1);
+        /* After transition.*/
+        jQuery(last_gridlet).one('webkitTransitionEnd transitionend otransitionend oTransitionEnd mstransitionend', jQuery.proxy(huge_it_after_trans));
+        function huge_it_after_trans() {
+          jQuery(current_image_class).css({'opacity' : 0, 'z-index': 1});
+          jQuery(next_image_class).css({'opacity' : 1, 'z-index' : 2});
+          cur_img.css('opacity', 1);
+          grid.remove();
+          huge_it_trans_in_progress_1 = false;
+          if (typeof event_stack_1 !== 'undefined' && event_stack_1.length > 0) {
+            key = event_stack_1[0].split("-");
+            event_stack_1.shift();
+            huge_it_change_image_1(key[0], key[1], data_1, true,false);
+          }
+        }
+      }
+      function huge_it_sliceH_1(current_image_class, next_image_class, direction) {
+        if (direction == 'right') {
+          var translateX = 'min-auto';
+        }
+        else if (direction == 'left') {
+          var translateX = 'auto';
+        }
+        huge_it_grid_1(1, 8, 0, translateX, 0, 1, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_sliceV_1(current_image_class, next_image_class, direction) {
+        if (direction == 'right') {
+          var translateY = 'min-auto';
+        }
+        else if (direction == 'left') {
+          var translateY = 'auto';
+        }
+        huge_it_grid_1(10, 1, 0, 0, translateY, 1, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_slideV_1(current_image_class, next_image_class, direction) {
+        if (direction == 'right') {
+          var translateY = 'auto';
+        }
+        else if (direction == 'left') {
+          var translateY = 'min-auto';
+        }
+        huge_it_grid_1(1, 1, 0, 0, translateY, 1, 1, current_image_class, next_image_class, direction);
+      }
+      function huge_it_slideH_1(current_image_class, next_image_class, direction) {
+        if (direction == 'right') {
+          var translateX = 'min-auto';
+        }
+        else if (direction == 'left') {
+          var translateX = 'auto';
+        }
+        huge_it_grid_1(1, 1, 0, translateX, 0, 1, 1, current_image_class, next_image_class, direction);
+      }
+      function huge_it_scaleOut_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(1, 1, 0, 0, 0, 1.5, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_scaleIn_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(1, 1, 0, 0, 0, 0.5, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_blockScale_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(8, 6, 0, 0, 0, .6, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_kaleidoscope_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(10, 8, 0, 0, 0, 1, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_fan_1(current_image_class, next_image_class, direction) {
+        if (direction == 'right') {
+          var rotate = 45;
+          var translateX = 100;
+        }
+        else if (direction == 'left') {
+          var rotate = -45;
+          var translateX = -100;
+        }
+        huge_it_grid_1(1, 10, rotate, translateX, 0, 1, 0, current_image_class, next_image_class, direction);
+      }
+      function huge_it_blindV_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(1, 8, 0, 0, 0, .7, 0, current_image_class, next_image_class);
+      }
+      function huge_it_blindH_1(current_image_class, next_image_class, direction) {
+        huge_it_grid_1(10, 1, 0, 0, 0, .7, 0, current_image_class, next_image_class);
+      }
+      function huge_it_random_1(current_image_class, next_image_class, direction) {
+        var anims = ['sliceH', 'sliceV', 'slideH', 'slideV', 'scaleOut', 'scaleIn', 'blockScale', 'kaleidoscope', 'fan', 'blindH', 'blindV'];
+        /* Pick a random transition from the anims array.*/
+        this["huge_it_" + anims[Math.floor(Math.random() * anims.length)] + "_1"](current_image_class, next_image_class, direction);
+      }
+      
+      function iterator_1() {
+        var iterator = 1;
+
+        return iterator;
+     }
+	 
+     function huge_it_change_image_1(current_key, key, data_1, from_effect,clicked) {
+		
+        if (data_1[key]) {
+		
+			if(video_is_playing_1 && !clicked){
+				return false;
+			}
+         
+		 
+		 
+          if (!from_effect) {
+            // Change image key.
+            jQuery("#huge_it_current_image_key_1").val(key);
+             // if (current_key == '-2') { /* Dots.*/
+				current_key = jQuery(".huge_it_slideshow_dots_active_1").attr("data-image_key");
+			//  }
+          }
+
+          if (huge_it_trans_in_progress_1) {
+			//errorlogjQuery(".huge_it_slideshow_image_wrap_1").after(" --IN TRANSACTION-- <br />");
+            event_stack_1.push(current_key + '-' + key);
+            return;
+          }
+		  
+          var direction = 'right';
+          if (huge_it_current_key_1 > key) {
+            var direction = 'left';
+          }
+          else if (huge_it_current_key_1 == key) {
+            return false;
+          }
+         
+          // Set active thumbnail position.
+      
+          huge_it_current_key_1 = key;
+          //Change image id, title, description.
+          jQuery("#huge_it_slideshow_image_1").attr('data-image_id', data_1[key]["id"]);
+		  
+		  
+		  jQuery(".huge_it_slideshow_title_text_1").html(data_1[key]["alt"]);
+          jQuery(".huge_it_slideshow_description_text_1").html(data_1[key]["description"]);
+        
+		  var current_image_class = "#image_id_1_" + data_1[current_key]["id"];
+          var next_image_class = "#image_id_1_" + data_1[key]["id"];
+          
+		  
+		
+		 if(jQuery(current_image_class).find('.huge_it_video_frame_1').length>0) {
+			var streffect='fade';
+			if(streffect=="cubeV" || streffect=="cubeH" || streffect=="none" || streffect=="fade"){
+				huge_it_fade_1(current_image_class, next_image_class, direction);
+			}else{	
+				huge_it_fade_1(current_image_class, next_image_class, direction);
+			}	
+		  }else{	
+				huge_it_fade_1(current_image_class, next_image_class, direction);
+		  }	
+		  
+		  
+		jQuery('.huge_it_slideshow_title_text_1').removeClass('none');
+		if(jQuery('.huge_it_slideshow_title_text_1').html()==""){jQuery('.huge_it_slideshow_title_text_1').addClass('none');}
+
+		jQuery('.huge_it_slideshow_description_text_1').removeClass('none');
+		if(jQuery('.huge_it_slideshow_description_text_1').html()==""){jQuery('.huge_it_slideshow_description_text_1').addClass('none');}
+	  
+		  
+		  
+		  jQuery(current_image_class).find('.huge_it_slideshow_title_text_1').addClass('none');
+		  jQuery(current_image_class).find('.huge_it_slideshow_description_text_1').addClass('none');
+		
+		
+
+		  
+		  //errorlogjQuery(".huge_it_slideshow_image_wrap_1").after("--cur-key="+current_key+" --cur-img-class="+current_image_class+" nxt-img-class="+next_image_class+"--");
+			 huge_it_move_dots_1();
+						window.clearInterval(huge_it_playInterval_1);
+			play_1();
+        }
+
+      }
+	  
+      function huge_it_popup_resize_1() {
+
+		var staticsliderwidth=2000;
+		var sliderwidth=2000;
+		
+		var bodyWidth=jQuery(window).width();
+        var parentWidth = jQuery(".huge_it_slideshow_image_wrap_1").parent().width();
+		//if responsive js late responsive.js @  take body size and not parent div
+		if(sliderwidth>parentWidth){sliderwidth=parentWidth;}
+		if(sliderwidth>bodyWidth){sliderwidth=bodyWidth;}
+		
+		var str=(612/staticsliderwidth);
+		
+		jQuery(".huge_it_slideshow_image_wrap_1").css({width: (sliderwidth)});
+		jQuery(".huge_it_slideshow_image_wrap_1").css({height: ((sliderwidth) * str)});
+		jQuery(".huge_it_slideshow_image_container_1").css({width: (sliderwidth)});
+		jQuery(".huge_it_slideshow_image_container_1").css({height: ((sliderwidth) * str)});
+			
+		if("top"=="middle"){var titlemargintopminus=jQuery(".huge_it_slideshow_title_text_1").outerHeight()/2;}		
+		if("right"=="center"){var titlemarginleftminus=jQuery(".huge_it_slideshow_title_text_1").outerWidth()/2;}		
+		jQuery(".huge_it_slideshow_title_text_1").css({cssText: "margin-top:-" + titlemargintopminus + "px; margin-left:-"+titlemarginleftminus+"px;"});
+		
+		if("bottom"=="middle"){var descriptionmargintopminus=jQuery(".huge_it_slideshow_description_text_1").outerHeight()/2;}	
+		if("right"=="center"){var descriptionmarginleftminus=jQuery(".huge_it_slideshow_description_text_1").outerWidth()/2;}
+		jQuery(".huge_it_slideshow_description_text_1").css({cssText: "margin-top:-" + descriptionmargintopminus + "px; margin-left:-"+descriptionmarginleftminus+"px;"});
+		        jQuery("#huge_it_loading_image_1").css({display: "none"});
+                jQuery(".huge_it_slideshow_image_wrap1_1").css({display: "block"});
+                jQuery(".huge_it_slideshow_image_wrap_1").removeClass("nocolor");
+		
+		
+		if("resize"=="resize"){
+			jQuery(".huge_it_slideshow_image_1,  .huge_it_slideshow_image_container_1 img").css({
+				cssText: "width:" + sliderwidth + "px; height:" + ((sliderwidth) * str)	+"px;"
+			});
+		}else {
+			jQuery(".huge_it_slideshow_image_1,.huge_it_slideshow_image_item2_1").css({
+			cssText: "max-width: " + sliderwidth + "px !important; max-height: " + (sliderwidth * str) + "px !important;"
+		  });
+		}
+		
+		jQuery('.huge_it_video_frame_1').each(function (e) {
+          jQuery(this).width(sliderwidth);
+          jQuery(this).height(sliderwidth * str);
+        });
+      }
+      
+      jQuery(window).load(function () {
+		jQuery(window).resize(function() {
+			huge_it_popup_resize_1();
+		});
+		
+		jQuery('#huge_it_slideshow_left_1').on('click',function(){
+			huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), (parseInt(jQuery('#huge_it_current_image_key_1').val()) - iterator_1()) >= 0 ? (parseInt(jQuery('#huge_it_current_image_key_1').val()) - iterator_1()) % data_1.length : data_1.length - 1, data_1,false,true);
+			return false;
+		});
+		
+		jQuery('#huge_it_slideshow_right_1').on('click',function(){
+			huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), (parseInt(jQuery('#huge_it_current_image_key_1').val()) + iterator_1()) % data_1.length, data_1,false,true);
+			return false;
+		});
+		
+		huge_it_popup_resize_1();
+        /* Disable right click.*/
+        jQuery('div[id^="huge_it_container"]').bind("contextmenu", function () {
+          return false;
+        });
+        			
+		/*HOVER SLIDESHOW*/
+		jQuery("#huge_it_slideshow_image_container_1, .huge_it_slideshow_image_container_1, .huge_it_slideshow_dots_container_1,#huge_it_slideshow_right_1,#huge_it_slideshow_left_1").hover(function(){
+			//errorlogjQuery(".huge_it_slideshow_image_wrap_1").after(" -- hover -- <br /> ");
+			jQuery("#huge_it_slideshow_right_1").css({'display':'inline'});
+			jQuery("#huge_it_slideshow_left_1").css({'display':'inline'});
+		},function(){
+			jQuery("#huge_it_slideshow_right_1").css({'display':'none'});
+			jQuery("#huge_it_slideshow_left_1").css({'display':'none'});
+		});
+		var pausehover="on";
+		if(pausehover=="on"){
+			jQuery("#huge_it_slideshow_image_container_1, .huge_it_slideshow_image_container_1, .huge_it_slideshow_dots_container_1,#huge_it_slideshow_right_1,#huge_it_slideshow_left_1").hover(function(){
+				window.clearInterval(huge_it_playInterval_1);
+			},function(){
+				window.clearInterval(huge_it_playInterval_1);
+				play_1();
+			});		
+		}	
+          play_1();        
+      });
+
+      function play_1() {	   
+        /* Play.*/
+		//errorlogjQuery(".huge_it_slideshow_image_wrap_1").after(" -- paly  ---- ");
+        huge_it_playInterval_1 = setInterval(function () {
+			//errorlogjQuery(".huge_it_slideshow_image_wrap_1").after(" -- time left ---- ");
+          var iterator = 1;
+          huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), (parseInt(jQuery('#huge_it_current_image_key_1').val()) + iterator) % data_1.length, data_1,false,false);
+        }, '5000');
+      }
+	  
+      jQuery(window).focus(function() {
+       /*event_stack_1 = [];*/
+        var i_1 = 0;
+        jQuery(".huge_it_slider_1").children("div").each(function () {
+          if (jQuery(this).css('opacity') == 1) {
+            jQuery("#huge_it_current_image_key_1").val(i_1);
+          }
+          i_1++;
+        });
+      });
+      jQuery(window).blur(function() {
+        event_stack_1 = [];
+        window.clearInterval(huge_it_playInterval_1);
+      });      
+    </script>
+	<div class="huge_it_slideshow_image_wrap_1 ">
+			<div id="huge_it_loading_image_1" class="nodisplay"> <img src="http://www.freestdcheck.org/wp-content/plugins/slider-image/Front_images/loading/loading1.gif" width="100" height="100" style=" margin: 0px auto;"  alt="" /> </div>
+		<div class="huge_it_slideshow_image_wrap1_1 display">
+	      		<!-- ##########################DOTS######################### -->
+        <div class="huge_it_slideshow_dots_container_1">
+			  <div class="huge_it_slideshow_dots_thumbnails_1">
+												<div id="huge_it_dots_0_1" class="huge_it_slideshow_dots_1 huge_it_slideshow_dots_active_1" onclick="if(jQuery(this).hasClass('huge_it_slideshow_dots_active_1')) { return false; } huge_it_change_image_1(parseInt(jQuery('#huge_it_current_image_key_1').val()), '0', data_1,false,true);return false;" data-image_id="5" data-image_key="0"></div>
+										  </div>
+			
+							<a id="huge_it_slideshow_left_1" href="#">
+					<div id="huge_it_slideshow_left-ico_1">
+					<div><i class="huge_it_slideshow_prev_btn_1 fa"></i></div></div>
+				</a>
+				
+				<a id="huge_it_slideshow_right_1" href="#">
+					<div id="huge_it_slideshow_right-ico_1">
+					<div><i class="huge_it_slideshow_next_btn_1 fa"></i></div></div>
+				</a>
+					</div>
+	  <!-- ##########################IMAGES######################### -->
+      <div id="huge_it_slideshow_image_container_1" class="huge_it_slideshow_image_container_1">        
+        <div class="huge_it_slide_container_1">
+          <div class="huge_it_slide_bg_1">
+            <ul class="huge_it_slider_1">
+			  					  <li class="huge_it_slideshow_image_item_1" id="image_id_1_0">      
+												<img id="huge_it_slideshow_image_1_0" class="huge_it_slideshow_image_1"  alt="" src="http://www.freestdcheck.org/wp-content/uploads/2015/09/tinder.jpg" data-image_id="5" />
+								
+						<div class="huge_it_slideshow_title_text_1 none">
+													</div>
+						<div class="huge_it_slideshow_description_text_1 none">
+													</div>
+					  </li>
+					              </ul>
+			<input  type="hidden" id="huge_it_current_image_key_1" value="0" />
+          </div>
+        </div>
+      </div>
+	</div>
+</div>
+	  					<style>
+						#huge_it_slideshow_left_1, #huge_it_slideshow_right_1, .huge_it_slideshow_dots_thumbnails_1 {display:none!important;}
+						</style>
+				</div>
+				<div id="vanity" style="text-align:center;padding:10px 0;padding-bottom:30px;">
+					<a target="_blank" href="http://www.vanityfair.com/culture/2015/08/tinder-hook-up-culture-end-of-dating?mbid=nl_080615_Daily&CNDID=29705902&spMailingID=7965463&spUserID=MTAyMjk0MjM2MDA0S0&spJobID=740808588&spReportId=NzQwODA4NTg4S0"><h2>Click to Read <img style="display:inline-block;height:50px;top: 15px;position: relative;" src="http://www.freestdcheck.org/wp-content/uploads/2015/08/van.png"> 's
+						<i>“Tinder and the Dawn of the Dating Apocalypse”</i> article</h2>
+					</a>
+				</div>
+                <h1 style="text-align: center; margin: 20px 0;"><a href="http://www.freestdcheck.org/wp-content/uploads/2015/09/Social-Apps-STI-Risk.pdf" target="_blank">Click to Read "Sex on demand: Geosocial networking phone apps and risk of sexually transmitted infections…” study</a></h1>
+				<div id="about-ahf" class="search-wrap">
+								 
+								<div class="search-form">
+									<h1><span class="search"></span>Find an STD testing center near you!</h1>
+									<form id="searchWidget"  name="locatorWidget">
+										<div class="fourcol first">
+										<label for="zip">City/Zip</label><br/>
+										<input id="zip" type="text" name="zip" /><br/><br/>
+										</div>
+										<div class="fourcol">
+										<label for="radius">Radius</label><br/>
+										<select id="radius" name="radius">
+										<option value="5">5 miles</option>
+										<option value="10">10 miles</option>
+										<option value="25" selected="selected" >25 miles</option>
+										<option value="50">50 miles</option>
+										<option value="100">100 miles</option>
+										</select><br/><br/>
+										</div>
+										<div class="fourcol">
+										<input id="submit" class="button-style fourcol last  " type="submit" value="Find Services">   
+										</div>
+									</form>
+ 
+								</div>
+								
+				</div>
+													<script>
+									 jQuery('#searchWidget').submit(function(e){
+ 
+		e.preventDefault();
+		console.log('locator');
+		var zip = jQuery('#searchWidget #zip').val().toString();
+		var radius = jQuery('#searchWidget #radius').val().toString();
+		var link = 'http://www.freestdcheck.org/locations/?ml___postal_code='+ zip +'&ml___task=search_zip&ml___radius='+ radius;
+		window.open(link , "width=600,height=600,scrollbars=yes");
+	})
+									</script>
+									<!-- <script language="javascript" src="//code.metalocator.com/index.php?option=com_locator&view=directory&layout=staging_javascript&tmpl=component&framed=1&format=raw&no_html=1&Itemid=1866"></script> -->
+									 								</div>
+								
+				</div>
+ 
+				
+				<div id="inner-content" class="wrap clearfix">
+
+						<div id="main" class="twelvecol first clearfix" role="main">
+							<div class="video-container" style="margin-bottom:40px; width:600px; margin:auto; display:block">
+ <script src="http://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v1.5.min.js"></script>
+<div class="plyfe-widget" data-slot="Rst"></div>
+							</div>
+							<div style="margin-bottom:20px;float:left;">
+						<div class="ninecol center">
+							<div class="twocol first">
+								<img class="AHF-avatar" src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/ahf-avatar.png" width="100px;"/>
+							</div>
+							<div class="tencol ">
+								<a href="http://www.aidshealth.org" target="_blank"><h1>AIDS Healthcare Foundation<span class="icon arrow"></span></h1></a>
+								<hr />
+								<p>freeSTDcheck.org is a sexual health resource for free STD testing, treatment, and information launched by AIDS Healthcare Foundation (AHF), the largest provider of HIV/AIDS care in the U.S. AHF provides cutting edge medicine and advocacy in 31 countries worldwide, regardless of ability to pay.</p>
+							</div>
+						</div>
+					</div>
+					
+
+							
+							<article id="post-2" class="clearfix post-2 page type-page status-publish hentry" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+								<header class="article-header">
+ 
+
+								</header> <!-- end article header -->
+
+								<section class="entry-content clearfix" itemprop="articleBody">
+									<div class="twelvecol first testing-steps">
+<div class="threecol first">
+<div class="step first">
+<div class="number">
+<p>1</p>
+</div>
+<img src="http://freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/step-1.png" alt="" />
+<h1>Find a<br />
+Location</h1>
+</div>
+</div>
+<div class="threecol">
+<div class="step two">
+<div class="number">
+<p>2</p>
+</div>
+<img src="http://freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/step-2.png" alt="" />
+<h1>Walk<br />
+In</h1>
+</div>
+</div>
+<div class="threecol">
+<div class="step three">
+<div class="number">
+<p>3</p>
+</div>
+<img src="http://freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/step-3.png" alt="" />
+<h1>Get<br />
+Tested</h1>
+</div>
+</div>
+<div class="threecol last">
+<div class="step last">
+<div class="number">
+<p>4</p>
+</div>
+<img src="http://freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/step-4.png" alt="" />
+<h1>Know<br />
+Your Status</h1>
+</div>
+</div>
+</div>
+<div class="sixcol first block"><a href="http://freestdcheck.org/std-basics"><br />
+</a></p>
+<h1>STD Basics</h1>
+<hr />
+<p>Learn about the most common STDs, how they are contracted and how they can be prevented. The more you know, the more you can protect yourself.</p>
+</div>
+<div class="sixcol last block"><a href="http://freestdcheck.org/faqs"><br />
+</a></p>
+<h1>FAQs</h1>
+<hr />
+<p>Find out about what the typical testing experience is like and how you can benefit from it. Testing is free fast and confidential for everyone.</p>
+</div>
+								</section> <!-- end article section -->
+ 
+								
+
+							</article> <!-- end article -->
+
+							
+						</div> <!-- end #main -->
+
+						
+
+				</div> <!-- end #inner-content -->
+
+			</div> <!-- end #content -->
+
+			<footer class="footer" role="contentinfo">
+
+				<div id="inner-footer" class="wrap clearfix">
+
+					
+										<div id="footer1" class="fourcol first clearfix" role="complementary">
+
+											<div class="icon site-map"></div>
+						<div id="nav_menu-2" class="widget widget_nav_menu"><div class="menu-site-map-container"><ul id="menu-site-map" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item menu-item-30"><a href="http://www.freestdcheck.org/">Home</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://www.freestdcheck.org/faqs/">FAQs</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://www.freestdcheck.org/std-basics/">STD Basics</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://www.freestdcheck.org/locations/">Locations</a></li>
+</ul></div></div>
+					
+				</div>					
+					
+					
+										<div id="footer2" class="fourcol clearfix" role="complementary">
+
+											<div class="icon links"></div>
+						<div id="nav_menu-3" class="widget widget_nav_menu"><div class="menu-links-container"><ul id="menu-links" class="menu"><li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21"><a href="http://www.aidshealth.org">AIDS Healthcare Foundation</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="http://www.AHFpharmacy.org">AHF Pharmacy</a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a href="http://www.outofthecloset.org">Out of the Closet Thrift Store</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="http://www.freehivtest.net">FreeHIVtest.net</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="http://www.sexualrevolution2.org">Sexual Revolution 2</a></li>
+</ul></div></div>
+					
+				</div>					
+					
+					
+										<div id="footer3" class="fourcol last clearfix" role="complementary">
+
+											<div class="icon join"></div><h1>Join </h1><img class="join" src="http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/images/freestdcheck-logo.png" />
+						<div id="text-2" class="widget widget_text">			<div class="textwidget"><div><form method="post" name="join-freestdcheck" action="https://s616820910.t.eloqua.com/e/f2" id="form93" ><input value="join-freestdcheck" type="hidden" name="elqFormName"  /><input value="616820910" type="hidden" name="elqSiteId"  /><input name="elqCampaignId" type="hidden"  /><div id="formElement0" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px" ><div class="field-wrapper" style="float: left; width: 100%; clear: both" ><div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%" ><p style="position: relative; margin: 0px; padding: 0px" ><label for="Name" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap" >Name<span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt" >*</span></label><input id="field0" name="Name" type="text" value="" style="width: 100%"  /></p></div></div></div><div id="formElement1" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px" ><div class="field-wrapper" style="float: left; width: 100%; clear: both" ><div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%" ><p style="position: relative; margin: 0px; padding: 0px" ><label for="emailAddress" style="display: block; line-height: 150%; padding: 1px 0pt 3px; white-space: nowrap" >Email Address<span style="color: red !important; display: inline; float: none; font-weight: bold; margin: 0pt 0pt 0pt; padding: 0pt 0pt 0pt" >*</span></label><input id="field1" name="emailAddress" type="text" value="" style="width: 100%"  /></p></div></div></div><div id="formElement2" class="sc-view form-design-field sc-static-layout sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px; padding: 6px 5px 9px 9px" ><div class="field-wrapper" style="float: left; width: 100%; clear: both" ><div class="_100" style="float: left; width: 96%; margin-right: 2%; margin-left: 2%" ><p style="position: relative; margin: 0px; padding: 0px" ><input type="submit" value="Join" style="font-size: 100%; height: 24px; width: 100px"  /></p></div></div></div></form><script src="https://img03.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript" ></script><style type="text/css" media="screen" >.LV_validation_message{ font-weight:bold; margin: 0 0 0 5px; }
+.LV_valid{ color:#00CC00; display:none; }
+.LV_invalid{ color:#CC0000; font-size:10px; }
+.LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active { border: 1px solid #00CC00; }
+.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid #CC0000; }</style><script type="text/javascript" >var field0 = new LiveValidation("field0", {validMessage: "", onlyOnBlur: true});field0.add(Validate.Presence, {failureMessage:"This field is required"});var field1 = new LiveValidation("field1", {validMessage: "", onlyOnBlur: true});field1.add(Validate.Presence, {failureMessage:"This field is required"});</script></div></div>
+		</div>
+					
+				</div>					
+
+
+				</div> <!-- end #inner-footer -->
+
+			</footer> <!-- end footer -->
+			<div id="sub-footer">
+			 
+				<div class="source-org copyright">
+				<span style="float:left;">&copy; 2015 FreeSTDcheck.org.</span>
+				<ul class="social-footer">
+				<li><a href="https://www.facebook.com/freehivtestdotnet" title="facebook"><span id="fb"></span></a></li>
+				<li><a href="https://twitter.com/freeHIVtest" title="twitter"><span id="twitter"></span></a></li>
+				</ul>
+				
+				</div>
+			</div>
+		</div> <!-- end #container -->
+
+		<!-- all js scripts are loaded in library/bones.php -->
+		<script type='text/javascript' src='http://www.freestdcheck.org/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/js/scripts.js'></script>
+<script type='text/javascript' src='http://www.freestdcheck.org/wp-content/themes/ahf-base-theme/library/js/custom.min.js'></script>
+
+	</body>
+
+</html> <!-- end page. what a ride! -->
