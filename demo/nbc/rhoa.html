@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7" lang="en-US" ><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9" lang="en-US" ><![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en-US" ><![endif]-->
+<!--[if (gte IE 10)|(gt IEMobile 7)]><!--><html lang="en-US" 
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAYBV1VTGwIBUVhQBgUH"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon.png" rel="apple-touch-icon" />
+<link rel="shortcut icon" href="http://www.bravotv.com/sites/nbcubravotv/themes/custom/bravotv/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<script>var _sf_startpt=(new Date()).getTime();</script>
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/sites/nbcubravotv/themes/custom/bravotv/images/icons/apple-touch/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<meta name="description" content="After months of overcoming numerous hurdles to conceive, Kandi and Todd are ecstatic to welcome their first child together. However, Kandi is faced with juggling the highs and lows of pregnancy coupled with a busy life as a hard-working career woman. Ready for her fresh start, Kenya has decided to build the ultimate dream home, &quot;Moore Manor,&quot; all while continuing her quest for love." />
+<link rel="image_src" href="http://www.bravotv.com/sites/nbcubravotv/files/legacy/BravoShowLogo_0012_RHOA.png" />
+<meta property="fb:app_id" content="1592250694320227" />
+<meta property="og:site_name" content="Bravo TV Official Site" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.bravotv.com/the-real-housewives-of-atlanta" />
+<meta property="og:title" content="The Real Housewives of Atlanta" />
+<meta property="og:description" content="After months of overcoming numerous hurdles to conceive, Kandi and Todd are ecstatic to welcome their first child together. However, Kandi is faced with juggling the highs and lows of pregnancy coupled with a busy life as a hard-working career woman. Ready for her fresh start, Kenya has decided to build the ultimate dream home, &quot;Moore Manor,&quot; all while continuing her quest for love." />
+<meta property="og:image" content="http://www.bravotv.com/sites/nbcubravotv/files/legacy/BravoShowLogo_0012_RHOA.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@bravotv" />
+<meta name="twitter:url" content="http://www.bravotv.com/the-real-housewives-of-atlanta" />
+<meta name="twitter:title" content="The Real Housewives of Atlanta" />
+<meta name="twitter:description" content="After months of overcoming numerous hurdles to conceive, Kandi and Todd are ecstatic to welcome their first child together. However, Kandi is faced with juggling the highs and lows of pregnancy coupled with a busy life as a hard-working career woman. Ready for her fresh start, Kenya has decided to build the ultimate dream home, &quot;Moore Manor,&quot; all while continuing her quest for love." />
+<meta name="twitter:image:src" content="http://www.bravotv.com/sites/nbcubravotv/files/legacy/BravoShowLogo_0012_RHOA.png" />
+<meta property="article:published_time" content="2008-12-03T10:21:00-05:00" />
+<meta property="article:modified_time" content="2015-11-03T12:31:20-05:00" />
+  <title>The Real Housewives of Atlanta | Bravo TV Official Site</title>
+  <link rel="stylesheet" href="http://www.bravotv.com/sites/nbcubravotv/files/css/css_11iZFPjPflWlxFuuKSBa9-ZWCnYpHxshrNcyTCgXRB0.css" media="all" />
+  <script>
+var mpscall = {"site":"bravo-web","path":"\/node\/920921","title":"The Real Housewives of Atlanta","content_id":"node920921","is_content":1,"type":"tv_show","cag":{"field-latest-season":"The-Real-Housewives-of-Atlanta-Season-8"},"pubdate":"1228317660","cat":"the-real-housewives-of-atlanta"}
+var mpsopts = {"host":"mps.nbcuni.com","updatecorrelator":true}
+var mps = mps || {};
+document.write('<scr'+'ipt id="mps-ext-load" src="//'+mpsopts.host+'/fetch/ext/load-'+mpscall.site+'.js"></scr'+'ipt>');
+</script>
+<script src="http://www.bravotv.com/sites/all/libraries/modernizr/modernizr.min.js?nwzugk"></script>
+<script src="http://www.bravotv.com/sites/nbcubravotv/files/js/js_nYFB1Wd1zKf60rbiaMGlPZw6AaSnC6v_mSVtw0paTME.js"></script>
+<script>
+document.createElement( "picture" );
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-920921 node-type-tv-show auth2-pages page-has-sticky-ad palette__peach" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+  <div id="page">
+          <div class="js-header-wrapper js-ad-offset">
+
+  <div class="header__container">
+    <div class="header header--show container">
+      <a class="icon icon-menu show-nav__toggle">Open menu</a>
+      <div class="header__logo">
+                  <a href="/" title="Home" rel="home" class="logo">
+            <svg width="106" height="78" version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="136.2 172.1 264.1 194.5" enable-background="new 136.2 172.1 264.1 194.5" xml:space="preserve">
+              <switch>
+                <g>
+                  <path d="M400.3,294.9c0,14.3-7.7,22-22,22h-171l-49.6,49.6V317h-21.5V172.1h242c14.3,0,22,7.7,22,22L400.3,294.9"/>
+                  <path fill="#4EBBC6" d="M201.9,224.7v-13c0-11.9-6.4-17.8-19.6-17.8h-24.6v94.4h25c13,0,19.6-5.9,19.6-18v-18.7
+                    c0-7-2.8-10.8-9.2-12.3C198.6,237.2,201.9,233,201.9,224.7L201.9,224.7z M226.4,288.3v-56.7c2.6-2.4,6.2-3.9,12.3-3.9v-18.7
+                    c-6.8-0.4-9.7,2.9-12.9,8.6v-8.1h-16.7v78.8H226.4L226.4,288.3z M251.9,245.5c-6.4,2.8-9.2,6.6-9.2,14.9V276c0,8.8,4.6,13,11.9,13
+                    h0.4c5.5,0,10.3-2.9,13-6.6v5.9h16.5v-63c0-11.2-6.1-16.7-18.4-16.7H262c-12.3,0-18.4,5.5-18.4,16.7v10.8h16.2V226
+                    c0-1.8,0.7-2.8,2.6-2.8h2.6c1.8,0,2.6,0.9,2.6,2.8v12.9L251.9,245.5L251.9,245.5z M361.3,289.4c12.7,0,19.1-5.9,19.1-17.6V226
+                    c0-11.8-6.4-17.4-19.1-17.4h-4.8c-12.7,0-19.1,5.7-19.1,17.4v45.7c0,11.8,6.4,17.6,19.1,17.6H361.3L361.3,289.4z M322.2,288.3
+                    l11.9-78.8H318l-6.4,53.6l-6.4-53.6h-17.1l11.9,78.8L322.2,288.3L322.2,288.3z M180.8,232.8h-5.9v-23.7h5.9c2.4,0,3.7,1.3,3.7,3.7
+                    v16.3C184.5,231.5,183.2,232.8,180.8,232.8L180.8,232.8z M363.2,226.9V271c0,1.8-0.9,2.8-2.9,2.8h-2.6c-2,0-2.9-0.9-2.9-2.8v-44.1
+                    c0-2,0.9-2.9,2.9-2.9h2.6C362.3,224,363.2,224.9,363.2,226.9L363.2,226.9z M184.7,251v18.2c0,2.6-1.1,3.7-3.7,3.7h-6.1v-25.5h6.1
+                    C183.6,247.3,184.7,248.4,184.7,251L184.7,251z M267.5,272.9c-1.3,0.7-2.8,1.3-4.4,1.3c-2.8,0-3.9-1.1-3.9-3.9v-8.6
+                    c0-3.1,0.6-4.4,3.1-5.9l5.1-2.8V272.9"/>
+                </g>
+                <foreignObject>
+                  <img src="http://www.bravotv.com/sites/nbcubravotv/themes/custom/bravotv/logo.png" alt="Home" />
+                </foreignObject>
+              </switch>
+            </svg>
+          </a>
+              </div>
+      <div class="header__primary">
+                <h1 class="show-nav__title">
+                  <a href="/the-real-housewives-of-atlanta" class="show-nav__title-link">
+            The Real Housewives of Atlanta          </a>
+                </h1>
+                <div class="show-nav__title-info-container">
+          <a class="show-nav__title-info icon icon-info" href="/the-real-housewives-of-atlanta/about" title="About">About</a>
+        </div>
+        <div class="show-nav">
+          <div id="block-menu-block-show-nav" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-show-nav menu-name-menu-show-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-54131"><a href="/the-real-housewives-of-atlanta/videos">Watch</a></li>
+<li class="leaf menu-mlid-54151"><a href="/the-real-housewives-of-atlanta/blogs">Blogs</a></li>
+<li class="leaf menu-mlid-54136"><a href="/the-daily-dish/show/the-real-housewives-of-atlanta">News</a></li>
+<li class="leaf menu-mlid-54141"><a href="/the-real-housewives-of-atlanta/episode-guide">Episodes</a></li>
+<li class="leaf menu-mlid-265061 mobile-only"><a href="/the-real-housewives-of-atlanta/schedule">Show Schedule</a></li>
+<li class="last leaf menu-mlid-1"><a href="/the-real-housewives-of-atlanta/photos">Photos</a></li>
+</ul></div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="header__secondary">
+                <div class="header__promote">
+                      <div class="header__promote-top juliet">
+              Season Premiere            </div>
+                                <div class="header__promote-bottom hotel">
+              Nov 8 8/7c            </div>
+                  </div>
+                <div class="header__icons">
+          <div class="icon-list icon-list--social first">
+            <a class="icon icon-list__icon icon-facebook--gray header-icon first" href="#">Facebook</a>
+            <a class="icon icon-list__icon icon-twitter--gray header-icon last" href="#">Twitter</a>
+            <div class="drop-down--social-links">
+              <h2 class="drop-down__title foxtrot">Stay connected with  #RHOA</h2>
+              <div>
+                <ul>
+                  <li>
+                                      <a class="addthis_button_facebook_like" fb:like:layout="button" fb:like:action="like" fb:like:href="https://www.facebook.com/RealHousewivesofAtlanta"></a>
+                                    </li>
+                  <li>
+                                      <a class="addthis_button_twitter_follow_native" tw:count="none" tw:screen_name="bravotv"></a>
+                                    </li>
+                  <li>
+                                      <iframe class="btn button--tumblr" frameborder="0" border="0" scrolling="no" allowtransparency="true" height="25" src="http://platform.tumblr.com/v1/follow_button.html?button_type=1&amp;tumblelog=bravotv&amp;color_scheme=dark"></iframe>
+                                    </li>
+                </ul>
+              </div>
+              <div class="newsletter-signup">
+                <form action="/the-real-housewives-of-atlanta" method="post" id="bravo-lyris-subscription-form" accept-charset="UTF-8"><div><h2 class="newsletter-signup__title">Get the Bravo Newsletter</h2><div class="form-item form-type-emailfield form-item-email">
+  <label class="element-invisible" for="edit-email">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="email" id="edit-email" name="email" value="" size="60" maxlength="60" placeholder="Enter your email" class="form-text form-email required" />
+</div>
+<input type="hidden" name="form_build_id" value="form-xyWsukmmfgNIr5sLxr5Dyul1GVPGjTNqXdVQgj66dos" />
+<input type="hidden" name="form_id" value="bravo_lyris_subscription_form" />
+<div class="form-actions form-wrapper" id="edit-actions"><input class="button--right form-submit" type="submit" id="edit-submit" name="op" value="Sign Up!" /></div></div></form>              </div>
+            </div>
+          </div>
+          <div class="icon-list last">
+            <a class="icon icon-list__icon icon-calendar first" href="/the-real-housewives-of-atlanta/schedule">Schedule</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <main id="main" class="main" role="main">
+
+      
+        <div class="container vertical-nav__wrapper">
+                    <div class="vertical-nav--show ad-offset">
+                      <div class="vertical-nav__inner-wrapper">
+
+              <div class="vertical-nav__top">
+                <div class="show-nav--vertical">
+                  <div id="block-menu-block-show-nav-vert" class="block block-menu-block">
+
+    
+  <div class="content">
+    <div class="menu-block-wrapper menu-block-show-nav-vert menu-name-menu-show-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first leaf menu-mlid-54131"><a href="/the-real-housewives-of-atlanta/videos">Watch #RHOA</a></li>
+<li class="leaf menu-mlid-54151"><a href="/the-real-housewives-of-atlanta/blogs">Blogs</a></li>
+<li class="leaf menu-mlid-54136"><a href="/the-daily-dish/show/the-real-housewives-of-atlanta">News</a></li>
+<li class="leaf menu-mlid-54141"><a href="/the-real-housewives-of-atlanta/episode-guide">Episodes</a></li>
+<li class="leaf menu-mlid-265061 mobile-only"><a href="/the-real-housewives-of-atlanta/schedule">Show Schedule</a></li>
+<li class="last leaf menu-mlid-1"><a href="/the-real-housewives-of-atlanta/photos">Photos</a></li>
+</ul></div>
+  </div>
+</div>
+                  <div class="icon-list vertical-nav__icons">
+                                          <a class="icon icon-list__icon icon-facebook--white" href="https://www.facebook.com/RealHousewivesofAtlanta">Facebook</a>
+                                                              <a class="icon icon-list__icon icon-twitter--white" href="https://twitter.com/bravotv">Twitter</a>
+                                                              <a class="icon icon-list__icon icon-tumblr--white" href="http://bravotv.tumblr.com">Tumblr</a>
+                                      </div>
+                </div>
+              </div>
+              <div class="vertical-nav__middle">
+                <div class="primary-nav--vertical">
+                  <div class="menu-block-wrapper menu-block-primary-nav menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="first expanded active-trail menu-mlid-3276 header-nav-item"><a href="/shows" class="header-shows active-trail">Shows</a><div class="primary-nav__sub-menu drop-down--primary-nav"><ul class="primary-nav__sub-menu__buttons"><li class="primary-nav__sub-menu__buttons--see-all-shows"><a href="/shows" class="button" title="See all shows">See all shows</a></li><li  class="primary-nav__sub-menu__buttons--full-schedule"><a href="/schedule" class="button--icon--calendar" title="Full schedule">Full schedule</a></li></ul><ul class="menu"><li class="first leaf menu-mlid-267176"><a href="/apres-ski">Apres Ski</a></li>
+<li class="leaf menu-mlid-267011"><a href="/below-deck">Below Deck</a></li>
+<li class="leaf menu-mlid-267006"><a href="/dont-be-tardy">Dont Be Tardy</a></li>
+<li class="leaf menu-mlid-267196"><a href="/girlfriends-guide-to-divorce">Girlfriends Guide to Divorce</a></li>
+<li class="leaf menu-mlid-265141"><a href="/inside-the-actors-studio">Inside the Actors Studio</a></li>
+<li class="leaf menu-mlid-267036"><a href="/ladies-of-london">Ladies of London</a></li>
+<li class="leaf menu-mlid-265871"><a href="/last-chance-kitchen">Last Chance Kitchen</a></li>
+<li class="leaf menu-mlid-267001"><a href="/manzod-with-children">Manzod with Children</a></li>
+<li class="leaf menu-mlid-267016"><a href="/million-dollar-listing-los-angeles">Million Dollar Listing Los Angeles</a></li>
+<li class="leaf menu-mlid-267056"><a href="/the-peoples-couch">The Peoples Couch</a></li>
+<li class="leaf active-trail active menu-mlid-265136"><a href="/the-real-housewives-of-atlanta" class="active-trail active-trail active">The Real Housewives of Atlanta</a></li>
+</ul><ul class="menu"><li class="leaf menu-mlid-265156"><a href="/the-real-housewives-of-beverly-hills">The Real Housewives of Beverly Hills</a></li>
+<li class="leaf menu-mlid-267261"><a href="/the-real-housewives-of-cheshire">The Real Housewives of Cheshire</a></li>
+<li class="leaf menu-mlid-265896"><a href="/the-real-housewives-of-melbourne">The Real Housewives of Melbourne</a></li>
+<li class="leaf menu-mlid-264681"><a href="/the-real-housewives-of-new-jersey">The Real Housewives of New Jersey</a></li>
+<li class="leaf menu-mlid-264676"><a href="/the-real-housewives-of-new-york-city">The Real Housewives of New York City</a></li>
+<li class="leaf menu-mlid-264671"><a href="/the-real-housewives-of-orange-county">The Real Housewives of Orange County</a></li>
+<li class="leaf menu-mlid-265146"><a href="/top-chef">Top Chef</a></li>
+<li class="leaf menu-mlid-267191"><a href="/untying-the-knot">Untying the Knot</a></li>
+<li class="leaf menu-mlid-267181"><a href="/vanderpump-rules">Vanderpump Rules</a></li>
+<li class="leaf menu-mlid-264686"><a href="/watch-what-happens-live">Watch What Happens Live</a></li>
+<li class="last leaf menu-mlid-267256"><a href="/work-out-new-york">Work Out New York</a></li>
+</ul></div></li>
+<li class="leaf menu-mlid-202451"><a href="/full-episodes">Full Episodes</a></li>
+<li class="leaf menu-mlid-265056 mobile-only"><a href="/schedule">Schedule</a></li>
+<li class="leaf menu-mlid-265066 mobile-only"><a href="http://www.shopbybravo.com/?ecid=prf-bvo-100000&amp;pa=prf-bvo-100000">Shop</a></li>
+<li class="leaf menu-mlid-266781"><a href="/the-daily-dish/news">The Daily Dish</a></li>
+<li class="last leaf menu-mlid-266846"><a href="http://www.bravotv.com/photos">Photos</a></li>
+</ul></div>
+                </div>
+                <div class="icon-list vertical-nav__icons">
+                  <a class="addthis_button_facebook_follow icon icon-list__icon icon-facebook--white" addthis:userid="BRAVO" href="#"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Facebook</a>
+                  <a class="addthis_button_twitter_follow icon icon-list__icon icon-twitter--white" addthis:userid="bravotv" href="#"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Twitter</a>
+                  <a class="addthis_button_instagram_follow icon icon-list__icon icon-instagram--white" addthis:userid="bravotv" href="#" title="Tumblr"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Tumblr</a>
+                  <a class="addthis_button_tumblr_follow icon icon-list__icon icon-tumblr--white" addthis:userid="bravotv" href="#" title="Tumblr"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Tumblr</a>
+                  <a class="addthis_button_pinterest_follow icon icon-list__icon icon-pinterest--white" addthis:userid="bravobybravo" href="#" title="Pinterest"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Pinterest</a>
+                </div>
+              </div>
+              <div class="vertical-nav__bottom">
+                <div class="newsletter-signup--vertical">
+                  <form action="/the-real-housewives-of-atlanta" method="post" id="bravo-lyris-subscription-form--2" accept-charset="UTF-8"><div><h2 class="newsletter-signup__title">Get the Bravo Newsletter</h2><div class="form-item form-type-emailfield form-item-email">
+  <label class="element-invisible" for="edit-email--2">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="email" id="edit-email--2" name="email" value="" size="60" maxlength="60" placeholder="Enter your email" class="form-text form-email required" />
+</div>
+<input type="hidden" name="form_build_id" value="form-SfckuTb5LdFFbyz2oU1wGX3aUQ0SjtFIv0VlzR-1KHI" />
+<input type="hidden" name="form_id" value="bravo_lyris_subscription_form" />
+<div class="form-actions form-wrapper" id="edit-actions--2"><input class="button--right form-submit" type="submit" id="edit-submit--2" name="op" value="Sign Up!" /></div></div></form>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+      <div class="container">
+                <a id="main-content"></a>
+
+        
+                
+              </div>
+
+              
+<article class="tv-show" data-nid="920921" data-node-url="/the-real-housewives-of-atlanta">
+
+      <div class="hero-area__wrapper container">
+              
+<section class="hero-area">
+          <div class="hero-promo--primary">
+          
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/season-8/videos/this-season-on-rhoa" class="hero-promo__wrapper-link">
+<article class="hero-promo__wrapper">
+
+    <figure class="hero-promo__image">
+    
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--computer-1_5x/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=0NyWv8z4&amp;timestamp=1443214132 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--computer/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=ktDCacOs&amp;timestamp=1443214132 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--wide-1_5x/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=ZitCNwT9&amp;timestamp=1443214132 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--wide/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=iIYUZiu4&amp;timestamp=1443214132 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile-1_5x/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=o5Kns9MW&amp;timestamp=1443214132 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=TFb9cGFh&amp;timestamp=1443214132 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--computer/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=ktDCacOs&amp;timestamp=1443214132" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--large--computer/public/real-housewives-of-atlanta-season-8-hero-supertesae.jpg?itok=ktDCacOs&amp;timestamp=1443214132 788w" alt="" title="" />
+<!-- <![endif]-->
+</picture>  </figure>
+  
+  <div class="hero-promo__info-wrapper">
+    <div class="hero-promo__info">
+              <div class="hero-promo__badge juliet">
+          
+  Preview        </div>
+      
+      <h3 class="hero-promo__title oscar">Your First Look at the New Season!</h3>
+
+              <p class="hero-promo__description tango">
+          
+  Prepare for new 'Wives, familiar faces, and one unbelievable cliffhanger...        </p>
+                  <span class="promo__call-to-action juliet cta-video--w">
+        
+  Watch Video      </span>
+          </div>
+  </div>
+
+</article>
+</a>
+    </div>
+          <div class="hero-promo--secondary hero-promo--secondary-1">
+          
+<a href="http://www.bravotv.com/t/100-episodes-of-rhoa" class="hero-promo__wrapper-link">
+<article class="hero-promo__wrapper">
+
+    <figure class="hero-promo__image">
+    
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer-1_5x/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=pmlvx15g&amp;timestamp=1413178288 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=wd8iJezZ&amp;timestamp=1413178288 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--wide-1_5x/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=uBMgxyZ_&amp;timestamp=1413178288 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--wide/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=Lcyn1X_v&amp;timestamp=1413178288 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile-1_5x/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=lxo8Vxvs&amp;timestamp=1413178288 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=8b5sIJeE&amp;timestamp=1413178288 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=wd8iJezZ&amp;timestamp=1413178288" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/legacy/photos/milliondollarlistinglaseason5galleryfiredsheree.jpg?itok=wd8iJezZ&amp;timestamp=1413178288 394w" alt="" title="" />
+<!-- <![endif]-->
+</picture>  </figure>
+  
+  <div class="hero-promo__info-wrapper">
+    <div class="hero-promo__info">
+              <div class="hero-promo__badge juliet">
+          
+  Exclusive        </div>
+      
+      <h3 class="hero-promo__title oscar">Bloop: Celebrate the 100th Episode!</h3>
+
+                  <span class="promo__call-to-action juliet cta-gonow--w">
+        
+  Go Now      </span>
+          </div>
+  </div>
+
+</article>
+</a>
+    </div>
+          <div class="hero-promo--secondary hero-promo--secondary-2">
+          
+<a href="http://www.bravotv.com/the-daily-dish/where-are-your-favorite-former-rhoa-cast-members" class="hero-promo__wrapper-link">
+<article class="hero-promo__wrapper">
+
+    <figure class="hero-promo__image">
+    
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer-1_5x/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=x_QX8tKi&amp;timestamp=1436553754 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=ntDsvm24&amp;timestamp=1436553754 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--wide-1_5x/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=XigMQmK5&amp;timestamp=1436553754 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--wide/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=qIA9Gqkf&amp;timestamp=1436553754 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile-1_5x/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=Iquxn39f&amp;timestamp=1436553754 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--mobile/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=ryiRnzEx&amp;timestamp=1436553754 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=ntDsvm24&amp;timestamp=1436553754" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/hero-image--small--computer/public/real-housewives-of-atlanta-100-ep-hero-where-are-they-now.jpg?itok=ntDsvm24&amp;timestamp=1436553754 394w" alt="" title="" />
+<!-- <![endif]-->
+</picture>  </figure>
+  
+  <div class="hero-promo__info-wrapper">
+    <div class="hero-promo__info">
+              <div class="hero-promo__badge juliet">
+          
+  Blog        </div>
+      
+      <h3 class="hero-promo__title oscar">Where Are the Former #RHOA Cast Members Now?</h3>
+
+                  <span class="promo__call-to-action juliet cta-blog--w">
+        
+  Read Blog      </span>
+          </div>
+  </div>
+
+</article>
+</a>
+    </div>
+  </section>
+            <div class="watch-promos__ad watch-promos__ad--show">
+        <div class="advertisement bravo-ad" data-adregion="topbox" data-injection-method="1">
+      <script>typeof(mps.getAd) == 'function' && document.write(mps.getAd('topbox'));</script>
+  </div>
+      </div>
+              <div class="watch-promos__wrapper">
+          <h2 class="watch-promos__headline watch-promos__headline--show charlie">
+            
+  Watch Videos          </h2>
+          
+
+<ul class="watch-promos">
+      <li class="watch-promos__promo watch-promos__promo--1">
+      
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/season-7/videos/the-real-kids-of-atlanta-a-look-back" class="teaser-promo__wrapper-link">
+    <article class="teaser-promo">
+          <figure class="teaser-promo__image teaser-promo__image--primary teaser-promo__image--promo-show-watch">
+        
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--computer-1_5x/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=uFTl4qC_&amp;timestamp=1418683885 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--computer/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=AtQoNtGj&amp;timestamp=1418683885 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--tablet-1_5x/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=KSw6Imso&amp;timestamp=1418683885 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--tablet/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=HdBqheJ_&amp;timestamp=1418683885 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=QDpLWwVc&amp;timestamp=1418683885 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=n9y4BrS9&amp;timestamp=1418683885 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=QDpLWwVc&amp;timestamp=1418683885" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/field_media_items/2014/12/real-housewives-of-atlanta-season-7-kids-01.jpg?itok=QDpLWwVc&amp;timestamp=1418683885 450w" alt="" title="" />
+<!-- <![endif]-->
+</picture>                  <figcaption class="teaser-promo__badge juliet">
+            
+  Exclusive          </figcaption>
+              </figure>
+        <div class="teaser-promo__info teaser-promo__info--promo-show-watch">
+      <h3 class="teaser-promo__title">The Real Kids of Atlanta: A Look Back</h3>
+              <p class="teaser-promo__description india">
+          
+  See how they've grown up over the years.        </p>
+          </div>
+  </article>
+  </a>
+    </li>
+      <li class="watch-promos__promo watch-promos__promo--2">
+      
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/season-7/videos/how-do-the-wives-deal-with-the-haters" class="teaser-promo__wrapper-link">
+    <article class="teaser-promo">
+          <figure class="teaser-promo__image teaser-promo__image--primary teaser-promo__image--promo-show-watch">
+        
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--computer-1_5x/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=KE-eaWK9&amp;timestamp=1429904081 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--computer/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=uqGNqduF&amp;timestamp=1429904081 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--tablet-1_5x/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=JrJeA3b0&amp;timestamp=1429904081 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--tablet/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=mWD9MD91&amp;timestamp=1429904081 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=HDTY9jr9&amp;timestamp=1429904081 1.5x, http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=7XJS0YqC&amp;timestamp=1429904081 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=HDTY9jr9&amp;timestamp=1429904081" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-show-watch--mobile-1_5x/public/real-housewives-of-atlanta-season-7-watch-row-how-do-the-wives-deal-with-the-haters_1.jpg?itok=HDTY9jr9&amp;timestamp=1429904081 450w" alt="" title="" />
+<!-- <![endif]-->
+</picture>                  <figcaption class="teaser-promo__badge juliet">
+            
+  Exclusive          </figcaption>
+              </figure>
+        <div class="teaser-promo__info teaser-promo__info--promo-show-watch">
+      <h3 class="teaser-promo__title">An #RHOA Lesson in Dealing With Haters</h3>
+              <p class="teaser-promo__description india">
+          
+  Haters gonna hate. Find out how the 'Wives handle the social media guff.&nbsp;        </p>
+          </div>
+  </article>
+  </a>
+    </li>
+  </ul>
+
+          <div class="watch-promos__cta-wrapper">
+            <a href="/the-real-housewives-of-atlanta/videos" class="button">
+              See All Videos            </a>
+          </div>
+        </div>
+          </div>
+
+
+      <div class="container">
+      
+<section class="dontmiss-promos">
+	<div class="center-title">  <h2 class="card-list__title">  Don't Miss  </h2></div>
+
+  <ul class="dontmiss-promos__wrapper">
+          <li class="dontmiss-promos__promo" style=" width:28%">
+        
+<a href="http://www.bravotv.com/the-ultimate-housewives-in-bikinis-gallery" class="dontmiss-promo__wrapper-link">
+<article class="dontmiss-promo" style="width:300px; height:250px; margin-right:25px">
+<script src="https://d2hlj83egq3ows.cloudfront.net/components/plyfe-widgets-bootstrap/dist/plyfe-widgets-bootstrap-v1.5.min.js"></script>
+<div class="plyfe-widget" data-slot="xRx"></div>
+
+</article>
+</a>
+      </li>
+          <li class="dontmiss-promos__promo">
+        
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/photos/welcome-to-haute-lanta" class="dontmiss-promo__wrapper-link">
+<article class="dontmiss-promo">
+
+    <figure class="dontmiss-promo__image dontmiss-promo__image--primary">
+    
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/photos/therealhousewivesofatlantagalleryvintagefashion07.jpg?itok=FiD-AQ_L&amp;timestamp=1413178288 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--tablet/public/legacy/photos/therealhousewivesofatlantagalleryvintagefashion07.jpg?itok=Mox-XOkk&amp;timestamp=1413178288 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/photos/therealhousewivesofatlantagalleryvintagefashion07.jpg?itok=FiD-AQ_L&amp;timestamp=1413178288 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/photos/therealhousewivesofatlantagalleryvintagefashion07.jpg?itok=FiD-AQ_L&amp;timestamp=1413178288" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/photos/therealhousewivesofatlantagalleryvintagefashion07.jpg?itok=FiD-AQ_L&amp;timestamp=1413178288 270w" alt="" title="" />
+<!-- <![endif]-->
+</picture>  </figure>
+  
+  <div class="dontmiss-promo__info-wrapper">
+    <div class="dontmiss-promo__info">
+
+      <h3 class="dontmiss-promo__title kilo">
+        Welcome to Haute-lanta      </h3>
+
+              <p class="dontmiss-promo__description">
+          
+  From wigs to bike helmets to rhinestone lashes, enjoy the Atlanta ladies' signature style.        </p>
+                  <span class="dontmiss-promo__call-to-action juliet cta-gallery">
+        
+  View Photos      </span>
+          </div>
+  </div>
+
+</article>
+</a>
+      </li>
+          <li class="dontmiss-promos__promo">
+        
+<a href="http://www.bravotv.com/the-ultimate-before-they-were-housewives-collection" class="dontmiss-promo__wrapper-link">
+<article class="dontmiss-promo">
+
+    <figure class="dontmiss-promo__image dontmiss-promo__image--primary">
+    
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/images/photo/2013/09/real-housewives-of-new-jersey-season-3-before-they-were-housewives-kathy-06.jpg?itok=1xpNOiZK&amp;timestamp=1427314313 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--tablet/public/legacy/images/photo/2013/09/real-housewives-of-new-jersey-season-3-before-they-were-housewives-kathy-06.jpg?itok=xJAFRb65&amp;timestamp=1427314313 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/images/photo/2013/09/real-housewives-of-new-jersey-season-3-before-they-were-housewives-kathy-06.jpg?itok=1xpNOiZK&amp;timestamp=1427314313 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/images/photo/2013/09/real-housewives-of-new-jersey-season-3-before-they-were-housewives-kathy-06.jpg?itok=1xpNOiZK&amp;timestamp=1427314313" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/dont-miss--computer/public/legacy/images/photo/2013/09/real-housewives-of-new-jersey-season-3-before-they-were-housewives-kathy-06.jpg?itok=1xpNOiZK&amp;timestamp=1427314313 270w" alt="" title="" />
+<!-- <![endif]-->
+</picture>  </figure>
+  
+  <div class="dontmiss-promo__info-wrapper">
+    <div class="dontmiss-promo__info">
+
+      <h3 class="dontmiss-promo__title kilo">
+        The Ultimate Before They Were Housewives Collection      </h3>
+
+              <p class="dontmiss-promo__description">
+          
+  Check out photos of every Real Housewife pre-Bravo.        </p>
+                  <span class="dontmiss-promo__call-to-action juliet cta-gallery">
+        
+  View Photos      </span>
+          </div>
+  </div>
+
+</article>
+</a>
+      </li>
+      </ul>
+</section>
+    </div>
+  
+      <div class="row--tertiary" style="height:250px!important">
+      <div class="container">
+        
+
+<article class="marquee-promo">
+
+  <div class="marquee-promo__show-info">
+
+        <figure class="marquee-promo__logo">
+      <img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/show-logo-mono-marquee/public/legacy/knockout-logos/the-real-housewives-of-atlanta.png?itok=Ma93OFtU&amp;timestamp=1415110948" width="240" height="160" alt="" />    </figure>
+    
+  </div>
+
+    <a href="http://www.bravotv.com/the-real-housewives-of-atlanta/videos/rhoa-extended-scenes" class="marquee-promo__wrapper-link">
+      <div class="marquee-promo__upcoming">
+
+            <figure class="marquee-promo__image marquee-promo__image--primary">
+        
+  <img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/video-thumb--small/public/bravo_video_thumbnails/NBCU_Bravo/846/567/141212_2834221_Extended_Scene__Porsha_s_Photo_Shoot.jpg?itok=RI0W91SJ&amp;timestamp=1418413941" width="180" height="120" alt="" />      </figure>
+      
+      <div class="marquee-promo__info">
+        <h3 class="marquee-promo__title charlie">#RHOA Secrets Revealed!</h3>
+
+                  <h4 class="marquee-promo__badge juliet">
+            
+  Exclusive          </h4>
+        
+                  <div class="marquee-promo__description">
+            
+  <p>Watch previously unaired footage from last season.</p>          </div>
+                        <span class="marquee-promo__call-to-action juliet cta-video--w">
+          
+  Watch Video        </span>
+              </div>
+    </div>
+    </a>
+  
+    <div class="marquee-promo__video-services">
+    <h3 class="marquee-promo__video-services-title charlie">
+      The Real Housewives of Atlanta Anywhere    </h3>
+    <p class="marquee-promo__video-services-description">
+      Watch your favorite full episodes of The Real Housewives of Atlanta on any device:    </p>
+    <div class="item-list"><ul class="video-service__list"><li class="video-service__list-item first"><a href="https://itunes.apple.com/us/tv-season/real-housewives-atlanta-season/id933371191?uo=4&amp;amp;at=10l6XT" class="video-service__link video-service__link--itunes"><div class="logo--itunes">iTunes</div></a></li>
+<li class="video-service__list-item"><a href="http://www.amazon.com/gp/product/B00PKWB142?ie=UTF8&amp;amp;camp=1789&amp;amp;creativeASIN=B00PKWB142&amp;amp;linkCode=xm2&amp;amp;tag=bravotv0c7-20" class="video-service__link video-service__link--amazon"><div class="logo--amazon">Amazon</div></a></li>
+<li class="video-service__list-item"><a href="https://play.google.com/store/tv/show/The_Real_Housewives_of_Atlanta?id=283EijCD6kA&amp;amp;hl=en" class="video-service__link video-service__link--google-play"><div class="logo--google-play">Google Play</div></a></li>
+<li class="video-service__list-item last"><a href="http://www.vudu.com/movies/#search/The%20Real%20Housewives%20of%20Atlanta" class="video-service__link video-service__link--vudu"><div class="logo--vudu">Vudu</div></a></li>
+</ul></div>  </div>
+  
+</article>
+      </div>
+    </div>
+  
+      <div class="row--gray">
+      <div class="container">
+        <section class="latest-content latest-content--first card-list">
+                <div class="center-title">
+      <h2 class="card-list__title">What's New</h2>
+    </div>
+        </section>
+      </div>
+    </div>
+  
+      <div class="container">
+      
+<section class="gallery-promos">
+      <div class="gallery-promos__promo">
+      
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/photos/the-ultimate-housewives-in-bikinis-gallery" class="hero-promo__wrapper-link">
+  <article class="hero-promo__wrapper hero-promo__wrapper--promo-galleries">
+        <figure class="hero-promo__image hero-promo__image--promo-galleries">
+      
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--computer/public/real-housewives-of-atlanta-season-7-hero-bikinis.jpg?itok=WUaMxU_6&amp;timestamp=1428092236 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--tablet/public/real-housewives-of-atlanta-season-7-hero-bikinis.jpg?itok=vnoMyjbX&amp;timestamp=1428092236 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-hero-bikinis.jpg?itok=H_oLF0JZ&amp;timestamp=1428092236 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-hero-bikinis.jpg?itok=H_oLF0JZ&amp;timestamp=1428092236" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-hero-bikinis.jpg?itok=H_oLF0JZ&amp;timestamp=1428092236 600w" alt="" title="" />
+<!-- <![endif]-->
+</picture>    </figure>
+        <div class="hero-promo__info-wrapper">
+      <div class="hero-promo__info">
+        <h3 class="hero-promo__title hero-promo__title--promo-galleries oscar">Housewives in Bikinis!</h3>
+                  <div class="hero-promo__description hero-promo__description--promo-galleries tango">
+            
+  <p>Is it hot in here or is it just these Housewives?</p>          </div>
+                        <span class="promo__call-to-action juliet cta-gallery--w">
+          
+  View Photos        </span>
+              </div>
+    </div>
+  </article>
+</a>
+    </div>
+      <div class="gallery-promos__promo">
+      
+<a href="http://www.bravotv.com/the-real-housewives-of-atlanta/photos/the-10-best-rhoa-reads" class="hero-promo__wrapper-link">
+  <article class="hero-promo__wrapper hero-promo__wrapper--promo-galleries">
+        <figure class="hero-promo__image hero-promo__image--promo-galleries">
+      
+  <picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--computer/public/real-housewives-of-atlanta-season-7-best-reads.jpg?itok=C1-timjX&amp;timestamp=1422050112 1x" media="(min-width: 960px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--tablet/public/real-housewives-of-atlanta-season-7-best-reads.jpg?itok=azan-qEc&amp;timestamp=1422050112 1x" media="(min-width: 640px)" />
+<source srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-best-reads.jpg?itok=Ad_ZxHg7&amp;timestamp=1422050112 1x" media="(min-width: 300px)" />
+<!--[if IE 9]></video><![endif]-->
+<!--[if lt IE 9]>
+<img src="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-best-reads.jpg?itok=Ad_ZxHg7&amp;timestamp=1422050112" alt="" title="" />
+<![endif]-->
+<!--[if !lt IE 9]><!-->
+<img  srcset="http://www.bravotv.com/sites/nbcubravotv/files/styles/promo-galleries--mobile/public/real-housewives-of-atlanta-season-7-best-reads.jpg?itok=Ad_ZxHg7&amp;timestamp=1422050112 600w" alt="" title="" />
+<!-- <![endif]-->
+</picture>    </figure>
+        <div class="hero-promo__info-wrapper">
+      <div class="hero-promo__info">
+        <h3 class="hero-promo__title hero-promo__title--promo-galleries oscar">The 10 Best #RHOA Reads of All Time</h3>
+                  <div class="hero-promo__description hero-promo__description--promo-galleries tango">
+            
+  <p>The library is always open for the ladies of Atlanta...</p>          </div>
+                        <span class="promo__call-to-action juliet cta-gallery--w">
+          
+  View Photos        </span>
+              </div>
+    </div>
+  </article>
+</a>
+    </div>
+  </section>
+    </div>
+
+  
+  
+      <div class="row--gray">
+      <div class="container">
+        <section class="latest-content latest-content--second card-list">
+        </section>
+      </div>
+    </div>
+  
+  
+</article>
+      
+    </main>
+
+  </div> <!-- /#page -->
+
+  <footer class="site-footer">
+    <div class="site-footer__container container clearfix">
+      <div class="site-footer__triptych">
+        <div class="site-footer__half">
+          <h2 class="site-footer__header">Stay Connected with Bravo</h2>
+          <p class="site-footer__triptych-content">Get the latest news and info on your favorite shows and Bravolebrities!</p>
+
+          <div class="icon-list">
+            <a class="addthis_button_facebook_follow icon icon-list__icon icon-facebook--white" addthis:userid="BRAVO" href="#"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Facebook</a>
+            <a class="addthis_button_twitter_follow icon icon-list__icon icon-twitter--white" addthis:userid="bravotv" href="#"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Twitter</a>
+            <a class="addthis_button_instagram_follow icon icon-list__icon icon-instagram--white" addthis:userid="bravotv"  href="#" title="Instagram"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Instagram</a>
+            <a class="addthis_button_tumblr_follow icon icon-list__icon icon-tumblr--white" addthis:userid="bravotv" href="#" title="Tumblr"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Tumblr</a>
+            <a class="addthis_button_pinterest_follow icon icon-list__icon icon-pinterest--white" addthis:userid="bravobybravo" href="#" title="Pinterest"><img src="http://www.bravotv.com/sites/nbcubravotv/modules/custom/bravo_site/images/transp-bg-60-black.png" alt="" />Pinterest</a>
+          </div>
+        </div>
+
+        <div class="newsletter-signup site-footer__half">
+          <form action="/the-real-housewives-of-atlanta" method="post" id="bravo-lyris-subscription-form--3" accept-charset="UTF-8"><div><h2 class="newsletter-signup__title">Get the Bravo Newsletter</h2><div class="form-item form-type-emailfield form-item-email">
+  <label class="element-invisible" for="edit-email--3">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="email" id="edit-email--3" name="email" value="" size="60" maxlength="60" placeholder="Enter your email" class="form-text form-email required" />
+</div>
+<input type="hidden" name="form_build_id" value="form-klVCDrv0UYhH6p4eTp4dCECL7fewm_Gd1Y0Qpw5gaSo" />
+<input type="hidden" name="form_id" value="bravo_lyris_subscription_form" />
+<div class="form-actions form-wrapper" id="edit-actions--3"><input class="button--right form-submit" type="submit" id="edit-submit--3" name="op" value="Sign Up!" /></div></div></form>        </div>
+
+      </div>
+      <div class="site-footer__triptych">
+        <div id="block-menu-menu-about-bravo" class="block block-menu">
+
+    <h2 class="site-footer__header">About Bravo</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://www.affluencers.com/#/contacts">Advertise</a></li>
+<li class="leaf"><a href="/about-us">About Us</a></li>
+<li class="leaf"><a href="/frequently-asked-questions">FAQ</a></li>
+<li class="leaf"><a href="http://www.nbcuni.com/privacy/">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-and-conditions">Terms and Conditions</a></li>
+<li class="leaf"><a href="http://corporate.comcast.com/news-information/nbcuniversal-transaction/independent-programming">New Independent Programming Report</a></li>
+<li class="leaf"><a href="/closed-captioning">Closed Captioning</a></li>
+<li class="leaf"><a href="/sitemap.xml">XML Map</a></li>
+<li class="last leaf"><a href="http://www.bravotv.com/mobile">Bravo Apps &amp; Support</a></li>
+</ul>  </div>
+</div>
+      </div>
+      <div class="site-footer__triptych">
+        <div id="block-menu-menu-get-involved" class="block block-menu">
+
+    <h2 class="site-footer__header">Get Involved</h2>
+  
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="http://nbc.researchresults.com/?s=22">Join Viewer&#039;s Choice</a></li>
+<li class="leaf"><a href="/casting">Casting</a></li>
+<li class="leaf"><a href="http://www.nbcunicareers.com/search-results?search_type=criteria&amp;country=1&amp;state=all&amp;city=all&amp;keywords=bravo">Bravo Careers</a></li>
+<li class="last leaf"><a href="/contact">Contact Us</a></li>
+<li><a id="_bapw-link"><img id="_bapw-icon" style="display:inline !important;vertical-align:middle !important"/><span>AdChoices</span></a><script>(function(){var e=document,b,a=(e.location.protocol=="https:"?"https":"http"),c=(a=="https"?"https://info.evidon.com/c/betrad/pub/":"http://cdn.betrad.com/pub/");e.getElementById("_bapw-icon").src=c+"icon1.png";e.getElementById("_bapw-link").onclick=function(){var f=this;function d(i,l){var j=e.getElementsByTagName("head")[0]||e.documentElement,h=false,g=e.createElement("script");function k(){g.onload=g.onreadystatechange=null;j.removeChild(g);l()}g.src=i;g.onreadystatechange=function(){if(!h&&(this.readyState=="loaded"||this.readyState=="complete")){h=true;k()}};g.onload=k;j.insertBefore(g,j.firstChild)}this.onclick="return false";d(c+"pub1.js",function(){BAPW.i(f,{pid:206,ocid:908},false)})};b=new Image();b.src=a+"://l.betrad.com/pub/p.gif?pid=206&ocid=908&ii=1&r="+Math.random()}());</script></li></ul>  </div>
+</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <div class="container">
+              <a href="/" title="Home" rel="home" class="logo copyright__logo">
+          <svg width="106" height="78" version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="136.2 172.1 264.1 194.5" enable-background="new 136.2 172.1 264.1 194.5" xml:space="preserve">
+            <switch>
+              <g>
+                <path d="M400.3,294.9c0,14.3-7.7,22-22,22h-171l-49.6,49.6V317h-21.5V172.1h242c14.3,0,22,7.7,22,22L400.3,294.9"/>
+                <path fill="#4EBBC6" d="M201.9,224.7v-13c0-11.9-6.4-17.8-19.6-17.8h-24.6v94.4h25c13,0,19.6-5.9,19.6-18v-18.7
+                  c0-7-2.8-10.8-9.2-12.3C198.6,237.2,201.9,233,201.9,224.7L201.9,224.7z M226.4,288.3v-56.7c2.6-2.4,6.2-3.9,12.3-3.9v-18.7
+                  c-6.8-0.4-9.7,2.9-12.9,8.6v-8.1h-16.7v78.8H226.4L226.4,288.3z M251.9,245.5c-6.4,2.8-9.2,6.6-9.2,14.9V276c0,8.8,4.6,13,11.9,13
+                  h0.4c5.5,0,10.3-2.9,13-6.6v5.9h16.5v-63c0-11.2-6.1-16.7-18.4-16.7H262c-12.3,0-18.4,5.5-18.4,16.7v10.8h16.2V226
+                  c0-1.8,0.7-2.8,2.6-2.8h2.6c1.8,0,2.6,0.9,2.6,2.8v12.9L251.9,245.5L251.9,245.5z M361.3,289.4c12.7,0,19.1-5.9,19.1-17.6V226
+                  c0-11.8-6.4-17.4-19.1-17.4h-4.8c-12.7,0-19.1,5.7-19.1,17.4v45.7c0,11.8,6.4,17.6,19.1,17.6H361.3L361.3,289.4z M322.2,288.3
+                  l11.9-78.8H318l-6.4,53.6l-6.4-53.6h-17.1l11.9,78.8L322.2,288.3L322.2,288.3z M180.8,232.8h-5.9v-23.7h5.9c2.4,0,3.7,1.3,3.7,3.7
+                  v16.3C184.5,231.5,183.2,232.8,180.8,232.8L180.8,232.8z M363.2,226.9V271c0,1.8-0.9,2.8-2.9,2.8h-2.6c-2,0-2.9-0.9-2.9-2.8v-44.1
+                  c0-2,0.9-2.9,2.9-2.9h2.6C362.3,224,363.2,224.9,363.2,226.9L363.2,226.9z M184.7,251v18.2c0,2.6-1.1,3.7-3.7,3.7h-6.1v-25.5h6.1
+                  C183.6,247.3,184.7,248.4,184.7,251L184.7,251z M267.5,272.9c-1.3,0.7-2.8,1.3-4.4,1.3c-2.8,0-3.9-1.1-3.9-3.9v-8.6
+                  c0-3.1,0.6-4.4,3.1-5.9l5.1-2.8V272.9"/>
+              </g>
+              <foreignObject><img src="http://www.bravotv.com/sites/nbcubravotv/themes/custom/bravotv/logo.png" alt="Home"></foreignObject>
+            </switch>
+          </svg>
+        </a>
+            &copy;2015 Bravo Media LLC. <a href="http://www.nbcuniversal.com" class="copyright__link">A Division of NBCUniversal</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var _sf_async_config=Drupal.settings.chartbeat;
+  (function(){
+    function loadChartbeat() {
+      window._sf_endpt=(new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src',
+         (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+         "static.chartbeat.com/js/chartbeat.js");
+      document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+       loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script><!-- SiteCatalyst code version: H.24
+Copyright 1996-2015 Adobe, Inc. -->
+<script type="text/javascript" language="JavaScript">var s_account="nbcuglobal,nbcubravotvbu";</script>
+<script type="text/javascript" src="/sites/nbcubravotv/modules/features/bravo_sitecatalyst/js/s_code.js?nwzugk"></script>
+<script type="text/javascript"><!--
+
+s.pageName="The Real Housewives of Atlanta";
+s.contextData["bravo.userGroup"]="anonymous user";
+s.contextData["bravo.contentType"]="Show\/Series";
+s.contextData["bravo.season"]="";
+s.contextData["bravo.date"]="11-03-2015";
+s.contextData["bravo.articleTitle"]="The Real Housewives of Atlanta";
+s.contextData["bravo.people"]="";
+s.contextData["bravo.contentID"]="920921";
+s.contextData["bravo.pageURL"]="http:\/\/www.bravotv.com\/the-real-housewives-of-atlanta";
+s.contextData["bravo.franchise"]="";
+s.contextData["bravo.thedish"]="";
+s.contextData["nbcu.network"]="BravoTV.com";
+s.contextData["nbcu.showsite"]="The Real Housewives of Atlanta";
+s.contextData["nbcu.division"]="Cable";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24 -->
+<script src="http://www.bravotv.com/sites/nbcubravotv/files/js/js_kb3sd3ipp6ueOTYYhghhLzix6T0HywYMbI4F7B6o6d0.js"></script>
+<script src="http://www.bravotv.com/sites/nbcubravotv/files/js/js_47gFMCxS5URenrVSaad2_tL9needYQlzJ4KlcIc1Oi8.js"></script>
+<script src="http://www.bravotv.com/sites/nbcubravotv/files/js/js_REsLPu7rmWMjWdJcbmAAi4_CGneW_u1kgEQ0gfYfPC4.js" async="async"></script>
+<script src="http://www.bravotv.com/sites/nbcubravotv/files/js/js_NWsj5dJEJRLzB4WKZS98YCNOhvQ-oaQAigSDorSb1Qo.js"></script>
+<script src="//assets.vidora.com/js/nbcuni.c43f3b486d3213de.js"></script>
+<script async="async" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53d69bd22e0b6c46"></script>
+<script>
+(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//assets.pinterest.com/js/pinit.js';f.parentNode.insertBefore(p, f);}(document));
+</script>
+<script>
+typeof(mps.writeFooter)=='function' && mps.writeFooter();
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ab5855233f","applicationID":"11592140","transactionName":"Z1QHN0JXXUdQVhUMXl4eJABEX1xaHkUAAlRvXAQNUVFWRm5bDgFUb0cMBkdpQ1VWUA==","queueTime":0,"applicationTime":2022,"atts":"SxMEQQpNTkk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+</html>
